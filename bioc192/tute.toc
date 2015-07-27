@@ -40,3 +40,10 @@
 \contentsline {chapter}{Lecture 4}{14}
 \contentsline {section}{\numberline {4.1}Myoglobin}{14}
 \contentsline {section}{\numberline {4.2}Haem (Heme)}{14}
+\contentsline {section}{\numberline {4.3}Haemoglobin}{14}
+\contentsline {section}{\numberline {4.4}O$_2$ Binding Property}{15}
+\contentsline {subsection}{\numberline {4.4.1}Myoglobin}{15}
+\contentsline {subsection}{\numberline {4.4.2}Haemoglobin}{15}
+\contentsline {section}{\numberline {4.5}Sequential and Concerted Model of \discretionary {-}{}{}Allosterism}{15}
+\contentsline {subsection}{\numberline {4.5.1}Sequential Model}{16}
+\contentsline {subsection}{\numberline {4.5.2}Concerted Model}{16}
