@@ -2,12 +2,15 @@
 \contentsline {chapter}{Lecture 1}{3}
 \contentsline {section}{\numberline {1.1}Protein}{3}
 \contentsline {section}{\numberline {1.2}Amino Acids}{3}
-\contentsline {section}{\numberline {1.3}Charge of Amino Acids}{4}
-\contentsline {section}{\numberline {1.4}Amino Acid Side Chains}{4}
-\contentsline {section}{\numberline {1.5}Amino Acid Subgroups}{4}
-\contentsline {subsection}{\numberline {1.5.1}Non-polar}{5}
-\contentsline {subsection}{\numberline {1.5.2}Uncharged Polar}{5}
-\contentsline {subsection}{\numberline {1.5.3}Negatively Charged}{5}
-\contentsline {subsection}{\numberline {1.5.4}Positively Charged}{5}
-\contentsline {chapter}{Lecture 2}{6}
-\contentsline {section}{\numberline {2.1}me}{6}
+\contentsline {section}{\numberline {1.3}Amino Acid Side Chains}{4}
+\contentsline {section}{\numberline {1.4}Amino Acid Subgroups}{4}
+\contentsline {subsection}{\numberline {1.4.1}Non-polar}{4}
+\contentsline {subsection}{\numberline {1.4.2}Uncharged Polar}{4}
+\contentsline {subsection}{\numberline {1.4.3}Negatively Charged}{4}
+\contentsline {subsection}{\numberline {1.4.4}Positively Charged}{5}
+\contentsline {section}{\numberline {1.5}Charge of Amino Acids}{5}
+\contentsline {section}{\numberline {1.6}Amino Acid Modifications}{6}
+\contentsline {section}{\numberline {1.7}Proteins, Peptides, and Peptide Bonds}{6}
+\contentsline {subsection}{\numberline {1.7.1}Amide (peptide) Bonds}{6}
+\contentsline {chapter}{Lecture 2}{7}
+\contentsline {section}{\numberline {2.1}Bond Rotation}{7}
