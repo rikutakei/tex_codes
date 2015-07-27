@@ -30,3 +30,10 @@
 \contentsline {subsection}{\numberline {2.4.3}Turns}{11}
 \contentsline {subsection}{\numberline {2.4.4}Relationship between Ramachandron Plots and Secondary Structures}{11}
 \contentsline {chapter}{Lecture 3}{12}
+\contentsline {section}{\numberline {3.1}Supersecondary structure}{12}
+\contentsline {section}{\numberline {3.2}Protein Domains}{12}
+\contentsline {section}{\numberline {3.3}Protein Families}{12}
+\contentsline {section}{\numberline {3.4}Quaternary Structure}{12}
+\contentsline {section}{\numberline {3.5}Protein Folding Pathway}{13}
+\contentsline {section}{\numberline {3.6}Stabilisation of Protein Folding}{13}
+\contentsline {section}{\numberline {3.7}Chaperones and Chaperonin}{13}
