@@ -13,4 +13,3 @@
 \contentsline {section}{\numberline {1.7}Proteins, Peptides, and Peptide Bonds}{6}
 \contentsline {subsection}{\numberline {1.7.1}Amide (peptide) Bonds}{6}
 \contentsline {chapter}{Lecture 2}{7}
-\contentsline {section}{\numberline {2.1}Bond Rotation}{7}
