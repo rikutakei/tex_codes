@@ -37,3 +37,6 @@
 \contentsline {section}{\numberline {3.5}Protein Folding Pathway}{13}
 \contentsline {section}{\numberline {3.6}Stabilisation of Protein Folding}{13}
 \contentsline {section}{\numberline {3.7}Chaperones and Chaperonin}{13}
+\contentsline {chapter}{Lecture 4}{14}
+\contentsline {section}{\numberline {4.1}Myoglobin}{14}
+\contentsline {section}{\numberline {4.2}Haem (Heme)}{14}
