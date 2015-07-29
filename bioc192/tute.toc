@@ -70,4 +70,5 @@
 \contentsline {section}{\numberline {7.4}Gamma-carboxy Glutamic Acid (Gla)}{23}
 \contentsline {section}{\numberline {7.5}Hydroxylation}{23}
 \contentsline {chapter}{Lecture 8}{25}
+\contentsline {section}{\numberline {8.1}Introduction to Enzymes and Enzyme Engineering}{25}
 \contentsline {chapter}{Lecture 9}{26}
