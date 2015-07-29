@@ -1,63 +1,73 @@
-\contentsline {chapter}{Introduction}{3}
-\contentsline {chapter}{Lecture 1}{4}
-\contentsline {section}{\numberline {1.1}Protein}{4}
-\contentsline {section}{\numberline {1.2}Amino Acids}{4}
-\contentsline {section}{\numberline {1.3}Amino Acid Side Chains}{5}
-\contentsline {section}{\numberline {1.4}Amino Acid Subgroups}{5}
-\contentsline {subsection}{\numberline {1.4.1}Non-polar}{5}
-\contentsline {subsection}{\numberline {1.4.2}Uncharged Polar}{5}
-\contentsline {subsection}{\numberline {1.4.3}Negatively Charged}{5}
-\contentsline {subsection}{\numberline {1.4.4}Positively Charged}{6}
-\contentsline {section}{\numberline {1.5}Charge of Amino Acids}{6}
-\contentsline {section}{\numberline {1.6}Amino Acid Modifications}{7}
-\contentsline {section}{\numberline {1.7}Proteins, Peptides, and Peptide Bonds}{7}
-\contentsline {subsection}{\numberline {1.7.1}Amide (peptide) Bonds}{7}
-\contentsline {chapter}{Lecture 2}{8}
-\contentsline {section}{\numberline {2.1}Levels of Protein Structure}{8}
-\contentsline {subsection}{\numberline {2.1.1}Primary Structure}{8}
-\contentsline {subsection}{\numberline {2.1.2}Secondary Structure}{8}
-\contentsline {subsection}{\numberline {2.1.3}Tertiary Structure}{8}
-\contentsline {subsection}{\numberline {2.1.4}Quaternary Structure}{9}
-\contentsline {section}{\numberline {2.2}Bond Rotation}{9}
-\contentsline {subsection}{\numberline {2.2.1}Phi ($\phi $) Angle}{9}
-\contentsline {subsection}{\numberline {2.2.2}Psi ($\Psi $) Angle}{9}
-\contentsline {subsection}{\numberline {2.2.3}Omega ($\omega $) Angle}{10}
-\contentsline {subsection}{\numberline {2.2.4}Chi ($\chi $) Angle}{10}
-\contentsline {section}{\numberline {2.3}Ramachandron Plot}{10}
-\contentsline {section}{\numberline {2.4}Secondary Structure of a Protein}{10}
-\contentsline {subsection}{\numberline {2.4.1}$\alpha $-Helices}{10}
-\contentsline {subsection}{\numberline {2.4.2}$\beta $-Sheets}{11}
-\contentsline {subsection}{\numberline {2.4.3}Turns}{11}
-\contentsline {subsection}{\numberline {2.4.4}Relationship between Ramachandron Plots and Secondary Structures}{11}
-\contentsline {chapter}{Lecture 3}{12}
-\contentsline {section}{\numberline {3.1}Supersecondary structure}{12}
-\contentsline {section}{\numberline {3.2}Protein Domains}{12}
-\contentsline {section}{\numberline {3.3}Protein Families}{12}
-\contentsline {section}{\numberline {3.4}Quaternary Structure}{12}
-\contentsline {section}{\numberline {3.5}Protein Folding Pathway}{13}
-\contentsline {section}{\numberline {3.6}Stabilisation of Protein Folding}{13}
-\contentsline {section}{\numberline {3.7}Chaperones and Chaperonin}{13}
-\contentsline {chapter}{Lecture 4}{14}
-\contentsline {section}{\numberline {4.1}Myoglobin}{14}
-\contentsline {section}{\numberline {4.2}Haem (Heme)}{14}
-\contentsline {section}{\numberline {4.3}Haemoglobin}{14}
-\contentsline {section}{\numberline {4.4}O$_2$ Binding Property}{15}
-\contentsline {subsection}{\numberline {4.4.1}Myoglobin}{15}
-\contentsline {subsection}{\numberline {4.4.2}Haemoglobin}{15}
-\contentsline {section}{\numberline {4.5}Sequential and Concerted Model of \-Allosterism}{15}
-\contentsline {subsection}{\numberline {4.5.1}Sequential Model}{16}
-\contentsline {subsection}{\numberline {4.5.2}Concerted Model}{16}
-\contentsline {chapter}{Lecture 5}{17}
-\contentsline {section}{\numberline {5.1}Allosteric Effectors of Haemoglobin}{17}
-\contentsline {section}{\numberline {5.2}2,3-Bisphosphoglycerate (BPG)}{17}
-\contentsline {section}{\numberline {5.3}H$^+$ and CO$_2$}{18}
-\contentsline {subsection}{\numberline {5.3.1}The Bohr Effect}{18}
-\contentsline {subsection}{\numberline {5.3.2}The Blood Bicarbonate Buffer System}{18}
-\contentsline {chapter}{Lecture 6}{19}
-\contentsline {section}{\numberline {6.1}Haemoglobin Variants}{19}
-\contentsline {section}{\numberline {6.2}Normal Variants}{19}
-\contentsline {subsection}{\numberline {6.2.1}Foetal Haemoglobin (HbF)}{19}
-\contentsline {section}{\numberline {6.3}Abnormal Variants}{19}
-\contentsline {subsection}{\numberline {6.3.1}Sickle Cell Haemoglobin (HbS)}{20}
-\contentsline {subsection}{\numberline {6.3.2}Met-Haemoglobin (HbM)}{20}
-\contentsline {subsection}{\numberline {6.3.3}Haemoglobin C (HbC)}{20}
+\contentsline {chapter}{Introduction}{4}
+\contentsline {chapter}{Lecture 1}{5}
+\contentsline {section}{\numberline {1.1}Protein}{5}
+\contentsline {section}{\numberline {1.2}Amino Acids}{5}
+\contentsline {section}{\numberline {1.3}Amino Acid Side Chains}{6}
+\contentsline {section}{\numberline {1.4}Amino Acid Subgroups}{6}
+\contentsline {subsection}{\numberline {1.4.1}Non-polar}{6}
+\contentsline {subsection}{\numberline {1.4.2}Uncharged Polar}{6}
+\contentsline {subsection}{\numberline {1.4.3}Negatively Charged}{6}
+\contentsline {subsection}{\numberline {1.4.4}Positively Charged}{7}
+\contentsline {section}{\numberline {1.5}Charge of Amino Acids}{7}
+\contentsline {section}{\numberline {1.6}Amino Acid Modifications}{8}
+\contentsline {section}{\numberline {1.7}Proteins, Peptides, and Peptide Bonds}{8}
+\contentsline {subsection}{\numberline {1.7.1}Amide (peptide) Bonds}{8}
+\contentsline {chapter}{Lecture 2}{9}
+\contentsline {section}{\numberline {2.1}Levels of Protein Structure}{9}
+\contentsline {subsection}{\numberline {2.1.1}Primary Structure}{9}
+\contentsline {subsection}{\numberline {2.1.2}Secondary Structure}{9}
+\contentsline {subsection}{\numberline {2.1.3}Tertiary Structure}{9}
+\contentsline {subsection}{\numberline {2.1.4}Quaternary Structure}{10}
+\contentsline {section}{\numberline {2.2}Bond Rotation}{10}
+\contentsline {subsection}{\numberline {2.2.1}Phi ($\phi $) Angle}{10}
+\contentsline {subsection}{\numberline {2.2.2}Psi ($\Psi $) Angle}{10}
+\contentsline {subsection}{\numberline {2.2.3}Omega ($\omega $) Angle}{11}
+\contentsline {subsection}{\numberline {2.2.4}Chi ($\chi $) Angle}{11}
+\contentsline {section}{\numberline {2.3}Ramachandron Plot}{11}
+\contentsline {section}{\numberline {2.4}Secondary Structure of a Protein}{11}
+\contentsline {subsection}{\numberline {2.4.1}$\alpha $-Helices}{11}
+\contentsline {subsection}{\numberline {2.4.2}$\beta $-Sheets}{12}
+\contentsline {subsection}{\numberline {2.4.3}Turns}{12}
+\contentsline {subsection}{\numberline {2.4.4}Relationship between Ramachandron Plots and Secondary Structures}{12}
+\contentsline {chapter}{Lecture 3}{13}
+\contentsline {section}{\numberline {3.1}Supersecondary structure}{13}
+\contentsline {section}{\numberline {3.2}Protein Domains}{13}
+\contentsline {section}{\numberline {3.3}Protein Families}{13}
+\contentsline {section}{\numberline {3.4}Quaternary Structure}{13}
+\contentsline {section}{\numberline {3.5}Protein Folding Pathway}{14}
+\contentsline {section}{\numberline {3.6}Stabilisation of Protein Folding}{14}
+\contentsline {section}{\numberline {3.7}Chaperones and Chaperonin}{14}
+\contentsline {chapter}{Lecture 4}{15}
+\contentsline {section}{\numberline {4.1}Myoglobin}{15}
+\contentsline {section}{\numberline {4.2}Haem (Heme)}{15}
+\contentsline {section}{\numberline {4.3}Haemoglobin}{15}
+\contentsline {section}{\numberline {4.4}O$_2$ Binding Property}{16}
+\contentsline {subsection}{\numberline {4.4.1}Myoglobin}{16}
+\contentsline {subsection}{\numberline {4.4.2}Haemoglobin}{16}
+\contentsline {section}{\numberline {4.5}Sequential and Concerted Model of \-Allosterism}{16}
+\contentsline {subsection}{\numberline {4.5.1}Sequential Model}{17}
+\contentsline {subsection}{\numberline {4.5.2}Concerted Model}{17}
+\contentsline {chapter}{Lecture 5}{18}
+\contentsline {section}{\numberline {5.1}Allosteric Effectors of Haemoglobin}{18}
+\contentsline {section}{\numberline {5.2}2,3-Bisphosphoglycerate (BPG)}{18}
+\contentsline {section}{\numberline {5.3}H$^+$ and CO$_2$}{19}
+\contentsline {subsection}{\numberline {5.3.1}The Bohr Effect}{19}
+\contentsline {subsection}{\numberline {5.3.2}The Blood Bicarbonate Buffer System}{19}
+\contentsline {chapter}{Lecture 6}{20}
+\contentsline {section}{\numberline {6.1}Haemoglobin Variants}{20}
+\contentsline {section}{\numberline {6.2}Normal Variants}{20}
+\contentsline {subsection}{\numberline {6.2.1}Foetal Haemoglobin (HbF)}{20}
+\contentsline {section}{\numberline {6.3}Abnormal Variants}{20}
+\contentsline {subsection}{\numberline {6.3.1}Sickle Cell Haemoglobin (HbS)}{21}
+\contentsline {subsection}{\numberline {6.3.2}Met-Haemoglobin (HbM)}{21}
+\contentsline {subsection}{\numberline {6.3.3}Haemoglobin C (HbC)}{21}
+\contentsline {chapter}{Lecture 7}{22}
+\contentsline {section}{\numberline {7.1}Post-Translational Modification (PTM)}{22}
+\contentsline {section}{\numberline {7.2}Covalent Modification of Amino Acids}{22}
+\contentsline {section}{\numberline {7.3}Phoshphorylation}{22}
+\contentsline {subsection}{\numberline {7.3.1}Insulin Receptor}{23}
+\contentsline {subsection}{\numberline {7.3.2}Na$^+$/K$^+$ Pump}{23}
+\contentsline {section}{\numberline {7.4}Gamma-carboxy Glutamic Acid (Gla)}{23}
+\contentsline {section}{\numberline {7.5}Hydroxylation}{23}
+\contentsline {chapter}{Lecture 8}{25}
+\contentsline {chapter}{Lecture 9}{26}
