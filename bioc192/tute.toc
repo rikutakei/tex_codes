@@ -102,7 +102,17 @@
 \contentsline {section}{\numberline {12.2}Lineweaver-Burk Plot}{46}
 \contentsline {section}{\numberline {12.3}Significance of K$_M$}{47}
 \contentsline {section}{\numberline {12.4}Physiological Significance of K$_M$}{47}
-\contentsline {section}{\numberline {12.5}V$_{max}$ k$_{cat}$}{48}
+\contentsline {section}{\numberline {12.5}V$_{max}$ and k$_{cat}$}{48}
 \contentsline {section}{\numberline {12.6}k$_{cat}$, K$_M$ and Catalytic Efiiciency}{48}
 \contentsline {chapter}{Lecture 13}{49}
-\contentsline {chapter}{Lecture 14}{50}
+\contentsline {section}{\numberline {13.1}Enzyme Inhibitor}{49}
+\contentsline {section}{\numberline {13.2}Irreversible Inhibitors}{49}
+\contentsline {section}{\numberline {13.3}Reversible Inhibitors}{49}
+\contentsline {subsection}{\numberline {13.3.1}Competitive Reversible Inhibitor}{50}
+\contentsline {subsection}{\numberline {13.3.2}Non-competitive Reversible Inhibitor}{50}
+\contentsline {section}{\numberline {13.4}Methods of Enzyme Regulation}{50}
+\contentsline {subsection}{\numberline {13.4.1}Allosteric Enzyme Regulation}{50}
+\contentsline {subsection}{\numberline {13.4.2}Covalent Modification of Enzymes}{51}
+\contentsline {subsection}{\numberline {13.4.3}Activation of Enzymes by Cleavage}{51}
+\contentsline {section}{\numberline {13.5}Isoenzymes/Isozymes}{51}
+\contentsline {chapter}{Lecture 14}{52}
