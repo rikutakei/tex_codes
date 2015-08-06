@@ -116,3 +116,13 @@
 \contentsline {subsection}{\numberline {13.4.3}Activation of Enzymes by Cleavage}{51}
 \contentsline {section}{\numberline {13.5}Isoenzymes/Isozymes}{51}
 \contentsline {chapter}{Lecture 14}{52}
+\contentsline {section}{\numberline {14.1}Pharmacology and Toxicology}{52}
+\contentsline {section}{\numberline {14.2}Drugs}{52}
+\contentsline {subsection}{\numberline {14.2.1}Sources of Drugs}{52}
+\contentsline {subsection}{\numberline {14.2.2}Targets of Drugs}{52}
+\contentsline {section}{\numberline {14.3}Agonists and Antagonists}{53}
+\contentsline {section}{\numberline {14.4}Receptors}{53}
+\contentsline {subsection}{\numberline {14.4.1}Drug Receptor}{53}
+\contentsline {subsection}{\numberline {14.4.2}Physiological Receptor}{53}
+\contentsline {section}{\numberline {14.5}Ligand-Gated Ion Channels}{53}
+\contentsline {section}{\numberline {14.6}Voltage-Gated Ion Channels}{54}
