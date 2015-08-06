@@ -4,3 +4,7 @@
 *.log
 *.png
 *.jpg
+*.bbl
+*.bcf
+*.xml
+*.blg
