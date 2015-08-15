@@ -142,3 +142,15 @@
 \contentsline {section}{\numberline {16.3}Dopamine Receptor}{64}
 \contentsline {subsection}{\numberline {16.3.1}Parkinson's Disease}{65}
 \contentsline {subsection}{\numberline {16.3.2}Psychosis}{65}
+\contentsline {chapter}{Lecture 17}{66}
+\contentsline {section}{\numberline {17.1}Membrane Lipids and Proteins}{66}
+\contentsline {section}{\numberline {17.2}Membrane Composition}{66}
+\contentsline {section}{\numberline {17.3}Membrane Lipid Structure}{66}
+\contentsline {section}{\numberline {17.4}Membrane Fluidity}{67}
+\contentsline {subsection}{\numberline {17.4.1}Temperature}{67}
+\contentsline {subsection}{\numberline {17.4.2}Type of Fatty Acid}{67}
+\contentsline {subsection}{\numberline {17.4.3}Presence of Cholesterol}{67}
+\contentsline {section}{\numberline {17.5}Lipid Bilayer is a 2D Fluid}{68}
+\contentsline {section}{\numberline {17.6}Membrane Proteins}{68}
+\contentsline {section}{\numberline {17.7}How Are Proteins Attached to the Membrane?}{68}
+\contentsline {chapter}{Lecture 18}{69}
