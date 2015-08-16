@@ -154,3 +154,10 @@
 \contentsline {section}{\numberline {17.6}Membrane Proteins}{68}
 \contentsline {section}{\numberline {17.7}How Are Proteins Attached to the Membrane?}{68}
 \contentsline {chapter}{Lecture 18}{69}
+\contentsline {section}{\numberline {18.1}Transport of Non-polar Molecules Through the Membrane}{69}
+\contentsline {subsection}{\numberline {18.1.1}Permeability Coefficient and Oil-Water Partition Coefficient}{69}
+\contentsline {subsection}{\numberline {18.1.2}Concentration Gradient vs. Flux}{69}
+\contentsline {section}{\numberline {18.2}Transport of Polar Molecules Through the Membrane}{70}
+\contentsline {subsection}{\numberline {18.2.1}Channels}{70}
+\contentsline {subsection}{\numberline {18.2.2}Transporters}{70}
+\contentsline {section}{\numberline {18.3}Types of Transport Processes}{71}
