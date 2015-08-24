@@ -1,163 +1,180 @@
-\contentsline {chapter}{Introduction}{6}
-\contentsline {chapter}{Lecture 1}{7}
-\contentsline {section}{\numberline {1.1}Protein}{7}
-\contentsline {section}{\numberline {1.2}Amino Acids}{7}
-\contentsline {section}{\numberline {1.3}Amino Acid Side Chains}{8}
-\contentsline {section}{\numberline {1.4}Amino Acid Subgroups}{8}
-\contentsline {subsection}{\numberline {1.4.1}Non-polar}{8}
-\contentsline {subsection}{\numberline {1.4.2}Uncharged Polar}{9}
-\contentsline {subsection}{\numberline {1.4.3}Negatively Charged}{9}
-\contentsline {subsection}{\numberline {1.4.4}Positively Charged}{9}
-\contentsline {section}{\numberline {1.5}Charge of Amino Acids}{11}
-\contentsline {section}{\numberline {1.6}Amino Acid Modifications}{12}
-\contentsline {section}{\numberline {1.7}Proteins, Peptides, and Peptide Bonds}{13}
-\contentsline {subsection}{\numberline {1.7.1}Amide (peptide) Bonds}{13}
-\contentsline {chapter}{Lecture 2}{14}
-\contentsline {section}{\numberline {2.1}Levels of Protein Structure}{14}
-\contentsline {subsection}{\numberline {2.1.1}Primary Structure}{14}
-\contentsline {subsection}{\numberline {2.1.2}Secondary Structure}{14}
-\contentsline {subsection}{\numberline {2.1.3}Tertiary Structure}{14}
-\contentsline {subsection}{\numberline {2.1.4}Quaternary Structure}{15}
-\contentsline {section}{\numberline {2.2}Bond Rotation}{15}
-\contentsline {subsection}{\numberline {2.2.1}Phi ($\phi $) Angle}{15}
-\contentsline {subsection}{\numberline {2.2.2}Psi ($\Psi $) Angle}{15}
-\contentsline {subsection}{\numberline {2.2.3}Omega ($\omega $) Angle}{16}
-\contentsline {subsection}{\numberline {2.2.4}Chi ($\chi $) Angle}{16}
-\contentsline {section}{\numberline {2.3}Ramachandron Plot}{16}
-\contentsline {section}{\numberline {2.4}Secondary Structure of a Protein}{16}
-\contentsline {subsection}{\numberline {2.4.1}$\alpha $-Helices}{17}
-\contentsline {subsection}{\numberline {2.4.2}$\beta $-Sheets}{18}
-\contentsline {subsection}{\numberline {2.4.3}Turns}{18}
-\contentsline {subsection}{\numberline {2.4.4}Relationship between Ramachandron Plots and Secondary Structures}{18}
-\contentsline {chapter}{Lecture 3}{20}
-\contentsline {section}{\numberline {3.1}Supersecondary structure}{20}
-\contentsline {section}{\numberline {3.2}Protein Domains}{20}
-\contentsline {section}{\numberline {3.3}Protein Families}{21}
-\contentsline {section}{\numberline {3.4}Quaternary Structure}{21}
-\contentsline {section}{\numberline {3.5}Protein Folding Pathway}{21}
-\contentsline {section}{\numberline {3.6}Stabilisation of Protein Folding}{21}
-\contentsline {section}{\numberline {3.7}Chaperones and Chaperonin}{22}
-\contentsline {chapter}{Lecture 4}{23}
-\contentsline {section}{\numberline {4.1}Myoglobin}{23}
-\contentsline {section}{\numberline {4.2}Haem (Heme)}{23}
-\contentsline {section}{\numberline {4.3}Haemoglobin}{24}
-\contentsline {section}{\numberline {4.4}O$_2$ Binding Property}{25}
-\contentsline {subsection}{\numberline {4.4.1}Myoglobin}{25}
-\contentsline {subsection}{\numberline {4.4.2}Haemoglobin}{25}
-\contentsline {section}{\numberline {4.5}Sequential and Concerted Model of \-Allosterism}{25}
-\contentsline {subsection}{\numberline {4.5.1}Sequential Model}{26}
-\contentsline {subsection}{\numberline {4.5.2}Concerted Model}{26}
-\contentsline {chapter}{Lecture 5}{28}
-\contentsline {section}{\numberline {5.1}Allosteric Effectors of Haemoglobin}{28}
-\contentsline {section}{\numberline {5.2}2,3-Bisphosphoglycerate (BPG)}{28}
-\contentsline {section}{\numberline {5.3}H$^+$ and CO$_2$}{29}
-\contentsline {subsection}{\numberline {5.3.1}The Bohr Effect}{29}
-\contentsline {subsection}{\numberline {5.3.2}The Blood Bicarbonate Buffer System}{30}
-\contentsline {chapter}{Lecture 6}{32}
-\contentsline {section}{\numberline {6.1}Haemoglobin Variants}{32}
-\contentsline {section}{\numberline {6.2}Normal Variants}{32}
-\contentsline {subsection}{\numberline {6.2.1}Foetal Haemoglobin (HbF)}{32}
-\contentsline {section}{\numberline {6.3}Abnormal Variants}{32}
-\contentsline {subsection}{\numberline {6.3.1}Sickle Cell Haemoglobin (HbS)}{33}
-\contentsline {subsection}{\numberline {6.3.2}Met-Haemoglobin (HbM)}{33}
-\contentsline {subsection}{\numberline {6.3.3}Haemoglobin C (HbC)}{34}
-\contentsline {chapter}{Lecture 7}{35}
-\contentsline {section}{\numberline {7.1}Post-Translational Modification (PTM)}{35}
-\contentsline {section}{\numberline {7.2}Covalent Modification of Amino Acids}{35}
-\contentsline {section}{\numberline {7.3}Phoshphorylation}{35}
-\contentsline {subsection}{\numberline {7.3.1}Insulin Receptor}{36}
-\contentsline {subsection}{\numberline {7.3.2}Na$^+$/K$^+$ Pump}{37}
-\contentsline {section}{\numberline {7.4}Gamma-carboxy Glutamic Acid (Gla)}{37}
-\contentsline {section}{\numberline {7.5}Hydroxylation}{37}
-\contentsline {chapter}{Lecture 8}{38}
-\contentsline {section}{\numberline {8.1}Introduction to Enzymes and Enzyme Engineering}{38}
-\contentsline {chapter}{Lecture 9}{39}
-\contentsline {section}{\numberline {9.1}Introduction to Biotechnology}{39}
-\contentsline {subsection}{\numberline {9.1.1}The `Old' Way of Obtaining Proteins}{39}
-\contentsline {subsection}{\numberline {9.1.2}Recombinant Protein System}{39}
-\contentsline {subsection}{\numberline {9.1.3}Eukaryotic System}{39}
-\contentsline {subsection}{\numberline {9.1.4}Recombinant Antibodies}{40}
-\contentsline {subsection}{\numberline {9.1.5}Pharming}{40}
-\contentsline {chapter}{Lecture 10}{41}
-\contentsline {section}{\numberline {10.1}Introduction to Enzymes}{41}
-\contentsline {section}{\numberline {10.2}Active Site of an Enzyme}{41}
-\contentsline {subsection}{\numberline {10.2.1}Geometric Specificity and Stereospecificity}{42}
-\contentsline {section}{\numberline {10.3}Enzyme-Substrate Interaction}{42}
-\contentsline {subsection}{\numberline {10.3.1}Lock-and-Key Model}{43}
-\contentsline {subsection}{\numberline {10.3.2}Induced-fit Model}{43}
-\contentsline {section}{\numberline {10.4}Enzymes, Activation Energy, and \\Catalytic Mechanisms}{44}
-\contentsline {subsection}{\numberline {10.4.1}Acid-base Catalysis}{44}
-\contentsline {subsection}{\numberline {10.4.2}Covalent Catalysis}{45}
-\contentsline {subsection}{\numberline {10.4.3}Metal Ion Catalysis}{45}
-\contentsline {section}{\numberline {10.5}Co-factors and Co-enzymes/Co-substrates}{45}
-\contentsline {section}{\numberline {10.6}Enzyme Nomenclature}{45}
-\contentsline {chapter}{Lecture 11}{46}
-\contentsline {section}{\numberline {11.1}Enzyme Kinetics}{46}
-\contentsline {section}{\numberline {11.2}Measuring Enzyme Catalysis}{46}
-\contentsline {section}{\numberline {11.3}Effect of Enzyme Concentration on the Rate of Reaction}{47}
-\contentsline {section}{\numberline {11.4}Effect of Substrate Concentration on the Rate of Reaction}{47}
-\contentsline {subsection}{\numberline {11.4.1}V$_{max}$ and K$_M$}{48}
-\contentsline {chapter}{Lecture 12}{49}
-\contentsline {section}{\numberline {12.1}The Michaelis-Menten Equation}{49}
-\contentsline {section}{\numberline {12.2}Lineweaver-Burk Plot}{50}
-\contentsline {section}{\numberline {12.3}Significance of K$_M$}{50}
-\contentsline {section}{\numberline {12.4}Physiological Significance of K$_M$}{51}
-\contentsline {section}{\numberline {12.5}V$_{max}$ and k$_{cat}$}{51}
-\contentsline {section}{\numberline {12.6}k$_{cat}$, K$_M$ and Catalytic Efiiciency}{52}
-\contentsline {chapter}{Lecture 13}{53}
-\contentsline {section}{\numberline {13.1}Enzyme Inhibitor}{53}
-\contentsline {section}{\numberline {13.2}Irreversible Inhibitors}{53}
-\contentsline {section}{\numberline {13.3}Reversible Inhibitors}{53}
-\contentsline {subsection}{\numberline {13.3.1}Competitive Reversible Inhibitor}{54}
-\contentsline {subsection}{\numberline {13.3.2}Non-competitive Reversible Inhibitor}{54}
-\contentsline {section}{\numberline {13.4}Methods of Enzyme Regulation}{56}
-\contentsline {subsection}{\numberline {13.4.1}Allosteric Enzyme Regulation}{56}
-\contentsline {subsection}{\numberline {13.4.2}Covalent Modification of Enzymes}{57}
-\contentsline {subsection}{\numberline {13.4.3}Activation of Enzymes by Cleavage}{57}
-\contentsline {section}{\numberline {13.5}Isoenzymes/Isozymes}{57}
-\contentsline {chapter}{Lecture 14}{58}
-\contentsline {section}{\numberline {14.1}Pharmacology and Toxicology}{58}
-\contentsline {section}{\numberline {14.2}Drugs}{58}
-\contentsline {subsection}{\numberline {14.2.1}Sources of Drugs}{58}
-\contentsline {subsection}{\numberline {14.2.2}Targets of Drugs}{58}
-\contentsline {section}{\numberline {14.3}Agonists and Antagonists}{59}
-\contentsline {section}{\numberline {14.4}Receptors}{59}
-\contentsline {subsection}{\numberline {14.4.1}Drug Receptor}{59}
-\contentsline {subsection}{\numberline {14.4.2}Physiological Receptor}{59}
-\contentsline {section}{\numberline {14.5}Ligand-Gated Ion Channels}{60}
-\contentsline {section}{\numberline {14.6}Voltage-Gated Ion Channels}{61}
-\contentsline {chapter}{Lecture 15}{62}
-\contentsline {section}{\numberline {15.1}Nuclear Receptor}{62}
-\contentsline {section}{\numberline {15.2}Mechanism of Nuclear Receptor Signalling}{62}
-\contentsline {subsection}{\numberline {15.2.1}Regulation of Nuclear Receptor}{62}
-\contentsline {section}{\numberline {15.3}Structure of Nuclear Receptor}{63}
-\contentsline {section}{\numberline {15.4}What Genes are Activated by Nuclear Receptor}{63}
-\contentsline {section}{\numberline {15.5}Nuclear Receptor and Cancer}{63}
-\contentsline {subsection}{\numberline {15.5.1}Breast Cancer}{64}
-\contentsline {subsection}{\numberline {15.5.2}Androgen Receptor and Prostate Cancer}{64}
-\contentsline {section}{\numberline {15.6}Effect of Hormones on Living Organisms}{64}
-\contentsline {chapter}{Lecture 16}{65}
-\contentsline {section}{\numberline {16.1}G-protein Coupled Receptors (GPCR)}{65}
-\contentsline {section}{\numberline {16.2}Mechanism of GPCRs}{65}
-\contentsline {section}{\numberline {16.3}Dopamine Receptor}{65}
-\contentsline {subsection}{\numberline {16.3.1}Parkinson's Disease}{66}
-\contentsline {subsection}{\numberline {16.3.2}Psychosis}{66}
-\contentsline {chapter}{Lecture 17}{67}
-\contentsline {section}{\numberline {17.1}Membrane Lipids and Proteins}{67}
-\contentsline {section}{\numberline {17.2}Membrane Composition}{67}
-\contentsline {section}{\numberline {17.3}Membrane Lipid Structure}{68}
-\contentsline {section}{\numberline {17.4}Membrane Fluidity}{68}
-\contentsline {subsection}{\numberline {17.4.1}Temperature}{68}
-\contentsline {subsection}{\numberline {17.4.2}Type of Fatty Acid}{68}
-\contentsline {subsection}{\numberline {17.4.3}Presence of Cholesterol}{69}
-\contentsline {section}{\numberline {17.5}Lipid Bilayer is a 2D Fluid}{69}
-\contentsline {section}{\numberline {17.6}Membrane Proteins}{69}
-\contentsline {section}{\numberline {17.7}How Are Proteins Attached to the Membrane?}{70}
-\contentsline {chapter}{Lecture 18}{72}
-\contentsline {section}{\numberline {18.1}Transport of Non-polar Molecules Through the Membrane}{72}
-\contentsline {subsection}{\numberline {18.1.1}Permeability Coefficient and Oil-Water Partition Coefficient}{72}
-\contentsline {subsection}{\numberline {18.1.2}Concentration Gradient vs. Flux}{73}
-\contentsline {section}{\numberline {18.2}Transport of Polar Molecules Through the Membrane}{73}
-\contentsline {subsection}{\numberline {18.2.1}Channels}{74}
-\contentsline {subsection}{\numberline {18.2.2}Transporters}{74}
-\contentsline {section}{\numberline {18.3}Types of Transport Processes}{75}
+\contentsline {chapter}{Introduction}{7}
+\contentsline {chapter}{Lecture 1}{8}
+\contentsline {section}{\numberline {1.1}Protein}{8}
+\contentsline {section}{\numberline {1.2}Amino Acids}{8}
+\contentsline {section}{\numberline {1.3}Amino Acid Side Chains}{9}
+\contentsline {section}{\numberline {1.4}Amino Acid Subgroups}{9}
+\contentsline {subsection}{\numberline {1.4.1}Non-polar}{9}
+\contentsline {subsection}{\numberline {1.4.2}Uncharged Polar}{10}
+\contentsline {subsection}{\numberline {1.4.3}Negatively Charged}{10}
+\contentsline {subsection}{\numberline {1.4.4}Positively Charged}{10}
+\contentsline {section}{\numberline {1.5}Charge of Amino Acids}{12}
+\contentsline {section}{\numberline {1.6}Amino Acid Modifications}{13}
+\contentsline {section}{\numberline {1.7}Proteins, Peptides, and Peptide Bonds}{14}
+\contentsline {subsection}{\numberline {1.7.1}Amide (peptide) Bonds}{14}
+\contentsline {chapter}{Lecture 2}{15}
+\contentsline {section}{\numberline {2.1}Levels of Protein Structure}{15}
+\contentsline {subsection}{\numberline {2.1.1}Primary Structure}{15}
+\contentsline {subsection}{\numberline {2.1.2}Secondary Structure}{15}
+\contentsline {subsection}{\numberline {2.1.3}Tertiary Structure}{15}
+\contentsline {subsection}{\numberline {2.1.4}Quaternary Structure}{16}
+\contentsline {section}{\numberline {2.2}Bond Rotation}{16}
+\contentsline {subsection}{\numberline {2.2.1}Phi ($\phi $) Angle}{16}
+\contentsline {subsection}{\numberline {2.2.2}Psi ($\Psi $) Angle}{16}
+\contentsline {subsection}{\numberline {2.2.3}Omega ($\omega $) Angle}{17}
+\contentsline {subsection}{\numberline {2.2.4}Chi ($\chi $) Angle}{17}
+\contentsline {section}{\numberline {2.3}Ramachandron Plot}{17}
+\contentsline {section}{\numberline {2.4}Secondary Structure of a Protein}{17}
+\contentsline {subsection}{\numberline {2.4.1}$\alpha $-Helices}{18}
+\contentsline {subsection}{\numberline {2.4.2}$\beta $-Sheets}{19}
+\contentsline {subsection}{\numberline {2.4.3}Turns}{19}
+\contentsline {subsection}{\numberline {2.4.4}Relationship between Ramachandron Plots and Secondary Structures}{19}
+\contentsline {chapter}{Lecture 3}{21}
+\contentsline {section}{\numberline {3.1}Supersecondary structure}{21}
+\contentsline {section}{\numberline {3.2}Protein Domains}{21}
+\contentsline {section}{\numberline {3.3}Protein Families}{22}
+\contentsline {section}{\numberline {3.4}Quaternary Structure}{22}
+\contentsline {section}{\numberline {3.5}Protein Folding Pathway}{22}
+\contentsline {section}{\numberline {3.6}Stabilisation of Protein Folding}{22}
+\contentsline {section}{\numberline {3.7}Chaperones and Chaperonin}{23}
+\contentsline {chapter}{Lecture 4}{24}
+\contentsline {section}{\numberline {4.1}Myoglobin}{24}
+\contentsline {section}{\numberline {4.2}Haem (Heme)}{24}
+\contentsline {section}{\numberline {4.3}Haemoglobin}{25}
+\contentsline {section}{\numberline {4.4}O$_2$ Binding Property}{26}
+\contentsline {subsection}{\numberline {4.4.1}Myoglobin}{26}
+\contentsline {subsection}{\numberline {4.4.2}Haemoglobin}{26}
+\contentsline {section}{\numberline {4.5}Sequential and Concerted Model of \-Allosterism}{26}
+\contentsline {subsection}{\numberline {4.5.1}Sequential Model}{27}
+\contentsline {subsection}{\numberline {4.5.2}Concerted Model}{27}
+\contentsline {chapter}{Lecture 5}{29}
+\contentsline {section}{\numberline {5.1}Allosteric Effectors of Haemoglobin}{29}
+\contentsline {section}{\numberline {5.2}2,3-Bisphosphoglycerate (BPG)}{29}
+\contentsline {section}{\numberline {5.3}H$^+$ and CO$_2$}{30}
+\contentsline {subsection}{\numberline {5.3.1}The Bohr Effect}{30}
+\contentsline {subsection}{\numberline {5.3.2}The Blood Bicarbonate Buffer System}{31}
+\contentsline {chapter}{Lecture 6}{33}
+\contentsline {section}{\numberline {6.1}Haemoglobin Variants}{33}
+\contentsline {section}{\numberline {6.2}Normal Variants}{33}
+\contentsline {subsection}{\numberline {6.2.1}Foetal Haemoglobin (HbF)}{33}
+\contentsline {section}{\numberline {6.3}Abnormal Variants}{33}
+\contentsline {subsection}{\numberline {6.3.1}Sickle Cell Haemoglobin (HbS)}{34}
+\contentsline {subsection}{\numberline {6.3.2}Met-Haemoglobin (HbM)}{34}
+\contentsline {subsection}{\numberline {6.3.3}Haemoglobin C (HbC)}{35}
+\contentsline {chapter}{Lecture 7}{36}
+\contentsline {section}{\numberline {7.1}Post-Translational Modification (PTM)}{36}
+\contentsline {section}{\numberline {7.2}Covalent Modification of Amino Acids}{36}
+\contentsline {section}{\numberline {7.3}Phoshphorylation}{36}
+\contentsline {subsection}{\numberline {7.3.1}Insulin Receptor}{37}
+\contentsline {subsection}{\numberline {7.3.2}Na$^+$/K$^+$ Pump}{38}
+\contentsline {section}{\numberline {7.4}Gamma-carboxy Glutamic Acid (Gla)}{38}
+\contentsline {section}{\numberline {7.5}Hydroxylation}{38}
+\contentsline {chapter}{Lecture 8}{39}
+\contentsline {section}{\numberline {8.1}Introduction to Enzymes and Enzyme Engineering}{39}
+\contentsline {chapter}{Lecture 9}{40}
+\contentsline {section}{\numberline {9.1}Introduction to Biotechnology}{40}
+\contentsline {subsection}{\numberline {9.1.1}The `Old' Way of Obtaining Proteins}{40}
+\contentsline {subsection}{\numberline {9.1.2}Recombinant Protein System}{40}
+\contentsline {subsection}{\numberline {9.1.3}Eukaryotic System}{40}
+\contentsline {subsection}{\numberline {9.1.4}Recombinant Antibodies}{41}
+\contentsline {subsection}{\numberline {9.1.5}Pharming}{41}
+\contentsline {chapter}{Lecture 10}{42}
+\contentsline {section}{\numberline {10.1}Introduction to Enzymes}{42}
+\contentsline {section}{\numberline {10.2}Active Site of an Enzyme}{42}
+\contentsline {subsection}{\numberline {10.2.1}Geometric Specificity and Stereospecificity}{43}
+\contentsline {section}{\numberline {10.3}Enzyme-Substrate Interaction}{43}
+\contentsline {subsection}{\numberline {10.3.1}Lock-and-Key Model}{44}
+\contentsline {subsection}{\numberline {10.3.2}Induced-fit Model}{44}
+\contentsline {section}{\numberline {10.4}Enzymes, Activation Energy, and \\Catalytic Mechanisms}{45}
+\contentsline {subsection}{\numberline {10.4.1}Acid-base Catalysis}{45}
+\contentsline {subsection}{\numberline {10.4.2}Covalent Catalysis}{46}
+\contentsline {subsection}{\numberline {10.4.3}Metal Ion Catalysis}{46}
+\contentsline {section}{\numberline {10.5}Co-factors and Co-enzymes/Co-substrates}{46}
+\contentsline {section}{\numberline {10.6}Enzyme Nomenclature}{46}
+\contentsline {chapter}{Lecture 11}{47}
+\contentsline {section}{\numberline {11.1}Enzyme Kinetics}{47}
+\contentsline {section}{\numberline {11.2}Measuring Enzyme Catalysis}{47}
+\contentsline {section}{\numberline {11.3}Effect of Enzyme Concentration on the Rate of Reaction}{48}
+\contentsline {section}{\numberline {11.4}Effect of Substrate Concentration on the Rate of Reaction}{48}
+\contentsline {subsection}{\numberline {11.4.1}V$_{max}$ and K$_M$}{49}
+\contentsline {chapter}{Lecture 12}{50}
+\contentsline {section}{\numberline {12.1}The Michaelis-Menten Equation}{50}
+\contentsline {section}{\numberline {12.2}Lineweaver-Burk Plot}{51}
+\contentsline {section}{\numberline {12.3}Significance of K$_M$}{51}
+\contentsline {section}{\numberline {12.4}Physiological Significance of K$_M$}{52}
+\contentsline {section}{\numberline {12.5}V$_{max}$ and k$_{cat}$}{52}
+\contentsline {section}{\numberline {12.6}k$_{cat}$, K$_M$ and Catalytic Efiiciency}{53}
+\contentsline {chapter}{Lecture 13}{54}
+\contentsline {section}{\numberline {13.1}Enzyme Inhibitor}{54}
+\contentsline {section}{\numberline {13.2}Irreversible Inhibitors}{54}
+\contentsline {section}{\numberline {13.3}Reversible Inhibitors}{54}
+\contentsline {subsection}{\numberline {13.3.1}Competitive Reversible Inhibitor}{55}
+\contentsline {subsection}{\numberline {13.3.2}Non-competitive Reversible Inhibitor}{55}
+\contentsline {section}{\numberline {13.4}Methods of Enzyme Regulation}{57}
+\contentsline {subsection}{\numberline {13.4.1}Allosteric Enzyme Regulation}{57}
+\contentsline {subsection}{\numberline {13.4.2}Covalent Modification of Enzymes}{58}
+\contentsline {subsection}{\numberline {13.4.3}Activation of Enzymes by Cleavage}{58}
+\contentsline {section}{\numberline {13.5}Isoenzymes/Isozymes}{58}
+\contentsline {chapter}{Lecture 14}{59}
+\contentsline {section}{\numberline {14.1}Pharmacology and Toxicology}{59}
+\contentsline {section}{\numberline {14.2}Drugs}{59}
+\contentsline {subsection}{\numberline {14.2.1}Sources of Drugs}{59}
+\contentsline {subsection}{\numberline {14.2.2}Targets of Drugs}{59}
+\contentsline {section}{\numberline {14.3}Agonists and Antagonists}{60}
+\contentsline {section}{\numberline {14.4}Receptors}{60}
+\contentsline {subsection}{\numberline {14.4.1}Drug Receptor}{60}
+\contentsline {subsection}{\numberline {14.4.2}Physiological Receptor}{60}
+\contentsline {section}{\numberline {14.5}Ligand-Gated Ion Channels}{61}
+\contentsline {section}{\numberline {14.6}Voltage-Gated Ion Channels}{62}
+\contentsline {chapter}{Lecture 15}{63}
+\contentsline {section}{\numberline {15.1}Nuclear Receptor}{63}
+\contentsline {section}{\numberline {15.2}Mechanism of Nuclear Receptor Signalling}{63}
+\contentsline {subsection}{\numberline {15.2.1}Regulation of Nuclear Receptor}{63}
+\contentsline {section}{\numberline {15.3}Structure of Nuclear Receptor}{64}
+\contentsline {section}{\numberline {15.4}What Genes are Activated by Nuclear Receptor}{64}
+\contentsline {section}{\numberline {15.5}Nuclear Receptor and Cancer}{64}
+\contentsline {subsection}{\numberline {15.5.1}Breast Cancer}{65}
+\contentsline {subsection}{\numberline {15.5.2}Androgen Receptor and Prostate Cancer}{65}
+\contentsline {section}{\numberline {15.6}Effect of Hormones on Living Organisms}{65}
+\contentsline {chapter}{Lecture 16}{66}
+\contentsline {section}{\numberline {16.1}G-protein Coupled Receptors (GPCR)}{66}
+\contentsline {section}{\numberline {16.2}Mechanism of GPCRs}{66}
+\contentsline {section}{\numberline {16.3}Dopamine Receptor}{66}
+\contentsline {subsection}{\numberline {16.3.1}Parkinson's Disease}{67}
+\contentsline {subsection}{\numberline {16.3.2}Psychosis}{67}
+\contentsline {chapter}{Lecture 17}{68}
+\contentsline {section}{\numberline {17.1}Membrane Lipids and Proteins}{68}
+\contentsline {section}{\numberline {17.2}Membrane Composition}{68}
+\contentsline {section}{\numberline {17.3}Membrane Lipid Structure}{69}
+\contentsline {section}{\numberline {17.4}Membrane Fluidity}{69}
+\contentsline {subsection}{\numberline {17.4.1}Temperature}{69}
+\contentsline {subsection}{\numberline {17.4.2}Type of Fatty Acid}{69}
+\contentsline {subsection}{\numberline {17.4.3}Presence of Cholesterol}{70}
+\contentsline {section}{\numberline {17.5}Lipid Bilayer is a 2D Fluid}{70}
+\contentsline {section}{\numberline {17.6}Membrane Proteins}{70}
+\contentsline {section}{\numberline {17.7}How Are Proteins Attached to the Membrane?}{71}
+\contentsline {chapter}{Lecture 18}{73}
+\contentsline {section}{\numberline {18.1}Transport of Non-polar Molecules Through the Membrane}{73}
+\contentsline {subsection}{\numberline {18.1.1}Permeability Coefficient and Oil-Water Partition Coefficient}{73}
+\contentsline {subsection}{\numberline {18.1.2}Concentration Gradient vs. Flux}{74}
+\contentsline {section}{\numberline {18.2}Transport of Polar Molecules Through the Membrane}{74}
+\contentsline {subsection}{\numberline {18.2.1}Channels}{75}
+\contentsline {subsection}{\numberline {18.2.2}Transporters}{75}
+\contentsline {section}{\numberline {18.3}Types of Transport Processes}{76}
+\contentsline {chapter}{Lecture 19}{78}
+\contentsline {section}{\numberline {19.1}Energy Metabolism and ATP}{78}
+\contentsline {section}{\numberline {19.2}Energy Balance in the Body}{78}
+\contentsline {subsection}{\numberline {19.2.1}Subtopic: Leptin Receptor}{79}
+\contentsline {section}{\numberline {19.3}Units of Energy}{79}
+\contentsline {section}{\numberline {19.4}Measuring Energy Intake}{79}
+\contentsline {subsection}{\numberline {19.4.1}Bomb Calorimetry}{79}
+\contentsline {section}{\numberline {19.5}Atwater Factor}{79}
+\contentsline {section}{\numberline {19.6}Measuring Energy Expenditure}{80}
+\contentsline {subsection}{\numberline {19.6.1}Direct Calorimetry}{80}
+\contentsline {subsection}{\numberline {19.6.2}Indirect Calorimetry}{80}
+\contentsline {subsection}{\numberline {19.6.3}Respiration Exchange Ratio}{80}
+\contentsline {section}{\numberline {19.7}Basal Metabolism}{80}
+\contentsline {subsection}{\numberline {19.7.1}Hyper and Hypothyroidism}{81}
+\contentsline {chapter}{Lecture 20}{82}
+\contentsline {chapter}{Lecture 21}{83}
+\contentsline {chapter}{Lecture 22}{84}
