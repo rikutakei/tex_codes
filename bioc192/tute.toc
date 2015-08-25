@@ -192,4 +192,18 @@
 \contentsline {subsection}{\numberline {20.6.1}Glucose Transport}{84}
 \contentsline {subsection}{\numberline {20.6.2}Coeliac Disease}{84}
 \contentsline {chapter}{Lecture 21}{85}
-\contentsline {chapter}{Lecture 22}{86}
+\contentsline {section}{\numberline {21.1}Protein Digestion and Absorption}{85}
+\contentsline {section}{\numberline {21.2}Essential Amino Acids}{85}
+\contentsline {section}{\numberline {21.3}Regulation of Protein Digestion}{85}
+\contentsline {section}{\numberline {21.4}Enzymes Involved in Protein Digestion}{85}
+\contentsline {section}{\numberline {21.5}Protein Digestion}{86}
+\contentsline {subsection}{\numberline {21.5.1}Pepsinogen Activation}{86}
+\contentsline {subsection}{\numberline {21.5.2}Small Intestine Peptidase Activation}{86}
+\contentsline {section}{\numberline {21.6}Protein Absorption}{87}
+\contentsline {subsection}{\numberline {21.6.1}Amino Acid Transport}{87}
+\contentsline {subsection}{\numberline {21.6.2}Peptide Absorption}{87}
+\contentsline {subsection}{\numberline {21.6.3}Absorption of Intact Proteins}{87}
+\contentsline {section}{\numberline {21.7}Diseases of Inappropriate Enzyme Activation}{87}
+\contentsline {section}{\numberline {21.8}Diseases of Malabsorption}{87}
+\contentsline {section}{\numberline {21.9}Digestion of Nucleic Acid}{88}
+\contentsline {chapter}{Lecture 22}{89}
