@@ -176,5 +176,20 @@
 \contentsline {section}{\numberline {19.7}Basal Metabolism}{80}
 \contentsline {subsection}{\numberline {19.7.1}Hyper and Hypothyroidism}{81}
 \contentsline {chapter}{Lecture 20}{82}
-\contentsline {chapter}{Lecture 21}{83}
-\contentsline {chapter}{Lecture 22}{84}
+\contentsline {section}{\numberline {20.1}Digestion and Absorption of Food}{82}
+\contentsline {section}{\numberline {20.2}Organs Involved in Digestion}{82}
+\contentsline {subsection}{\numberline {20.2.1}Salivary Glands}{82}
+\contentsline {subsection}{\numberline {20.2.2}Stomach}{82}
+\contentsline {subsection}{\numberline {20.2.3}Pancreas}{82}
+\contentsline {subsection}{\numberline {20.2.4}Liver}{82}
+\contentsline {subsection}{\numberline {20.2.5}Small Intestine}{83}
+\contentsline {section}{\numberline {20.3}Beaumont's Experiment}{83}
+\contentsline {section}{\numberline {20.4}Digestion}{83}
+\contentsline {section}{\numberline {20.5}Carbohydrate Digestion}{83}
+\contentsline {subsection}{\numberline {20.5.1}Enzymes Involved in Carbohydrate Digestion}{83}
+\contentsline {subsection}{\numberline {20.5.2}Lactose Intolerance}{84}
+\contentsline {section}{\numberline {20.6}Carbohydrate Absorption}{84}
+\contentsline {subsection}{\numberline {20.6.1}Glucose Transport}{84}
+\contentsline {subsection}{\numberline {20.6.2}Coeliac Disease}{84}
+\contentsline {chapter}{Lecture 21}{85}
+\contentsline {chapter}{Lecture 22}{86}
