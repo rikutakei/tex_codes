@@ -1,0 +1,1626 @@
+\documentclass[a4paper, 12pt]{report}
+
+\usepackage{chemmacros}
+\usepackage{graphicx}
+\usepackage[utf8]{inputenc}
+
+\graphicspath{ {../images/topic1/} {../images/topic2/} {../images/topic3/}}
+
+\newcommand{\HRule}{\rule {\linewidth}{0.5mm}}
+
+\newcommand{\mychapter}[2]{
+    \setcounter{chapter}{#1}
+    \setcounter{section}{0}
+    \chapter*{#2}
+    \addcontentsline{toc}{chapter}{#2}
+}
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{center}
+
+\HRule
+\vspace{0.4cm}
+\Huge{\textbf{BIOC192 Summary Tutorial Notes 2015}}
+\HRule
+
+\vfill
+\LARGE{\textbf{Compiled by Riku Takei}}
+
+\end{center}
+
+\end{titlepage}
+
+%\tableofcontents
+%\newpage
+
+%\mychapter{0}{Introduction}
+
+%\input{../intro.tex}
+
+\mychapter{1}{Lecture 1}
+
+\section{Levels of Protein Structure}
+
+\subsection{Primary Structure}
+
+The Primary structure of a protein is the amino acid sequence of that particular protein.
+Note that the sequence of the amino acid (i.e. the primary structure) determines the 3D structure of the protein, since the primary sequence will have all the required amino acids in the right order for protein folding (via hydrophobic interaction).
+
+\subsection{Secondary Structure}
+
+Secondary structure is the local regular folds/structure that are stabilised by H-bonds between the backbone peptide groups of the polypeptide chain.
+Examples of secondary structures include the $\alpha$-helix and $\beta$-sheets.
+Supersecondary structures are related to the secondary structure, as it consists of combinations of secondary structures to make certain motifs (e.g. greek keys).
+
+\subsection{Tertiary Structure}
+
+Tertiary structure is the structure, or domain, formed by arranging secondary/supersecondary structures.
+These usually have a function once it has the correct 3D structure, but it may require other tertiary structures to act as a single protein.
+
+\subsection{Quaternary Structure}
+
+Quaternary structure is where multiple tertiary structure come together to form a single functional protein.
+Not all protein form a quaternary structure to function.
+
+\section{Amino Acids}
+
+Amino acids are the building blocks of a protein.
+Proteins are made from multiple amino acids joined together as a long polypeptide chain, which in turn folds into a certain structure (see Lecture 2).
+
+There are 20 amino acids in our cells that make up the proteins.
+All of these 20 amino acids have an amino group (--NH$_3$ group), a carboxyl group (--COOH group), a hydrogen atom, and a variable side chain (--R group) attached to the central carbon atom (C$_{\alpha}$).
+Due to the variable side chains, all amino acids except glycine are chiral, meaning that they cannot be mirrored (and hence have two forms: D-- and L-- amino acids).
+The reason why glycine is the only amino acid that is achiral is because the glycine side chain group is just a hydrogen atom.
+
+\section{Amino Acid Side Chains}
+
+As mentioned earlier, all 20 amino acids have a common peptide backbone which is made up of the $\alpha$-carbon, carboxyl group, amino group, and a hydrogen atom -- the only thing different between the amino acids are the side chain, or the R group.
+This means that each of the 20 amino acids have different chemical properties, depending on the side chain group it has.
+Cells take advantage of this and arrange these amino acids in a certain way so the protein can, for example, carry out chemical reactions faster (i.e. it gives the protein its functionality, as well as its unique structure).
+
+\section{Amino Acid Subgroups}
+
+Due to the unique chemical properties of the amino acid side chains, they are grouped into subgroups.
+There are four main groups: Non-polar, uncharged polar, negatively charged, and positively charged amino acids.
+
+\subsection{Non-polar}
+
+These amino acids have non-polar (or hydrophobic) side chain, meaning that the side chains cannot be charged under physiological pH.
+The amino acids in this group are: alanine, valine, leucine, isoleucine, glycine, cysteine, phenylalanine, tryptophan, methionine, and proline.
+
+\subsection{Uncharged Polar}
+
+These amino acids have side chains that can be charged, but uncharged under normal physiological pH.
+As you can see, the side chain contains --OH groups and/or --NH$_2$ groups, whichare able to de/protonate under certain pH.
+The amino acids in this group are: serine, threonine, tyrosine, asparagine, and glutamine.
+
+
+\subsection{Negatively Charged}
+
+These amino acids have side chains that are negatively charged (i.e. deprotonated) side chains at physiological pH.
+The side chain contains a deprotonated --COOH group, giving it a negative charge to the side chain.
+The pK$_a$ of these amino acid side chains ranges from 4$\sim$5.
+The amino acids in this group are: aspartic acid (aspartate) and glutamic acid (glutamate).
+
+\subsection{Positively Charged}
+
+These amino acids have side chains that are positively charged (i.e. protonated) side chains at physiological pH.
+The side chain contains a protonated --NH$_2$ group, giving it a positive charge to the side chain.
+The pK$_a$ of these amino acid side chains ranges from 10$\sim$12, with an exception of histidine, which has a pK$_a$ of 7$\sim$7.5.
+The amino acids in this group are: lysine, arginine, and histidine.
+
+
+\includegraphics[width=\textwidth]{20aa}
+
+\section{Charge of Amino Acids}
+
+Amino acids have different charges on them, depending on the pH of the environment, as well as the chemical properties of the side chains of the amino acids.
+The $\alpha$-amino group ($\alpha$ means that it is joined onto the C$_{\alpha}$) has a pK$_a$ of about 9, whereas the pK$_a$ of the $\alpha$-carboxyl group is about 2 (for all 20 amino acids).
+When pH = pK$_a$, 50\% of the molecules are protonated and 50\% of the molecules are protonated.
+Depending on the pH of the solution, there will be more or less protonated molecules.
+
+The amount of de/protonated amino acids affect the net charge of the protein, and therefore the isoelectric point (pI) of the protein.
+The isoelectric point (pI) is the pH at which the net charge of the protein is 0 (i.e. neutral).
+
+When the pH is low (e.g. 2), the concentration of the hydrogen ion ([H$^+$]) increases, therefore the molecules are likely to become protonated.
+Likewise, when the pH is high (e.g. 10), the concentration of the hydrogen ion ([H$^+$]) decreases, therefore the molecules are likely to become deprotonated.
+So, in general, when the pH is below the pK$_a$, the molecule is protonated (i.e. H$^+$ ion added), and when the pH is above the pK$_a$, the molecule is deprotonated (i.e. H$^+$ ion removed).
+
+\begin{center}
+    \textbf
+        {pH \textless{} pK$_a$, then the side chain is protonated \\
+        pH \textgreater{} pK$_a$, then the side chain is deprotonated}
+\end{center}
+
+Under physiological condition (pH = 7), the --COOH and the --NH$_3$ groups are charged so the amino acid is uncharged.
+However, some amino acid side chains may be charged under physiological condition and contribute to the net charge of the amino acid, and therefore the protein.
+This is because different amino acid side chains have different pK$_a$ values, hence different charge at physiological pH.
+
+\begin{center}
+\includegraphics[width=0.8\textwidth]{aapka}
+\end{center}
+
+\section{Amino Acid Modifications}
+
+Some amino acids are modified after translation -- this is called the post-translational modification (PTM).
+Types of PTM includes:
+\begin{itemize}
+    \item Disulfide bond formation between cysteines
+    \item Phosphorylation
+    \item Glycosylation
+    \item Methylation
+    \item Adenylation
+    \item Iodination
+    \item Metal binding
+\end{itemize}
+
+\section{Proteins, Peptides, and Peptide Bonds}
+
+Amino acids are covalently linked together by peptide bonds -- the bond formed between the amino group of one amino acid with a carboxyl group of another amino acid.
+A chain of amino acids linked together by peptide bonds are called peptides, and these are usually short.
+Peptides that have a longer chain of amino acids with defined biological function are called proteins.
+(Note: peptides are proteins as well -- it's just a little smaller)
+
+\subsection{Amide (peptide) Bonds}
+
+Amide (peptide) bond has a partial double bond characteristic due to the electron delocalisation/sharing between the oxygen atom and the nitrogen atom.
+This means that the amide bond is rigid, and also have a dipole nature (oxygen is slightly negative, nitrogen is slightly positive).
+
+The amide bonds are predominantly in \textit{trans}-configuration in the protein, although some can be in \textit{cis}-configuration, especially when the bond is preceded by proline.
+This is due to ring structure that the proline side chain forms with its amino group (causes steric clashes).
+
+By convention, the free amino group on the end of the peptide chain is called the N-terminus of the protein, and the free carboxyl group is known as the C-terminus.
+This gives a `directionality' to the peptide sequence, from the N-terminus to the C-terminus, and we draw primary sequence and count the amino acids according to this directionality.
+
+\begin{center}
+\includegraphics[width=\textwidth]{amidebond}
+\end{center}
+
+\mychapter{2}{Lecture 2}
+
+\section{Bond Rotation}
+
+Protein structure is created by the main chain and side chain bonds, and requires the main/side chains to be in a certain conformation.
+In order to do this, the amino acids must rotate and orientate correctly for the right interaction.
+
+Single bonds between the carbon atoms can be rotated freely, but not the double bonds.
+Since the amide bonds have a partial double bond characteristic, it is rigid and forms a plane that does not allow rotation.
+However, rotation is allowed at the $\alpha$-carbon (C$_{\alpha}$) atom.
+Obviously, even though rotations are allowed at the C$_{\alpha}$ atom, not all angles are allowed due to steric hindrance.
+
+There are four types of bond angle rotations: $\omega, \psi, \phi$, and $\chi$.
+These angles have values that range from 0 to $\pm$180$^{\circ}$, and together, it gives the 3D structural information of a protein.
+
+\subsection{Phi ($\phi$) Angle}
+
+Phi angle is defined as the bond angle rotation of the N--C$_{\alpha}$ bond.
+This bond rotation leads to O--O atom collision.
+
+\subsection{Psi ($\Psi$) Angle}
+
+Psi angle is defined as the bond angle rotation of the C--C$_{\alpha}$ bond.
+This bond rotation leads to the NH--NH collision.
+
+\vspace{1.0cm}
+
+\noindent
+\textbf{Remembering phi/psi angles are quite hard, but just remember that, relative to the C$_{\alpha}$ atom, phi angle is the rotation of the amide plane on the amino group side, whereas the psi angle is the rotation of the amide plane on the other side (i.e. the carboxyl side).}
+
+\subsection{Omega ($\omega$) Angle}
+
+mega angle is the bond angle rotation of the actual peptide bond (N--C bond, NOT N--C$_{\alpha}$ bond).
+This bond can only be either 0$^{\circ}$ (\textit{cis}) or 180$^{\circ}$ (\textit{trans}).
+
+\subsection{Chi ($\chi$) Angle}
+
+Chi angle is the bond angle rotation of the side chain bond (C$_{\alpha}$--R bond).
+
+\section{Ramachandron Plot}
+
+This plot shows all the possible phi/psi angles (i.e. the two amide planes adjacent to the C$_{\alpha}$) that are allowed in a protein with no steric interference.
+Any phi/psi angle pairs that cause steric hindrance are not plotted, so we get some `regions' of allowed angle pairs for any given protein.
+The side chains of the amino acids are (usually) staggered to minimise steric hindrance.
+
+\vspace{0.5cm}
+
+\includegraphics[width=\textwidth]{ramachandron}
+
+\section{Secondary Structure of a Protein}
+
+There are three main secondary structures in a protein: $\alpha$-helix, $\beta$-sheets, and turns.
+
+\subsection{$\alpha$-Helices}
+
+Specifically speaking, $\alpha$-helix is a type of helix that is present in a protein -- there are other types of helices (e.g. polyproline helix), but $\alpha$-helix is the most common type.
+
+In $\alpha$-helix, the carbonyl group of the n$^{th}$ residue forms a H-bond to the amino group of the n+4$^{th}$ residue (e.g. the carbonyl group of the 1$^{st}$ residue H-bonds to the amino group of the 5$^{th}$ residue)
+There is about 3.6 residues per turn, which is about 5.4\AA per turn.
+The distance (or height) between 2 residues is about 1.5\AA.
+The side chains point outwards from the helix (this provides certain chemical properties on the sides of the helix, e.g. hydrophobic side). 
+$\alpha$-helices are dipole in nature, due to the amide bond polarity, all of which points at a single direction.
+
+There are some residues that disrupt the helical structure, and these are glycine and proline.
+Glycine side chain is a hydrogen atom, so it causes very little steric hindrance and therefore very flexible.
+This flexibility can cause disruption in the helical structure.
+Proline has a unique side chain that connects back to its amino group, forming an imino group, meaning that proline introduces a natural `bend' in the polypeptide chain, and thus disrupts the helical structure.
+
+\begin{center}
+\includegraphics[width=0.7\textwidth]{alphahelix}
+\end{center}
+
+\subsection{$\beta$-Sheets}
+
+$\beta$-sheets, or $\beta$-pleated sheets, are formed from H-bond formation between adjacent polypeptide chain (or strands), therefore $\beta$-sheets are formed from 2$\sim$10 strands (but itcan have more strands).
+Each strand has about 15 amino acids, and the $\beta$-sheets can be either parallel (both strands go from N to C terminal) or anti-parallel (strands go in an opposite direction).
+$\beta$-sheets are extended, but pleated (i.e. it's not completely flat), and the side chains point above and below.
+
+\subsection{Turns}
+
+Turns are sharp hairpin turns in a protein, and it has a high glycine and proline content.
+About 30\% of the residues in a protein is involved in turns.
+It is common for the residues to form H-bonds across the turn.
+There are many types of turns (\textgreater16), but type I and II are common.
+
+\subsection{Relationship between Ramachandron Plots and Secondary Structures}
+
+Secondary structures have certain phi/psi angle pairs, and when you overlay these to the plot, it falls into the allowed regions of the plot at a distinct region.
+This is not surprising, because if the secondary structures fall in the forbidden region, how did the structure form in the first place?
+It can't -- the structure cannot form due to steric hindrance.
+
+This essentially shows that secondary structures have unique phi/psi angle pairs.
+
+\mychapter{3}{Lecture 3}
+
+\section{Protein Folding Pathway}
+
+Protein folding is directed predominantly by the hydrophobic forces from the non-polar residues.
+This is NOT a random process.
+Since the proteins are submerged in water, the non-polar residues try to stay away from water, and therefore aggregate together to form secondary structures.
+This initial folding process is referred to nucleation.
+The hydrophobic regions of the secondary structure comes together to form a larger structure, and stabilised by small non-covalent interactions.
+
+\vspace{0.5cm}
+
+\noindent
+The process of protein folding is summarised below:
+\begin{enumerate}
+\item Short, small secondary structures are formed, driven by hydrophobic forces (nucleation)
+\item Nuclei come together to form larger domains
+\item Larger domains come together
+\item Small conformational changes/adjustments occur to give compact native structure
+\end{enumerate}
+
+\section{Stabilisation of Protein Folding}
+
+Proteins are stabilised by non-covalent interactions, which are weak individually, but strong when there are a lot of them.
+Covalent bonds such as disulfide bonds can stabilise the protein as well.
+
+%\includegraphics[width=\textwidth]{stabilisinginteraction}
+
+\section{Chaperones and Chaperonin}
+
+Some proteins require additional accessory proteins to assist them in folding the proteins properly, or to fold it faster.
+If the proteins are not folded properly, it can lead to serious diseases like Alzheimer's and prion.
+
+\mychapter{4}{Lecture 4}
+
+\section{Myoglobin}
+
+Myoglobin is the monomeric form of haemoglobin, and it resides in the tissue/muscles for O$_2$ storage.
+Myoglobin consists of a globin protein that consists of 8 $\alpha$-helices (numbered for clarity), with a haem group in the middle.
+Myoglobin is able to reversibly bind O$_2$, and have high affinity for O$_2$ as well.
+
+\section{Haem (Heme)}
+
+Haem consists of four pyrrole rings that are linked together via methane bridges, with the ferrous (Fe$^{2+}$) attached at the center of the molecule.
+This Fe$^{2+}$ is slightly below the plane of the porphyrin ring when O$_2$ is not bound, and is shifted into the plane when it binds (causes conformational change).
+
+The heme is attached to the myoglobin via the His F8 (histidine on the helix F at position 8), and His E7 is on the opposite side to influence the O$_2$ binding affinity.
+The His E7 prevents the strong binding of O$_2$ to the heme (right angle) by kinking the angle at which the O$_2$ binds to the heme.
+This allows weaker and therefore reversible binding of the O$_2$ molecule to the myoglobin.
+
+Note that cyanide binds to the Fe$^{3+}$ form, not the Fe$^{2+}$ form.
+Also note that cyanide's main inhibitory effect is at the cytochrome Fe$^{3+}$, and affects the electron transport system.
+
+\begin{center}
+\includegraphics[width=0.4\textwidth]{haem}
+\end{center}
+
+\section{Haemoglobin}
+
+Haemoglobin is the tetrameric (4 subunit) form of myoglobin that consists of two $\alpha$ and two $\beta$ subunits, and it is a blood O$_2$ transporter.
+Since haemoglobin is a tetramer, it has 4 haem group in total (one on each subunit), and therefore able to carry 4 O$_2$ molecules.
+Slight conformational change occurs when the O$_2$ binds to the haemoglobin molecule, which will become important in explaining the cooperative effect of the subunits.
+
+\section{O$_2$ Binding Property}
+
+\subsection{Myoglobin}
+
+Myoglobin resides in muscles and tissues, and have high affinity for O$_2$.
+This is shown in the O$_2$ saturation curve.
+At low partial pressure of O$_2$ (pO$_2$), myoglobin is mostly saturated with O$_2$ (i.e. O$_2$ is bound to it).
+This means that myoglobin only releases the O$_2$ molecule when the pO$_2$ is very low.
+
+\subsection{Haemoglobin}
+
+In contrast, haemoglobin's O$_2$ binding affinity is not that high compared with myoglobin.
+As you can see from the O$_2$ saturation curve, it requires quite a high pO$_2$ for haemoglobin to be saturated with O$_2$.
+This makes sense as haemoglobin has to bind to O$_2$ at the lungs where pO$_2$ is relatively high, but also has to release the O$_2$ molecules at the tissue/muscle, where the pO$_2$ is low.
+This allows haemoglobin to be an effective O$_2$ carrier.
+
+One thing to note here from the curve is that the shape of the curve for haemoglobin is sigmoidal (S-shape).
+This indicates that haemoglobin is allosteric (or cooperative), where the subunits assist one another to facilitate the binding/release of O$_2$ molecules.
+Of course, there are other factors that contribute to the allosteric binding/release of O$_2$ molecules.
+
+\begin{center}
+\includegraphics[width=0.4\textwidth]{saturationcurve}
+\end{center}
+
+\section{Sequential and Concerted Model of \-Allosterism}
+
+When O$_2$ binds to a subunit of haemoglobin, it causes a slight conformational change to the subunit.
+This conformational change assists the binding of O$_2$ molecules to the other subunits by cooperativity/allosterism.
+For clarity, the tense (T) state is the state of the subunit when O$_2$ is not bound (low O$_2$ affinity), and the relaxed (R) state is the state of the subunit when O$_2$ is bound (high O$_2$ affinity).
+
+There are two models, sequential and concerted models, of allosterism.
+It is still unknown which model is correct, as there are many observations supporting both models.
+
+\subsection{Sequential Model}
+
+Sequential model is when one O$_2$ molecule binding to a single subunit causes the conformational change in the subunit it binds, and also the subunits that are adjacent to it as well.
+This conformational change makes the other subunits easier to bind to O$_2$ molecules, which will also change conformation of itself and the others.
+
+With respect to the R/T states, binding of O$_2$ molecule causes a single subunit to be in R state, and also changes the conformation of the adjacent subunits so that it is easier to bind to O$_2$ molecules, therefore easier for the subunits to turn into the R state.
+
+\textbf{In sequential model, binding of one substrate changes the conformation of other subunits, which makes it easier for the other subunits to bind the substrate}
+
+\subsection{Concerted Model}
+
+In concerted model, all of the subunits are either in the T state, or the R state, and the states are at equilibrium (i.e. no `in between' state).
+The O$_2$ molecules can bind to either state at any time.
+When there are more substrate (i.e. O$_2$) is bound to haemoglobin, the greater the chance for the subunits to be in the R state, which means that the equilibrium is favoured towards the R state when there are more O$_2$ molecules bound to haemoglobin.
+
+\textbf{ In concerted model, the T and R states are at equilibrium and substrates can bind at any time to any conformational state. The binding of substrate causes the equilibrium to shift to the R state and the substrates are more likely to bind to the protein.}
+
+\mychapter{5}{Lecture 5}
+
+\section{Allosteric Effectors of Haemoglobin}
+
+As discussed earlier in Lecture 4, binding of O$_2$ molecule to the haem group causes a conformational change, and thus promotes the R or T state.
+This conformational change is caused by the shift in the Fe$^{2+}$ atom of the haem, which is attached to the His F8 of the haemoglobin subunit, which then cause a slight shift that propagates through the protein.
+
+However, there are other molecules that bind to the haemoglobin \textbf{at a different site as where the O$_2$ binds to}.
+Since these molecules have effects on haemoglobin, yet it binds to a distant position of the haemoglobin, these molecules are called the allosteric effectors.
+
+\vspace{0.3cm}
+
+\begin{center}
+\textbf{Allosteric effectors are molecules that bind to the allosteric protein at a place other than/different to the normal substrate binds to.}
+\end{center}
+
+\section{2,3-Bisphosphoglycerate (BPG)}
+
+2,3-Bisphosphoglycerate (BPG) is a small, negatively charged (-5 charge) molecule that binds to the deoxy-haemoglobin at the center of the tetramer.
+Binding of BPG causes the haemoglobin to be in T state, i.e. in the dexygenated state, and decreases the haemoglobin's binding affinity for O$_2$, meaning that the haemoglobin with BPG bound to it will require higher pO$_2$ to oxygenate it.
+Binding of BPG at the muscle/tissue site ensures that the O$_2$ molecules are released at the muscles/tissues.
+
+O$_2$ binding to the haemoglobin at the lungs causes the release of BPG molecule, allowing the haemoglobin to carry O$_2$ to the muscles/tissues.
+
+\section{H$^+$ and CO$_2$}
+
+Both H$^+$ and CO$_2$ binds to haemoglobin at a different site as the substrate (O$_2$) and affects the oxygen affinity of haemoglobin.
+Both molecules favour the T state of haemoglobin, and therefore favours the deoxygenated state (i.e. decreased O$_2$ affinity).
+Note that both of these molecules are related to the pH of the environment, and the blood buffer system is also involved in controlling the concentration of these molecules.
+
+\subsection{The Bohr Effect}
+
+Technically speaking, the Bohr effect is the effect of pH (i.e. [H$^+$]) and [CO$_2$] on the oxygen affinity of haemoglobin.
+As pH decreases (therefore [H$^+$] increases), the net charge of haemoglobin changes due to different amino acids getting protonated, which leads to slight conformational changes in the haemoglobin structure, and therefore decrease in haemoglobin's oxygen affinity.
+Similarly, as CO$_2$ concentration increases, CO$_2$ is more likely to bind to the haemoglobin and decrease the oxygen affinity of haemoglobin.
+
+\subsection{The Blood Bicarbonate Buffer System}
+
+In the blood, there is an equilibrium between bicarbonate ([HCO$_3^-$]) ion and CO$_2$.
+
+\begin{center}
+\ch{H$_2$O + CO$_2$ <=> HCO$_3^-$ + H$^+$}
+\end{center}
+
+As you can see, the [H$^+$] concentration and the [CO$_2$] concentration is related to one another due to this buffer system.
+This means that at the tissue/muscle where the relative concentration of CO$_2$ is high, it is going to be making the bicarbonate ion, together with H$^+$ ion, and therefore the pH is decreased.
+However, at the lungs where the concentration of CO$_2$ is low, there will be less H$^+$ ion present, and therefore have higher pH.
+
+Together with the Bohr effect, this means that the pH is high at the lungs and have low CO$_2$ concentration, and therefore haemoglobin will have high oxygen affinity, and thus get saturated with O$_2$ (oxygenated).
+In contrast, the pH will be lower at the tissues/muscles and have high CO$_2$ conference, and therefore haemoglobin will have low oxygen affinity, and thus releases O$_2$ at the tissue/muscle (deoxygenated).
+
+Also note that BPG is released at the lungs when O$_2$ binds to the haemoglobin, and binds at the tissue/muscle when O$_2$ is released and CO$_2$ and H$^+$ binds to it, contributing to the binding and release of O$_2$.(insert the saturation curve of +/- allosteric effectors)
+
+\includegraphics[width=\textwidth]{bicarbonate}
+
+\mychapter{6}{Lecture 6}
+
+\section{Normal Variants}
+
+These variants are normal in the sense that they are naturally occurring, and not caused by abnormal mutations.
+These variants are different to the normal haemoglobin in that it uses different type of subunits to make the haemoglobin up.
+
+\subsection{Foetal Haemoglobin (HbF)}
+
+Foetal haemoglobin (HbF) is only present in the foetus blood.
+HbF is made up of two $\alpha$ subunits and two $\gamma$ subunits, compared to the adult haemoglobin (HbA) which is made up of two $\alpha$ and two $\beta$ subunits.
+Since the foetus has to obtain oxygen from the mother's blood via the placenta, HbF has a higher affinity for oxygen than the HbA.
+This is because HbF binds less strongly to BPG due to the Ser143 in the $\gamma$ subunit (His143 in $\beta$ subunit), thereby increasing the oxygen affinity.
+
+The graph below just shows how different subunits are made at different developmental stage.(insert the graph)
+As you can see, there are subunits other than $\alpha$, $\beta$ and $\gamma$ subunits.
+
+\section{Abnormal Variants}
+
+These variants are caused by genetic mutations that alter the properties of haemoglobin, and can lead to anaemia or other pathological symptoms.
+
+\subsection{Sickle Cell Haemoglobin (HbS)}
+
+This variant is caused by a single point mutation on the $\beta$ subunit of haemoglobin.
+This point mutation causes an amino acid substitution from glutamic acid to valine (E6V mutation), which is on the surface of the protein.
+
+The consequence of this mutation is the formation of deoxy-Hb aggregate/crystal in the red blood cell.
+Since valine is a non-polar amino acid, it can stick/bind to other haemoglobin at specific site (in a hydrophobic pocket).
+
+\subsection{Met-Haemoglobin (HbM)}
+
+Methaemoglobin (HbM) is caused by mutations that changes the oxidation state of the iron atom in the haem from Fe$^{2+}$ to Fe$^{3+}$.
+This means that the oxygen cannot bind (or have very low affinity for oxygen) to the haem iron, as it is in a different oxidation state.
+
+\subsection{Haemoglobin C (HbC)}
+
+Haemoglobin C (HbC) is common in West Africa, and is caused by a point mutation that causes a substitution mutation.
+The substitution is at the same place as HbS: glutamic acid to lysine at position 6 (E6K).
+As a consequence of this substitution, the charge is swapped from negatively charged glutamic acid to positively charged lysine.
+
+Malaria is caused by the infection of red blood cells by \textit{Plasmodium \\falciparum}.
+Infected red blood cells will contain malaria parasite proteins that produce knobs on the surface of the red blood cells and causes it to adhere to the capillaries, causing tissue damage due to reduced oxygen supply.
+However, individuals with homo or heterozygous HbC have less adherence, and thus have some resistance to malaria infection.
+
+\mychapter{7}{Lecture 7}
+
+\section{Post-Translational Modification (PTM)}
+
+Most proteins, if not all proteins, in eukaryotic cells are post-translationally modified.
+Post-translational modification increases the number of distinct forms of proteins without increasing the number of genes in the genome.
+This means that the level of complexity provided by the proteins are also increased as well.
+
+The diversity of the proteins can be expanded by mRNA splicing and PTM.
+PTM can be categorised into two categories: the covalent addition of chemical group to amino acid side chain, or covalent hydrolysis of the peptide bond in a protein.
+
+\section{Phoshphorylation}
+
+Phosphorylation can occur on the hydroxyl (OH) group of the amino acid side chains.
+Amino acids that have OH groups are Ser, Thr, and Tyr.
+Phosphorylation of the side chains are done by an enzyme called kinase, which adds the large, negatively charged phosphate group to the side chain, and uses ATP during this process.
+To remove the phosphate group, an enzyme called phosphatase is used.
+
+The consequence of adding a phosphate group to these amino acid side chains is that it's going to alter the protein structure, due to the electrostatic attraction between the more negatively charged phosphate group with other postitively charged amino acid side chains.
+Since the attraction is going to shift the amino acids slightly, it will cause a shift in the whole protein, and therefore alters the conformation of the protein and affects the biological properties of it.
+
+Quite often, phosphorylation state is used to `switch' the conformational state of the protein to enable a biological process in a cell (e.g. facilitating interaction with other proteins).
+
+\subsection{Insulin Receptor}
+
+Binding of insulin to the insulin receptor causes a conformational change in the receptor, and this exposes the tyrosine in the cytosol side of the membrane.
+The exposed tyrosine is then targeted by kinases, and get phosphorylated by it.
+Phosphorylated tyrosine can then cause responses (e.g. signal transduction, GLUT4 transporter expression).
+
+\subsection{Na$^+$/K$^+$ Pump}
+
+Phosphorylation state affects which molecule (Na$^+$ or K$^+$) to bind to the pump, and therefore be transported.
+This is also energy dependent process, as the pump is constantly being phosphorylated and dephosphorylated.
+
+\section{Gamma-carboxy Glutamic Acid (Gla)}
+
+Gamma-carboxy glutamic acid occurs when an additional carboxyl group is added to the glutamic acid.
+This PTM is done in some blood coagulation proteins, and it requires vitamin K as a co-factor.
+Ten to twelve Gla enables the formation of bidentate Ca$^{2+}$ binding site and allows blood coagulation proteins to interact with platelets, as a part of blood clot formation process.
+
+When you have vitamin K deficiency, you can't gamma-carboxylate the glutamic acids, since the reaction requires vitamin K as a co-factor.
+As a consequence, this leads to bleeding disorder.
+
+\section{Hydroxylation}
+
+Hydroxylation mainly occurs on the 4' (or 3') position of the proline, but it can also occur at the 5' position of lysine.
+Hydroxylation provides greater possibilities for non-covalent interactions, so it allows for more H-bonding to occur.
+As a result, proteins are able to form higher order structure.
+
+Vitamin C is important in hydroxylation, as it is required for the reaction to occur.
+Vitamin C keeps the Fe$^{2+}$ in this oxidation form, which is essential for the hydroxylation process.
+Since collagen structure requires hydroxylation to keep its higher order structure, low vitamin C causes disruption in this structure.
+This disease is known as scurvy.
+
+\mychapter{8}{Lecture 8}
+
+\section{Introduction to Enzymes and Enzyme Engineering}
+
+Enzymes (proteins) are able to accelerate and carry out chemical reactions that are most likely impossible to do under physiological/biological conditions.
+Without these enzymes, we will not be able to synthesise chemicals required to survive.
+It is also interesting that the enzymes have all evolutionarily developed itself to make difficult chemical reactions to faster, but within similar timescale.
+
+Can we utilise the properties/characteristics of enzymes to make it do what we want it to do?
+This is the key idea behind the researches being done in the area of enzyme engineering.
+We can use enzyme engineering to make enzymes that are able to react with different substrates, or make it more efficient at doing the reaction.
+
+\mychapter{9}{Lecture 9}
+
+\section{Introduction to Biotechnology}
+
+For therapeutic and clinical use of proteins, the proteins must be made and extracted from a source.
+Biotechnology is the field of research to produce proteins in systems (sort of).
+
+\subsection{The `Old' Way of Obtaining Proteins}
+
+Therapeutic proteins were extracted from relevant sources (e.g. tissues, serum) and was used to treat the patients.
+The problems with this approach was the risk of identified and unidentified pathogen infections from the source (e.g. HIV).
+
+\subsection{Recombinant Protein System}
+
+This is the more recent method to produce proteins for therapeutic use.
+Plasmids that contain a required protein is expressed in a different organism/system, and the purified and collected.
+
+Recombinant insulin is produced this way, by expressing two separate parts of insulin in \textit{E. coli}.
+These parts are extracted and combined to form insulin.
+
+The advantage of this is that it is cheap, has high yield, and it is pathogen free.
+However, in a prokaryotic system, the cells are unable to post-trasnlationally modify the protein, which may be essential for the function of some proteins.
+Another problem is that the proteins may not fold properly or only partially folded.
+
+\subsection{Eukaryotic System}
+
+This system solves the problem of PTM and protein misfolding, as the proteins will be expressed in a eukaryotic system.
+
+An example of a protein that uses a eukaryotic system is erythropoietin (EPO).
+EPO regulated haematopoiesis, and its expression is partially regulated by the blood oxygen level -- EPO acts so that it produce more red blood cells and haemoglobin.
+EPO is used therapeutically as well as a performance enhancing drug.
+EPO is produced in immortalised Chinese hamster ovary cells.
+
+Different EPOs have different glycosylation profile, which allows us to detect athletes who uses EPO.
+
+\subsection{Recombinant Antibodies}
+
+Recombinant antibodies are designed to control the effects of some proteins in your body (e.g. some cell receptors).
+Mouse AB can be made, but it is recognised as foreign material in humans and get rejected.
+This lead to the formation of chimeric antibodies, so there will be no immune response.
+
+\subsection{Pharming}
+
+The use of live animals to express/make recombinant proteins, for example, in milk.
+
+\mychapter{10}{Lecture 10}
+
+\section{Introduction to Enzymes}
+
+In most cases, enzymes are proteins (in some cases, it's RNA enzymes) that acts as biological catalysts.
+Enzymes increases the rate of reaction, but does NOT change the equilibrium, nor the thermodynamics of a reaction.
+This means that, even though enzymes make the reactions to occur faster, it cannot shift the chemical reaction to favour one product over another.
+Note that enzymes are named ``-ases''.
+
+For a chemical reaction to occur, the substrates must be in close proximity of one another, and also have the right orientation.
+Enzymes catalyse reactions by doing just that: bind the substrate in the right orientation in close proximity so a chemical reaction can occur at a faster rate.
+
+\section{Active Site of an Enzyme}
+
+Active site is the 3-dimensional site of an enzyme where the reaction occurs.
+The active site has amino acid side chains projecting into it to help substrate binding.
+The shape of the active site determines the specificity of the enzyme, since enzymes are (usually) very specific.
+This means that enzymes only bind to certain substrate, and no other substrates.
+
+\subsection{Geometric Specificity and Stereospecificity}
+
+\begin{center}
+\includegraphics[width=0.7\textwidth]{geo_stereo}
+\end{center}
+Geometric specificity is where the substrate must be made of same component/structure for it to be recognised by the enzyme.
+Stereospecificity is where the substrate has the required components,but don't have the right orientation, and therefore not recognised by the enzymes.
+
+\section{Enzyme-Substrate Interaction}
+
+\begin{center}
+\ch{ E + S <=> ES <=> [{T}] EP <=> E + P }
+\end{center}
+
+In an enzyme catalysed reaction, substrate binds to the active site and forms an enzyme-substrate complex (ES), which is stabilised by non-covalent interactions.
+Note that this interaction is specific.
+As the reaction proceeds, transition state (T), which is neither a substrate nor the product, is formed, then proceeds further into enzyme-product complex (EP).
+This complex can then be dissociated to form the original enzyme ready for another reaction, and release the product.
+
+There are two models that describes how the substrate binds to the enzyme: the lock-and-key model, or the induced-fit model.
+
+\begin{center}
+\includegraphics[width=0.6\textwidth]{enzymemodels}
+\end{center}
+
+\subsection{Lock-and-Key Model}
+
+The concept of the lock and key model is fairly simple -- the substrate must have the shape/structure that perfectly matches the enzyme active site.
+If the substrate doesn't then, the enzyme cannot react with it and no reaction occurs.
+However, this is not really the case in nature as enzymes changes conformation when the substrate binds to it.
+
+\subsection{Induced-fit Model}
+
+This is how an enzyme actually works.
+The substrate and the enzyme active site does not match perfectly as it did for the lock and key model.
+When the substrate and the enzyme binds, it causes a conformational change in the enzyme, which allows the enzyme to properly bind to the substrate.
+
+Note that one way to increase the rate of reaction is by stabilising the transition state of the substrate.
+Enzymes can do this by preferentially binding to the substrate in a transition state conformation.
+This is quite often the case, as enzymes usually stabilises the transition state of the substrate during the catalysis.
+
+\section{Enzymes, Activation Energy, and \\Catalytic Mechanisms}
+
+Enzymes can decrease the activation energy of a chemical reaction by various catalytic mechanisms.
+There are 6 ways to do this:
+
+\begin{enumerate}
+\item Acid-base catalysis
+\item Covalent catalysis
+\item Metal ion catalysis
+\item Electrostatic catalysis
+\item Proximity and orientation effects
+\item Preferential binding of the transition state complex
+\end{enumerate}
+
+In this lecture, only the first three was discussed.
+
+\subsection{Acid-base Catalysis}
+
+This kind of catalysis involves the transfer of H$^+$ ions, for example by glutamic and aspartic acids (COOH group), or by lysine (NH$_3^+$ group).
+Note that these side chains require certain pH for it to be in the right ionisation state, and therefore to be able to transfer H$^+$ ions.
+In this sense, histidine is very useful as it has a pK$_a$ of about 6.5, which is close to the physiological pH.
+This means that with a slight change in pH, it can be either a H$^+$ donor or acceptor, and therefore able to take part in the acid-case catalysis reaction.
+
+\subsection{Covalent Catalysis}
+
+In a covalent catalysis, the enzyme forms a highly reactive, short-lived intermediate which is covalently attached to the enzyme.
+
+\begin{center}
+\ch{A-B + E -> A-E + B ->  A + B + E}
+\end{center}
+
+The enzyme requires an amino acid with a side chain that can act as a nucleophile (e.g.ser, cys)
+
+\subsection{Metal Ion Catalysis}
+
+About a third of known enzymes require metal ions for their catalytic activity.
+Metals can provide substrate orientation, binding energy, and/or sites for redox reactions.
+Metals act as a cofactor in these reactions.
+
+\section{Co-factors and Co-enzymes/Co-substrates}
+
+Some enzymes require other factors to catalyse chemical reactions.
+These factors can be metal ions or small organic molecules (co-enzymes).
+Co-enzymes, or co-substrates, are molecules that help with the reaction, and is changed after the reaction occurs.
+Co-substrates are usually derived from vitamin derivatives.
+(An example used in the lecture was NAD)
+
+\mychapter{11}{Lecture 11}
+
+\section{Measuring Enzyme Catalysis}
+
+\begin{center}
+\includegraphics[width=0.5\textwidth]{progresscurve}
+\end{center}
+
+Enzyme catalysis of a reaction can be measured from the progress curve of a reaction.
+Progress curve is the graph of how much product is made (or how much substrate is used up) over time.
+It is important to measure the initial reaction velocity of the reaction from this progress curve in order to calculate some other important measures of enzyme kinetics.
+
+This initial reaction velocity (V$_i$) is the slope of the tangential line of the initial part of the progress curve.
+Only the initial part is used, because as you progress through the reaction, some factors start to limit the reaction and becomes unreliable.
+
+\section{Effect of Enzyme Concentration on the Rate of Reaction}
+
+\begin{center}
+\includegraphics[width=0.5\textwidth]{vvse}
+\end{center}
+
+Consider the situation where there is an excess substrate (i.e. unlimited source of substrate).
+As the concentration of the enzyme increases, the rate of reaction increases.
+\textbf{This means that the velocity of the reaction (V) is proportional to the enzyme concentration, when there is excess substrate.}
+
+This is expected, since there are more enzymes to catalyse the reaction -- as more enzymes are introduced to the system, more enzymes can react with the substrate, and therefore produce more products.
+
+\section{Effect of Substrate Concentration on the Rate of Reaction}
+
+\begin{center}
+\includegraphics[width=0.4\textwidth]{vvss}
+\end{center}
+
+Consider the situation where the concentration of enzyme is fixed.
+As we increase the concentration of substrate, the rate of reaction will initially increase linearly, but as more and more substrates are introduced, the rate of reaction reaches a `maximum'.
+This is because all of the active site of the enzymes become occupied as the substrate concentration increases -- it reaches the `maximum capacity' of the enzyme, and the enzymes cannot increase the rate of reaction no matter how hard it tries.
+
+\begin{center}
+\includegraphics[width=0.4\textwidth]{zerofirstkinetics}
+\end{center}
+
+In kinetics term, the enzyme shows first-order kinetics initially (where the rate depends on the substrate concentration), but then shows zero-order kinetics (where the rate does not depend on/changes with substrate concentration).
+When the velocity of the reaction is plotted with the substrate concentration, this is quite apparent from the hyperbolic curve of the graph.
+
+\subsection{V$_{max}$ and K$_M$}
+
+From this V vs S curve, we can identify two kinetic parameters: V$_{max}$ and K$_M$.
+V$_{max}$ is defined as the maximum velocity of the reaction when an enzyme is saturated with substrate.
+K$_M$ is defined as the \textbf{substrate concentration} at which the velocity of the reaction is half the maximum velocity ($V = \frac{V_{max}}{2}$).
+K$_M$ is also called the Michaelis constant.
+
+Note: do NOT get this mixed up with ``K$_M$ = $\frac{V_{max}}{2}$'' -- remember that K$_M$ is the \textbf{substrate concentration} when V = $\frac{V_{max}}{2}$.
+
+\mychapter{12}{Lecture 12}
+
+\section{The Michaelis-Menten Equation}
+
+Using V$_{max}$ and K$_M$, we can define the Michaelis-Menten equation:
+
+\begin{center}
+\large{V = $\frac{V_{max} [S]}{K_M + [S]}$}
+\end{center}
+
+Few assumptions must be made in order to derive this equation:
+\begin{center}
+\ch{E + S <=> [k_1][k_{-1}] ES -> [k_2][slow] E + P}
+\end{center}
+\begin{enumerate}
+\item ES formation and breakdown is in rapid equilibrium, i.e. the ES concentration does not change over time ({$\frac{d[ES]}{dt}$} = 0).
+\item Enzyme is saturated with substrate, therefore it is at V$_{max}$.
+\item Initial rate is used, meaning that the substrate concentration does not change significantly.
+\item Initial rate is used, meaning that there is no product present.
+\end{enumerate}
+
+Michaelis-Menten equation is a simple model of an enzyme catalysed reaction based on the assumptions stated above, and is applicable to most enzymes.
+
+\section{Lineweaver-Burk Plot}
+
+\begin{center}
+\includegraphics[width=0.8\textwidth]{lineweaverburk}
+\end{center}
+
+Since the V vs [S] curve is hyperbolic, you can only estimate the V$_{max}$ from it, and therefore you can only estimate the K$_M$ value.
+In order to measure the V$_{max}$ and K$_M$, you can take the double reciprocal of the V vs [S] curve (i.e. take the reciprocal of both V and S).
+This gives us the Lineweaver-Burk plot, which you can measure the V$_{max}$ and K$_M$ from the y- and x-intercept, respectively.
+
+\section{Significance of K$_M$}
+
+\begin{center}
+\ch{E + S <=> [k_1][k_{-1}] ES -> [k_2][slow] E + P}
+\end{center}
+
+K$_M$ characterises a single enzyme-substrate pair.
+K$_M$ is independent of the substrate concentration, but is dependent on the substrate, meaning that K$_M$ is different for different substrate.
+
+K$_M$ is defined as the ratio of the breakdown of the ES complex and the formation of the ES complex:
+
+\begin{center}
+\large{K$_M$ = $\frac{breakdown[ES]}{formation[ES]}$ = $\frac{k_{-1} + k_2}{k_1}$ = $\frac{k_{-1}}{k_1}$}
+\end{center}
+
+Usually, k$_2$ is much slower than k$_{-1}$, so we can ignore k$_2$.
+K$_M$ is also called the ES dissociation constant, and its unit is the same as the concentration.
+
+Low K$_M$ indicates that k$_{-1}$ is low and k$_1$ is high, and therefore it has a high affinity between the enzyme and the substrate, and binds to one another tightly, forming a strong ES complex.
+High K$_M$ indicates that k$_{-1}$ is high and k$_1$ is low, and therefore it has a low affinity between the enzyme and the substrate, and binds to one another weakly, forming a loose/weak ES complex.
+
+Therefore, you can use K$_M$ as an indicator of substrate preference of an enzyme.
+
+\section{V$_{max}$ and k$_{cat}$}
+
+\begin{center}
+\ch{E + S <=> [k_1][k_{-1}] ES -> [k_2][slow] E + P}
+\end{center}
+
+\begin{enumerate}
+\item k$_2$ is the rate-limiting step of the reaction
+\item The rate of the reaction is proportional to the total enzyme concentration ([E$_{total}$]).
+\end{enumerate}
+
+This gives us the definition of k$_{cat}$ and V$_{max}$, relative to one another:
+
+\begin{center}
+V$_{max}$ = k$_2$ + [E$_{total}$] \ch{->} k$_{cat}$ = $\frac{[E_{total}]}{V_{max}}$
+\end{center}
+
+k$_{cat}$ is the turnover number, or the catalytic rate constant of an enzyme.
+The unit is in s$^{-1}$.
+\textbf{The number of moles of substrate converted into product, per mole of enzyme per second.}
+
+\section{k$_{cat}$, K$_M$ and Catalytic Efiiciency}
+
+\begin{center}
+Catalytic Efficiency = $\frac{k_{cat}}{K_M}$
+\end{center}
+
+The ratio of k$_{cat}$ and K$_M$ is the measure of the enzyme efficiency -- how quickly a product is formed relative to how well the substrate binds.
+The catalytic efficiency will therefore have the highest value when k$_{cat}$ is high (high turnover), and low K$_M$ (high binding affinity).
+
+\mychapter{13}{Lecture 13}
+
+\section{Irreversible Inhibitors}
+
+Irreversible inhibitors are inhibitors that covalently binds to the enzyme, to a specific amino acid side chain.
+This means that the inhibitor permanently inactivates an enzyme, as it cannot be unbound.
+Examples of irreversible inhibitors include penicillin (targets glycopeptide transpeptidase in bacterial cell wall) and organophosphates (inhibitor of acetylcholinesterase).
+
+\section{Reversible Inhibitors}
+
+There are two types of reversible inhibitors: competitive and non-competitive inhibitors.
+Both of these inhibitors bind to the enzyme non-covalently, and can be `knocked off'.
+Some inhibitors can be knocked off more easily than the others, depending on how tight the inhibitor binds to the enzyme.
+
+\begin{center}
+\ch{ E + I <=> EI }\\
+
+\vspace{0.5cm}
+
+\ch{K$_i$ = $\frac{[E][I]}{[EI]}$}
+\end{center}
+
+K$_i$ is the dissociation or inhibition constant -- just like the K$_M$ with normal substrate.
+The lower the K$_i$, the stronger the inhibitor binds to the enzyme.
+K$_i$ \textless{} $10^{-9}$ mol L$^{-1}$ is strong binding.
+
+\subsection{Competitive Reversible Inhibitor}
+
+\begin{center}
+\includegraphics[width=0.6\textwidth]{compinh}
+\end{center}
+
+These inhibitors bind to the enzyme at the active site, and competes with the substrate molecule.
+This means that (usually) the inhibitor will have similar structure as the substrate, as it can bind to the active site.
+
+\begin{center}
+\textbf{Competitive inhibitors increases the K$_M$, but does not change the V$_{max}$ of the enzyme.}
+\end{center}
+
+This means that the apparent affinity of an enzyme for the substrate is reduced (as the K$_M$ is increased).
+The V$_{max}$ is not affected, as the binding of the inhibitor is NOT going to affect the catalytic activity of the enzyme -- the enzyme can still reach the V$_{max}$, it just needs more substrate to out-compete the inhibitor (hence the increase in K$_M$).
+(The binding of the inhibitor is not going to affect how fast the reaction proceeds, once the real substrate binds to the enzyme).
+
+\subsection{Non-competitive Reversible Inhibitor}
+
+\begin{center}
+\includegraphics[width=0.6\textwidth]{noncompinh}
+\end{center}
+
+These inhibitors bind to elsewhere to the active site of the enzymes and causes a conformational change, and therefore affects the efficiency of the catalysis.
+
+\begin{center}
+\textbf{Non-competitive inhibitors decreases the V$_{max}$, but does not change the K$_M$ of the enzyme.}
+\end{center}
+
+When the inhibitor binds to the enzyme, it does not occupy the active site where the substrate binds to.
+This means that the active site is free for the substrate to bind -- it's just that the reaction does not proceed as efficient as without the inhibitor bound to it.
+Hence the decreased V$_{max}$, but unchanged K$_M$.
+(Another way to think about it -- V$_{max}$ is proportional to the total enzyme concentration and the k$_{cat}$, so if k$_{cat}$ decreases, then V$_{max}$ will also decrease).
+
+\section{Methods of Enzyme Regulation}
+
+\subsection{Allosteric Enzyme Regulation}
+
+\begin{center}
+\includegraphics[width=0.6\textwidth]{allosterism}
+\end{center}
+
+Allosteric enzymes generally display co-operativity and usually multi-subunit.
+The enzyme's reaction curve shows a sigmoidal curve.
+Activity of allosteric enzymes can be regulated by binding molecules (effectors) away from the active site, which can activate or inhibit the enzyme.
+Regulatory effect is achieved by conformational changes caused by the effectors binding to the enzyme.
+Note that the inhibitors shift the curve to the right, whereas the activator will shift the curve to the left.
+
+\subsection{Covalent Modification of Enzymes}
+
+In this lecture, only phosphorylation was mentioned.
+Phosphorylation and de-phosphorylation is the most common, and is catalysed by kinases and phosphatases, respectively.
+Phosphorylation state of an enzyme determines whether the enzyme is `on' or `off'.
+However, phosphorylation does not necessarily mean that the enzyme is on -- it really does depend on the enzyme you're studying.
+
+\subsection{Activation of Enzymes by Cleavage}
+
+Some enzymes are synthesised as zymogens -- the inactive form of the enzyme.
+The enzyme is only active once the enzyme is cleaved at a certain amino acid residue.
+Many of the enzymes involved in the digestive processes and blood clotting proteins are made as zymogens.
+
+\section{Isoenzymes/Isozymes}
+
+Multi-subunit enzymes may exist in multiple forms in an organism -- these enzymes are called isoenzymes.
+Isoenzymes differ in physical, kinetic and immunological properties, but all of them catalyse the same reaction.
+Isoenzymes are formed from two different genes that make slightly different subunit for the enzyme.
+Isoenzyme is a form of transcriptional regulation of cellular activity, as some cells in your body has to catalyse the reaction differently to another part of your body.
+
+\mychapter{14}{Lecture 14}
+
+\section{Pharmacology and Toxicology}
+
+Pharmacology is the study of therapeutic drugs and design of these drugs.
+It is the study of how drugs work and how it is metabolised in the cell.
+
+Toxicology is the study of poisoning/toxins.
+It is the study of the harmful uses drugs in humans, animal and the environment.
+
+\section{Drugs}
+
+A drug is a chemical that changes the behaviour or function of an individual system, organ, tissue or invading organism.
+In other words, a chemical that changes the behaviour of the cell.
+
+\subsection{Sources of Drugs}
+
+You can extract and purify drugs from plants and animals, but have some issues around contamination, etc.
+Current sources of drugs are made synthetically, so there will be no contamination from purification.
+Drug companies can screen for millions of chemicals, and choose the best one and study it (this process is very expensive).
+Rational drug design is where you study the actual target and the disease so that you can make a rational decision about how to make or design a drug for that disease.
+Another way to make drugs is to use computer to model what kind of drug will be the best to use.
+Once identified, it can then be tested in the lab.
+
+\subsection{Targets of Drugs}
+
+Drugs can bind to a molecule and cause an effect on the cell -- the molecule it binds to will be its molecular target.
+Understanding the pathways of the disease or the targets of the drug leads to better drug design.
+
+\section{Agonists and Antagonists}
+
+Agonists are the drugs or molecules that binds to a receptor and can produce a full biological response.
+On the other hand, antagonists are drugs or molecules that binds to a receptor and prevents the response to occur (i.e. opposite of agonists).
+
+\section{Receptors}
+
+There are two types of receptors described in these lectures -- drug receptors and physiological receptors.
+
+\subsection{Drug Receptor}
+
+Drug receptor is ANYTHING that the drug binds to.
+This can be a proteins, lipids, DNA, RNA, or whatever as long as the drug binds to it and have an effect on the cell through the molecule.
+
+\subsection{Physiological Receptor}
+
+Physiological receptors are normal receptors that are present on the cell surface.
+Most of these are transmembrane, meaning that it spans the whole membrane.
+These receptors allow signalling to occur from the outside (extracellular) to the inside (intracellular) of the cell.
+They also regulate cell function by responding to stimuli such as hormones, neurotransmitters or growth hormones and produce a signal for the cell to do something.
+Most drugs activate or inhibit these kind of receptors.
+
+There are four types of physiological receptors: ligand-gated/voltage-linked ion channels, G-protein coupled receptors (GPCR), kinase-linked receptors, and Nuclear receptors.
+
+\section{Ligand-Gated Ion Channels}
+
+Ligand-gated ion channels are proteins present in the cell membrane.
+This receptor has a receptor and an ion channel domains, and is made up from 5 subunits.
+Binding of the ligand induces a conformational change in the protein, which opens up the channel and allow the ions to pass through.
+
+Specific receptors have specific activating molecules, and only certain ions can pass through.
+These receptors control the intracellular ion concentration which gives different charges to the cell.
+The response times for these receptors are within milliseconds, which is ideal for fast response (e.g. in nerves).
+
+Using nicotinic acetylcholine receptor as an example, normal substrate/agonist of this receptor is acetylcholine.
+Another agonist is nicotine, and an antagonist is tubocurarine.
+Tubocurarine is an irreversible inhibitor, so it binds to the receptor and won't release, hence you can eat the hunted animal.
+
+\section{Voltage-Gated Ion Channels}
+
+These receptors are made fromm four subunits, and opened in response to changes in voltage across the membrane (e.g. voltage change caused by ligand-gated ion channels).
+The mechanism itself is very similar to the ligand-gated channels.
+The drugs that can block these receptors literally blocks the ion channel and prevents the ions to move through the pores (e.g. tetrodotoxin).
+
+\mychapter{15}{Lecture 15}
+
+\section{Nuclear Receptor}
+
+Nuclear receptors, unlike the transmembrane voltage/ligand-gated channels, reside in the cytosol of the cell (i.e. within the cell).
+This is partly because the nuclear receptors act in the nucleus, where it interacts with the DNA for gene transcription.
+These nuclear receptors binds and interacts with the DNA at the response element for that receptor, which requires multiple regulation mechanisms.
+The binding of the nuclear receptor-ligand complex to the response element causes transcription/gene activation.
+Since the effect of the cellular response is observable only after the protein is made, the response time is quite slow -- takes hours to days for the response.
+
+\section{Mechanism of Nuclear Receptor Signalling}
+
+For a ligand to enter the cell, the ligand must be lipophilic/hydrophobic, otherwise it will not be able to enter the cell through the membrane.
+Normally, the receptor is bound to a heat shock protein (Hsp; a chaperone), that prevents the receptor from binding to the DNA or other receptors.
+When the ligand binds to the receptor, the Hsp is displaced/removed, and the receptor dimerises (i.e. binds to another receptor).
+The receptor cannot bind to the DNA unless it is dimerised.
+Once bound to the DNA, the dimer recruits/associates with many other proteins to activate the gene (e.g. RNA polymerase) and transcribes the gene for cellular response.
+
+\subsection{Regulation of Nuclear Receptor}
+
+There are multiple regulatory steps in this mechanism to prevent unwanted signal and cell response.
+Firstly, the receptor is located inside the membrane, meaning that only the lipophilic/hydrophobic ligands can access/activate the receptor.
+The Hsp that is bound to the receptor is also important, because without them, the receptor may be able to bind to the DNA cause unwanted gene activation.
+Dimerisation is another level of regulation -- it requires the receptor to be dimerised, or else it's not going to activate the gene.
+
+\section{Structure of Nuclear Receptor}
+
+\begin{center}
+\includegraphics[width=0.7\textwidth]{nuclearreceptor}
+\end{center}
+
+There are three parts to the receptor.
+The first part is the ligand binding site (steroid hormones).
+Second part is the DNA binding domain, which is the site where the receptor binds to the DNA.
+This part contains the zinc finger motif for DNA binding.
+The last part is the transcription regulatory domain, where the transcription factors and other machinery binds to for gene activation.
+
+\section{What Genes are Activated by Nuclear Receptor}
+
+The genes activated by the receptor depends on the tissue site the receptor resides in, what cell type it's in, and what kind of ligand/drug binds to the receptor.
+This means that the receptor can activate multiple different genes, and therefore have different cellular response depending on the ligand, tissue site, etc. (i.e. it's not a one-gene-to-one-receptor thing).
+For example, estrogen receptor have different cellular response depending on the tissue site.
+
+\mychapter{16}{Lecture 16}
+
+\section{G-protein Coupled Receptors (GPCR)}
+
+G-protein Coupled Receptors (GPCRs) are transmembrane receptors that are associated with G-proteins, as the name suggests.
+GPCRs acts/responds in the timescale of seconds -- slower than the ligand/voltage gated ion channels, but faster than the nuclear receptors.
+GPCRs are important as it is the largest group of the receptors, and therefore an easy target for drugs.
+Also, GPCRs are activated by diverse ligands.
+About 30 to 50\% of the drugs target the GPCRs, but still only 10\% of the known GPCRs are targeted.
+
+\section{Mechanism of GPCRs}
+
+The ligand binds to the transmembrane receptor on the cell surface.
+Before the ligand is attached to the receptor, the receptor is not associated with the G-protein.
+Once the ligand binds to the receptor, the conformation of the receptor changes, which allows the G-protein to interact with the receptor.
+Interaction with the receptor causes the G-protein to change conformation as well, which increase or decrease the activity of a particular enzyme.
+Depending on the activity of the enzyme, the amount of second messenger molecule produced by the enzyme is altered, and therefore causes some cellular response.
+
+\section{Dopamine Receptor}
+
+Dopamine receptor is an example of GPCR.
+When the ligand (dopamine) binds to the receptor, it causes a conformational change in the G-protein which decrease the enzyme activity and therefore decreases the amount of second messenger (cAMP) produced.
+
+\subsection{Parkinson's Disease}
+
+Parkinson's disease is caused by decreased level of dopamine, due to the damage in the neural cells that produce dopamine.
+Parkinson's can be treated by using levodopa -- a prodrug that is processed into dopamine.
+The problem with levodopa is that it is hard to balance/control the effect of levodopa, and leads to psychological effects (such as hallucination/psychosis) and motor complications.
+
+\subsection{Psychosis}
+
+Psychosis occurs when there is too much dopamine around, and over activates the dopamine receptor.
+In this case, antipsychotics (antagonists of dopamine receptor) is used to prevent the dopamine to have too much effect on the receptor.
+This means that the level of dopamine is stall high, but the effect is inhibited by using antagonists.
+Again, however, if you use too much of antipsychotics, you get a Parkinson's like syptoms, signifying the fact that it's very hard to balance the effects of these drugs.
+
+\mychapter{17}{Lecture 17}
+
+\section{Membrane Composition}
+
+Membrane lipids are made from amphipathic molecules, meaning that the molecules have both charged and uncharged parts.
+The hydrocarbon tails are hydrophobic and are 16$\sim$22 carbons long.
+In animals, the length of the hydrocarbon tails are usually even.
+These hydrocarbon tails can be either saturated (no double bonds) or unsaturated (with double bonds).
+Note that the double bonds introduce a kink in the tail.
+
+In aqueous solution, the polar group of the molecules are exposed to the solution, whereas the hydrophobic part forms the inner part of the membrane.
+This forms a well-known lipid bilayer, which is energetically favourable for the molecules to form in aqueous environment.
+
+\section{Membrane Lipid Structure}
+
+Membrane lipids all have a glycerol backbone which two fatty acids and a phosphate group attaches to.
+As mentioned, the fatty acids can be of different length, with or without double bonds.
+The phosphate group provides the charge for the amphipathic molecule, and often have polar groups added to the phosphate.
+This provides the group extra charge which can form patches on the surface of the membrane.
+
+Note that there are other types of membrane lipids present in different tissue of the same organism, or maybe in tissues from another organism, depending on the function of the tissue in its organism.
+
+\section{Membrane Fluidity}
+
+Membrane fluidity is affected by temperature, the type of fatty acids present, and the presence of cholesterol.
+All of these factors have an effect on the hydrophobic, non-covalent interaction between the lipids.
+Reminder: non-covalent interactions are very weak on its own, but strong when there are a lot of them, and the strength of the interaction is also dependent on the distance/hoe close to each other.
+
+\subsection{Temperature}
+
+Temperature affects the membrane fluidity by disrupting the non-covalent interactions between the hydrocarbon tails.
+As the number of the carbon increases in the hydrocarbon tails increases, the melting point also increases, and therefore less fluid.
+This is because there are more carbons for hydrophobic interaction that strengthens the interaction.
+
+\subsection{Type of Fatty Acid}
+
+The type of fatty acids, or more like how saturated a fatty acid is, affects the membrane fluidity.
+When the hydrocarbon tails are unsaturated, that is, it has double bonds in it, it has a kink.
+This kink causes the hydrocarbon tails to be more separated and the packing of the membrane lipids less ordered.
+Since the kink is going to spread the hydrocarbon tails apart further apart, this increases the distance between the tails, and therefore weakens the hydrophobic interaction between them (therefore more fluid).
+
+\subsection{Presence of Cholesterol}
+
+Cholesterol has a rigid ring structure that can be used as a ``scaffold''.
+This allows the lipids to anchor themselves to it and form a more ordered structure, and therefore makes the membrane less fluid.
+
+\section{Membrane Proteins}
+
+The membrane is jam-packed with proteins.
+Proteins are also able to move in the membrane -- it is dynamic.
+There are many functions of membrane proteins -- cell to cell contact, surface recognition, cytoskeleton contact, enzymes, transporters, receptors and signalling.
+
+Proteins can be either integral (all or some part of the protein is embedded in the membrane), or peripheral (on the surface of the membrane).
+Peripheral proteins can be held in pace on the membrane surface by polar patches from, for example, the polar groups attached to the phosphate group, forming an electrostatic interaction.
+
+Note that the proteins have ``sides'' on the membrane, and are asymmetric.
+This means that not all proteins that are exposed to the extracellular surface are also exposed on the intracellular surface.
+For example, most (if not all) of the proteins that are glycosylated are exposed on the extracellular surface, and not on the intracellular surface.
+
+\section{How Are Proteins Attached to the Membrane?}
+
+Non-polar amino acids of the protein resides within the lipid bilayer -- it is unfavourable for hydrophobic amino acids to move out of the membrane, so the proteins is anchored to the membrane.
+Proteins can also have an anchoring domain that can be used to anchor the domain to the membrane.
+
+Lipidation, a type of post translational modification, adds fatty acid groups to the protein which can insert it into the membrane for anchorage.
+
+\mychapter{18}{Lecture 18}
+
+\section{Transport of Non-polar Molecules Through the Membrane}
+
+Transport of non-polar molecules through the membrane is dependent on both the hydrophobicity and the concentration of the molecule.
+Unlike polar molecules, non-polar molecules are relatively easier to diffuse through the membrane due to its hydrophobic nature of the molecule.
+
+\subsection{Permeability Coefficient and Oil-Water Partition Coefficient}
+
+The permeability coefficient of a molecule describes how well the molecule is able to pass through the membrane -- i.e. how permeable the molecule is.
+The smaller the coefficient is, the harder for the molecule to pass through the membrane, and therefore less permeable.
+
+The oil-water partition coefficient describes how hydrophobic a molecule is.
+This means that the higher the oil-water partition coefficient is for that molecule, the more hydrophobic the molecule is.
+
+When these two factors are graphed for different kinds of molecules, you can clearly see that the higher the oil-water partition coefficient (i.e. more hydrophobic the molecule is), the higher the permeability coefficient.
+This shows that the more hydrophobic a molecule is, the easier for that molecule to pass through the membrane.
+
+\subsection{Concentration Gradient vs. Flux}
+
+When the  flux  is plotted against the concentration gradient of the molecule across the membrane, it is clear that the flux is proportional to the concentration gradient.
+This means that the higher the concentration gradient across the membrane, the higher the flux of that molecule through the membrane (i.e. faster/more will go through).
+
+\section{Transport of Polar Molecules Through the Membrane}
+
+Unlike the non-polar molecules, the lipid bilayer represents an energy barrier for the transport of polar molecules across it.
+So, for the polar molecules to pass through the membrane, the energy barrier must be decreased.
+Proteins within the membrane make small holes in the membrane to allow polar molecules to pass through.
+
+\subsection{Channels}
+
+Channels, when opened, are open to both the intracellular and the extracellular space (i.e. open to both ends).
+These channels can be opened or closed spontaneously, and are ``gated''.
+Since the mechanism of the channels are fairly simple, the rate of transport of molecules across the membrane when opened can approach the rate of diffusion -- about 10$^7\sim$10$^8$ molecules per second.
+The structure of the holes of the channels provide some specificity of the molecules that can go through the membrane.
+
+\subsection{Transporters}
+
+Unlike the channels, transporters are only open to either the intracellular or the extracellular space.
+The binding of the molecule that is to be transported induces a conformational change in the transporter which opens the opposite end, allowing the release of the molecule to the other side.
+The release of the molecule causes another conformational change that reverts the transporter back into its original state and the process repeats.
+Since the process of transporting the molecule requires conformational change of the transporter itself, the rate of transport is much slower compared to the channels -- about 10$^2\sim$10$^3$ molecules per second.
+
+Another characteristic thing about transporters is that they are very much like an enzyme -- transporters are very selective of what they move through the membrane, and it also shows a Michaelis-Menten-like kinetics.
+For example, glucose and mannitol are two very similar structured molecules that have similarly low permeability coefficient without a transporter.
+However, when GLUT transporter is present, the permeability coefficient increases a lot for the glucose, but not for mannitol, showing that the transporters are selective in which molecule it transports.
+
+\begin{center}
+\includegraphics[width=1.0\textwidth]{kinetics}
+\end{center}
+
+The kinetics of the transporter is represented by the equation below, where J is the flux and [A] is the concentration gradient of the molecule across the membrane.
+
+\begin{center}
+\large{$J_A = \frac{J_{max}[A]}{K_M + [A]}$}
+\end{center}
+
+\section{Types of Transport Processes}
+
+\begin{description}
+\item [Non-mediated] Requires no protein for transport -- free diffusion.
+\item [Mediated] Requires a protein. Also called facilitated transport.
+\item [Passive] Down a concentration gradient and no energy is required for the transport.
+\item [Active] Up a concentration gradient and requires an input of energy. Energy can come from ATP hydrolysis or from the co-transport of another molecule moving down its concentration gradient.
+\item [Co-transport] Movement of two molecules by a transporter.
+\begin{description}
+\item [Symport] Both molecules move through the transporter in the same direction.
+\item [Antiport] The two molecules move in the opposite directions to one another.
+\end{description}
+\end{description}
+
+\vspace{0.5cm}
+
+\noindent
+\textbf{Note: for symport and antiport, both molecules may not be going down the concentration gradient -- one molecule may be going up the concentration gradient, whereas the other maybe going down the concentration gradient.}
+
+\mychapter{19}{Lecture 19}
+
+\section{Energy Metabolism and ATP}
+
+We require approximately 1kg of ATP per kg of body fat for the day.
+Obviously, we can't carry that much ATP every day, and so we have to make it as we need it.
+Anabolism is the use of energy to form/make macromolecules from building blocks (e.g. making proteins).
+Metabolism is the opposite of anabolism, where the macromolecules are broken down into smaller constituent/component/building blocks to be oxidised to produce energy, or to be used in anabolic processes.
+
+From the first law of thermodynamics, the total energy within a system is constant -- i.e. energy can neither be created or destroyed.
+This means that the energy must be converted from one form to another.
+
+\section{Energy Balance in the Body}
+
+\begin{center}
+E$_{intake}$ = E$_{expended}$ + E$_{stored}$\\
+\vspace{0.5cm}
+E$_{expended}$ = Basal metabolism + Activities
+\end{center}
+
+As you can see from the equation, all of the energy taken into the body must be either used up/expended, or stored.
+Clearly, to lose weight, you must either decrease your intake, or increase your energy expenditure.
+You can increase the energy expenditure by increasing your basal metabolism and/or the amount of exercise/activities.
+(Note that small amount of energy is lost in faeces, urine and sweat.)
+Weight gain is a problem in developed countries, as they tend to have higher percentage of obese people.
+
+The rest of this lecture will be focusing on each aspect of the equation.
+
+\subsection{Subtopic: Leptin Receptor}
+
+Leptin deficient mice eats too much.
+Leptin is a hormone that binds to the leptin receptor, which acts so that the host feels full, and therefore stops eating.
+So, if a mouse is leptim deficient, then the mouse will not feel full, and therefore continues eating.
+
+\section{Units of Energy}
+
+Joule (J) is the unit of energy, defined as the \textbf{energy required to push against 1N of force for 1m}.
+An older metric is the calories, where 1cal is the energy required to heat 1g of water from 14.5$^\circ$C to 15.5$^\circ$C.
+1cal is equivalent to 4.184J.
+Daily energy intakes and expenditure usually measured as MJ.
+
+\section{Measuring Energy Intake}
+
+\subsection{Bomb Calorimetry}
+
+You can measure the energy contained in the food by burning the food and measuring the change in temperature of the water.
+
+\begin{center}
+\ch{C6H12O6 + 6 O2 -> 6 CO2 + 6 H2O + heat}\\
+\ch{C16H32O2 + 23 O2 -> 16 CO2 + 16 H2O + heat}
+\end{center}
+
+Carbohydrates releases 2813kJ/mol (glucose), whereas fatty acids release 10024kJ/mol (palmitate).
+Since fatty acids are more reduced, it can produce more energy from oxidation.
+One thing to note is that not all energy in food is available for the body (e.g. cellulose and nitrogen, which are excreted out).
+Therefore, these factors must be taken into account for calculations.
+
+\section{Atwater Factor}
+
+Atwater factors are used to measure how much energy each constituents have.
+Fat has 38kJ/g, carbohydrates and proteins have 17kJ/g and ethanol has 29kJ/g.
+These atwater factors can be used to calculate how much energy is contained in the food.
+
+\section{Measuring Energy Expenditure}
+
+Bomb calorimetry of a human would be good, but not feasible for obvious reasons.
+There are other ways to measure energy expenditure.
+
+\subsection{Direct Calorimetry}
+
+This method relies on measuring heat output from individual in a whole body calorimeter.
+This is good for determining the basal metabolic rate (BMR) -- i.e. at rest.
+However, it is quite hard to measure the energy used in more physical exercises, due to space constraints and complexity of the calculation and machinery.
+
+\subsection{Indirect Calorimetry}
+
+This method measures the energy expenditure based on the oxygen consumption and carbon dioxide production, which is measured using a respirometer.
+Since certain amount of energy is associated with every litre of oxygen consumed (20.9kJ/L), you are able to calculate how much energy was used.
+This allows us to calculate the energy expenditure for a range of activities, and also allows the calculation of the respiration exchange ratio (RER).
+
+\subsection{Respiration Exchange Ratio}
+
+\begin{center}
+\large{RER = $\frac{CO_2 produced}{O_2 consumed}$}
+\end{center}
+
+RER tells us about what kind of fuels are used -- carbohydrates or fat.
+Note that the stoichiometry of the oxygen and carbon dioxide is different for carbohydrates and fat.
+Since the stoichiometry of oxygen to carbon dioxide is 1:1 in carbohydrates, RER = 1, but this not the case for fat, and therefore have RER = 0.7.
+
+\section{Basal Metabolism}
+
+Basal metabolism is the energy required for the maintenance of life -- general metabolism, muscle concentration, etc.
+This is usually defined as the energy expenditure at rest.
+BMR is affected by:
+\begin{itemize}
+\item gender
+\item age 
+\item body size
+\item body composition
+\item genetics
+\item hormonal status
+\item stress levels
+\item disease status
+\item certain drugs
+\end{itemize}
+
+BMR can be increased by: athletic training, fever, late pregnancy, drugs (e.g. caffeine) and hyperthyroidism.
+BMR can be decreased by: malnutrition, sleep, drugs (beta blockers) and hypothyroidism.
+
+\subsection{Hyper and Hypothyroidism}
+
+\begin{description}
+\item [Hyperthyroidism] Increased metabolic rate due to excessive production of thyroid hormone, which acts to increase the effect of insulin, etc. Symptoms include heat production, anxiety, etc.
+\item [Hypothyroidism] Decreased metabolic rate due to thyroid hormone deficiency (from iodine deficiency). Symptoms include coldness, depression, etc.
+\end{description}
+
+\mychapter{20}{Lecture 20}
+
+\section{Organs Involved in Digestion}
+
+\subsection{Salivary Glands}
+
+Produces saliva -- neutral pH and contains mucous and amylase that starts the digestion of carbohydrates.
+
+\subsection{Stomach}
+
+For food storage (controlled release into the duodenum) and mixing of the food with gastric juices.
+Stomach release highly acidic acid (0.1M HCl) that denature the proteins.
+It also secretes pepsinogen (zymogen) for protein digestion, and also mucous layer for protection.
+
+The parietal cells produce the acid (HCl), and the chief cells produce the pepsinogen, which is activated by the acidic environment.
+
+\subsection{Pancreas}
+
+Pancreas is slightly alkaline pH 7, and secretes most digestive enzymes, including amylase, lipase and many proteases.
+
+\subsection{Liver}
+
+Synthesis of bile salts/acids (stored in gall bladder), which is important for fat digestion.
+
+\subsection{Small Intestine}
+
+Where the final phase of digestion and absorption occurs.
+
+\section{Digestion}
+
+There 2 main phases involved in digestion:
+\begin{enumerate}
+\item Hydrolysis of bonds connecting the monomer units in food macromolecules.
+\item Absorption of products from the gut into the body.
+\end{enumerate}
+
+In the case of carbohydrates, proteins and TAGs, the bond to cleave would be the glycosidic bonds, peptide bonds and ester bonds, respectively.
+
+\section{Carbohydrate Digestion}
+
+Carbohydrates make up 40 to 50\% of the energy intake.
+Carbohydrates include starch (amylose and amylopectin), glycogen, simple sugars and fibre (i.e. cellulose).
+Cellulose cannot be digested in humans, as we lack the enzyme for breakdown of cellulose.
+
+\subsection{Enzymes Involved in Carbohydrate Digestion}
+
+The digestive process begins in the mouth where the salivary amylase starts breaking down the starch molecules into smaller sugars.
+When it enters the small intestine, the pancreatic amylase (secreted from the pancreas) further breaks down the starch molecules into maltose and isomaltose.
+The intestinal epithelial cells secretes maltase, isomaltase, lactase and sucrase, which breaks down the disaccharide molecules into monomers (glucose, fructose and galactose).
+These monosaccharides are then absorbed into the body via the intestinal villi.
+
+\begin{reactions*}
+Maltose/Isomaltose &->[Maltase][Isomaltase] 2 Glucose\\
+Sucrose &->[Sucrase] Fructose + Glucose\\
+Lactose &->[Lactase] Galactose + Glucose
+\end{reactions*}
+
+\subsection{Lactose Intolerance}
+
+This is caused by lactase enzyme deficiency.
+Since lactose is not digested, it accumulates inside the intestine where the gut microbes can use it for fermentation.
+Lactose intolerance causes bloating, flatulence and diarrhoea due to the fermentation.
+Individuals with this should avoid lactose consumption.
+
+\section{Carbohydrate Absorption}
+
+Monosaccharides are absorbed into the body via the villi and microvilli (brush border) of the intestinal wall.
+The villi and microvilli provides a large surface area for absorption.
+
+\subsection{Glucose Transport}
+
+Sugars are water soluble, and therefore require a transporter to pass through the cell membrane into the cell.
+SGLT1 protein is present in the intestinal side of the cell membrane and transports glucose into the intestinal cell together with the Na ion (symport).
+Movement of Na ion from the intestine into the cell is down the concentration gradient, which provides the energy for the glucose transport up the gradient into the cell.
+
+On the other side of the cell membrane, GLUT2 protein is present.
+Since the concentration of glucose in the cell is higher than the blood, the glucose can move down the concentration gradient through the GLUT2 transporter.
+Note that there is Na/K pump on this side of the membrane to maintain the Na concentration gradient.
+
+Once transported into the blood, other tissues can uptake glucose via GLUT3 (brain) and GLUT4 (muscle and adipose).
+
+\subsection{Coeliac Disease}
+
+Disease of the small intestine, where the body reacts against the wheat protein gluten.
+This causes the villi to be flattened and nutrients are not absorbed properly.
+
+\mychapter{21}{Lecture 21}
+
+\section{Protein Digestion and Absorption}
+
+Proteins can be used for energy, but it is more for regenerating the depleted amino acids.
+It is also important for supplying the body with essential amino acids.
+Proteins are the major source of nitrogen for purines, pyrimidines and haem.
+The carbon skeleton of the amino acids can be used as fuel/energy production, where the amino group (i.e. nitrogen) is converted into urea and excreted.
+Decrease/malnutrition of certain amino acid can lead to Kwashiokhor.
+
+\section{Essential Amino Acids}
+
+We cannot synthesise all 20 amino acids -- require 8 essential amino acids from the diet.
+These amino acids are: L, K, T, Y, I, M, F and V.
+
+\section{Regulation of Protein Digestion}
+
+Obviously, we don't want to ``eat ourselves'', so the process is highly regulated by polypeptide hormones.
+These hormones are: gastrin (stomach), secretin (duodenum), and cholecystokinin (duodenum).
+
+\section{Enzymes Involved in Protein Digestion}
+
+Before we move onto how proteins are digested, we need to know what kind of enzymes are involved.
+The enzymes present are: pepsin (stomach), trypsin, chymotrypsin and carboxypeptidase (3 from pancreas), and aminopeptidase and dipeptidase (2 from small intestine).
+All of these enzymes act in the small intestine, except for pepsin.
+Note that the protease specificity is determined by the adjacent amino acid side chains of the peptide chain it is breaking.
+For example, pepsin, trypsin and chymotrypsin cleaves the polypeptide after aromatic, positively charged and aromatic side chains, respectively.
+
+\section{Protein Digestion}
+
+Digestion of protein involves the hydrolyses of specific peptide bonds, performed by several different proteases.
+All of these proteases are secreted as inactive zymogens to prevent them from digesting our own cells, and they are all activated by cleavage of peptides from their structure.
+
+There are two stages of protein digestion:
+\begin{enumerate}
+\item Endopeptidases attack the peptide bonds within the peptide chain. Pepsin, trypsin and chymotrypsin are all endopeptidases.
+\item Exopeptidases attack the peptide bonds at the end of the peptide chain (i.e. from C-term or N-term -- hence amino or carboxypeptidase).
+\end{enumerate}
+
+\subsection{Pepsinogen Activation}
+
+Pepsinogen (due to its structure) have its catalytic active site inhibited.
+H$^+$ (low pH) changes the conformation of the pepsinogen and allows it to auto-cleave the peptide bond and activate itself.
+The activated pepsin can then activate other pepsinogens.
+Note that this process is all triggered by the ingestion of food, and the hormones associated with it.
+
+\subsection{Small Intestine Peptidase Activation}
+
+All 3 peptidases (trypsin, chymotrypsin and carboxypeptidase) are secreted in the inactive zymogen forms -- trypsinogen, chymotrypsinogen and procarboxypeptidases.
+First, trypsinogen is activated by the membrane bound enterokinase that adds the phosphate group to it.
+This causes a conformational change in the trypsinogen structure which allows it to auto-cleave and auto-activate itself.
+The activated trypsin activates the chymotrypsinogen and procarboxypeptidase.
+
+As a result of the activation of all of these proteases (including pepsin), dietary proteins are digested into single amino acids, dipeptides and tripeptides.
+Di and tripeptidases then digest the di and tripeptides into single amino acid.
+
+\section{Protein Absorption}
+
+\subsection{Amino Acid Transport}
+
+There are 5 main amino acids transporters to transport the amino acids across the luminal membrane.
+These are: Neutral, basic, acidic, other (taurine), and Glycine, proline and hydroxyproline.
+All of these amino acids are transported in a similar way to the glucose transport -- co-transport with Na.
+
+\subsection{Peptide Absorption}
+
+Very little absorption occurs for peptides that are longer than 4 amino acids.
+Di and tripeptides are absorbed in the small intestine via co-transport with H$^+$ ions (PepT1).
+These di/tripeptides are then digested in the cell and exported out into the blood.
+
+\subsection{Absorption of Intact Proteins}
+
+This only occurs in few circumstances -- e.g. in newborn for immunoglobulin absorption.
+
+\section{Diseases of Inappropriate Enzyme Activation}
+
+This is associated with inappropriate enzyme action (zymogen activation).
+This can lead to the breakdown of mucosal layer and proceed to peptic ulcers.
+
+Pancreatitis is where the pH is altered and degrades/inflame the pancreas.
+It can also release the enzymes into the blood.
+
+\section{Diseases of Malabsorption}
+
+Cystic fibrosis patients have abnormally thick mucous secretions due to mutation in chloride transporter.
+The thick mucous can block the pancreatic ducts, and therefore no protease activity.
+
+Coeliac disease have been mentioned in the previous lecture.
+
+\section{Digestion of Nucleic Acid}
+
+DNA and RNA are subject to acid hydrolysis in the stomach.
+Intestinal nucleases also hydrolyse the phophodiester bonds between the nucleotides.
+The individual nucleotides are absorbed via nucleotide transporters (Na co-transport).
+
+It is most unlikely that the DNA/RNA gets incorporated into our body, but it is a possibility as there are evidence of DNA being intact in the gut.
+
+\mychapter{22}{Lecture 22}
+
+\section{Lipid Digestion and Absorption}
+
+Lipid digestion starts and the mouth, which is continued in the stomach, and lastly in the small intestine (main site of fat digestion).
+Lipid digestion is done by the lipase enzymes, present in all three location mentioned above, which breaks down the triacylglycerol (TAG) into glycerol and free fatty acids (FAs).
+
+\section{Bile Acids/Salts}
+
+Dietary lipids must be emulsified/solubilised in the aqueous solution.
+This is done by the bile acids/salts, which are made from cholesterol.
+Bile acids are synthesised in the liver and stored in the gall bladder as bile, which is secreted in response to cholecystokinin.
+
+Bile acids are powerful detergents with hydrophobic  and hydrophilic surfaces (amphipathic), which allows it to form micelles with TAGs and increase the surface area for lipid digestion by the pancreatic lipase (also associated with the micelles).
+Note that bile acids have similar structure to cholesterol, but have OH and COOH groups on them.
+
+\section{Bile Composition}
+
+Bile contains: water, bile acids, electrolytes, cholesterol, phospholipids, and bile pigments (bilirubin).
+Note that the ration of electrolytes to cholesterol (electrolytes:cholesterol) is important to avoid gall stones in the gall bladder.
+
+\section{Digestion of Lipids}
+
+Firstly, the lipids are emulsified by the bile salts (in response to cholecystokinin) to form micelles.
+Pancreatic lipase binds to the lipid/aqueous interface of the micelles and hydrolyses the TAGs at positions 1 and 3 of the glycerol backbone.
+After this, smaller micelles form with bile salts, hydrolysed FFAs, MAGs, and cholesterol.
+Micelles are then absorbed across the intestinal cell membrane into the blood.
+
+\section{Fat Malabsorption}
+
+This leads to excess fat and fat soluble vitamins in faeces, and are caused by conditions that interfere with bile or pancreatic lipase secretion (e.g. pancreatitis, gall bladder or liver disease).
+
+\subsection{Orlistat (Xenicol)}
+
+Potent inhibitor of pancreatic lipase, and therefore TAGs get excreted without getting absorbed.
+
+\section{Process of Fat Absorption}
+
+\subsection{Lipoproteins}
+
+Lipoproteins are particles that are made of lipid core (TAGs and cholesterol) surrounded by phospholipids and proteins that sulubilise the lipids in the blood for transport around the body.
+In general, the structure of lipoproteins are made of core TAGs and cholesterol esters, surrounded by phospholipids and apoproteins.
+The apoprotein component of the lipoproteins provides the specificity of where the lipoproteins are transported.
+
+There are four main classes of lipoproteins: chylomicrons, VLDL, LDL, and HDL.
+\begin{description}
+\item[Chylomicrons] are the least dense (in terms of TAG content) out of all four classes. These contain mainly TAGs, and the apoproteins associated are: apoB48, C2, C3, and E.
+\item[VLDL] are the next least dense class, which contains mainly TAGs (but not as much as chylomicrons), with slightly higher phospholipid content. The main apoproteins associated are: apoB100, C1, C2, C3 and E.
+\item[LDL] are second most dense class and consists mainly of cholesterol, with higher protein content. Apoprotein associated with this class is apoB100.
+\item[HDL] are the most dense class and consists mainly of proteins. Main apoproteins involved in this class are: apoA1, A2, C1, C2, C3, D and E.
+\end{description}
+
+The two main functions of lipoproteins are to make the lipids soluble for transport in the blood, and to provide a delivery system for shifting the lipids in/out of the cells.
+
+\subsubsection{Function of Apoproteins}
+
+Apoproteins have various functions depending on the type of apoprotein.
+Some apoproteins are structural for lipoprotein assembly (apoB).
+ApoB and E are `ligands' for cell surface receptors (i.e. recognition for lipoprotein absorption).
+Some are enzyme cofactors (e.g. apoC2 for lipoprotein lipase).
+
+\subsection{Lipid Transport Pathways}
+
+There  are two major lipid transport pathways.
+The exogenous chylomicron pathway transports dietary fat from the GI tract to other parts of the body.
+The endogenous VLDL/LDL pathway transports endogenously synthesised fat.
+
+\subsection{Exogenous Pathway}
+
+The FFAs and MAGs that are absorbed into the intestinal cell gets resynthesised back into TAGs.
+These TAGs and other lipids combine with apoB in the ER to form chylomicrons and secreted from the intestinal cells into the blood via the lymphatic system.
+FFAs are transported to adipose tissues and muscles, and the remnants are transported to the liver where it is recognised by the apoE receptor.
+
+\subsubsection{Lipoprotein Lipase}
+
+Lipoprotein lipase is an enzyme found on the endothelial surface that hydrolyses TAGs in the lipoproteins to glycerol and FFAs.
+It has the highest activity in the heart, adipose tissues and skeletal muscles.
+Lipoprotein lipase is activated by apoC2 protein, and mutation in apoC2 or lipoprotein lipase leads to increased chylomicrons and plasma TAGs.
+
+\subsection{Endogenous Pathway}
+
+Fat can also be synthesised in the liver as well, and therefore require transport out of the liver cell.
+VLDLs are synthesised and exported into the blood from the liver cells, and contains apoC2 to interact with lipoprotein lipase for further TAG breakdown.
+VLDL can get ``receycled'' into LDL -- the cholesterol rich lipoprotein that is considered to be ``bad'', and only contains apoB100.
+These LDL can get absorbed/taken up by other tissues via  the LDL receptor, but if this receptor is mutated, it can cause increased cholesterol and LDL in the blood.
+
+\subsection{Familial Hypercholesterolemia (FH)}
+
+This is caused by defects in LDL receptor gene and leads to premature atherosclerosis.
+It is a dominant disorder and so heterozygotes are also affected by this condition.
+This leads to increased LDL level by about 2 to 3 times higher.
+FH is treated with statins (drug that inhibits one of the enzymes involved in cholesterol synthesis).
+
+
+\end{document}
