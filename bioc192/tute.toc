@@ -207,3 +207,17 @@
 \contentsline {section}{\numberline {21.8}Diseases of Malabsorption}{87}
 \contentsline {section}{\numberline {21.9}Digestion of Nucleic Acid}{88}
 \contentsline {chapter}{Lecture 22}{89}
+\contentsline {section}{\numberline {22.1}Lipid Digestion and Absorption}{89}
+\contentsline {section}{\numberline {22.2}Bile Acids/Salts}{89}
+\contentsline {section}{\numberline {22.3}Bile Composition}{89}
+\contentsline {section}{\numberline {22.4}Digestion of Lipids}{90}
+\contentsline {section}{\numberline {22.5}Fat Malabsorption}{90}
+\contentsline {subsection}{\numberline {22.5.1}Orlistat (Xenicol)}{90}
+\contentsline {section}{\numberline {22.6}Process of Fat Absorption}{90}
+\contentsline {subsection}{\numberline {22.6.1}Lipoproteins}{90}
+\contentsline {subsubsection}{Function of Apoproteins}{91}
+\contentsline {subsection}{\numberline {22.6.2}Lipid Transport Pathways}{91}
+\contentsline {subsection}{\numberline {22.6.3}Exogenous Pathway}{91}
+\contentsline {subsubsection}{Lipoprotein Lipase}{91}
+\contentsline {subsection}{\numberline {22.6.4}Endogenous Pathway}{92}
+\contentsline {subsection}{\numberline {22.6.5}Familial Hypercholesterolemia (FH)}{92}
