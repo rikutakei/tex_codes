@@ -232,7 +232,7 @@
 \contentsline {subsubsection}{Vitamin B1}{95}
 \contentsline {subsubsection}{Vitamin B2}{95}
 \contentsline {subsubsection}{Vitamin B3}{96}
-\contentsline {subsubsection}{Vitamin B4}{96}
+\contentsline {subsubsection}{Vitamin B5}{96}
 \contentsline {subsubsection}{Vitamin B6}{96}
 \contentsline {subsubsection}{Vitamin B7}{96}
 \contentsline {subsubsection}{Vitamin B9}{96}
@@ -249,4 +249,12 @@
 \contentsline {subsection}{\numberline {25.1.1}Conservation of Energy}{100}
 \contentsline {subsection}{\numberline {25.1.2}Energy Coupling}{100}
 \contentsline {subsubsection}{Coupling ATP Hydrolysis with Hexokinse}{101}
-\contentsline {chapter}{Lecture 26}{102}
+\contentsline {subsection}{\numberline {25.1.3}Oxidising Fuels for Energy}{101}
+\contentsline {subsubsection}{Redox Reactions}{101}
+\contentsline {subsubsection}{Phosphorylation Reactions}{101}
+\contentsline {subsection}{\numberline {25.1.4}Reducing Equivalents}{102}
+\contentsline {subsection}{\numberline {25.1.5}Co-enzymes}{102}
+\contentsline {subsubsection}{NAD}{102}
+\contentsline {subsubsection}{FAD}{102}
+\contentsline {subsubsection}{Co-enzyme A}{103}
+\contentsline {chapter}{Lecture 26}{104}
