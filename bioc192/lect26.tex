@@ -1,0 +1,106 @@
+\section{Glycolysis}
+
+Glycolysis is the process where the 6 carbon glucose is split into two 3 carbon pyruvates.
+Glycolysis occurs in the cytoplasm and is an ubiquitous pathway, and is found in most cells.
+For some cells, glycolysis is essential for the cells' energy requirement (for example RBC, brains cells that use glucose as the major fuel source).
+In glycolysis, the energy from this pathway is conserved as ATP and NADH, and the end product (pyruvate is further metabolised for more energy).
+There are two main phases in glycolysis: the activation (or energy investment) phase, and the energy pay-off phase.
+
+\subsection{Activation of Glucose}
+
+There are two reactions in glycolysis that add a phosphates onto glucose.
+The first phosphorylation (also the first reaction of glycolysis) is done by the enzyme hexokinase, which phosphorylates glucose and get glucose-6-phosphate.
+G6P is then rearranged into fructose-6-phosphate by the glucosephosphate isomerase enzyme.
+Once in F6P form, phosphofructokinase enzyme adds another phosphate to this molecule to get fructose-1,6-bisphosphate.
+FBP is then split in the middle by an aldolase to give DHAP (dihydroxyactone phosphate) and G3P (glyceraldehyde-3-phosphate).
+DHAP is then rearranged into G3P by triose phosphate isomerase, as G3P is the form that is fed into the energy pay-off phase.
+
+\begin{reactions*}
+Glucose + ATP     & -> G{-} 6 {-}P + ADP\\
+G{-} 6 {-}P       & -> F{-} 6 {-}P\\
+F{-} 6 {-}P + ATP & -> FBP + ADP\\
+FBP               & -> DHAP + G{-} 3 {-}P\\
+DHAP &<=> G{-} 3 {-}P
+\end{reactions*}
+
+As you can see, we have added two phosphates onto glucose and have splitted this into two 3 carbon molecule with one phosphate on each molecule.
+Also note that some of the reactions are slightly unfavourable (e.g. rearrangement of G6P into F6P is \bioGibbs[exponent=0']{1.6}), but the reaction can still go on as the product is constantly being removed, and also that the overall reaction of glycolysis has negative $\Delta$G.
+So, when you're looking at the Gibbs free energy of a reaction, think of what is being removed, and also the overall Gibbs free energy of the reaction.
+
+\subsection{Energy Pay-Off/Release Phase}
+
+\subsubsection{Oxidation of G3P and First Substrate Level Phosphorylation}
+
+Once the G3Ps are made, this can then be used to make ATP, but to get a net gain in energy, there must be another phosphate added onto the G3P.
+Firstly, a phosphate is added onto G3P to make 1,3-BPG (1,3-bisphosphoglycerate).
+The energy required for this phosphorylation is provided by the oxidation of G3P into 1,3-BPG, which also reduces NAD$^+$ into NADH.
+Note that this reaction does not require ATP, as all the energy comes from the oxidation of G3P (and therefore this reaction will give us the net gain of ATP).
+
+The 1C phosphate of 1,3-BPG is very reactive, and is removed from the molecule and added onto ADP to produce ATP and 3PG (3-phosphoglycerate).
+This is the first substrate level phosphorylation reaction that produces an ATP.
+
+\subsubsection{Arsenic Poisoning}
+
+Arsenic substitutes for phosphate during the oxidation of G3P and is hydrolysed, but does not carry out any substrate level phosphorylation (i.e. no net ATP produced).
+This therefore affects the cells that are solely dependent on glycolysis, such as the red blood cells.
+
+\subsubsection{Second Substrate Level Phosphorylation}
+
+Before the second substrate level phosphorylation reaction, 3PG is rearranged to phosphoenolpyruvate (PEP).
+Once in PEP form, the phosphate is transferred to ADP by pyruvate kinase (energy comes from the cleavage of phosphate).
+
+\begin{reactions*}
+G{-} 3 {-}P + Pi + NAD+ & -> 1 , 3 {-}BPG + NADH + H+\\
+1 , 3 {-}BPG + ADP      & -> 3 PG + ATP\\
+3 PG ->                 & -> -> PEP\\
+PEP + ADP               & -> Pyruvate + ATP\\
+\hrulefill\\
+Glucose + 2 NAD+ + 2 ADP + 2 Pi &-> 2 Pyruvate + 2 NADH + 2 ATP + 2 H+\\
+\end{reactions*}
+
+The overall Gibbs free energy of glycolysis is \bioGibbs[exponent=0']{-73.3}.
+
+\section{Fate of Pyruvate}
+
+The fate of pyruvate depends on the oxygen availability in the cell.
+
+\subsection{Aerobic Condition}
+
+Under aerobic condition, pyruvate is converted into acetyl-CoA (CoA with 2 carbon fatty acid).
+This oxidative decarboxylation reaction occurs in the mitochondrial matrix, and requires several co-factors.
+Note that this reaction cannot be reversed (pyruvate dehydrogenase complex that catalyses this reaction has an E1 enzyme that has low affinity for carbon dioxide, and therefore the release of carbon dioxide makes it very unlikely for this reaction to be reversed).
+
+\begin{center}
+\setatomsep{2em}
+\chemfig{CH_3-C([2]=O)-COO\chemabove{}{\scrm}} +
+\chemfig{HS-CoA} + \ch{NAD+} \ch{->}
+\chemfig{CH_3-C([2]=O)-S-CoA} + \ch{CO2 + NADH + H+}
+\end{center}
+
+\subsection{Anaerobic Condition}
+
+Pyruvate cannot be converted into acetyl-CoA under anaerobic condition, and therefore converted into lactate instead.
+This reactions is carried out to regenerate the depleted NAD$^+$, and therefore to keep glycolysis going (as NAD concentration is very low in your body, and your cells).
+
+\begin{center}
+\ch{Pyruvate + NADH + H+ <=>[Lactate] Lactate + NAD+}
+\end{center}
+
+In yeast, anaerobic alcoholic fermentation occurs to regenerate NAD$^+$.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -258,3 +258,13 @@
 \contentsline {subsubsection}{FAD}{102}
 \contentsline {subsubsection}{Co-enzyme A}{103}
 \contentsline {chapter}{Lecture 26}{104}
+\contentsline {section}{\numberline {26.1}Glycolysis}{104}
+\contentsline {subsection}{\numberline {26.1.1}Activation of Glucose}{104}
+\contentsline {subsection}{\numberline {26.1.2}Energy Pay-Off/Release Phase}{105}
+\contentsline {subsubsection}{Oxidation of G3P and First Substrate Level Phosphorylation}{105}
+\contentsline {subsubsection}{Arsenic Poisoning}{105}
+\contentsline {subsubsection}{Second Substrate Level Phosphorylation}{105}
+\contentsline {section}{\numberline {26.2}Fate of Pyruvate}{106}
+\contentsline {subsection}{\numberline {26.2.1}Aerobic Condition}{106}
+\contentsline {subsection}{\numberline {26.2.2}Anaerobic Condition}{106}
+\contentsline {chapter}{Lecture 27}{107}
