@@ -276,3 +276,12 @@
 \contentsline {subsubsection}{Carnitine Supplements}{112}
 \contentsline {section}{\numberline {27.3}$\beta $-Oxidation}{113}
 \contentsline {chapter}{Lecture 28}{114}
+\contentsline {section}{\numberline {28.1}Citric Acid Cycle}{114}
+\contentsline {subsection}{\numberline {28.1.1}First Half -- Release of CO$_2$}{114}
+\contentsline {subsubsection}{Condensation of Acetyl-CoA and Oxaloacetate}{114}
+\contentsline {subsubsection}{Isomerisation of Citrate}{114}
+\contentsline {subsubsection}{First Oxidative Decarboxylation}{115}
+\contentsline {subsubsection}{Second Oxidative Decarboxylation}{115}
+\contentsline {subsection}{\numberline {28.1.2}Second Half -- Rearranging it back to Oxaloacetate}{115}
+\contentsline {subsubsection}{Succinyl-CoA to Succinate}{115}
+\contentsline {subsubsection}{Succinate to Oxaloacetate}{115}
