@@ -285,3 +285,9 @@
 \contentsline {subsection}{\numberline {28.1.2}Second Half -- Rearranging it back to Oxaloacetate}{115}
 \contentsline {subsubsection}{Succinyl-CoA to Succinate}{115}
 \contentsline {subsubsection}{Succinate to Oxaloacetate}{115}
+\contentsline {chapter}{Lecture 29}{117}
+\contentsline {section}{\numberline {29.1}Amino Acids as Fuel}{117}
+\contentsline {section}{\numberline {29.2}Deamination of Amino Acids}{117}
+\contentsline {subsection}{\numberline {29.2.1}Common Amino/Keto Acid Pairs}{118}
+\contentsline {section}{\numberline {29.3}Removal of Ammonium}{118}
+\contentsline {chapter}{Lecture 30}{120}
