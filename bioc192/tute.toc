@@ -300,12 +300,23 @@
 \contentsline {subsection}{\numberline {31.1.1}Complex I}{104}
 \contentsline {subsection}{\numberline {31.1.2}Complex II}{104}
 \contentsline {subsection}{\numberline {31.1.3}Co-Enzyme Q (Ubiquinone)}{104}
-\contentsline {subsection}{\numberline {31.1.4}Complex III}{104}
-\contentsline {subsection}{\numberline {31.1.5}Cytochrome c}{104}
-\contentsline {subsection}{\numberline {31.1.6}Complex IV}{104}
+\contentsline {subsection}{\numberline {31.1.4}Complex III}{105}
+\contentsline {subsection}{\numberline {31.1.5}Cytochrome c}{105}
+\contentsline {subsection}{\numberline {31.1.6}Complex IV}{105}
 \contentsline {subsection}{\numberline {31.1.7}Energy Accounting}{105}
 \contentsline {section}{\numberline {31.2}Poisoning the ETC}{105}
 \contentsline {subsection}{\numberline {31.2.1}Rotenone}{105}
 \contentsline {subsection}{\numberline {31.2.2}Cyanide}{105}
 \contentsline {subsection}{\numberline {31.2.3}Carbon Monoxide}{105}
 \contentsline {subsection}{\numberline {31.2.4}Consequences}{105}
+\contentsline {chapter}{Lecture 32}{107}
+\contentsline {section}{\numberline {32.1}History of ATP Synthase}{107}
+\contentsline {section}{\numberline {32.2}Proton Motive Force}{107}
+\contentsline {section}{\numberline {32.3}Experimental Proof of pmf}{107}
+\contentsline {subsection}{\numberline {32.3.1}Experiment with Mitochondria with no Outer Membrane}{107}
+\contentsline {subsection}{\numberline {32.3.2}Experiment using an Uncoupler}{108}
+\contentsline {subsubsection}{Dinitrophenol (DNP)}{108}
+\contentsline {subsection}{\numberline {32.3.3}Liposome with Light-Inducible Proton Pump}{108}
+\contentsline {section}{\numberline {32.4}F$_o$F$_1$ ATP Synthase}{109}
+\contentsline {subsection}{\numberline {32.4.1}Mechanism of ATP Synthesis}{109}
+\contentsline {section}{\numberline {32.5}Energy Accounting}{109}
