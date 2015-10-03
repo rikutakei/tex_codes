@@ -55,4 +55,6 @@
 \contentsline {section}{\numberline {37.5}Muscle Fibre Types}{122}
 \contentsline {section}{\numberline {37.6}Myostatin}{122}
 \contentsline {chapter}{Lecture 38}{123}
-\contentsline {chapter}{Lecture 39}{124}
+\contentsline {section}{\numberline {38.1}Diabetes}{123}
+\contentsline {section}{\numberline {38.2}Insulin}{123}
+\contentsline {chapter}{Lecture 39}{125}
