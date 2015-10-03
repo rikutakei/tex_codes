@@ -44,5 +44,15 @@
 \contentsline {subsubsection}{Ketone Body Synthesis}{119}
 \contentsline {section}{\numberline {36.5}Metabolic Adaptations to Starvation}{120}
 \contentsline {chapter}{Lecture 37}{121}
-\contentsline {chapter}{Lecture 38}{122}
-\contentsline {chapter}{Lecture 39}{123}
+\contentsline {section}{\numberline {37.1}Exercise Metabolism}{121}
+\contentsline {section}{\numberline {37.2}Anaerobic Exercise}{121}
+\contentsline {subsection}{\numberline {37.2.1}Phosphocreatine}{121}
+\contentsline {subsection}{\numberline {37.2.2}Glycogen}{121}
+\contentsline {subsection}{\numberline {37.2.3}Anaerobic Glycolysis}{121}
+\contentsline {subsection}{\numberline {37.2.4}Regulation of Glycolysis in Exercising Muscle}{121}
+\contentsline {section}{\numberline {37.3}Aerobic Exercise}{122}
+\contentsline {section}{\numberline {37.4}Aerobic Training}{122}
+\contentsline {section}{\numberline {37.5}Muscle Fibre Types}{122}
+\contentsline {section}{\numberline {37.6}Myostatin}{122}
+\contentsline {chapter}{Lecture 38}{123}
+\contentsline {chapter}{Lecture 39}{124}
