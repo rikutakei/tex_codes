@@ -1,0 +1,54 @@
+\documentclass[a4paper, 12pt, oneside]{report}
+
+% Preamble:
+\usepackage[T1]{fontenc}       % package for specifying output font encoding
+\usepackage[utf8]{inputenc}    % package for specifying input font encoding
+\usepackage{graphicx}          % package for graphics handling (i.e. figure images)
+\usepackage{mathptmx}          % package for Times New Roman font
+\usepackage{setspace}          % package for setting line space
+
+
+% If you want to compile specific files, uncomment the line below and add the filenames in the {} :
+%\includeonly{}
+
+\begin{document}
+
+\include{./title}
+
+\pagenumbering{roman} % set page numbering to roman numeral
+
+\include{./abstract}
+
+\include{./acknowledgement}
+
+\tableofcontents
+
+\addcontentsline{toc}{section}{\contentsname}
+
+\clearpage
+
+\addcontentsline{toc}{section}{\listfigurename}
+
+\listoffigures
+
+\clearpage
+
+\addcontentsline{toc}{section}{\listtablename}
+
+\listoftables
+
+% May need to include abbreviations and glossary here, before any chapter begins
+
+\clearpage
+
+\pagenumbering{arabic} % revert the page numbering to normal numbering
+
+\include{./intro}
+
+\include{./methods}
+
+\include{./results}
+
+\include{./discussion}
+
+\end{document}
