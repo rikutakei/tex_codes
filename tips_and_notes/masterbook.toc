@@ -1,0 +1,2 @@
+\contentsline {part}{I\hspace {1em}Vim Tips}{3}
+\contentsline {chapter}{\numberline {1}Quick Introduction}{4}

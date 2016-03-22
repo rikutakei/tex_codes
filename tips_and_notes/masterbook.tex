@@ -1,0 +1,24 @@
+% My master tips book
+\documentclass[a4paper, 12pt] {report}
+
+\usepackage[utf8]{inputenc}
+\usepackage{setspace}
+\usepackage{glossaries}
+
+\makeglossaries
+
+\begin{document}
+
+\include{./title/title}
+\include{./glossary/glossary}
+
+%TODO: work on the intro/why I'm writing this tips book in the first place
+
+\tableofcontents
+
+\printglossaries
+\clearpage
+
+\include{./vim/vimtips}
+
+\end{document}
