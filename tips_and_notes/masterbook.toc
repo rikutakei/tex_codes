@@ -6,3 +6,10 @@
 \contentsline {section}{\numberline {2.1}Get used to the Modal Interface}{6}{section.2.1}
 \contentsline {section}{\numberline {2.2}Never leave the home row}{6}{section.2.2}
 \contentsline {section}{\numberline {2.3}Act, Repeat, Reverse}{7}{section.2.3}
+\contentsline {section}{\numberline {2.4}Edit your text in chunks}{7}{section.2.4}
+\contentsline {section}{\numberline {2.5}Navigate in chunks}{8}{section.2.5}
+\contentsline {chapter}{\numberline {3}Modal Interface of Vim}{9}{chapter.3}
+\contentsline {section}{\numberline {3.1}Normal Mode}{9}{section.3.1}
+\contentsline {section}{\numberline {3.2}Insert Mode}{9}{section.3.2}
+\contentsline {section}{\numberline {3.3}Visual Mode}{9}{section.3.3}
+\contentsline {section}{\numberline {3.4}Command Line (Ex) Mode}{9}{section.3.4}

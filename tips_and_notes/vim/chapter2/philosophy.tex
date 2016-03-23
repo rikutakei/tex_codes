@@ -34,15 +34,21 @@ We will meet these modes later on.
 
 \section{Act, Repeat, Reverse}
 
+When using vim, everything should be set up so that you can ``act, repeat, reverse''.
+What I mean by this is that you should use vim in such a way that you edit a bit of text (act), then repeat the same edit on different parts of the text (repeat), and make all of his reversible (reverse).
+We will meet the dot-command in the next chapter.
 
+When going through this book, you should always think about how you are going to type less, automate tasks, and how to prevent yourself typing the same text over and over again.
+The main goal is to do a single edit, then make this repeatable so that you don't have to re-type it again later, and if you happen to carry out the changes too many time, you should be able to reverse the change.
 
+\section{Edit your text in chunks}
 
+In vim, it is easy to write everything in one single burst in the insert mode (like in other text editors and MS Word), but this should be avoided.
+Since vim's undo command (\verb|u|) reverts the last change made to  the text, if you type everything all at once you run the risk of undoing the whole text.
+Rather than doing this, you should try and  change the text bit by bit to make sure your undo command doesn't undo everything, but only the small incremental changes you have made to the document.
 
+\section{Navigate in chunks}
 
-
-
-
-
-
-
-
+Hopefully, you know how to navigate simply in vim by now (the \verb|hjkl| keys).
+When you're navigating yourself in vim, you should try and use more keys that skips more than one letter (i.e. use \verb|h| and \verb|l| keys less).
+You should use the keys that allow you to skip multiple words or lines at a time, like the \verb|w/b| keys and \verb|<ctrl-f>/<ctrl-b>| keys.
