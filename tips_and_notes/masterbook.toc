@@ -1,4 +1,8 @@
-\contentsline {part}{I\hspace {1em}Vim Tips}{3}
-\contentsline {chapter}{\numberline {1}Quick Introduction}{4}
-\contentsline {section}{\numberline {1.1}Why I started using Vim}{4}
-\contentsline {section}{\numberline {1.2}The ``Vim Way''}{5}
+\contentsline {part}{I\hspace {1em}Vim Tips}{3}{part.1}
+\contentsline {chapter}{\numberline {1}Quick Introduction}{4}{chapter.1}
+\contentsline {section}{\numberline {1.1}Why I started using Vim}{4}{section.1.1}
+\contentsline {section}{\numberline {1.2}Before you start}{5}{section.1.2}
+\contentsline {chapter}{\numberline {2}The ``Vim Way''}{6}{chapter.2}
+\contentsline {section}{\numberline {2.1}Get used to the Modal Interface}{6}{section.2.1}
+\contentsline {section}{\numberline {2.2}Never leave the home row}{6}{section.2.2}
+\contentsline {section}{\numberline {2.3}Act, Repeat, Reverse}{7}{section.2.3}
