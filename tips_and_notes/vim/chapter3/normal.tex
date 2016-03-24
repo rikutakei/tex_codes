@@ -1,0 +1,39 @@
+\section{Normal Mode}
+
+Normal mode can be accessed by pressing  the \verb|<esc>| or \verb|<ctrl-[>| command, and is probably the mode that you will be in most of the time.
+This is because most of your editing will start in this mode, then switch into another mode to complete your editing task.
+In some cases, you probably won't have to leave the normal mode at all (for example deleting a word or a line).
+
+An analogy used in the book was of a painter -- painters, when drawing up a nice piece of artwork, do not leave their paintbrush on the canvas.
+Instead, they rest their paint brush, look at it and think about it for a while, and then decide what to do next.
+Whatever they do next can be anything from picking a different colour of paint to paint in, or it could be a different kind of brush to give different texture.
+Vim's normal mode works just like that -- it gives you ``resting'' mode to think about what to write, what words to edit, how to edit, etc.
+
+\subsection{Chunk your undos}
+
+As mentioned already, you should chunk your undos as finely as you can by going back into normal mode.
+Vim defines a ``change'' as any change in the text.
+This could range from deleting a single letter to deleting the whole document (and everything you can think of in between those range).
+When using insert mode, vim will define the change as whatever you type in insert mode until you go back into normal mode (i.e. until you have pressed the \verb|<esc>| key).
+
+You should find your own definition of a chunk you are comfortable with and stick with it.
+For example, I usually write a sentence up (or part of a sentence up), then always go back to normal mode to keep line-wise chunks rather than any smaller/bigger chunks.
+
+By having smaller chunks for undoing your edit, you are able to go back to your previous text in a finer detail, rather than having to undo a huge chunk and rewriting most of the text you have just undone.
+
+\subsection{Compose repeatable changes: Meet the Dot Command}
+
+When you make a change to your text/document, vim allows you to repeat this change as well as undoing the change (as in previous section).
+This means that any changes you make to the text can be repeated on a different part of the text, and therefore won't have to re-type the exact change or commands you have typed earlier (never retype!!).
+
+
+
+
+
+
+
+
+
+
+
+
