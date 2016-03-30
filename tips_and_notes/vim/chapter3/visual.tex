@@ -1,4 +1,11 @@
 \section{Visual Mode}
 
+Visual mode is very similar to normal mode, but it allows you to define text selection using your cursor position(s).
+You can enter visual mode by pressing \verb|v| in normal mode.
+To enter a line-wise visual mode, press \verb|V|, and for a block-wise visual mode, press \verb|<ctrl-v>|.
 
+To reselect the previous selection, press \verb|gV|.
+If you want to swap the cursor position from one end of a selection to another, press \verb|o| while in insert mode.
 
+If you want to carry out a (ex) command on the selection, press \verb|:| while in insert mode with the text selected (or just simply type the operator command if it's not complicated).
+This will drop you into ex-command line prompt, where you can type in whatever you want to do with the selection.

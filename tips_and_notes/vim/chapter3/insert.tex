@@ -1,4 +1,33 @@
 \section{Insert Mode}
 
+This mode will be self explanatory -- it is the mode you type text into the document.
+However, there are tricks and work-arounds that you can use in insert mode so that you don't have to always go back into normal mode.
+To go back into normal mode, you can either press \verb|<esc>| or \verb|<ctrl-[>|.
 
+\subsection{Deleting from insert mode}
 
+\begin{tabular}{c|l}
+    \verb|<ctrl-h>| & delete one character\\
+    \verb|<ctrl-w>| & delete one word\\
+    \verb|<ctrl-u>| & delete one line\\
+\end{tabular}
+
+\subsection{Insert-normal mode}
+
+Insert-normal mode is a mode that allows you to go back into normal mode for just one command, and then switches automatically back into insert mode.
+To use it, while in insert mode, press \verb|<ctrl-o>|.
+This will put you into insert-normal mode, and after you have entered a command in this mode, it will switch you back into insert mode.
+\verb|zz| is a normal mode command that redraws the screen so that the current line is positioned in the middle of the screen.
+This can be quite useful in insert-normal mode, especially if you want to reposition the screen and get back into the typing immediately.
+
+\subsection{Paste text while in insert mode}
+
+You can paste text from certain registers by using \verb|<ctrl-r>{register}|.
+This will paste the text stored inside the register that you have specified into the current cursor position.
+Use \verb|<ctrl-p>{register}| to paste the text literally without indentation, and other nonsense (e.g. carriage return).
+
+\subsection{Use expression register to insert calculations and other complicated stuff}
+
+The ``='' symbol is a special register that allows you to paste the result of the expression typed in.
+When you type \verb|<ctrl-r>=|, this will open up a prompt which you can type expression into.
+For example, you could type 3576*235 into this, and once you hit the enter button, the result should be inserted into the text (by the way, the answer to that equation is 840360).

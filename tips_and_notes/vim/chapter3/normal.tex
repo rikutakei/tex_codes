@@ -9,6 +9,77 @@ Instead, they rest their paint brush, look at it and think about it for a while,
 Whatever they do next can be anything from picking a different colour of paint to paint in, or it could be a different kind of brush to give different texture.
 Vim's normal mode works just like that -- it gives you ``resting'' mode to think about what to write, what words to edit, how to edit, etc.
 
+\subsection{Operator + Motion = Action}
+
+This formula is the most powerful tool and rule you will use in normal mode.
+In normal mode, there are keys known as the operator keys, and keys known as the motion keys.
+Together, they can perform an action over certain parts of text, depending on the combination of the operator and the motion keys you have pressed.
+
+\subsubsection{Operator keys}
+
+Operator keys are the core components of all the editing commands you carry out in normal mode -- and there are a lot of them!
+The easiest way to learn them (other than using the keys repeatedly) is to learn them by their mnemonics (or maybe what they look like).
+\newline
+
+\begin{tabular}[c]{c|l}
+    c            & change\\
+    d            & delete\\
+    y            & yank\\
+    g$\sim$      & swap case\\
+    gU           & make uppercase\\
+    gu           & make lowercase\\
+    =            & autoindent\\
+    \textgreater & shift to right\\
+    \textless    & shift to left\\
+\end{tabular}
+\newline
+
+Also note that vim will wait for you to press a motion key after you have pressed the operator key -- this is called the ``operator-pending mode''.
+This means that you can press the operator key and have enough time to think about what motion you will need to do the right edit.
+
+\subsubsection{Motion keys}
+
+Motion keys are the keys that allow you to move around the document while in normal mode.
+It is also the means to specify how far the operator commands should take action on.
+Like the operator keys, you should learn it by their mnemonics.
+\newline
+
+\begin{tabular}[c]{c|l}
+    h/j/k/l & default cursor movement\\
+    w/W     & word or WORD\\
+    b/B     & go back a word or WORD\\
+    e/E     & go to the end of the word or WORD\\
+    p       & paragraph\\
+    0/\$    & beginning/end of the current line\\
+    gg/G    & start/end of the current file\\
+    t/T     & (un)til the character, searching forward/backward\\
+    f/F     & find the character, searching forward/backward\\
+\end{tabular}
+
+\subsubsection{Text objects}
+
+Text objects define a regions of text by structure, and consists of two characters.
+The first character is either an ``i'' or an ``a'', and the second character can be anything that describes either a bounded or delimited text object.
+
+\begin{description}
+    \item [Bounded text objects] are defined by boundaries (e.g. words, sentences, and paragraphs).
+    \item [Delimited text objects] are anything in between a pair of matching symbols (e.g. (), [], \{\}, and xml tags).
+\end{description}
+
+The ``i'' stands for inside, whereas ``a'' stands for around/all.
+With the bounded text objects, ``i'' will capture the current word and ``a'' will capture the word with a single white space (if any).
+With the delimited text objects, ``i'' will capture everything inside the specified matching symbols and ``a'' will capture everything inside the matching symbols and the symbols you have specified.
+Together with other motion keys or specific matching symbols, text objects can be very useful in defining and capturing parts of the texts that you want to edit.
+
+\subsubsection{Action}
+
+When you combine the operator and the motion keys and/or text objects together, it will edit the document as demanded.
+For example, \verb|dw| will delete the word (from the current position of the cursor to the end of the word), and \verb|cw| will change the word (from the current position of the cursor to the end of the word).
+If you use the text object, it's even better -- it will delete/change the word your cursor is currently positioned, instead of going from the current cursor position to the end of the word.
+
+If you press the operator key twice (e.g. \verb|dd|), it will do the action on the current line.
+So, \verb|dd| will delete the current line, and \verb|>>| will indent the current line to your right.
+
 \subsection{Chunk your undos}
 
 As mentioned already, you should chunk your undos as finely as you can by going back into normal mode.
@@ -24,16 +95,31 @@ By having smaller chunks for undoing your edit, you are able to go back to your 
 \subsection{Compose repeatable changes: Meet the Dot Command}
 
 When you make a change to your text/document, vim allows you to repeat this change as well as undoing the change (as in previous section).
-This means that any changes you make to the text can be repeated on a different part of the text, and therefore won't have to re-type the exact change or commands you have typed earlier (never retype!!).
+This means that any changes you make to the text can be repeated on a different part of the text, and therefore won't have to re-type the exact change or commands you have typed earlier.
+Ideally, you should type one editing command (e.g. daw to delete a word) then repeat this command by using the dot (\verb|.|).
 
+When you press \verb|.|, vim repeats the last editing command that altered the text.
+For example, if you opened a new line and typed ``hello'' then escaped, the dot command will repeat your edit -- i.e. it will make a new line saying ``hello''.
+Making a new line saying ``hello'' is not that helpful, but with other useful editing commands, the dot command can be very useful.
 
+For example, if you wanted to make a word uppercase, you can do so by typing \verb|gUaw| or \verb|gUw| while the cursor is on the word you want to uppercase.
+What if you wanted to uppercase a bunch of words, spread out throughout the document?
+You are not going to retype \verb|gUw| every single time, but instead you can move to the word you want to change the case and press the \verb|.| -- it will remember the last editing command (\verb|gUw|) and uses it on the word.
+Pretty neat, huh?
 
+\subsection{Use counts to do simple addition and subtraction}
 
+If you have numbers in your document which you would like to increment or decrement, use \verb|<ctrl-a>| and \verb|<ctrl-x>|.
+When you have the cursor on the number, press \verb|<ctrl-a>/<ctrl-x>| to increment/decrement respectively.
+If you are at the beginning of the line, pressing these keys will jump to the first number (if there is any), and does the incrementing/decrementing for you.
 
+\subsection{Combine numbers with commands}
 
+If you know exactly how many words/lines/paragraphs to edit, you can prefix the command with numbers to repeat the commands n times.
+For example, when you type \verb|c2w|, you would drop into insert mode after deleting two words that are ahead of the cursor.
+It may be quicker in some situations to use the dot command.
 
+\subsection{Build custom operator and motion keys}
 
-
-
-
-
+You can build your custom motion keys by using the \verb|omap| command in the vimrc (I think).
+See \verb|:h :map-operator| and \verb|:h :omap-info|.
