@@ -5,7 +5,66 @@ With normal mode by itself, you can only edit so much with the given operator an
 You can increase and specify the range with visual modes, but this will only affect locally, within the selection.
 If you wanted to edit the whole document, you can use \verb|G| as  the motion, but the operator keys may not be specific enough to do the task you want it to do.
 
-Ex mode provides the minor adjustments and specificity required by you to carry out the exact task you want vim to do for the whole document, or just part of it.
+Ex mode provides the minor adjustments and specificity you cannot get in normal mode alone to carry out the exact task you want vim to do for the whole document, or just part of it.
+To enter Ex mode, press \verb|:| while in normal mode, and you will be given a command prompt starting with ``:''.
+
+\subsection{Basic command editing in Ex mode}
+
+As in insert mode, you can use \verb|<ctrl-w/u>| to delete a word/line in the command line.
+You can also paste characters from registers with \verb|<ctrl-r>{register}|.
+To insert a word or WORD in the Ex command prompt, type \verb|<ctrl-r><ctrl-w/a>|.
+
+
+\newpage
+
+\subsection{Ex mode syntax}
+
+The basic command syntax in Ex mode is as follows:
+
+\begin{center}
+    \verb|:[start],[end] [normal] command [address]|
+\end{center}
+
+\subsubsection{Range}
+
+The \verb|start| and the \verb|end| defines the range of the lines the command specified is to act on.
+You can define the range either relatively or absolutely.
+Absolute range is self explanatory -- you define your range by using the line number of the file.
+Relative range is used relative to particular parts of the document, with or without offsets.
+Some useful relative addresses are:
+\newline
+
+\begin{tabular}{c|l}
+    .  & current line\\
+    \$ & end of file\\
+    \% & all of the lines in the current file\\
+    0  & virtual line above the first line of the file\\
+\end{tabular}
+\newline
+
+With these relative addresses, you can define where you want the changes to occur, from where ever you are in the file.
+You can also give these addresses offsets (using + or - sign) so you don't have to worry about where in the file you are.
+%For example, if you wanted to substitute a pattern from the start of the file to five lines before the end of the file, you can type \verb|:1,$-5s/{word}/{substitute}/g|.
+
+\subsubsection{Visual mode range}
+
+If you are too lazy to type out the range or if you can't be bothered thinking where the range should start and end, an alternative is to use the visual selection as the range.
+When you select a part of the text you want to use as the range, you can press \verb|:| while in visual mode to open up an Ex command prompt with the range prepopulated with weird marks like this \verb|:'<,'>|.
+
+These symbols represents the start and the end of the visual selection, which you can use it in the Ex command.
+
+\subsubsection{Using patterns as a range}
+
+Instead of specifying ranges with visual selection and addresses, you can also use search patterns as a range.
+To start (and end) a search pattern, you have to type \verb|/| with the search pattern you are looking for in between the slash.
+If there is a special character in the search, then you'll have to escape the characters with a backslash (\verb|\|).
+
+\subsection{Copy/move lines to specific address}
+
+
+
+
+
 
 
 
