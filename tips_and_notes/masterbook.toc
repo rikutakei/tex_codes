@@ -38,3 +38,11 @@
 \contentsline {subsection}{\numberline {3.4.6}Command-line window}{17}{subsection.3.4.6}
 \contentsline {subsection}{\numberline {3.4.7}Using shell commands and shell in Vim}{17}{subsection.3.4.7}
 \contentsline {subsubsection}{Some useful shell commands in Vim}{18}{section*.11}
+\contentsline {chapter}{\numberline {4}Files, Windows, and Tabs}{19}{chapter.4}
+\contentsline {section}{\numberline {4.1}Files}{19}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Navigating between different buffers}{19}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Buffer list}{19}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Argument list}{20}{subsection.4.1.3}
+\contentsline {section}{\numberline {4.2}Windows}{20}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Split and navigate through windows}{20}{subsection.4.2.1}
+\contentsline {section}{\numberline {4.3}Tabs}{20}{section.4.3}

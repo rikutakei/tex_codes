@@ -1,10 +1,12 @@
 \section{Tabs}
 
-
-
-
-
-
-
-
-
+Tabs in vim can hold a collection of windows (like a workspace in  linux).
+The \verb|:lcd {path}| command sets the working directory for the current window (not the tab).
+This means that you can assign different working directory to different windows/tabs (i.e. separate workspace).
+\verb|:tabedit {filename}| will open a new tab with filename.
+If filename is empty, tab is created with an empty buffer.
+\verb|<ctrl-w>T| will move the current window into a new tab page.
+\verb|:tabclose| will close the tab page, even if it has got multiple windows open.
+\verb|:tabonly| will close all other tabs except for the current tab.
+Finally, \verb|gt/gT| will ``go to'' the next/previous tab.
+You can specify the number of tabs you want to jump past (e.g. 3gt).
