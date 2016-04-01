@@ -61,22 +61,57 @@ If there is a special character in the search, then you'll have to escape the ch
 
 \subsection{Copy/move lines to specific address}
 
+To copy or move some lines to a specific address in your document, type \verb|:[range]copy{address}| or \verb|:[range]move{address}|
+You can type t (for copy) or m (for move) instead of typing it out fully.
+Also, the address where the text is placed is below the specified address (so if you specified it to paste it to the current line, it will paste one line below it).
 
+\subsection{Execute normal mode commands}
 
+To execute any normal mode command on the lines specified, type \\\verb|:[range]normal{command}|.
+This will execute the command you have specified on the range of lines.
+If you have forgotten to place ``;'' after each line, then you could type \verb|[range]normal A;| to append ``;'' to each of the lines you have specified.
+This can also be applied to un/commenting lines of texts as well.
 
+\subsection{Repeating Ex command}
 
+To repeat the last Ex command you have used, press \verb|@:|.
+If you want to repeat it again, press \verb|@@|.
+You can also look at the history of the Ex command you have used by using the arrow keys while in the Ex command line prompt.
 
+\subsection{Command-line window}
 
+Command-line window is a mode where you could look through the history of all the commands you have used in a separate buffer.
+You can navigate in this window using the \verb|j/k| keys as in normal mode.
+To execute the command, simply press \verb|<CR>| while the cursor is on the command you want to repeat.
 
+Good thing about this mode is that you are able to edit these commands using vim's editing power.
+This means that you are able to connect/edit/alter previous commands you have used to suit the current document, or for streamlining your workflow.
+To switch from command-line prompt to command-line window anytime by pressing \verb|<ctrl-f>|.
+To exit the command-line window, press \verb|:q| (i.e. quit out of the buffer).
 
+You can also look up your search history by typing \verb|q/| instead of \verb|q:|.
 
+\subsection{Using shell commands and shell in Vim}
 
+To run shell commands within vim, type \verb|!| once you're in the Ex command prompt.
+For example, if you wanted to compile your current \LaTeX{} file into pdf, you can type \verb|:!pdflatex %| (where \% is a shorthand for the current filename).
 
+If you wanted to do more than one command while in vim and you're tired of keep typing !, then you could open up a shell session within vim (type \verb|:shell|).
+Note that ! is a one-off command, whereas \verb|:shell| is a full shell session.
+An alternative approach to this is to suspend vim by pressing \verb|<ctrl-z>|, and then when you are done with the shell, you could resume vim by typing \verb|fg| in the shell.
 
+\subsubsection{Some useful shell commands in Vim}
 
+\begin{tabular}{c|l}
+    \verb|:read !{command}|         & directs standard output into a buffer\\
+    \verb|:write !{command}|        & directs buffer content as standard input for\\
+                                    & the command\\
+    \verb|:[range]write !{command}| & execute command in shell using the range\\
+                                    & of lines as input\\
+    \verb|:[range]!{filter}|        & use range as standard input for the filter\\
+                                    & and overwrite the range (i.e. filter the range\\
+                                    & using the program filter)\\
+\end{tabular}
+\newline
 
-
-
-
-
-
+Note that the positioning of the whitespace can be important for distinguishing when to use the text as standard input for a shell command, or for filtering.
