@@ -32,3 +32,4 @@
 \contentsline {subsubsection}{Range}{15}{section*.8}
 \contentsline {subsubsection}{Visual mode range}{15}{section*.9}
 \contentsline {subsubsection}{Using patterns as a range}{15}{section*.10}
+\contentsline {subsection}{\numberline {3.4.3}Copy/move lines to specific address}{15}{subsection.3.4.3}
