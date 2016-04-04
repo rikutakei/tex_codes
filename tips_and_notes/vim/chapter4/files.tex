@@ -1,0 +1,39 @@
+\chapter{Files, Windows, and Tabs}
+
+\section{Files}
+
+First of all, note that the buffers are not the same as the files -- we edit the buffers in vim, and then save the changed buffer as a file.
+In vim, we can edit multiple buffers simultaneously by giving vim more than one file names to edit (\verb|vim file1 file2 ...|).
+
+\subsection{Navigating between different buffers}
+
+There are few commands you can use to navigate yourself to different buffer you have opened in vim.
+\newline
+
+\begin{tabular}{c|l}
+    \verb|:bnext| (\verb|:bn|)  & next buffer\\
+    \verb|:bprev| (\verb|:bp|)  & previous buffer\\
+    \verb|:bfirst| (\verb|:bf|) & first buffer\\
+    \verb|:blast| (\verb|:bl|)  & last buffer\\
+\end{tabular}
+\newline
+
+It will be a good idea to map these to different key bindings to access different buffers quickly.\\
+E.g. \verb|nnoremap <silent> {key_combination} :bprevious<CR>|
+
+\subsection{Buffer list}
+
+The \verb|:ls| command opens up the buffer list to see what files you have opened, and which file you are currently working with.
+The \verb|\%| represents the current buffer, and \verb|\#| indicates the alternative buffer.
+You can switch between the current buffer and the alternative buffer by pressing \verb|<ctrl-^>| (or \verb|<ctrl-6>|).
+
+\subsection{Argument list}
+
+Argument list represents the list of files that was passed as an argument when you run the \verb|vim| command in the shell.
+To open the argument list, type \verb|:args|.
+Argument list can be changed by using \verb|:args {arglist}| (e.g. \verb|:args index.html app.js|).
+It can also take wildcard characters (globs) like * (wildcard) and ** (recurse downwards into other directories).
+
+Files can be specified using the backtick (\verb|`|) expansion as well.
+Backtick executes the text within it in the shell and lets you use the output.
+So, you can use \verb|:args `cat files.txt`| to use the content of files.txt as the argument list.

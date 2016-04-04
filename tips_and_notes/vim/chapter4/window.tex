@@ -1,0 +1,24 @@
+\section{Windows}
+
+Vim allows us to split the window with same or different buffers for editing.
+An alternative to this would be to use tmux.
+You can use windows to look at different parts of the document, so that you can have a window open to refer to the text elsewhere of the document, and a window open for editing the document.
+
+\subsection{Split and navigate through windows}
+
+\begin{tabular}{c|l}
+\verb|<ctrl-w>s|              & split window horizontally\\
+\verb|<ctrl-w>h|              & split window vertically\\
+\verb|:sp {file}|             & split window horizontally and load file\\
+\verb|:vsp {file}|            & split window vertically and load file\\
+\verb|<ctrl-w><ctrl-w>|       & cycle through open windows\\
+\verb|<ctrl-w><ctrl-h/j/k/l>| & focus the window to left/down/up/right \\
+                              & window\\
+\verb|:cl(ose)|               & close the active window\\
+\verb|:on(ly)|                & close all windows except current window\\
+\verb|<ctrl-w>=|              & equalize width and height of all windows\\
+\verb|<ctrl-w>_|              & maximize height of the active window\\
+\verb=<ctrl-w>|=              & maximize width of the active window\\
+\verb|[N]<ctrl-w>_|           & set active window height to N rows\\
+\verb=[N]<ctrl-w>|=           & set active window width to N columns\\
+\end{tabular}
