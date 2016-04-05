@@ -48,5 +48,18 @@
 \contentsline {section}{\numberline {4.3}Tabs}{21}{section.4.3}
 \contentsline {chapter}{\numberline {5}Navigation within files}{22}{chapter.5}
 \contentsline {section}{\numberline {5.1}Basic navigation}{22}{section.5.1}
-\contentsline {section}{\numberline {5.2}Efficient navigation}{22}{section.5.2}
-\contentsline {section}{\numberline {5.3}Navigation Summary}{22}{section.5.3}
+\contentsline {subsection}{\numberline {5.1.1}Moving letter-wise}{22}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Moving word-wise}{22}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}word vs WORD}{22}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}Moving to a specific position on a line}{23}{subsection.5.1.4}
+\contentsline {section}{\numberline {5.2}Efficient navigation}{23}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Navigate by specific letters}{23}{subsection.5.2.1}
+\contentsline {subsubsection}{Think like a scrabble player}{23}{section*.12}
+\contentsline {subsection}{\numberline {5.2.2}Search to navigate}{24}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Jump between matching parenthesis}{24}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Mark your place and jump to your marks}{24}{subsection.5.2.4}
+\contentsline {subsubsection}{Default marks in Vim}{25}{section*.13}
+\contentsline {subsubsection}{Uppercase vs lowercase marks}{25}{section*.14}
+\contentsline {subsection}{\numberline {5.2.5}Navigate between files with jumps}{25}{subsection.5.2.5}
+\contentsline {subsection}{\numberline {5.2.6}Change list}{26}{subsection.5.2.6}
+\contentsline {section}{\numberline {5.3}Navigation Summary}{26}{section.5.3}

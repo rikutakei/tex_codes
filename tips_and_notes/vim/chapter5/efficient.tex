@@ -1,5 +1,114 @@
 \section{Efficient navigation}
 
+The basic navigation will get the work done quite efficiently (faster than MS Office at least), but you can go faster by using other commands to navigate within and between files.
+Logically, to go any faster than the basic movement introduced in the previous section, you will have to be able to navigate through the document faster than word-wise navigation -- i.e. navigations that are larger than a word.
+This section will show you how to do this (if used correctly).
+
+\subsection{Navigate by specific letters}
+
+To move your cursor to (or close to) a specific letter/character, press \verb|f/t{char}|.
+\verb|f| will search for the character you have pressed after pressing \verb|f| from the current cursor position to the end of the line.
+If the character is found, the cursor will jump to the character, and if it is not found, the cursor remains at its position.
+
+\verb|t| key does a similar thing to the \verb|f| key, but moves the cursor to one position before the character you searched for.
+Again, if the character is not present, the cursor doesn't move from the current position.
+To repeat the search/jumping forward to the character, press \verb|;|.
+To reverse the search/jump backward to the character, press \verb|,|.
+
+Note that \verb|f/t| keys  both search forward in the line, but if you wanted to search backward to start off with, then you could use the uppercase version -- \verb|F/T|.
+Again, you can repeat the jump using the \verb|;/,| keys.
+
+\subsubsection{Think like a scrabble player}
+
+Remember that there are some letters that appear more often than other letters, so choosing a good letter for jumping will make your navigation faster.
+When using the character search commands, it's better to choose target characters with a low frequency of occurrences.
+
+\subsection{Search to navigate}
+
+Note that \verb|f/F/t/T| keys only work on a single character at a time, and only on the current line.
+Unless your line is massive, then this method of navigation doesn't work as efficiently as you would expect.
+
+Another way for navigating around the document is to use the search function to search for the specific words in the document.
+To start a search, simply press the \verb|/| key -- this will give you a prompt where you can type the word you are looking for.
+Depending on how you have set up vim, the search results will come up as you type, and automatically moves the cursor to the beginning of the first match of your search.
+
+Once you press the \verb|<CR>|, the cursor will move to the first match in the document.
+To abort/cancel the search, press \verb|<esc>|.
+To go to the next/previous matching word, press \verb|n/N|, respectively.
+If you wanted to search backwards instead of searching forward, you can press \verb|?| instead of \verb|/|.
+
+An advantage of the search command is that you can use the search while you are in visual mode, as well as operator-pending mode.
+So, you could use \verb|c/d/gU| and other keys with the search command.
+Note that the search command is an exclusive command, so it doesn't include the letter under the cursor (i.e. the first letter of your first match of your search).
+
+\subsection{Jump between matching parenthesis}
+
+You can jump between matching parentheses using the \verb|\%| symbol.
+This is useful if you want to visually select the inside the parentheses.
+
+\subsection{Mark your place and jump to your marks}
+
+You might want to set a mark in the file so that you can come back to it instantly.
+To set a mark somewhere in the document, press \verb|m{a|$\sim$\verb|z}|, where the specified letter will store the mark that you have set in the document.
+
+There are two ways you could jump to the marks that you have set:
+\begin{enumerate}
+    \item \verb|'{mark}| moves to the line where the mark was set in the document (the cursor is placed at the beginning of the line).
+    \item \verb|`{mark}| moves to the exact position of the mark where you have set the mark in the document.
+\end{enumerate}
+
+\subsubsection{Default marks in Vim}
+
+Other than the marks you have specified and explicitly set in the document, there are marks that vim automatically keeps track of.
+\newline
+
+\begin{tabular}{c|l}
+    \verb|``| & position before the last jump within the current file\\
+    \verb|`.| & location of last change\\
+    \verb|`^| & location of last insertion\\
+    \verb|`[| & start of last change or yank\\
+    \verb|`]| & end of last change or yank\\
+    \verb|`<| & start of last visual selection\\
+    \verb|`>| & end of last visual selection\\
+\end{tabular}
+\newline
+
+Some of these marks will work with a single quote as well.
+
+\subsubsection{Uppercase vs lowercase marks}
+
+Lowercase marks are local to each individual buffer, but uppercase marks are globally accessible.
+This means that you are able to jump to the document with uppercase mark set anytime you like, even if you haven't opened that file when you started vim.
+By default, global marks are persisted between editing sessions, meaning that you can always come back to a specific file if a mark is set somewhere in the document.
+
+\subsection{Navigate between files with jumps}
+
+Vim has a thing called the jump list (\verb|:jumps|).
+Jump list records any command that changes the active file for the current window (known as ``jumps'').
+\verb|<ctrl-o>| goes back one jump, and \verb|<ctrl-i>| goes forward one jump.
+
+Note that motions move around within a file, whereas jumps can move between files.
+Generally, long-range motions are classified as jumps, but short-range motions are classified as motions.
+
+Some examples of jumps include:
+\newline
+
+\begin{tabular}{c|l}
+    \verb|[count]G| & jump to line number\\
+    searching (\verb|/|/\verb|?|/n/N) & jump to next/previous occurrence of a pattern\\
+    \verb|\%| & jump to matching parentheses\\
+    \verb|(|/\verb|)| & jump to start/next sentence\\
+    \verb|{|/\verb|}| & jump to start/next paragraph\\
+    \verb|H/M/L| & jump to top/middle/bottom of screen\\
+    \verb|gf| & jump to file name under cursor\\
+    \verb|<ctrl-]>| & jump to definition of keyword under the cursor \\
+\end{tabular}
+
+\subsection{Change list}
+
+Just like jump list, change list is a list of the modifications made to each buffer during an editing session.
+\verb|g;/g,| allows you to traverse forward/backward through the change list, respectively.
+
 \section{Navigation Summary}
 
 \begin{center}
@@ -12,17 +121,3 @@
     \draw [<->, very thick] (h) edge (l) (k) edge (j);
 \end{tikzpicture}
 \end{center}
-
-
-
-
-
-
-
-
-
-
-
-
-
-

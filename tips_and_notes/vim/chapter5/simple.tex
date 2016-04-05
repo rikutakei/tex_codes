@@ -2,12 +2,29 @@
 
 \section{Basic navigation}
 
+The idea here is to keep your fingers on the home row, no matter what.
+Moving your hands from the keyboard to the mouse is going to waste your time.
 
+\subsection{Moving letter-wise}
 
+To move around in the document one cursor (i.e. one letter/character) at a time, press the \verb|h/j/k/l| keys, which corresponds to the left/down/up/right arrow keys.
+It is easy to reach out onto your arrow keys instead of using these keys, but, like with reaching for the mouse, it will waste your time.
 
+To force yourself to use the \verb|h/j/k/l| keys, you should map the arrow keys to do nothing: \verb|noremap <Up> <Nop>| (and do it for left/right/down keys).
 
+\subsection{Moving word-wise}
 
+You can move around bits of text character-wise, but moving word-wise would be faster.
+The \verb|w/b/e/ge| commands will allow you to move word-wise through the text, each offering slightly different movement.
+\verb|w/b| moves your cursor forward/backward to the start of the next word, and \verb|e/ge| moves your cursor forward/backward to the end of the next word.
 
+\subsection{word vs WORD}
 
+WORDS are sequence of any non-blank characters, whereas words are sequence of letters, digits, and underscores, or as a sequence of other non-blank characters.
+For example, \verb|www.google.com| has 5 words, but only 1 WORD.
+To move WORD-wise instead of word-wise, you will have to press the uppercase version of the word-wise commands (i.e. \verb|W/B/E/gE|).
 
+\subsection{Moving to a specific position on a line}
 
+Press \verb|0/\$| to move to the beginning/end of the line.
+To go to the first non-blank character of the line, press \verb|^|.
