@@ -1,0 +1,60 @@
+\chapter{Copy and Paste}
+
+Copying and pasting text are essential features of any text editors.
+I have already mentioned how to yank/change/delete/paste (\verb|y/c/d/p|) in vim, but there is a little bit more to it than just simply copy/deleting/pasting.
+
+\section{Registers}
+
+There are some useful features in vim that will allow you to store and paste multiple different pieces of text in your document.
+The key to this feature are the registers.
+Any key on the keyboard can be used as a register to store pieces of text, and you can pull out the text that is stored in the specified register.
+
+To specify which register to store/use, you have to specify the register by pressing \verb|"{register}|, kind of like when you are setting marks in documents (see \textit{\ref{subsec:marks}:\nameref{subsec:marks}}).
+For example, to yank a word into the register \verb|a|, you would press \verb|"ayiw| while the cursor is on the word you want to store.
+
+The basic syntax of copying/pasting (and some other commands) using a register is \verb|"{register}y/p[motion]|.
+When no register is specified for paste/copy, the \verb|"| register is used by default (known as the unnamed register).
+
+\section{Named registers}
+
+Vim has a register for each letter of the alphabet, meaning that we have 26 unique registers that we can store different pieces of text.
+This is especially useful when you want to copy/paste/delete multiple text, but want to use it again another time.
+
+\section{Special registers}
+
+There are registers that have special function in vim and reserved for specific purposes.
+
+\subsection{Unnamed register (\texttt{""})}
+
+Unnamed register is used by \verb|x/s/d/c/y| commands, and stores the text that has been deleted or yanked as a result of the command.
+So, whenever you remove a text from normal mode, the text will be saved to the unnamed register.
+
+\subsection{Yank register (\texttt{"0})}
+
+When \verb|y{motion}| is used, it saves not only to the unnamed register, but also saves it to the yank register (\verb|"0|).
+This register is only used by the \verb|y{motion}|, and therefore unaffected by other deleting/substituting commands like \verb|s/d/x/c|.
+Meaning that you are able to copy a piece of text, then change a different bit of text and paste the text you have yanked using the yank register.
+
+\subsection{Black hole register (\texttt{"\_})}
+
+The underscore register is the place where nothing is returned (i.e. nothing is saved).
+This is useful when you don't want to overwrite a different register (e.g. unnamed register).
+
+\subsection{System clipboard register (\texttt{"+})}
+
+If you want to copy/paste to/from an external program, you need to access the system clipboard.
+You can paste text from another place by using \verb|"+p| (or \verb|<ctrl-r>+| in insert mode).
+If you want to use a text from vim, you can store the text in \verb|"+| and use paste as usual (\verb|<ctrl-v>|) in another place.
+
+If it doesn't work on ubuntu properly, try installing the vim-gnome package.
+
+\subsection{Expression register (\texttt{"=})}
+
+When you access this register, it drops down into Ex command prompt.
+Vim will evaluate the expression you have typed and stores the result in the register.
+You can paste the result in insert mode using the \verb|<ctrl-r>=| keys.
+
+\subsection{Read-only register}
+
+
+

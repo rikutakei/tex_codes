@@ -47,6 +47,7 @@ You can jump between matching parentheses using the \verb|\%| symbol.
 This is useful if you want to visually select the inside the parentheses.
 
 \subsection{Mark your place and jump to your marks}
+\label{subsec:marks}
 
 You might want to set a mark in the file so that you can come back to it instantly.
 To set a mark somewhere in the document, press \verb|m{a|$\sim$\verb|z}|, where the specified letter will store the mark that you have set in the document.
@@ -112,12 +113,14 @@ Just like jump list, change list is a list of the modifications made to each buf
 \section{Navigation Summary}
 
 \begin{center}
-\begin{tikzpicture}[node distance = 1.5cm]
-    \node (o) at (0,0) {};
-    \node [left=of o] (h) {h/b/B/ge/gE/0/T/F/?};
-    \node [right=of o] (l) {l/w/W/e/E/\$/t/f/\verb|/|};
-    \node [above=of o] (k) {k/\verb|<ctrl-b>|};
-    \node [below=of o] (j) {j/\verb|<ctl-f>|};
-    \draw [<->, very thick] (h) edge (l) (k) edge (j);
-\end{tikzpicture}
+    {\large
+        \begin{tikzpicture}[node distance = 1.5cm]
+            \node (o) at (0,0) {};
+            \node [left=of o] (h) {h/b/B/ge/gE/0/T/F/?};
+            \node [right=of o] (l) {l/w/W/e/E/\$/t/f/\verb|/|};
+            \node [above=of o] (k) {k/\verb|<ctrl-b>|};
+            \node [below=of o] (j) {j/\verb|<ctl-f>|};
+            \draw [<->, very thick] (h) edge (l) (k) edge (j);
+        \end{tikzpicture}
+    }
 \end{center}
