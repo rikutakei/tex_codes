@@ -1,75 +1,79 @@
-\contentsline {part}{I\hspace {1em}Vim Tips}{4}{part.1}
-\contentsline {chapter}{\numberline {1}Quick Introduction}{5}{chapter.1}
-\contentsline {section}{\numberline {1.1}Why I started using Vim}{5}{section.1.1}
-\contentsline {section}{\numberline {1.2}Before you start}{6}{section.1.2}
-\contentsline {chapter}{\numberline {2}The ``Vim Way''}{7}{chapter.2}
-\contentsline {section}{\numberline {2.1}Get used to the Modal Interface}{7}{section.2.1}
-\contentsline {section}{\numberline {2.2}Never leave the home row}{7}{section.2.2}
-\contentsline {section}{\numberline {2.3}Act, Repeat, Reverse}{8}{section.2.3}
-\contentsline {section}{\numberline {2.4}Edit your text in chunks}{8}{section.2.4}
-\contentsline {section}{\numberline {2.5}Navigate in chunks}{9}{section.2.5}
-\contentsline {chapter}{\numberline {3}Modal Interface of Vim}{10}{chapter.3}
-\contentsline {section}{\numberline {3.1}Normal Mode}{10}{section.3.1}
-\contentsline {subsection}{\numberline {3.1.1}Operator + Motion = Action}{10}{subsection.3.1.1}
-\contentsline {subsubsection}{Operator keys}{10}{section*.4}
-\contentsline {subsubsection}{Motion keys}{11}{section*.5}
-\contentsline {subsubsection}{Text objects}{11}{section*.6}
-\contentsline {subsubsection}{Action}{12}{section*.7}
-\contentsline {subsection}{\numberline {3.1.2}Chunk your undos}{12}{subsection.3.1.2}
-\contentsline {subsection}{\numberline {3.1.3}Compose repeatable changes: Meet the Dot Command}{13}{subsection.3.1.3}
-\contentsline {subsection}{\numberline {3.1.4}Use counts to do simple addition and subtraction}{13}{subsection.3.1.4}
-\contentsline {subsection}{\numberline {3.1.5}Combine numbers with commands}{13}{subsection.3.1.5}
-\contentsline {subsection}{\numberline {3.1.6}Build custom operator and motion keys}{14}{subsection.3.1.6}
-\contentsline {section}{\numberline {3.2}Insert Mode}{14}{section.3.2}
-\contentsline {subsection}{\numberline {3.2.1}Deleting from insert mode}{14}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Insert-normal mode}{14}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Paste text while in insert mode}{14}{subsection.3.2.3}
-\contentsline {subsection}{\numberline {3.2.4}Use expression register to insert calculations and other complicated stuff}{14}{subsection.3.2.4}
-\contentsline {section}{\numberline {3.3}Visual Mode}{15}{section.3.3}
-\contentsline {section}{\numberline {3.4}Command Line (Ex) Mode}{15}{section.3.4}
-\contentsline {subsection}{\numberline {3.4.1}Basic command editing in Ex mode}{15}{subsection.3.4.1}
-\contentsline {subsection}{\numberline {3.4.2}Ex mode syntax}{16}{subsection.3.4.2}
-\contentsline {subsubsection}{Range}{16}{section*.8}
-\contentsline {subsubsection}{Visual mode range}{16}{section*.9}
-\contentsline {subsubsection}{Using patterns as a range}{16}{section*.10}
-\contentsline {subsection}{\numberline {3.4.3}Copy/move lines to specific address}{17}{subsection.3.4.3}
-\contentsline {subsection}{\numberline {3.4.4}Execute normal mode commands}{17}{subsection.3.4.4}
-\contentsline {subsection}{\numberline {3.4.5}Repeating Ex command}{17}{subsection.3.4.5}
-\contentsline {subsection}{\numberline {3.4.6}Command-line window}{17}{subsection.3.4.6}
-\contentsline {subsection}{\numberline {3.4.7}Using shell commands and shell in Vim}{17}{subsection.3.4.7}
-\contentsline {subsubsection}{Some useful shell commands in Vim}{18}{section*.11}
-\contentsline {chapter}{\numberline {4}Files, Windows, and Tabs}{19}{chapter.4}
-\contentsline {section}{\numberline {4.1}Files}{19}{section.4.1}
-\contentsline {subsection}{\numberline {4.1.1}Navigating between different buffers}{19}{subsection.4.1.1}
-\contentsline {subsection}{\numberline {4.1.2}Buffer list}{19}{subsection.4.1.2}
-\contentsline {subsection}{\numberline {4.1.3}Argument list}{20}{subsection.4.1.3}
-\contentsline {section}{\numberline {4.2}Windows}{20}{section.4.2}
-\contentsline {subsection}{\numberline {4.2.1}Split and navigate through windows}{20}{subsection.4.2.1}
-\contentsline {section}{\numberline {4.3}Tabs}{21}{section.4.3}
-\contentsline {chapter}{\numberline {5}Navigation within files}{22}{chapter.5}
-\contentsline {section}{\numberline {5.1}Basic navigation}{22}{section.5.1}
-\contentsline {subsection}{\numberline {5.1.1}Moving letter-wise}{22}{subsection.5.1.1}
-\contentsline {subsection}{\numberline {5.1.2}Moving word-wise}{22}{subsection.5.1.2}
-\contentsline {subsection}{\numberline {5.1.3}word vs WORD}{22}{subsection.5.1.3}
-\contentsline {subsection}{\numberline {5.1.4}Moving to a specific position on a line}{23}{subsection.5.1.4}
-\contentsline {section}{\numberline {5.2}Efficient navigation}{23}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Navigate by specific letters}{23}{subsection.5.2.1}
-\contentsline {subsubsection}{Think like a scrabble player}{23}{section*.12}
-\contentsline {subsection}{\numberline {5.2.2}Search to navigate}{24}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Jump between matching parenthesis}{24}{subsection.5.2.3}
-\contentsline {subsection}{\numberline {5.2.4}Mark your place and jump to your marks}{24}{subsection.5.2.4}
-\contentsline {subsubsection}{Default marks in Vim}{25}{section*.13}
-\contentsline {subsubsection}{Uppercase vs lowercase marks}{25}{section*.14}
-\contentsline {subsection}{\numberline {5.2.5}Navigate between files with jumps}{25}{subsection.5.2.5}
-\contentsline {subsection}{\numberline {5.2.6}Change list}{26}{subsection.5.2.6}
-\contentsline {section}{\numberline {5.3}Navigation Summary}{26}{section.5.3}
-\contentsline {chapter}{\numberline {6}Copy and Paste}{27}{chapter.6}
-\contentsline {section}{\numberline {6.1}Registers}{27}{section.6.1}
-\contentsline {section}{\numberline {6.2}Named registers}{27}{section.6.2}
-\contentsline {section}{\numberline {6.3}Special registers}{28}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Unnamed register (\texttt {""})}{28}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Yank register (\texttt {"0})}{28}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Black hole register (\texttt {"\_})}{28}{subsection.6.3.3}
-\contentsline {subsection}{\numberline {6.3.4}System clipboard register (\texttt {"+})}{28}{subsection.6.3.4}
-\contentsline {subsection}{\numberline {6.3.5}Expression register (\texttt {"=})}{28}{subsection.6.3.5}
-\contentsline {chapter}{\numberline {7}Macros}{29}{chapter.7}
+\contentsline {part}{I\hspace {1em}Vim Tips}{5}{part.1}
+\contentsline {chapter}{\numberline {1}Quick Introduction}{6}{chapter.1}
+\contentsline {section}{\numberline {1.1}Why I started using Vim}{6}{section.1.1}
+\contentsline {section}{\numberline {1.2}Before you start}{7}{section.1.2}
+\contentsline {chapter}{\numberline {2}The ``Vim Way''}{8}{chapter.2}
+\contentsline {section}{\numberline {2.1}Get used to the Modal Interface}{8}{section.2.1}
+\contentsline {section}{\numberline {2.2}Never leave the home row}{8}{section.2.2}
+\contentsline {section}{\numberline {2.3}Act, Repeat, Reverse}{9}{section.2.3}
+\contentsline {section}{\numberline {2.4}Edit your text in chunks}{9}{section.2.4}
+\contentsline {section}{\numberline {2.5}Navigate in chunks}{10}{section.2.5}
+\contentsline {chapter}{\numberline {3}Modal Interface of Vim}{11}{chapter.3}
+\contentsline {section}{\numberline {3.1}Normal Mode}{11}{section.3.1}
+\contentsline {subsection}{\numberline {3.1.1}Operator + Motion = Action}{11}{subsection.3.1.1}
+\contentsline {subsubsection}{Operator keys}{11}{section*.4}
+\contentsline {subsubsection}{Motion keys}{12}{section*.5}
+\contentsline {subsubsection}{Text objects}{12}{section*.6}
+\contentsline {subsubsection}{Action}{13}{section*.7}
+\contentsline {subsection}{\numberline {3.1.2}Chunk your undos}{13}{subsection.3.1.2}
+\contentsline {subsection}{\numberline {3.1.3}Compose repeatable changes: Meet the Dot Command}{14}{subsection.3.1.3}
+\contentsline {subsection}{\numberline {3.1.4}Use counts to do simple addition and subtraction}{14}{subsection.3.1.4}
+\contentsline {subsection}{\numberline {3.1.5}Combine numbers with commands}{14}{subsection.3.1.5}
+\contentsline {subsection}{\numberline {3.1.6}Build custom operator and motion keys}{15}{subsection.3.1.6}
+\contentsline {section}{\numberline {3.2}Insert Mode}{15}{section.3.2}
+\contentsline {subsection}{\numberline {3.2.1}Deleting from insert mode}{15}{subsection.3.2.1}
+\contentsline {subsection}{\numberline {3.2.2}Insert-normal mode}{15}{subsection.3.2.2}
+\contentsline {subsection}{\numberline {3.2.3}Paste text while in insert mode}{15}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}Use expression register to insert calculations and other complicated stuff}{15}{subsection.3.2.4}
+\contentsline {section}{\numberline {3.3}Visual Mode}{16}{section.3.3}
+\contentsline {section}{\numberline {3.4}Command Line (Ex) Mode}{16}{section.3.4}
+\contentsline {subsection}{\numberline {3.4.1}Basic command editing in Ex mode}{16}{subsection.3.4.1}
+\contentsline {subsection}{\numberline {3.4.2}Ex mode syntax}{17}{subsection.3.4.2}
+\contentsline {subsubsection}{Range}{17}{section*.8}
+\contentsline {subsubsection}{Visual mode range}{17}{section*.9}
+\contentsline {subsubsection}{Using patterns as a range}{17}{section*.10}
+\contentsline {subsection}{\numberline {3.4.3}Copy/move lines to specific address}{18}{subsection.3.4.3}
+\contentsline {subsection}{\numberline {3.4.4}Execute normal mode commands}{18}{subsection.3.4.4}
+\contentsline {subsection}{\numberline {3.4.5}Repeating Ex command}{18}{subsection.3.4.5}
+\contentsline {subsection}{\numberline {3.4.6}Command-line window}{18}{subsection.3.4.6}
+\contentsline {subsection}{\numberline {3.4.7}Using shell commands and shell in Vim}{18}{subsection.3.4.7}
+\contentsline {subsubsection}{Some useful shell commands in Vim}{19}{section*.11}
+\contentsline {chapter}{\numberline {4}Files, Windows, and Tabs}{20}{chapter.4}
+\contentsline {section}{\numberline {4.1}Files}{20}{section.4.1}
+\contentsline {subsection}{\numberline {4.1.1}Navigating between different buffers}{20}{subsection.4.1.1}
+\contentsline {subsection}{\numberline {4.1.2}Buffer list}{20}{subsection.4.1.2}
+\contentsline {subsection}{\numberline {4.1.3}Argument list}{21}{subsection.4.1.3}
+\contentsline {section}{\numberline {4.2}Windows}{21}{section.4.2}
+\contentsline {subsection}{\numberline {4.2.1}Split and navigate through windows}{21}{subsection.4.2.1}
+\contentsline {section}{\numberline {4.3}Tabs}{22}{section.4.3}
+\contentsline {chapter}{\numberline {5}Navigation within files}{23}{chapter.5}
+\contentsline {section}{\numberline {5.1}Basic navigation}{23}{section.5.1}
+\contentsline {subsection}{\numberline {5.1.1}Moving letter-wise}{23}{subsection.5.1.1}
+\contentsline {subsection}{\numberline {5.1.2}Moving word-wise}{23}{subsection.5.1.2}
+\contentsline {subsection}{\numberline {5.1.3}word vs WORD}{23}{subsection.5.1.3}
+\contentsline {subsection}{\numberline {5.1.4}Moving to a specific position on a line}{24}{subsection.5.1.4}
+\contentsline {section}{\numberline {5.2}Efficient navigation}{24}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Navigate by specific letters}{24}{subsection.5.2.1}
+\contentsline {subsubsection}{Think like a scrabble player}{24}{section*.12}
+\contentsline {subsection}{\numberline {5.2.2}Search to navigate}{25}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Jump between matching parenthesis}{25}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Mark your place and jump to your marks}{25}{subsection.5.2.4}
+\contentsline {subsubsection}{Default marks in Vim}{26}{section*.13}
+\contentsline {subsubsection}{Uppercase vs lowercase marks}{26}{section*.14}
+\contentsline {subsection}{\numberline {5.2.5}Navigate between files with jumps}{26}{subsection.5.2.5}
+\contentsline {subsection}{\numberline {5.2.6}Change list}{27}{subsection.5.2.6}
+\contentsline {section}{\numberline {5.3}Navigation Summary}{27}{section.5.3}
+\contentsline {chapter}{\numberline {6}Copy and Paste}{28}{chapter.6}
+\contentsline {section}{\numberline {6.1}Registers}{28}{section.6.1}
+\contentsline {section}{\numberline {6.2}Named registers}{28}{section.6.2}
+\contentsline {section}{\numberline {6.3}Special registers}{29}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Unnamed register (\texttt {""})}{29}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Yank register (\texttt {"0})}{29}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Black hole register (\texttt {"\_})}{29}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.4}System clipboard register (\texttt {"+})}{29}{subsection.6.3.4}
+\contentsline {subsection}{\numberline {6.3.5}Expression register (\texttt {"=})}{30}{subsection.6.3.5}
+\contentsline {subsection}{\numberline {6.3.6}Read-only register}{30}{subsection.6.3.6}
+\contentsline {section}{\numberline {6.4}Visual selection and registers}{30}{section.6.4}
+\contentsline {section}{\numberline {6.5}paste from register}{30}{section.6.5}
+\contentsline {chapter}{\numberline {7}Macros}{31}{chapter.7}
+\contentsline {section}{\numberline {7.1}Record and execute a macro}{31}{section.7.1}

@@ -2,6 +2,7 @@
 
 Copying and pasting text are essential features of any text editors.
 I have already mentioned how to yank/change/delete/paste (\verb|y/c/d/p|) in vim, but there is a little bit more to it than just simply copy/deleting/pasting.
+Just a quick note before we get started: \verb|gp/gP| does the same thing as the \verb|p/P| command, except that it leaves the cursor at the end of the pasted text.
 
 \section{Registers}
 
@@ -56,5 +57,26 @@ You can paste the result in insert mode using the \verb|<ctrl-r>=| keys.
 
 \subsection{Read-only register}
 
+There are some registers in vim that are reserved for specific purposes:
+\newline
 
+\begin{tabular}{c|l}
+    \verb|"%| & name of the current file you are editing\\
+    \verb|"#| & name of the alternate file\\
+    \verb|".| & last inserted text\\
+    \verb|":| & last ex command\\
+    \verb|"/| & last search pattern\\
+\end{tabular}
+\newline
 
+\section{Visual selection and registers}
+
+When you paste while in visual mode, the text which has been selected will be replaced with the text in the unnamed register.
+This means that the selection that was overwritten by the paste is now in the unnamed register (i.e. the content of the unnamed register is swapped with the visual selection).
+This can be useful if you want to rearrange words/lines/selection in your document.
+
+\section{paste from register}
+
+Sometimes it can be a little confusing whether to use \verb|p| or \verb|P|, as one will paste before and the other will paste after the cursor, respectively.
+It may be helpful to go into Insert mode and use \verb|<ctrl-r>{register}|, as it will always paste the text after the cursor (as if we have typed it).
+Also, together with \verb|c{motion}| (and others), you can make a useful dot command with it.
