@@ -9,6 +9,62 @@ The \verb|q| key acts as both the start and stop command for recording a macro\v
 Press \verb|q| again to stop recording the keystrokes.
 Note that anything stored in the register will be overwritten after you have recorded the macro to the register.
 
-To execute 
+To execute the macro in a specific register, type \verb|@{register}|.
+To replay the most recent macro, type \verb|@@|.
 
+\section{How to construct a macro - Normalise, Strike, Abort}
 
+The golden rule of setting up macro is to ensure that every command is repeatable.
+Firstly, you have to normalise the cursor position, then strike your target with a repeatable motion, and lastly, the macro should abort when that motion fails.
+
+\subsection{Normalise the cursor position}
+
+Before you do anything, make sure your cursor is positioned so that the next command does what you expect and where you expect it.
+For example, you might want to move the cursor to the next search match (\verb|n|), or start of the current line (\verb|0|), or first line of the file (\verb|gg|)
+This makes it easier for you to strike the right target every  time you run the macro.
+
+\subsection{Strike your target with a repeatable motion}
+
+Navigate by search, use text objects, and exploit the full arsenal of vim's motions to make your macro as flexible and repeatable as you can.
+Never use the \verb|h/j/k/l| keys when you can use other useful motion (e.g. \verb|0|/\verb|gg|).
+
+\subsection{Abort when motion fails}
+
+If a motion fails while a macro is executing, then vim aborts the rest of the macro by default.
+For example, if a macro changed the word you are searching, then it will abort (i.e. do nothing) as soon as there are no more words that matches the search pattern.
+This means that you can repeat it as many times without worrying about over doing the macro in a document.
+
+\section{Play back a macro with a count}
+
+Unlike the dot command, you can repeat a macro using a count (e.g. \verb|100@q| repeats the macro stored in the register \verb|q| 100 times).
+
+\subsection{Running a macro in series or parallel}
+
+Think of it as an electric circuit -- series will stop working if one part of the circuit blows, but a parallel circuit can still work even if one bit blows up.
+When you run \verb|100@{register}|, this will do it in series and it will repeat the macro 100 times until it aborts.
+If you select the text first, then do \verb|:'<,'>normal@q|, you will repeat the macro in parallel for those lines, which will ignore the lines that it cannot change, rather than aborting the whole thing as soon as one aborts.
+
+\section{Appending commands to macro}
+
+If you forgot to include a command at the end, you can append it by using the uppercase letter of the register (e.g. \verb|qA|).
+
+\section{Running macros on multiple files}
+
+You can set up the macro to go to the next file \verb|:bn|) for series, or set up an argument list with all the files (\verb|:args *{filetype}|) for parallel.
+In parallel, you can do \verb|:argdo normal@{register}| to use the macro on all the files in \verb|:args|.
+After you have run this, you will have to save all the buffers (\verb|:wa(ll)| to write all, or you could incorporate \verb|:wnext| (write, then next buffer) into your macro).
+
+\section{Macro for incrementing numbers}
+
+In vim, you can set variables by using \verb|:let| command (e.g. \verb|:let i=1|).
+\verb|:echo {variable}| will echo the value stored in the variable (\verb|:echo i| will give 1).
+You can increment \verb|i| by saying \verb|:let i+=1|.
+To insert the incremented number into the text, you will have to record/save \verb|i| into an expression register: \verb|<ctrl-r>=i<CR>|.
+In order for this to work, you will have to set the variable outside the macro first, then use the variable and increment the variable within the macro, so it will save/adjust the value of the variable as the macro is replayed.
+
+\section{Edit the contents of the macro}
+
+Just like yank and put, macro is also saved in the register.
+To edit the command, you have to paste the macro into the document then edit it.
+Once you have finished editing the command, paste it back onto the register using the \verb|"{register}y$| command, which will yank the command without the \verb|<CR>|.
+Finally, delete the line when you are done.

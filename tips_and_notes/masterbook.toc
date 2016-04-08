@@ -77,3 +77,13 @@
 \contentsline {section}{\numberline {6.5}paste from register}{30}{section.6.5}
 \contentsline {chapter}{\numberline {7}Macros}{31}{chapter.7}
 \contentsline {section}{\numberline {7.1}Record and execute a macro}{31}{section.7.1}
+\contentsline {section}{\numberline {7.2}How to construct a macro - Normalise, Strike, Abort}{31}{section.7.2}
+\contentsline {subsection}{\numberline {7.2.1}Normalise the cursor position}{31}{subsection.7.2.1}
+\contentsline {subsection}{\numberline {7.2.2}Strike your target with a repeatable motion}{32}{subsection.7.2.2}
+\contentsline {subsection}{\numberline {7.2.3}Abort when motion fails}{32}{subsection.7.2.3}
+\contentsline {section}{\numberline {7.3}Play back a macro with a count}{32}{section.7.3}
+\contentsline {subsection}{\numberline {7.3.1}Running a macro in series or parallel}{32}{subsection.7.3.1}
+\contentsline {section}{\numberline {7.4}Appending commands to macro}{32}{section.7.4}
+\contentsline {section}{\numberline {7.5}Running macros on multiple files}{33}{section.7.5}
+\contentsline {section}{\numberline {7.6}Macro for incrementing numbers}{33}{section.7.6}
+\contentsline {section}{\numberline {7.7}Edit the contents of the macro}{33}{section.7.7}
