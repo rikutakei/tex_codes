@@ -87,3 +87,8 @@
 \contentsline {section}{\numberline {7.5}Running macros on multiple files}{33}{section.7.5}
 \contentsline {section}{\numberline {7.6}Macro for incrementing numbers}{33}{section.7.6}
 \contentsline {section}{\numberline {7.7}Edit the contents of the macro}{33}{section.7.7}
+\contentsline {chapter}{\numberline {8}Search and pattern matching}{34}{chapter.8}
+\contentsline {section}{\numberline {8.1}Basic searching}{34}{section.8.1}
+\contentsline {subsection}{\numberline {8.1.1}Mute search highlighting}{34}{subsection.8.1.1}
+\contentsline {section}{\numberline {8.2}Pattern matching in search}{34}{section.8.2}
+\contentsline {chapter}{\numberline {9}Search}{35}{chapter.9}

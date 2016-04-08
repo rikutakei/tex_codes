@@ -1,0 +1,40 @@
+\chapter{Search and pattern matching}
+
+\section{Basic searching}
+
+As discussed before, \verb|/| searches forward and \verb|?| searches backward for a pattern, and \verb|n/N| will jump to the next/previous search pattern.
+Repeat the search by leaving the search field blank and press \verb|<CR>|
+Note that \verb|n| goes forward for \verb|/| search but ``backward'' (forward in the backward direction) for the \verb|?| search.
+To switch the direction, just use \verb|/| or \verb|?| with no search pattern -- this will re-use the previous pattern to search forward/backward.
+You can go through your search history by using the \verb|<up>| key in the search prompt (or use \verb|q/|).
+
+\subsection{Mute search highlighting}
+
+\verb|:noh(lsearch)| will mute the highlighting for current search, but will enable it for the next search.
+Either use this as is (\verb|:noh|) or map it to a useful shortcut.
+
+\section{Pattern matching in search}
+
+There are various tricks and tips you can add to your search pattern to hone in  on the target text that you are actually interested in.
+
+\subsection{Case sensitivity in search}
+
+You can set the case sensitivity globally by tweaking the \verb|:ignorecase| setting, but you may want to set the case sensitivity differently, depending on your needs.
+The \verb|\c| and \verb|\C| items in your search pattern will allow you to do this.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
