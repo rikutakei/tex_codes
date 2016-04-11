@@ -1,0 +1,90 @@
+\chapter{Substitution}
+
+Substitution is very much like search, but allows you to replace the search pattern with another string.
+
+\section{Syntax of substitute command}
+
+\begin{center}
+    \LARGE{\verb|:[range]s/{pattern}/{string}/[flags]|}
+\end{center}
+
+\section{Tweaking substitute command using flags}
+
+There are different flags you could use in the substitute command to suit the requirement(s).
+Some of the flags are listed below (see \verb|:h :s_flags| for a full reference).
+\newline
+
+\begin{tabular}{c|l}
+\verb|g| & use substitution command globally on the current line\\
+\verb|c| & allow you to confirm or reject the changes each time\\
+\verb|n| & suppresses the normal substitution and report the number of occurrences\\
+\verb|&| & reuse the previous flags\\
+\verb|e| & suppress error messages\\
+\end{tabular}
+
+\section{Special characters for the replacement string}
+
+There are some special characters you can use in the replacement string.
+Some of them are listed below (see \verb|:h sub-replace-special| for full reference).
+\newline
+
+\begin{tabular}{c|l}
+\verb|\r|             & \verb|<CR>| \\
+\verb|\t|             &  tab\\
+\verb|\\|             & single backslash \\
+\verb|\{digit}|       & submatches \\
+\verb|\0|             & entire matched pattern\\
+\verb|&|  & entire matched pattern\\
+\verb|~|              &  use the \verb|{string}| from the previous substitution\\
+\verb|\={vim script}| & evaluate vim script and replace \verb|{string}| with the result of script\\
+\end{tabular}
+
+\section{Find and replace every match in a file}
+
+Note in the previous section that the \verb|g| flag only works on the current line.
+To act on the whole file, you need to use \verb|%| (all the lines in a file) as the range.
+
+\section{Check each substitution}
+
+Use the \verb|c| flag to check/confirm if you want to substitute it or not (e.g. \verb|:%s/{pattern}/{string}/gc|)
+\newline
+
+\begin{tabular}{c|l}
+\verb|y| & ``yes''/substitute\\
+\verb|b| & ``no''/don't substitute\\
+\verb|q| & quit substitution\\
+\verb|l| & ``last'' substitution (substitute this match and quit)\\
+\verb|a| & ``all'' (substitute this and any remaining matches)\\
+\verb|<ctrl-e>| & scroll screen up\\
+\verb|<ctrl-y>| & scroll screen down\\
+\end{tabular}
+
+\section{Re-using the last search pattern}
+
+Leave the \verb|{pattern}| field empty to use the last search pattern.
+If you want to, you can paste it into the substitute command with \verb|<ctrl-r>/| (register where the search pattern is stored).
+This will keep the full record of what you have substituted on the command history, rather than a blank line.
+
+\section{Replace pattern with the contents of a register}
+
+You can do this by typing \verb|<ctrl-r>{register}|.
+This may cause problems of the contents of that register contains special characters or have multiple lines (in which case you will have to escape each character).
+Instead of pasting the contents directly into the substitute command, you can reference the register bu evaluating it as a vim script (e.g. \verb|:%s//\=@0/g|).
+
+The \verb|\=| tells vim to evaluate a vim script expression, therefore the command tells vim to substitute the pattern using the contents of \verb|@0| (yank register).
+By using the  register reference, you run the risk of substituting different patterns with different words when we originally ran the \verb|:%s//\=@0/g| command.
+But we can take advantage of this behaviour by searching for a different pattern, then yanking a different replacement.
+When you run the exact same command, it will replace your search pattern with the yanked text.
+
+\section{Repeating the previous substitute command}
+
+If you missed the \verb|%| symbol to make it a file-wise substitution, you can just press \verb|g&|, which is equivalent to \verb|:%s///~/&|.
+Some useful commands are listed below (see pg 227 for good mappings):
+\newline
+
+\begin{tabular}{c|l}
+\verb|:&| & repeat the last substitution command on this line (flag ignored)\\
+\verb|:&&| & same as \verb|:&| but use the flags in previous substitution command.\\
+& Note that this can be used with visual selection\\
+\verb|:%&&| & same as \verb|:&&| but act file-wise (equivalent to \verb|g&|)\\
+\end{tabular}

@@ -1,0 +1,37 @@
+\chapter{Advanced substitution}
+
+This chapter includes some cases of substitution that require little bit more thinking than normal substitute commands.
+
+\section{Rearrange CSV fields using submatches}
+
+You can use submatches in search to rearrange one or more words.\\
+\verb|:%s/{search pattern with submatches}/\{submatch 1-9}|
+See pg 228 in Practical Vim for a detailed example.
+
+\section{Perform arithmetic on the replacement}
+
+You can perform arithmetics on the matches and replace the old matches with the result.
+For example, \verb|:%s//\=submatch(0)-1/g| will minus 1 to whatever matches in the search.
+\verb|submatch({number})| returns the \verb|{number}|'th submatch of the matched text.
+When 0 is used, the whole matches text is returned.
+\verb|submatch()| can only be used in the \verb|:s| command or the \verb|substitute()| function.
+Another thing to note is that you have to use this function to access the submatches in vim script.
+
+\section{Swap two or more words}
+
+You can use a dictionary data type for this \verb|:let x={"dog":"man", "man":"dog"}|\\
+You can access it by \verb|x["key"]| (e.g. \verb|:echo x["dog"]| will give man).
+You also need to be able to match the words that you want to swap.\\
+\verb-/\v(<"word1">|<"word2">...)- will capture the match into the submatches.
+To swap  the words, type:\\
+\verb|:%s//\={dictionary of words to be swapped}[submatch(1)]/g|\\
+This uses the submatch to look up the matching keyword in the dictionary you have defined, and use the other key value as the replacement string.
+As a result, you would have swapped the words.
+This approach will allow you to swap 2 or more words in a document with a single hit.
+(checkout the plugin discussed on pg 232 in Practical Vim).
+
+\section{Find and replace across multiple files}
+
+You need to first set up the substitute command, then use the argument list and \verb|:argdo| command to apply it to all the files.
+You can use the \verb|e| flag to suppress the error messages when it can't find any matches in a file.
+This method will attempt to substitute in all  the files, whether or not it has the match (see pg 235-236 for an alternative solution).

@@ -13,6 +13,14 @@ You can go through your search history by using the \verb|<up>| key in the searc
 \verb|:noh(lsearch)| will mute the highlighting for current search, but will enable it for the next search.
 Either use this as is (\verb|:noh|) or map it to a useful shortcut.
 
+\subsection{Preview the first match before execution}
+
+Enable \verb|:incsearch| to see what the search pattern your search pattern is picking up.
+
+\subsection{Auto-complete the search field}
+
+You can auto-complete the search field by using \verb|<ctrl-r><ctrl-w>|.
+
 \section{Pattern matching in search}
 
 There are various tricks and tips you can add to your search pattern to hone in  on the target text that you are actually interested in.
@@ -21,20 +29,121 @@ There are various tricks and tips you can add to your search pattern to hone in 
 
 You can set the case sensitivity globally by tweaking the \verb|:ignorecase| setting, but you may want to set the case sensitivity differently, depending on your needs.
 The \verb|\c| and \verb|\C| items in your search pattern will allow you to do this.
+The \verb|\c| makes the search to ignore case, and \verb|\C| makes the search case sensitive.
+These items can appear anywhere in the search pattern, so if you forgot to put on case sensitivity at the start, you can append \verb|\c| of \verb|\C| at the end of your search (e.g. \verb|/foo\c| or \verb|/foo\C|).
 
+\subsection{Smart case sensitivity}
 
+The \verb|:smartcase| option allows you to search case insensitive if everything is lower case, but if it contains an uppercase, it switches to case sensitive search.
+For example, if you search \verb|/hello| with smart case on, it will match \verb|hello, Hello, hEllo,| etc., but when you search for \verb|/Hello|, it will only match \verb|/Hello|.
 
+\subsection{Very magic search}
 
+The \verb|\v| in a search tells the search to switch into a ``very magic'' search, where all characters are assumed to have a special meaning, except letters, digits, and underscore (\verb|_|).
+This makes the rules about escaping characters in the search a bit easier.
 
+\subsection{Verbatim search}
 
+Sometimes you want to search for words with \verb|.|, \verb|*|, \verb|?| and other characters that have special meanings.
+The \verb|\V| item switches on the ``very nomagic'' search, where nothing has a special meaning (unless backslashed within the pattern).
+For example, a normal search for \verb|/a.k.a| could match \verb|backward|, but with verbatim search (\verb|/\Va.k.a|) will only match \verb|a.k.a|.
 
+In general, use \verb|\v| for regular expression and \verb|\V| for literal search.
 
+\subsection{Hex character}
 
+The \verb|\x| character stands for \verb|[0-9a-fA-F]| (i.e. hex characters).
 
+\section{Specifying the word boundary}
 
+Use \verb|<| and \verb|>| in the search to specify the boundary of the word.
+For example, \verb|the| can come up in \verb|there, these,| etc., but \verb|<the>| will only match the word \verb|the|.
 
+\section{Use parentheses to capture submatches}
 
+Any pattern matches within the parentheses is ``captured'' or stored in a temporary place.
+You can access the captured text using \verb|\{digit}|.
+If multiple parentheses are used, it is stored in \verb|\1|, then in \verb|\2|, and so on.
+Note that \verb|\0| always refer to the entire match, even if you are not using a parentheses.
+These captured text can be used later in other commands such as substitution.
+If you don't want to store the text, type \verb|%| before the parentheses -- this will prevent vim to store the pattern.
 
+\section{Other characters}
 
+\verb|\w| character matches word characters, including letters, numbers, and the underscore.
+\verb|\W| character matches everything except for word characters.
+The \verb|\zs/\ze| characters marks the start/end of a match in a pattern.
 
+\section{Patterns vs. Matches}
 
+Patterns can be anything you are searching for, whereas matches are the particular word/characters you want to highlight/change.
+For example, you might be interested in the word ``Vim'' that comes after ``Practical'' (i.e. want to look for the occurrence of \verb|Practical Vim| and only highlight/change the \verb|Vim| part).
+
+If you search just for Vim, it will match all the Vim in the document, whereas only few will match with Practical Vim (but you only want to change the Vim part, and leave the Practical part alone).
+To do this, use \verb|\zs| and \verb|\ze| within a pattern where you want the match -- \verb|/Practical \zsVim\ze|.
+This should highlight Vim that comes after the Practical.
+
+\section{Characters to escape during searches}
+
+When searching forward, you will have to escape the \verb|/| character.
+When searching backward, you will have to escape the \verb|?| character.
+You will have to escape \verb|\| all the time.
+You can use \verb|escape({str}, {char1}, {char2}, ...)| function to automatically escape specified characters.
+
+\section{Count the matches for current pattern}
+
+\verb|:%s///gn| will count the number of matches in the current document.
+The \verb|n| flag after \verb|g| suppresses the usual substitute behaviour.
+By leaving the search field blank, we tell Vim to use the current pattern.
+It may be a good idea to map this to a shortcut.
+
+\section{Using an offset in searches}
+
+The \verb|/e| in the search pattern tells vim to place the cursor at the end of the matching search pattern.
+For example, \verb|/lang/e| will place the cursor on the \verb|g| of the word lang.
+
+\section{Operate on search matches that vary in length}
+
+First, you need to find a match that will match the text.
+For example, if you are looking for either \verb|Xml| or \verb|Xhtml|, you could match them using \verb|/\vX(ht)?ml\C|.
+Then, you can use the previous match pattern as a motion to work on the search match.
+Again, for example, if you want to uppercase those words, you could type \verb|gU//e| (``make everything until the end of the match uppercase'') to make the words uppercase.
+
+The \verb|n| key wil jump to the next match, but places the cursor at the end of the match, as \verb|//e| was the last search done.
+Therefore you will have to use \verb|//| (without the \verb|e|) to go to the next match.
+
+The ``textobj-lastpat'' by Kana Natsuno adds \verb|i/| text object to operate on the search matches.
+This allows you to do the same thing with \verb|gUi/|, and also allows you to use \verb|n| to go to the next match (and therefore dot formula will work).
+
+\section{Workflow for constructing complex patterns/regular expressions}
+
+Example sentences to make a complex search:
+\newline
+
+\begin{center}
+    \verb|This string contains a 'quoted' word.|
+    \verb|This string contains 'two' quoted 'words.'|
+    \verb|This 'string doesn't make things easy.'|
+\end{center}
+
+\subsection{A broad match}
+
+You will have to start off with a broad match that matches a lot of text in the document.
+The search \verb|/\v'.+'| will match \verb|'| followed by any character until the last \verb|'| mark.
+(\verb|.| = anything, \verb|+| = as many times).
+
+\subsection{Refinement}
+
+After the first crude search, you will have to edit and refine the search so that it matches the pattern more specifically.
+You can change the \verb|.| to \verb|[^']| so it matches any characters but \verb|'|.
+
+\subsection{Iterate until perfect match}
+
+You will need to keep refine the match until you get a perfect match.
+You can change the search to \verb-/\v'([^']|'\w)+'- to ignore the \verb|'| used as apostrophe.
+You can change this search into \verb-/\v'(([^']|'\w)+)'- to store it in \verb|\1| to use it later for substitution.
+\verb|:%s//"\1"/g| would change all single quote marks into double quotes.
+
+\section{Search for the visually selected text}
+
+coming soon
