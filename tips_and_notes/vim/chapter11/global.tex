@@ -1,0 +1,48 @@
+\chapter{Global commands}
+
+The global command combines the Ex commands with Vim's pattern matching abilities.
+It allows you to run Ex command on each line that matches a specific pattern.
+
+\section{Syntax of global command}
+
+{\large\verb|:[range] global [!] /{pattern}/ [range for cmd] [cmd]|}
+\newline
+
+The default range of the \verb|:global| command is the whole file (\verb|%|).
+The \verb|{pattern}| can be left blank to use the previous search pattern.
+\verb|[cmd]| can be any Ex command (except for another \verb|:global| command), and the default command is the \verb|:print| command.
+The \verb|!| tells it to invert the command (i.e. do the \verb|cmd| on everything that doesn't match the pattern).
+
+\section{Delete or keep matching lines}
+
+\begin{tabular}{c|l}
+\verb|:g/{regular exp}/d| & this would delete all the lines that contain the regular expression\\
+\verb|:v/{regular exp}/d| & \verb|:v| stands for \verb|:vglobal| (inverted global, i.e. \verb|:global| with \verb|!|).\\
+& This will delete all the lines without the regular expression.\\
+\end{tabular}
+
+\section{Collect certain lines from a file}
+
+For example, you need to extract all ``TODO'' comments in a file.
+You can do this by \verb|:g/TODO|, which prints it out.
+If you want to save it in a register, do \verb|:g/TODO/yank A|, which will save it to the register \verb|a| (capital A tells it to append to the specified register).
+Now you can paste or do whatever using this register.
+
+\section{Alphabetise a selection}
+
+You can do this by using the Vim's sort command.
+Say if you needed to do this to a block of lines, and there were multiple blocks in a file, which will be difficult to do it one by one, you can hit all of them at once using the global command.
+Note that the \verb|cmd| can take a range as well, independent of the \verb|range| for the \verb|:global| command.
+The \verb|.| address stands for the line that the cursor is positioned, but in \verb|:g|, it stands for the line that matches the \verb|pattern|.
+
+If the block was in between \verb|{| and \verb|}|, you can do \verb|:g/{/ .+1,/}/-1 sort|.
+The \verb|+1| and \verb|-1| is the offset to specify only the content of the block.
+Note that \verb|/{/| searches for the closing bracket.
+
+In general: \verb|:g/{start}/ .,{finish} [cmd]| will do the work to each of the specified range.
+
+\section{Muting messages from \texttt{cmd}}
+
+Sometimes \verb|cmd| sends out a message, which can be annoying.
+You can silent this by using \verb|:silent| (or \verb|:sil|) to suppress the messages.
+For example, \verb|:g/{/sil .+1,/}/-1 >| will indent the lines specified with no messages.

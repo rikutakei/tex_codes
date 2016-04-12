@@ -125,3 +125,9 @@
 \contentsline {section}{\numberline {10.2}Perform arithmetic on the replacement}{43}{section.10.2}
 \contentsline {section}{\numberline {10.3}Swap two or more words}{43}{section.10.3}
 \contentsline {section}{\numberline {10.4}Find and replace across multiple files}{44}{section.10.4}
+\contentsline {chapter}{\numberline {11}Global commands}{45}{chapter.11}
+\contentsline {section}{\numberline {11.1}Syntax of global command}{45}{section.11.1}
+\contentsline {section}{\numberline {11.2}Delete or keep matching lines}{45}{section.11.2}
+\contentsline {section}{\numberline {11.3}Collect certain lines from a file}{45}{section.11.3}
+\contentsline {section}{\numberline {11.4}Alphabetise a selection}{46}{section.11.4}
+\contentsline {section}{\numberline {11.5}Muting messages from \texttt {cmd}}{46}{section.11.5}
