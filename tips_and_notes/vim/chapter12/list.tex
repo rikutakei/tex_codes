@@ -1,0 +1,32 @@
+\chapter{Quick fix and location list}
+
+\section{Compile code and use quick fix list}
+
+You are able to run \verb|:make| in Vim, instead of having to run make in terminal.
+When errors are given, vim automatically parses each line and extracts the filename, line number, and error messages.
+For each warning, vim creates a record in the quick fix list.
+You can jump through the quick fix list, which takes you to the location of the error.
+Some of the commands are listed below (see \verb|:h quickfix| for full list):\\
+
+\begin{tabular}{c|l}
+    \verb|:cnext|     & jump to the next item\\
+    \verb|:cprevious| & jump to the previous item\\
+    \verb|:cfirst|    & jump to the first item\\
+    \verb|:clast|     & jump to the last item\\
+    \verb|:cfile|     & jump to the first item in the next file\\
+    \verb|:cnfile|    & jump to the first item in the next file\\
+    \verb|:cpfile|    & jump to the last item in the next file\\
+    \verb|:cc N|      & jump to the N$^{th}$ item\\
+    \verb|:copen|     & open the quick fix list\\
+    \verb|:cclose|    & close the quick fix list\\
+\end{tabular}
+\newline
+
+You can prepend the \verb|:cnext| and other commands with numbers to go through them $n$ times at a time (e.g. \verb|:5cnext| will go through 5 errors at a time).
+If you want to skip all errors in current file and start with the next file, use \verb|:cnfile|.
+You can go through and choose the errors visually by using the quick fix window, and use \verb|k/j| keys to scroll.
+You can also use search within this window.
+To close the window, type \verb|:q| or \verb|:cclose|.
+
+Vim holds onto the last ten quick  fix list,  and you can load them up using \verb|:colder| or \verb|:cnewer| commands.
+Again, this can be used with numbers to go back to the n$^{th}$ quick fix list.

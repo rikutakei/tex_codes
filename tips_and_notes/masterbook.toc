@@ -131,3 +131,5 @@
 \contentsline {section}{\numberline {11.3}Collect certain lines from a file}{45}{section.11.3}
 \contentsline {section}{\numberline {11.4}Alphabetise a selection}{46}{section.11.4}
 \contentsline {section}{\numberline {11.5}Muting messages from \texttt {cmd}}{46}{section.11.5}
+\contentsline {chapter}{\numberline {12}Quick fix and location list}{47}{chapter.12}
+\contentsline {section}{\numberline {12.1}Compile code and use quick fix list}{47}{section.12.1}
