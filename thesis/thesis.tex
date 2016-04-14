@@ -1,25 +1,28 @@
 \documentclass[a4paper, 12pt, oneside]{report}
 
 % Preamble:
-\usepackage[T1]{fontenc}       % package for specifying output font encoding
-\usepackage[utf8]{inputenc}    % package for specifying input font encoding
-\usepackage{graphicx}          % package for graphics handling (i.e. figure images)
-\usepackage{mathptmx}          % package for Times New Roman font
-\usepackage{setspace}          % package for setting line space
+\usepackage[T1]{fontenc}         % package for specifying output font encoding
+\usepackage[utf8]{inputenc}      % package for specifying input font encoding
+\usepackage{graphicx}            % package for graphics handling (i.e. figure images)
+\usepackage{mathptmx}            % package for Times New Roman font
+\usepackage{setspace}            % package for setting line space
+\usepackage[hidelinks]{hyperref} % package for hyperlinking references - hidelinks option removes the ugly boxes around the huperlinks
 
+% Set up the hyperlinks - hange the colour of the links to blue:
+\hypersetup{colorlinks=true,linkcolor=blue}
 
 % If you want to compile specific files, uncomment the line below and add the filenames in the {} :
 %\includeonly{}
 
 \begin{document}
 
-\include{./title}
+\include{./misc/title}
 
 \pagenumbering{roman} % set page numbering to roman numeral
 
-\include{./abstract}
+\include{./misc/abstract}
 
-\include{./acknowledgement}
+\include{./misc/acknowledgement}
 
 \tableofcontents
 
@@ -43,12 +46,12 @@
 
 \pagenumbering{arabic} % revert the page numbering to normal numbering
 
-\include{./intro}
+\include{./intro/intro}
 
-\include{./methods}
+\include{./methods/methods}
 
-\include{./results}
+\include{./results/results}
 
-\include{./discussion}
+\include{./discussion/discussion}
 
 \end{document}
