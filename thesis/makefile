@@ -29,10 +29,8 @@ all: thesis.pdf
 # -interaction=nonstopmode keeps the pdflatex backend from stopping at a
 # missing file reference and interactively asking you for an alternative.
 
-# TODO: try the -bibtex option for latexmk for referencing
-
 thesis.pdf: thesis.tex
-	latexmk -pdf -pdflatex="pdflatex -interaction=nonstopmode" -use-make thesis.tex
+	latexmk -bibtex -pdf -pdflatex="pdflatex -interaction=nonstopmode" -use-make thesis.tex
 
 clean:
 	latexmk -c

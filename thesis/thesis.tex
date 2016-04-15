@@ -1,18 +1,28 @@
 \documentclass[a4paper, 12pt, oneside]{report}
 
 % Preamble:
-\usepackage[T1]{fontenc}         % package for specifying output font encoding
-\usepackage[utf8]{inputenc}      % package for specifying input font encoding
-\usepackage{graphicx}            % package for graphics handling (i.e. figure images)
-\usepackage{mathptmx}            % package for Times New Roman font
-\usepackage{setspace}            % package for setting line space
-\usepackage[hidelinks]{hyperref} % package for hyperlinking references - hidelinks option removes the ugly boxes around the huperlinks
+\usepackage[T1]{fontenc}                     % package for specifying output font encoding
+\usepackage[utf8]{inputenc}                  % package for specifying input font encoding
+\usepackage{natbib}                          % package for reference management
+\usepackage{graphicx}                        % package for graphics handling (i.e. figure images)
+\usepackage{mathptmx}                        % package for Times New Roman font
+\usepackage{chngcntr}                        % package for making continuous figure numbering, instead of section-based numbering
+\usepackage{setspace}                        % package for setting line space (used in title page)
+\usepackage[hidelinks, colorlinks]{hyperref} % package for hyperlinking references - hidelinks option removes the ugly boxes around the huperlinks
+\usepackage[md]{titlesec}                    % package for tweaking the chapter/section/subsection titles format
 
 % Set up the hyperlinks - hange the colour of the links to blue:
-\hypersetup{colorlinks=true,linkcolor=blue}
+\hypersetup{allcolors=blue}
+
+% change figure numbering from section-based to continuous:
+\counterwithout{figure}{chapter}
+\counterwithout{table}{chapter}
 
 % If you want to compile specific files, uncomment the line below and add the filenames in the {} :
 %\includeonly{}
+
+% Change the title of bibliography to references:
+\renewcommand{\bibname}{References}
 
 \begin{document}
 
@@ -52,6 +62,14 @@
 
 \include{./results/results}
 
+\include{./results/results2}
+
 \include{./discussion/discussion}
+
+% Use the reference style specified in BiocRefStyle.bst:
+\bibliographystyle{BiocRefStyle}
+
+% Print out the bibliography:
+\bibliography{MSc}
 
 \end{document}
