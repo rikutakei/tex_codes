@@ -1,23 +1,60 @@
 \chapter{Methods}
 
+\section{Body Mass Index (BMI)}
+
+\subsection{BMI Calculation}
+
+BMI was calculated from the height and weight data of the samples using the following equation:\\
+\begin{equation}
+    BMI = \frac{weight (kg)}{Height^2(m^2)}
+\end{equation}
+
+\subsection{BMI Classification}
+
+Samples were classified based on the WHO definition:
+\begin{table}[h]
+    \caption{WHO defined BMI classification}\\
+    \label{tab:who-bmi-class}
+    \begin{center}
+        \begin{tabular}{|c|c|}
+            \hline
+            \bfseries {Classification} & \bfseries {BMI}\\
+            \hline
+            Underweight & \textless 20.0\\
+            Normal weight/lean & 20.0$\sim$24.9\\
+            Overweight & 25.0$\sim$29.9\\
+            Obese & \textgreater 30.0\\
+            \hline
+        \end{tabular}
+    \end{center}
+\end{table}
+
 \section{Download Data from publicly available source}
 
+Data related to multiple different cancer types were downloaded from free and publicly available source such as The Cancer Genome Atlas and the International Cancer Genome Consortium.
 
-\subsection{The Cancer Genome Atlas}
+\subsection{The Cancer Genome Atlas (TCGA)}
 
+The clinical data for all cancer types (33 types in total) were downloaded from TCGA database and were checked for the height and weight data for each sample.
+Any cancer type with no weight and/or height data of the samples were excluded from the project, as no BMI information can be obtained without these data.
+This gave a total of eight cancer types (**insert all the names of cancer types here) to be used for further analyses.
 
-\subsection{International Cancer Genome Consortium}
+\subsection{International Cancer Genome Consortium (ICGC)}
 
+RNA-seq data for the eight cancer types with sample BMI information were downloaded from the ICGC database.
 
+\section{Validation of methodology used by \citet{Creighton2012}}
 
-\section{Validation Of Methodology}
+\subsection{Raw data from \citet{Creighton2012} paper}
+
+The raw microarray gene expression data files of all the samples used by \citet{Creighton2012} were downloaded from the Gene Expression Omnibus (GEO) database.
+Raw data were imported into R/RStudio for further analyses.
 
 \subsection{Normalisation of \citet{Creighton2012} data}
 
-where was the original data from?\\
-(rma normalisation before any analysis)
+The raw microarray data for all 103 samples in the study were normalised using Robust Multi Array (RMA) method from the \textit{affy} package in R.
 
-\subsection{Differential Gene Expression Analysis}
+\subsection{Differential gene expression analysis}
 
 (mention WHO classification of obese/overweight/lean)\\
 (also mention limma package)
