@@ -1,4 +1,4 @@
-\chapter{Methods}
+\chapter{Methods (draft)}
 \label{ch:methods}
 
 \section{Body Mass Index (BMI)}
@@ -10,8 +10,8 @@
 BMI was calculated from the height and weight data of the samples using the following equation:
 
 \begin{equation}
-    \label{eq:bmicalc}
-    BMI = \frac{weight (kg)}{Height^2(m^2)}\\
+	\label{eq:bmicalc}
+	BMI = \frac{weight (kg)}{Height^2(m^2)}\\
 \end{equation}
 
 \subsection{BMI Classification}
@@ -19,20 +19,20 @@ BMI was calculated from the height and weight data of the samples using the foll
 
 Samples were classified based on the WHO definition, as shown in Table~\ref{tab:whobmiclass}.
 \begin{table}[hb]
-    \caption{WHO defined BMI classification}
-    \label{tab:whobmiclass}
-    \begin{center}
-        \begin{tabular}{|c|c|}
-            \hline
-            \bfseries {Classification} & \bfseries {BMI}\\
-            \hline
-            Underweight & \textless 20.0\\
-            Normal weight/lean & 20.0$\sim$24.9\\
-            Overweight & 25.0$\sim$29.9\\
-            Obese & \textgreater 30.0\\
-            \hline
-        \end{tabular}
-    \end{center}
+	\caption{WHO defined BMI classification}
+	\label{tab:whobmiclass}
+	\begin{center}
+		\begin{tabular}{|c|c|}
+			\hline
+			\bfseries {Classification} & \bfseries {BMI}\\
+			\hline
+			Underweight & \textless 20.0\\
+			Normal weight/lean & 20.0$\sim$24.9\\
+			Overweight & 25.0$\sim$29.9\\
+			Obese & \textgreater 30.0\\
+			\hline
+		\end{tabular}
+	\end{center}
 \end{table}
 
 \section{Download Data from publicly available source}
@@ -45,7 +45,7 @@ Data related to multiple different cancer types were downloaded from free and pu
 
 The clinical data for all cancer types (33 types in total) were downloaded from TCGA database and were checked for the height and weight data for each sample.
 Any cancer type with no weight and/or height data of the samples were excluded from the project, as no BMI information can be obtained without these data.
-This gave a total of eight cancer types (**insert all the names of cancer types here) to be used for further analyses.
+This gave a total of eight cancer types (bladder urothelial carcinoma (BLCA), cervical squamous cell carcinoma and endocervical adenocarcinoma (CESC), colon adenocarcinoma (COAD), kidney renal clear cell carcinoma (KIRP), liver hepatocellular carcinoma (LIHC), rectum adenocarcinoma (READ), skin cutaneous melanoma (SKCM), and uterine corpus endometrial carcinoma (UCEC)) to be used for further analyses.
 
 \subsection{International Cancer Genome Consortium (ICGC)}
 \label{subsec:icgc}
@@ -68,6 +68,8 @@ Raw data were imported into R/RStudio for further analyses.
 \label{subsec:normcrdata}
 
 The raw microarray data for all 103 samples in the study were normalised using Robust Multi Array (RMA) method from the \textit{affy} package in R.
+The data was then standardised so that each of the genes had a mean of 0 and a standard deviation of 1.
+(mention scaling anything over 3 were made to be 3 for heatmap scaling)
 
 \subsection{Obesity associated gene probes from the \citet{Creighton2012} study}
 \label{subsec:crobsgene}
@@ -82,7 +84,7 @@ All 103 samples from the \citet{Creighton2012} study were split into two groups 
 The difference in the gene expression between these two sample groups were analysed by fitting a linear model to the data, using the \textit{limma} package in R.
 The top 799 differentially expressed gene probes that had p-value \textless{} 0.01 were identified.
 
-The process above was repeated on the same data, with same group (obese and non-obese) after controlling for all other clinical variables that were not related to the sample BMI (age, sex, race, tumour grade, lymph node (LN) status, progesterone receptor (PR) status, and estrogen receptor (ER) status).
+The process above was repeated on the same data, with the same group (obese and non-obese) after controlling for all other clinical variables that were not related to the sample BMI (age, sex, race, tumour grade, lymph node (LN) status, progesterone receptor (PR) status, and estrogen receptor (ER) status).
 The top 799 differentially expressed gene probes that had p-value \textless{} 0.01 between the two groups were identified.
 
 To completely remove the effect of race on the analysis, the analysis was repeated using only the Caucasian samples.
