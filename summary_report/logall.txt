@@ -1,0 +1,772 @@
+===============================================================================
+31 March 2015
+-------------------------------------------------------------------------------
+I need to download data from the TCGA website using wget.
+First, I need to get the names of the cancer types, since wget doesn't allow wildcard characters for HTML URLs.
+    Download index.html file:
+        wget https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/
+    Strip the html tags:
+        sed -e 's/<[a-zA-Z\/][^>]*>//g' index.html > index2.html
+    Use Vim to delete all the unwanted characters and spaces, so you're 
+    just left with the cancer names.
+Once I get the cancer names, then I can loop over the names to download the required patient data.
+The URL will be in the form of:
+https://tcga-data.nci.nih.gov/tcgafiles/ftp_auth/distro_ftpusers/anonymous/tumor/**cancer**/bcr/biotab/clin/nationwidechildrens.org_clinical_patient_**cancer**.txt
+where **cancer** is where the cancer name gets inserted.
+wget allows file input, so use for loop to read from the cancer names file, make the appropriate URL, then append it to a separate file.
+    Check out the make_url code
+Use this file (cancer_urls.txt) as the input file for wget.
+    Make patient_data directory and run the wget:
+        wget -P patient_data/ -i cancer_urls.txt
+-P flag lets you specify the target directory, -i flag lets you specify the input file.
+The files downloaded have long names, so rename all of them to just the cancer name.
+    - see next part
+===============================================================================
+1 April 2015
+-------------------------------------------------------------------------------
+Out of 38 cancer subtypes that I thought I have downloaded, 5 subtypes didn't have the clinical patient data. These were: cntl, fppp, lcml, lnnh, misc.
+Renamed everything to **cancer**_patient_data.txt using a simple for loop on command line.
+    Create another index file from index2.html, but remove the 5 subtypes.
+    See rename file for the loop
+Make a file with all the filenames in it.
+Now it's ready to load into R.
+===============================================================================
+9 April 2015
+-------------------------------------------------------------------------------
+Data has been loaded into R (see task1.R for details)
+Out of 33 cancer subtypes, there were only 14 subtypes that had both height and weight data.
+From these data, I've identified the patients that have both height and weight data. (breast cancer did not have mass/weight data)
+Note from Mik: 
+    - wants a table of subtypes and the number of patients with H/W data
+        > Probably give him the list of the data with all the 
+            H/W patient information.
+Exported the list as 'BMI_data.txt'. (see code for details)
+-------------------------------------------------------------------------------
+Look at the RNA-seq data of UCEC (endometrial cancer) and perform singular value decomposition (SVD) to identify obesity related metagene.
+Compare/validate these genes with the Creighton et al. obesity metagene (799 genes).
+    - should show if obesity metagene can be used across cancer types
+Goal/To-do:
+    - reorganise RNA-seq data into usable format
+    - validate Creighton et al. metagene by either:
+        1) extracting the genes in Creighton et al. genes from the 
+            UCEC data, do SVD, and compare the metagenes, OR
+        2) make obesity metagene from the UCEC clinical data and RNA-seq
+            data, and then compare this metagene with the Creighton et al.
+            metagene (see how well the genes match up)
+===============================================================================
+11 June 2015
+-------------------------------------------------------------------------------
+Have downloaded UCEC microarray and RNA-seq data from ICGC database (check the ICGC website).
+Load the RNA-seq data into R.
+    - data has a raw read count variable which I can use for SVD
+Need to reorganise the data into genes-by-samples matrix
+    - use dplyr (look at the R code)
+===============================================================================
+15 June 2015
+-------------------------------------------------------------------------------
+There's about 541 samples and 20502 genes.
+    - Took about 1 second per gene, so about 5 hours to run/make the whole 
+        raw read count file
+        - stored in the data/task02 directory as raw_read_count.txt
+Need to get the obesity gene probes from the Creighton et al paper
+    - move the data from the bmi-markdown directory
+The obesity gene file doesn't actually have the gene names in it
+    - Need to identify it by annotating the obesity probe IDs
+When the 799 obesity probes were annotated (using the 'select' function), the probes mapped to 875 genes
+    - Some of them were NAs, but some had multiple genes per probes
+    - there were 755 unique genes (excluding the NAs)
+Was able to keep it to 799 when I used the 'mapIds' function, but don't know if this is any good.
+    - there were 692 unique genes (excluding the NAs)
+Using the 692 unique genes from mapIds function, need to check which genes
+are actually present in the raw data
+    - there were 645 out of 692 genes present in the raw data
+Extracted these 645 genes for all the samples and put it into a matrix.
+===============================================================================
+16 June 2015
+-------------------------------------------------------------------------------
+When I standardised the data to have Mean of 0, and standard deviation of 1, I kept getting NA as a result
+    - Found out that there was a single row that had NAs (row 221)
+    - removed the row and everything ran fine
+Now I'll have to match the clinical data (i.e. BMI) with the RNA-seq data Imported the TCGA clinical data into R
+    - extracted the height and weight data from it
+    - need to calculate the BMI for each patient
+The problem with the TCGA and ICGC data is that the sample names are a little bit different
+    - ICGC have extra trailing random ID numbers...
+Used gsub to remove the extra IDs
+    - see code
+===============================================================================
+17 June 2015
+-------------------------------------------------------------------------------
+Created a matrix of height and weight data (hwdata - see code)
+    - remove the '[Not Available]' samples
+        - resulted in 512 valid samples with both height and weight data
+Need to calculate the BMI status for each of the samples
+    - BMI = weight/(height)^2
+Converted the height/weight data into numerical matrix from character matrix
+    - I hate factors...
+Found a sample that has a wrong height data
+    - probably 166cm instead of 66cm
+Need to match which samples are in the raw read count data
+    - matched the samples with BMI
+        - total of 511 samples (but with some duplicates - different samples
+            from the same patient??)
+        - need primary tumour data ONLY
+            - might have other samples in there that is making the duplicates
+            - need to re-extract the RNA-seq data
+Got the specimen.UCEC-US.tsv file from the ICGC data portal
+    - contains the tumour sample type data
+Even after extracting only primary tumours, there were 21 duplicates and 3
+triplicates
+===============================================================================
+25 June 2015
+-------------------------------------------------------------------------------
+There were 21 duplicates and 3 triplicates in the sample names out of 509 primary tumour samples in the data set
+    - see the code for the duplicates and triplicates
+Able to get the duplicating samples - plot them to assess which one is the bad one
+    -heat map?
+===============================================================================
+25 June 2015
+-------------------------------------------------------------------------------
+Outputted the heatmaps to 'replicates.pdf'
+Need to decide which sample to use in the SVD
+    - see code
+Managed to do the SVD analysis and produced heatmaps
+    - seems like the higher the BMI, the lower the gene expression
+===============================================================================
+13 July 2015
+-------------------------------------------------------------------------------
+Notes from the meeting:
+Quality assessment:
+    - make density plots for all the samples (on log scale)
+        -should look similar and bad samples will deviate
+    - calculate correlation matrix for samples across all genes.
+        - plot this as a heatmap
+        - good samples should cluster together
+            - correlation for good samples should be >0.6
+        -use hclust and cutree to identify poor samples and remove these
+    - remake correlation matrix 
+        - repeat until no bad samples
+Replicate picking:
+    - make scatterplots of the replicate pairs
+        - all genes, use pch='.' to get small points
+    - use the heatmap of the sample correlation matrix to help figure out which replicates to use
+Normalisation:
+    - use the limma voom function  on the count data 
+        - see the limma user guide
+    - remove genes with low count values before running voom
+    - remake the density plots to see if the samples are now fairly uniform
+Metagene creation:
+    - see the code in the email
+Compare to clinical variables:
+    -scatterplot of BMI vs BMI metagene
+    -boxplot of BMI groups (<25, 25~30, >30) vs BMI metagene
+    - plot BMI metagenes against other variables
+Extra:
+    - do differential expression analysis of BMI>30  vs BMI<30 in the endometrial data (limma)
+    - do the significant genes overlap with the list of 799?
+    - use these genes to create a BMI metagene and compare with BMI and other clinical variables
+===============================================================================
+20 July 2015
+-------------------------------------------------------------------------------
+Have done some of the stuff on the analysis notes.
+Some difficulties and problems:
+    - not sure how to interpret the scatterplot for the replicates
+        -> check what kind of sample these are
+        -> doesn't look too different, so pick one
+    - Do I do voom normalisation first before the correlation matrix analysis?
+        -> probs not
+    - I did the correlation matrix thing on the raw data, without normalising etc... do I have to normalise it first?
+        -> NO - don't want to normalise crappy data first (gonna make it harder to determine the shitty data)
+===============================================================================
+22 July 2015
+-------------------------------------------------------------------------------
+Need to do a SVD on the Creighton et al data to get a transformation matrix.
+    - the number of genes used in the SVD must match the number of genes in
+      the endometrial cancer data
+    - multiple probes may match to a single gene in the Creighton data
+There were 777 genes (out of 799) that were not NAs
+There were 695 unique genes within the 777 non-NA genes
+There were 643 genes from the Creighton data that matched in the endometrial cancer data
+    - when I checked back to the Creighton data, all 643 genes were unique
+        - i.e. no need to merge any genes - just use these 643 genes
+Now I have to SVD the 643 genes by 103 samples and take the transformation matrix to the endometrial cancer data.
+===============================================================================
+24 July 2015
+-------------------------------------------------------------------------------
+Made the transformation matrix with the Creighton et al data, using the 643 genes.
+(NOTE: I have been using the data without normalising it, so ignore some of these quality control crap -- me (26/4/16))
+Used this transformation matrix on the endometrial data (312 samples)
+    - the heatmap looked like it corresponded to the metagene created from the transformation matrix
+Now I need to check whether the metagene is associated with the clinical data of the endometrial data
+===============================================================================
+27 July 2015
+-------------------------------------------------------------------------------
+Plotted obesity metagene vs BMI status
+    - used only the samples that had the BMI data
+    - Found that there were no association of metagene with the BMI status...
+Now I need to perform differential expression analysis.
+    - see what genes are DEed in the obese vs normal+overweight samples.
+===============================================================================
+29 July 2015
+-------------------------------------------------------------------------------
+Thought the task02 code was getting too long, so starting up a new one for differential expression analysis.
+===============================================================================
+5 August 2015
+-------------------------------------------------------------------------------
+Started working on the DEG analysis
+There were 482 samples in the data that also had a BMI data (no duplicates).
+Normalising using voom function from limma.
+    -removed genes with small count data (from 20502 genes to 19257 genes)
+The top table (and volcano plot) doesn't show any gene that is differentially expressed...
+===============================================================================
+13 August 2015
+-------------------------------------------------------------------------------
+Did DEG analysis - found 218 genes between obese vs non-obese patients.
+The metagene produced doesn't look too good...
+    - maybe because I did the sample quality control stuff after the DEG analysis
+        - do quality control before the DEG analysis, then re-do the metagene stuff.
+===============================================================================
+14 August 2015
+-------------------------------------------------------------------------------
+Reduced the samples from 482 samples to 322 samples (last cutree had to be k = 4)
+    - most of them are above 0.6 correlation, but some are just below 0.6
+    - didn't want to cut too many samples for DEG
+Out of 322 samples, 199 samples were obese, 60 were normal, and 63 were overweight
+    - 199 obese vs 123 normal/overweight
+DEG analysis showed that there were only 4 genes that were differentially expressed between the obese vs. non-obese samples
+    - Don't know what's going wrong here, but it might be due to the poor quality of the endometrial RNA-seq data in general
+        -apparently the breast cancer data started from 0.75 correlation.
+Now, I need to forget/leave the UCEC data and look into other cancer types
+    - see if other cancer types have any correlation between BMI and gene expression
+===============================================================================
+2 September 2015
+-------------------------------------------------------------------------------
+Turns out that I needed to log the data before quality control/removing the bad samples.
+    - Re-do the analysis to see if I get different results
+Some data points had 0 counts which caused some problems with logging
+    - added 1 to all the count data to avoid this
+After logging the data, there were no samples that had a correlation of 0.6
+    - No samples were discarded
+SVD on Creighton et al. data was done and used to transform the endometrial data
+    - The results didn't change
+        - Metagene from Creighton et al data doesn't correlate with the endometrial data...
+Do DEG analysis on endometrial data and compare this with obesity genes identified in Creighton et al. data.
+===============================================================================
+3 September 2015
+-------------------------------------------------------------------------------
+Creighton et al data didn't give a great result, so moving onto a different data set
+Using the GSE20194 dataset that was used by Fuentes-Mattei et al (2014).
+    - Downloaded the data from http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE20194
+Unzipped/untarred the file
+    - contained 278 CEL files (one for each sample)
+    - ls GSM505* > files.txt
+Imported the data into Rstudio and RMA normalised the data
+    - 22283 gene probes by 278 samples
+Need to extract the gene probes that are associated with BMI
+    - Use supTab3-fixed.csv file
+        - supplementary data from the paper
+There are 130 obesity related gene probes, but only 111 unique genes
+    - have to collapse some of the probes
+===============================================================================
+4 September 2015
+-------------------------------------------------------------------------------
+The metagene created from the 111 genes seems to capture the overall expression of the Fuentes-Mattei data
+    - not sure whether this correlates with obesity (no BMI data for the samples in this dataset)
+Check whether the metagene from Fuentes-Mattei data show any correlation/association with the Creighton data
+    - This dataset has obesity/BMI information
+    - able to see if it really correlates with BMI
+Transformed the Creighton dataset, but did not show any significant separation between the obese patients and the normal/overweight patients.
+    - Seems like these metagene isn't showing anything significant...
+        - Still have to check in other cancer datasets (e.g. UCEC, etc.)
+===============================================================================
+7 September 2015
+-------------------------------------------------------------------------------
+Downloaded 7 cancer data from ICGC website
+    - couldn't find 6 cancers out of 14 in total
+7 cancer data downloaded were: BLCA, CESC, COAD, KIRP, LIHC, READ, and SKCM.
+The 6 cancer data not on ICGC were: CHOL, DLBC, ESCA, THYM, UCS and UVM.
+    - esophageal cancer (ESCA) doesn't have any RNA-seq data, which is a bit dissapointing...
+Loaded all 7 cancer data into R
+    - seems like there are unknown genes in the data (shown as '?')
+        - going to remove these for now
+    - seems like there are duplicate samples as well...
+        - will have to merge these into one (maybe use WGCNA?)
+===============================================================================
+20 September 2015
+-------------------------------------------------------------------------------
+Wrote a function to transform the ICGC data into a matrix form, but this function takes quite a while to run
+    - it does take care of any duplicates and '?' genes though
+        - for duplicates, maximum value was used
+I thought some of the data sets had samples with varying number of unique genes, but I couldn't find which one it was...
+    - my function should have taken care of this, but I'm still a bit worried
+All the raw read counts are stored as a txt file
+Now I need to analyse all 8 cancer data
+Loaded all the BMI data into R
+    - made a matrix for each cancer type (stored it as ~~~~bmi.txt)
+Identified which samples in each cancer type have BMI data
+    - see code
+Almost ready for the analyses
+    - log, standardise, transform, etc
+Used WGCNA's collapseRows function to remove duplicate samples
+===============================================================================
+23 September 2015
+-------------------------------------------------------------------------------
+Loaded the raw data from Creighton
+    - re-checked that the metagene correlates with BMI (it did)
+Looped over all 8 cancer types (log10, standardise, then heatmap)
+    - the heatmaps are not looking good
+        - maybe I did something wrong in the making of the actual data
+Found the bug!!!
+    - I was standardising the data based on the samples, rather than the genes
+        - i.e. each sample had mean=0,sd=1 over all genes
+===============================================================================
+29 September 2015
+-------------------------------------------------------------------------------
+Got all the heatmaps and plots for all 8 cancer types
+    - it seems like there is no correlation with obesity...
+    - maybe problem with data processing
+        - use tidyr on server after committee meeting
+Check heatmaps with obesity values later
+Started doing some Fuentes-Mattei stuff
+    - use the code from task5 (maybe transfer it to task6 later...)
+===============================================================================
+14 December 2015
+-------------------------------------------------------------------------------
+Need to re-do the data analysis again, using tidyr to make the matrix.
+    - do it on server (not enough memory on desktop...)
+===============================================================================
+15 December 2015
+-------------------------------------------------------------------------------
+Read all the cancer raw data (.tsv files) into R
+Need to use tidyr to  make it into a matrix.
+    - Need submitted_sample_id, gene_id, and raw_read_count columns
+    - change memory limit (ulimit -s 20480)
+There are 20502 unique genes per sample
+Made matrix for each cancer type
+===============================================================================
+12 January 2016
+-------------------------------------------------------------------------------
+Back into the lab
+All of the matrices created have the gene names as their first column, not as rownames
+    - Change the rownames to the first column
+Need to delete the '?' row (first row of the matrix)
+===============================================================================
+13 January 2016
+-------------------------------------------------------------------------------
+Rsynced the data from the server onto my computer
+Start analyzing the data using the codes from task06 as base
+======================================================================
+13 January 2016
+----------------------------------------------------------------------
+Starting the analysis of the cancer data (processed with tidyr)
+Imported the cancer data and bmi data into R
+======================================================================
+14 January 2016
+----------------------------------------------------------------------
+Used icgc_to_tcga function from task 4 to match the sample id in the bmi data with the cancer data
+    - The cancer data have sample ids as their column, so you need to
+        change it into rownames first before using the icgc_to_tcga
+        function.
+Need to identify which samples have bmi data
+There are duplicate samples in the cancer data
+    - need to identify them and merge them (use WGCNA)
+collapseRows function from WGCNA worked on all cancer types, but produced warnings
+    - "row names of input data and probes not identical ..... check 
+        results carefully"
+======================================================================
+15 January 2016
+----------------------------------------------------------------------
+Got all the cancer type data - start the analysis
+First, I'll have to use the obesity genes from either the Creighton et al or Fuentes-mattei et al data
+    - start off with Creighton et al data, then F-M data.
+Crieghton obesity gene is not in gene symbol format, so convert it into gene symbols as in task 6
+    - 799 gene probes, 695 unique and non-NA genes.
+Need to pull out the Creighton obesity genes for each cancer type.
+    - some genes are not in the cancer data (have to remove these genes)
+    - 647 genes present in the cancer data
+Need to make the metagene from the Creighton data first (and also check again if it correlates with bmi)
+Do the analysis on all cancer types
+    - REMEMBER TO LOG AND STANDARDISE THE DATA!!
+Might as well make a function to do standardisation (and maybe SVD as well)
+Continuing on with the Creighton et al data
+Made metagene and heatmap functions to make things easier to program
+Standardise_data function somehow transposes the matrix (e.g. sample changes from columns to rows), so watch out for some bugs.
+Make transformation matrix with Creighton metagene and apply it to other cancer data.
+(lines 140 to 224)
+======================================================================
+20 January 2016
+----------------------------------------------------------------------
+Carrying on with analyzing cancer data.
+Forgot to transpose the transformed matrix
+    - added t() function in the make_meta_gene function
+Forgot to make make_plot function for associating bmi data with the expression data
+    - May need to use 1-metagene as the metagene input
+    - ouput will be stored in a crcancer.pdf file
+SLC17A6 gene produced NaN in the READ cancer data after standardisation and affected the tranformation
+    - remove this gene from the obesity related gene list and re-do the
+        analysis
+The heatmaps showed similar results as last analysis
+    - gene expression correlates with the BMI status
+However, the clinical variables did not match the metagene
+Do Fuentes-Mattei et al analysis
+(lines 226 to 246)
+======================================================================
+21 January 2016
+----------------------------------------------------------------------
+Starting analysis with Fuentes-Mattei et al data.
+Load data and process it as in task 6
+    - 110 unique genes with 278 samples
+Made heatmap for Fuentes-Mattei, but can't make plots as FM data doesn't have clinical data
+Some genes are not included in the cancer data
+    - 107 genes that are useful
+(lines 246 to 300)
+======================================================================
+22 January 2016
+----------------------------------------------------------------------
+Made all the heatmaps and plots for Fuentes-Mattei et al transformed cancer data.
+    - saved as 'fmcancer.pdf'
+Again, the results looked similar to the previous results that used my function to process the data
+    - suggests that the obesity related genes cannot be used in other cancer types...
+Need to start on the differential gene expression analysis for the cancer types.
+(lines 300 to 315)
+======================================================================
+25 January 2016
+----------------------------------------------------------------------
+Need to start on the differential gene expression analysis for the cancer types.
+Pseudocode/plan:
+    - do normal vs overweight and above
+    - do normal vs obese
+    - confirm Creighton et al obesity related gene probes
+    - do DEGs for all cancer types
+    - find commonly differentially expressed genes
+    - use these genes to find common pathways being dysregulated
+        (maybe next task...?)
+Start the analysis with Creighton et al data first, confirm the results, then move onto other cancer data.
+Some results from Creighton et al data:
+    - for P value < 0.05 (unadjusted):
+        - normal vs overweight/obese = 759 genes
+        - normal/overweight vs obese = 5278 genes
+    - for P value < 0.01 (unadjusted):
+        - normal vs overweight/obese = 104 genes
+        - normal/overweight vs obese = 1781 genes
+Above results were done using FDR control, and there weren't many DEGs when adjusted P-value was used.
+    - These numbers don't really correspond to the original
+        Creighton et al results from their paper...
+Check if there are any overlaps in the obesity-related genes and the significant genes
+(from start to line 95)
+======================================================================
+26 January 2016
+----------------------------------------------------------------------
+Need to process the data first
+    - load data and find which samples have BMI data
+    - log the data
+    - identify and group the samples into their BMI status
+There were NAs introduced after standardising the cancer data and has been removed
+    - note that the number of NAs introduced in each cancer type was
+        different, and therefore the number of genes in each cancer
+        type are different now
+            - may have to adjust the number of genes so that they
+                have the same number of genes...
+Made top tables for all the cancer types
+Realised that you need to use voom normalisation instead of just logging and standardising.
+Made a function to pull out the significant genes
+Need to make a venn diagram to see if any overlaps
+    - venn diagram only supports 2~5...
+There were about 9000 DEGs that were common between all 8 cancer types, using p value of 0.05.
+    - about 3300 gene when p value < 0.01
+(from line 95 to line 260)
+======================================================================
+27 January 2016
+----------------------------------------------------------------------
+Noticed that the 9000 genes common weren't actually common
+    - they were just total unique genes from all the cancer types,
+        rather than common genes.
+Need to re-do the common genes thing
+Table the genes twice to find how many genes turned up in however many cancer types.
+Talked to Mik:
+    - Need to randomly split the samples into two and carry out the DEG
+        analysis, then compare this with the results from the obesity
+        related samples split (task 10)
+    - group obese samples from all the cancer types and use obesity
+        related genes to do class prediction (task 11?)
+(from line 260 to end)
+======================================================================
+28 January 2016
+----------------------------------------------------------------------
+Need to repeat the DEG analysis multiple times (maybe 100?) with randomly split groups, not split based on BMI
+Pseudocode:
+    - split groups into two (1:1 or 1:2 ratio)
+        - whichever is closer to the normal/overweight vs obese split
+    - do DEG analysis, using group 1 vs group 2 as the design matrix
+        - do this for all cancer types
+    - tabularise these and save the result
+        - maybe save the genes that were common in 3 or more cancer
+            types as well...?
+    - repeat this for n times (maybe 100)
+    - compare the saved results with obesity-split results
+The relative sample size per group of cancer types:
+              normal overweight  obese
+        BLCA    103         97     61
+        CESC     85         62     77
+        COAD     75         80     71
+        KIRP     26         53     45
+        LIHC    140         75     49
+        READ     22         36     15
+        SKCM     72         73     73
+        UCEC     90        106    286
+Either keep the ratio of the samples the same, or to keep the absolute number of samples used the same  for each run
+    - probably do the latter
+Probably a good idea to set the seed before randomly choosing the the samples for grouping
+Use the number of samples in the 'samples' matrix as a guide
+Psuedocode for grouping:
+    - generate n random numbers between 1 and x, where n = number
+        of ob samples and x = total number of samples in that
+        cancer type
+    - use these numbers as the row coordinates for picking the
+        samples and making  the model matrix
+Made a function to do the test, but not sure if this was necessary
+(from start to line 115)
+======================================================================
+29 January 2016
+----------------------------------------------------------------------
+The function to do the test ran longer than expected (about 2 hours)
+Results:
+Randomly split sample testing (n = 100)
+-------------------------------------------------------------------------
+No. of cancer types overlapped |   1  |  2  | 3  | 4 |   5  | 6 | 7 | 8 |
+No. of genes (mean)            | 5012 | 870 | 89 | 6 | 0.22 | 0 | 0 | 0 |
+
+Normal/Overweight vs  obese sample split
+------------------------------------------------------------------------
+No. of cancer types overlapped | 1    | 2    | 3   | 4  | 5 | 6 | 7 | 8 |
+No. of genes (mean)            | 6865 | 1907 | 289 | 26 | 1 | 0 | 0 | 0 |
+Now that I've got the result, I need to figure out whether the 6865 genes in the original result was by chance, when compared with the randomly split samples
+    - i.e. I need to find the 90th or 95th percentile of the number
+        of genes (then we know whether the 6865 genes were by chance,
+        or it really was significant)
+I need to carry out the test again, but with 1000 samples and figure out what the significant values for the genes are
+    - since the run of 100 tests took about 1 to 2 hours, gonna try
+        parallelise the task using parallel R in terminal
+            - all codes are backed up on gitHub
+Before I do this, try optimising the function
+    - use mclapply instead of for loop
+    - manage to do this by using seq_along, but not sure if it's any
+        faster...
+======================================================================
+17 February 2016
+----------------------------------------------------------------------
+Starting task 11
+Results from task 10 showed that my original results were significant compared to the randomly sampled data set/group.
+However, they probably have a lot of false positives, and will be quite hard to find which genes are actually significant.
+    - have a look at the genes that didn't come up in the randomly
+        sampled data
+    - do pathway enrichment analysis with the genes.
+What to do:
+    1) Find genes that are present in the real data, but not in the
+        randomly sampled data
+            - i.e. DEGs that are not expressed by chance (since all
+             of the genes from randomly sampled data are by chance)
+    2) Repeat the DEG analysis, but with pathway enrichment analysis
+        and look for the pathways that are significant in the real
+        data.
+            - Do pathway enrichment analysis for every cancer and
+                find the common pathways across multiple cancer
+                types (then compare it with the real data).
+    3) Pull out the t-test scores from the differential expression
+        analysis for all the genes that were differentially expressed
+        in the cancer types, then create a heatmap to see what t-values
+        each cancer types were getting.
+1 and 2 are pretty much the same thing - probably do it in the same task.
+3 looks easy enough to wedge it into this task as well.
+======================================================================
+18 February 2016
+----------------------------------------------------------------------
+Started working on the pathway analysis
+    - using reactome, gene ontology, KEGG, and org.Hs.eg.db databases.
+======================================================================
+19 February 2016
+----------------------------------------------------------------------
+Found a bug in the code from Tom in the GO database bit (line 38 in Tom's code)
+    - The gene symbols were matching different GOID and/or pathway
+    - when pulling out GOID from GO.list, some GOIDs had null value,
+        and therefore length of tmp becomes smaller than GO.list
+            - need to account for this 'loss' of samples.
+What Tom's code allows you to do:
+    1) ****.list variables store the gene symbols which contains the
+        ID for the pathways.
+    2) The ID can then be used to search for the pathway(s) by
+        referencing the ID with the path* variables.
+Not quite sure of how to find significantly enriched pathways...
+Only 6750 pathways in the reactome database...??
+======================================================================
+24 February 2016
+----------------------------------------------------------------------
+Need to find significant pathways from DEGs....
+    - found a few R packages - going to see what they're like
+        - topGO, GOstats, ReactomePA, KEGGprofile, PATHNet
+        - EnrichmentBrowser didn't load properly
+======================================================================
+29 February 2016
+----------------------------------------------------------------------
+Need to figure out what the pathway enrichment analysis packages do ( and the theory behind it ).
+    - probably need to write my own function on the way
+Some pseudocode:
+    - get list of DEGs
+    - within these DEGs, how many genes are involved in a specific
+        pathway?
+    - out of all the DEGs pulled out, is the number of genes associated
+        with the pathway statistically significant?
+            - yes = pathway enriched, no = not enriched
+    - repeat for all pathway
+I need to tweak the sample_test function so that it does the pathway enrichment analysis after each DEG analysis
+    - first make a function to do the pathway enrichment analysis
+    - need a pre-made matrix of gene-by-pathways for Fisher's test
+        - might have to make one for each database...?
+Thought I've debugged GO pathway from Tom's code, but seems like I haven't processed it properly...
+    - When pulling out GOID, some of them remains as list, instead of
+        vector of GOIDs
+            - i.e. list of list
+            - might have to re-do the for-loop until no list is included
+======================================================================
+1 March 2016
+----------------------------------------------------------------------
+Started making a gene-by-pathway matrix
+    - not sure using a for-loop is a good idea/elegant...?
+Decided to use for-loop instead of apply
+    - too hard to implement in apply function
+After making the for-loop, use ifelse function to make it into a 0/1 matrix
+Need to do this for all pathway databases
+======================================================================
+2 March 2016
+----------------------------------------------------------------------
+KEGG and reactome pathways weren't as bad, but GO pathway database had way too many pathways for R to handle (like 40000 pathways)
+    - need to select for appropriate genes and pathways.
+Save the files as txt
+======================================================================
+4 March 2016
+----------------------------------------------------------------------
+Got all the gene by pathway matrices
+    - starting the analysis now
+Haven't done all of the analyses, but noticed that some pathways have very few genes, and when these genes come up in the list of DEGs, it becomes significant...
+    - is this right?
+    - how does picking out 2 genes make the pathway "enriched"?
+======================================================================
+7 March 2016
+----------------------------------------------------------------------
+Changed the pathenrich function slightly
+    - use the whole db variable instead of pulling out 'relevant'
+        genes and/or pathways
+Due to the size of the TFmatrices, KEGG is the fastest, then reactome, then GO database
+    - but GO has the most pathways, and therefore most detailed ()
+Need to do the path enrichment analysis on original ob vs lean/ov data to get the list of pathways we're looking for
+    - then do pathway enrichment on random groups for the same data
+        and look for the pathways that didn't show up in the random
+        samples
+======================================================================
+9 March 2016
+----------------------------------------------------------------------
+Added lapply for adding adjusted p-values, using FDR (Benjamini Hochberg)
+Changed the lapply into mcapply
+======================================================================
+11 March 2016
+----------------------------------------------------------------------
+mclapply version was taking forever (not sure why...)
+    - reverted it back to the lapply version (worked fine, and
+        somehow very fast)
+Ready to do the however many iterations of pathway enrichment analysis for each cancer type.
+Pseudocode for the iteration:
+    - for each list element (i.e. cancer), make a matrix of p-values
+        to get a pathway by p-value matrix
+            - each column of p-value is from a single pathway
+                enrichment analysis
+    - after this list of pathway by p-values are made, need to adjust
+        it via BH/FDR method
+    - need to assign 0 or 1 for significant or non-significant
+        pathways, then count them all up (i.e. table() it)
+Do a test run to see if it works
+======================================================================
+18 March 2016
+----------------------------------------------------------------------
+The iteration version is working fine
+I need to do pathway enrichment analysis using the gene-rank based method, instead of a hypergeometric based method
+    - hypergeometric method (Fishers?) does a statistical test using
+        the genes that are differentially expressed, or not
+    - better if we rank the genes so that we take into account of the
+        'almost' significant genes
+Currently looking into the camera(), roast(), geneSetTest() functions
+======================================================================
+31 March 2016
+----------------------------------------------------------------------
+Came back from break - carrying on with pathway enrichment analysis
+Looked at camera and roast functions (geneSetTest function had a note saying that camera was recommended over this function)
+    - camera gave better FDR values than roast (?)
+======================================================================
+4 April 2016
+----------------------------------------------------------------------
+There were no significant pathways enriched in any of the cancer data.
+Re-run the analysis with all the samples on the same scale
+    - combine all the samples then normalise the whole data
+It still didn't find any significant pathways.
+Go back to Creighton data and double check if the marker is actually
+BMI related, or some other factors involved.
+======================================================================
+4 April 2016
+----------------------------------------------------------------------
+Need to check whether the obesity-related markers are being affected by other factors (e.g. age, grade)
+    - fit linear model, then use the residuals from it so the
+        variables are removed from the data.
+Pseudocode:
+    - remove all of the possible variables affecting the data (except
+        obesity)
+    - do differential expression analysis using obese vs non-obese
+        samples
+    - check if the DEGs matches the obesity-specific probes they have
+        found in their paper.
+======================================================================
+6 April 2016
+----------------------------------------------------------------------
+Did DEG analysis on the residuals of the data
+    - came up with about 4000 genes with p < 0.05
+        - only about half of the Creighton obesity-related genes were
+            included in this list
+Do DEG on the original/raw data using obese vs non-obese design matrix
+    - see if the same genes come up
+All of the obesity-related genes from Creighton data showed up in the top table, but not all were in the top 799 genes (p value-wise).
+There were only 132 genes that had a fold change (not logFC) greater than 1.2 (which is how Creighton got the gene probe set in the first place).
+======================================================================
+7 April 2016
+----------------------------------------------------------------------
+390 obesity probes from Creighton data were in the top table with p-value < 0.01
+Both metagenes (Creighton and mine) were  able to separate obese samples from non-obese samples.
+    - there were overlap of 239 probes between these obesity-related markers
+Used the 239 overlapping probes to see if it can separate the obese from non-obese samples.
+    - it could separate the groups as well as the other sets of
+        obesity related probes.
+Pulled out the top 799 probes from the residual data and compared it with the other metagenes
+    - it matched 423 probes in my obesity related probes.
+    - it matched 168 probes from Creighton signature
+    - it matched 112 probes from overlap signature
+Only 216 probes from the creighton obesity-related probes were present in the residual top table (p < 0.01)
+    - means that of those 390 overlapping genes that matched, 216 of them
+        remained after controlling for all other clinical variables.
+======================================================================
+11 April 2016
+----------------------------------------------------------------------
+Re-do the analysis, but only use the caucasian samples
+    - remove the effect of race completely from the analysis/linear model
+======================================================================
+12 April 2016
+----------------------------------------------------------------------
+There were different genes in my 799 obesity genes compared with the 799 genes found in the residual data. However, when  you only worked with caucasian samples, the top 799 genes found in the non-residual data were identical to those found in the residual data.
+    - The difference in genes found in the first analysis may have
+        been accounted for by the presence of caucasian samples?
+The results shown above was due to a bug in my code.
+    - there were no overlaps of the genes between the non-residual
+        and the residual data in caucasian samples
+Use the genes from the analyses to transform the TCGA data
+    - use residual (my, cr, red), caucasian (cr, ca), and
+        causcasian residual (cacrres, cares) genes
+======================================================================
+13 April 2016
+----------------------------------------------------------------------
+None of the metagenes found from the Creighton data correlated with BMI in any of the TCGA data.

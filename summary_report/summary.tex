@@ -5,22 +5,193 @@
 
 \section*{Summary so far}
 
-\subsection*{Creighton data}
+\section*{Creighton study}
 
-Creighton et al. found obesity-associated genetic signatures that are specific to obese samples, but not in the lean or overweight samples, in a study using breast tumour samples from patients.
-Total of 103 samples were used in the study, majority (about 70 odd samples) were caucasian, and rest of them black or asian.
-Expression of genes from the samples were quantified using a microarray chip.
-The samples were split into three groups: obese, overweight, and lean samples.
+\subsection*{Intro and methods}
 
-They initially looked at the difference in the gene expression between lean vs. non-lean, but they switched it to obese vs. non-obese group (read paper again).
-(I think they did an ANOVA to see the expression difference between all three groups)
-From this, they found 799 genetic signatures (600 odd unique genes) that were specific to the BMI status of the samples (i.e. the genetic signatures were able to identify obese  samples from the non-obese samples).
-These were identified as obesity specific genes, as they did not correlate (?) with any other clinical variable (judged by the heatmap??).
+Creighton et al. found obesity-associated genetic signature that is specific to obese samples, but not in the lean or overweight samples.
+The study used pretreatment breast tumour biopsies from 103 patient (77 Caucasian, 16 Black, and 10 Asian patients).
+They noticed that the Black patients were more likely to be obese compared to the Caucasian patients (13/16 vs. 22/77), but larger sample size would have made it more convincing.
+Race specific BMI classification may have given a different result (less Black patients may have been classified as obese).
 
-They identified the genes to be involved in AKT/mTOR pathway, and further validated the results using drugs specific to these on mice with breast cancer (?, maybe it was the Fuentes-Mattei paper).
-With these results, we decided to see if these obesity-associated genetic signatures were able to predict the BMI status of the samples/patients in other tumour types from TCGA database.
+The quality of the tumour (tumour cell enrichment per biopsy - i.e. ratio of tumour cells and normal cells) was controlled by trimming the sample in such a way that the tumour cells in each sample were $\geq$ 70\% enriched.
+Expression of genes from these samples were quantified using an affymetrix HG-U133A microarray chip.
 
-\subsection{TCGA}
+The samples were split into three groups using the patient BMI status.
+``Tumours from obese patients were not particularly enriched for a specific molecular subtype, as defined by ER and HER2 status''.
+
+\subsection*{Results}
+
+First, they looked for any genes that were differentially expressed in any of the three BMI groups.
+Unsupervised hierarchical clustering of the genes separated the tumours based on the ER status rather than BMI status.
+They used ANOVA to look for any genes differentially expressed in any of the three BMI groups.
+From this, they got 658 probes at p \textless 0.01, which greatly exceeded the number you would get by chance (approx. 22000 genes $\times$ 0.01 = 220 genes).
+In a heatmap of these 658 gene probes, they noticed that almost all of the genes were differentially expressed in the obese group compared with both overweight and lean group (overweight and lean group appeared homogeneous).
+
+Since the overweight and lean groups looked similar to each other, they grouped these two into a single group and looked for differentially expressed genes between the obese and non-obese groups.
+They found 799 gene probes that were p \textless 0.01 and fold change \textgreater 1.2.
+They only found a median of 82 gene probes when they chose random samples to do gene expression analysis (1000 permutations done), showing that the 799 gene probes were statistically significant.
+
+The heatmap with these genes (fig1 of their paper) showed that the expression was uniform in the obese group, and not specific to tumour grade, ER/PR/HER2 status.
+This was validated in the supplementary figure 4 (haven't looked at it, but I assume it's a figure of box plots showing no significant difference between obese and non-obese groups).\\
+
+They then decided to to use other publicly available breast tumour data to see the relevance of their signature in other data.
+They ranked each sample according to the obesity-associated gene signature they have found (metagene and transformation matrix on other data).
+The results showed that high obesity gene signature scores correlated with a shorter time to metastasis and may represent genes that promote cancer progression only in van de Vijver dataset.
+``... this association with worse outcome may be dependent on the specific patient population under consideration.''
+
+There was no overlap in the genes activated by insulin growth factor (IGF-1) and other oncogenic pathways (MAPK and PI3K) and the genes highly expressed in obesity-associated tumours.
+There was some overlap (\textless 12\%) in genes repressed by the same pathways and the genes low in obese samples.
+They concluded that the obesity-associated genetic signature was distinct from oncogenic pathway signature (different oncogenic mechanism?).
+
+They did a metagene analysis with their data and other data with the IGF-1 signature.
+With their dataset, high IGF-1 score was observed in obese tumour group, compared to the rest of the tumours.
+In other datasets, they found that high IGF-1 scores correlated with high obesity-associated scores (table 2 in their paper).
+They didn't mention the correlation of obesity-associated scores and IGF-1 scores in their original data.
+Shows that both IGF1 and obesity-associated signatures are able to split the samples based on their BMI status, and/or contribute to cancer progression, but in an independent way?
+Maybe IGF1 uses mechanism x, whereas obesity-associated genes use mechanism y, but both contribute to cancer progression.
+
+\section*{Fuentes-Mattei study}
+
+coming soon
+
+
+\section*{What I have been doing (chronologically)}
+
+\subsection*{Data access and processing}
+
+First, I downloaded all the clinical data for all cancer types available online from the ICGC database and checked which cancer types had patient height and weight data.
+There were 14 cancer types in total that had both height and weight data, but only 8 cancer types from this list had RNA-seq data available.
+This gave me 8 cancer types to work with:
+\begin{description}
+	\item[BLCA] Bladder urothelial carcinoma
+	\item[CESC] Cervical squamous cell carcinoma and endocervical adenocarcinoma
+	\item[COAD] Colon adenocarcinoma
+	\item[KIRP] Kidney renal papillary cell carcinoma
+	\item[LIHC] Liver hepatocellular carcinoma
+	\item[READ] Rectal adenocarcinoma
+	\item[SKCM] Skin cutaneous melanoma
+	\item[UCEC] Uterine corpus endometrial carcinoma
+\end{description}
+
+The RNA-seq data for these cancer types were downloaded from TCGA database.
+
+\subsubsection*{Normalisation and standardisation}
+
+Creighton and Fuentes-Mattei data were imported into R and normalised using rma function.
+These data were standardised to have a mean of 0 and standard deviation of 1.
+
+The cancer data were imported into R and checked for the samples that had both height and weight data.
+Any samples without either height and/or weight data were removed from the analysis (removed from the clinical data and RNA-seq data).
+After this, all of the cancer data were normalised using Voom function  from limma (after it has been logged to the base 10).
+These were then standardised just like the Creighton and Fuentes-Mattei data (mean = 0, sd = 1).
+
+\subsection*{Metagene analysis and transformation matrix}
+
+\subsubsection*{Creighton's obesity-associated genes}
+
+799 gene probes identified by the study were used to see if the obesity-associated genetic signature was able to separate the samples based on their BMI status in different cancer types.
+First, I checked that these gene probes were able to separate the samples based on their BMI status like they have said in their paper.
+After normalising and standardising the data, a metagene  was made using SVD.
+Metagene represented each of the sample's obesity-associated gene expression level (i.e. obesity-associated gene scores that was described in the Creighton paper).
+
+The gene expression level of each sample correlated with their metagene score (i.e. high/low expression of the genes when metagene was high/low).
+To confirm that the metagene score was actually separating the samples based on the BMI status, a boxplot was made with the BMI status against the metagene score, as well as a scatter plot of the metagene against raw BMI value of each sample.
+These plots showed that the metagene scores were able to separate the samples into obese or non-obese groups, showing that the obesity-associated gene signature was real in their data.
+
+\subsubsection*{Transformation of Creighton obesity genes to TCGA cancer types}
+
+To transform the cancer data using a list of genes from another data, the transformation matrix from the SVD must have the same number of genes in both datasets (due to matrix multiplications).
+So, to make sure that both the Creighton and TCGA data had the same genes, the probe IDs of the obesity-associated genes were converted into gene symbols first (as TCGA data is RNA-seq data, not microarray).
+
+The gene symbols were matched against the genes present in one of the cancer types downloaded (all cancer types had the same genes, so the resulting gene list was applicable to other types).
+Any duplicates of gene symbols or gene probe IDs  were removed using the collapseRows function from WGCNA package.
+
+Transformation matrix was formed from the resulting list of genes that were common in both the Creighton and TCGA cancer data.
+The cancer data were transformed using this matrix, and the first column of the resulting matrix was used as the metagene for that cancer type.
+
+Heatmaps were made for each cancer type, using the metagene from the transformation.
+The overall gene expression profile for each cancer type correlated with the metagene score (i.e. high/low metagene score corresponded to high/low expression level of the selected genes).
+To confirm whether this association was based on the BMI status of the samples, a boxplot and a scatter plot was plotted with the metagene score against the BMI status and raw BMI value of the samples.
+
+Surprisingly, the apparent correlation of the overall gene expression level with metagene scores were not related to the samples BMI status -- the metagene scores were not able to separate the samples based on their BMI status like in the Creighton dataset.
+
+Since clinical data was not available  for Fuentes-Mattei  dataset, it was not possible to validate the Creighton obesity-associated genes on this dataset.
+However, assuming that the genetic signatures identified by Fuentes-Mattei were obesity-associated, it was possible to see whether their signatures were able to separate the samples based on BMI status.
+
+\subsubsection*{Transformation of Fuentes-Mattei obesity genes to Creighton and TCGA cancer types}
+
+Like with Creighton data, the gene signature from Fuentes-Mattei study was used to make a metagene and a transformation matrix.
+Again, any genes not present in the TCGA data were removed from the signature to make sure that both data sets had the same genes for transformation.
+
+Metagene was created in the Fuentes-Mattei data first and heatmap was produced.
+The heatmap showed that the overall gene expression for each sample correlated with the metagene score, which was expected.
+Since there was no clinical data available for the data set, the ability for the signature to separate the samples into obese or non-obese was not possible.
+
+To see if the Fuentes-Mattei signature was able to be used in other data, Creighton and TCGA data were transformed using the Fuentes-Mattei signature.
+Data was transformed and heatmaps, boxplot, and scatter plots were made for each data set to see if the signature correlated with overall gene expression and/or BMI status.
+
+The heatmaps for all the data showed similar results in that the overall gene expression of the samples correlated with the signature, but was not able to separate the obese samples from non-obese samples.
+This result showed that the signature from Fuentes-Mattei study captured the overall gene expression of the samples, but the signature was not specific to the BMI status of the samples.
+
+These results suggested that the signatures from previous studies are not able to identify the obese samples from the non-obese samples in different cancer types, and possibly not even in the same tumour type.
+
+\subsubsection*{What I think about the results}
+
+The lack of identification in different tumour types can be explained by different tumour biology for different types of tumour, together with tumour heterogeneity and other factors that are specific to the local environment of the tumour.
+
+However, the lack of evidence in the same tumour types were unexpected, as the tumour biology should be similar to one another, if not the same.
+Obvious difference between the two data sets was that Fuentes-Mattei study used tumour samples from ER positive patients, whereas the Creighton study used all the tumour types available at the time.
+It could be that the Fuentes-Mattei signature was specific to ER+ samples (repeat the same analysis but use only ER+ samples from Creighton data).
+
+Another reason could be that, since the tumours are known to be heterogeneous, the samples used in either studies were significantly different from each other.
+This may result in signatures that they thought was ``tumour specific'', but in fact it was quite different to what they have expected.
+I guess if those studies used more samples, you might be able to capture the effect of tumour heterogeneity more and dampen the effect that is complicating the signature's ability to identify obese samples.\\
+
+\newline
+
+Since the signatures identified by either studies could not separate the obese samples from non-obese samples, we decided to see whether there were any differentially expressed genes common in all cancer types (that are specific to obesity).
+If there was any, then use these genes to see if it can identify the obese samples from non-obese samples in Creighton data set.
+
+\subsection*{Gene expression analysis}
+
+\subsubsection*{Creighton data}
+
+I first started the analysis on the Creighton data to check their results.
+I have splitted the samples into two groups like in the study, but in two different ways: lean vs. overweight/obese, and lean/overweight vs. obese.
+
+\begin{center}
+	\begin{tabular}{c|c|c}
+                                  & P \textless{} 0.05 & P \textless{} 0.01 \\
+		\hline
+		Lean vs. overweight/obese & 759              & 104              \\
+		Lean/overweight vs obese  & 5278             & 1781             \\
+	\end{tabular}
+\end{center}
+
+The adjusted p-values were not used, as no genes showed up when adjusted.
+These results were different from the original Creighton data, which was mildly concerning...
+(Didn't check for the overlaps of the obesity-associated genes with the genes I found, but I did that later on).
+
+\subsubsection*{Common genes in TCGA cancer types}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
