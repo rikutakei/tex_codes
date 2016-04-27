@@ -1,6 +1,8 @@
 \documentclass[a4paper, 11pt]{article}
 
 \usepackage[utf8]{inputenc}
+\usepackage{booktabs}
+
 \begin{document}
 
 \section*{Summary so far}
@@ -146,8 +148,8 @@ It could be that the Fuentes-Mattei signature was specific to ER+ samples (repea
 
 Another reason could be that, since the tumours are known to be heterogeneous, the samples used in either studies were significantly different from each other.
 This may result in signatures that they thought was ``tumour specific'', but in fact it was quite different to what they have expected.
-I guess if those studies used more samples, you might be able to capture the effect of tumour heterogeneity more and dampen the effect that is complicating the signature's ability to identify obese samples.\\
-
+I guess if those studies used more samples, you might be able to capture the effect of tumour heterogeneity more and dampen the effect that is complicating the signature's ability to identify obese samples.
+(Creighton's group did mention that their signature ``may be dependent on the specific patient population under consideration''.)\\
 \newline
 
 Since the signatures identified by either studies could not separate the obese samples from non-obese samples, we decided to see whether there were any differentially expressed genes common in all cancer types (that are specific to obesity).
@@ -161,7 +163,7 @@ I first started the analysis on the Creighton data to check their results.
 I have splitted the samples into two groups like in the study, but in two different ways: lean vs. overweight/obese, and lean/overweight vs. obese.
 
 \begin{center}
-	\begin{tabular}{c|c|c}
+	\begin{tabular}{ccc}
                                   & P \textless{} 0.05 & P \textless{} 0.01 \\
 		\hline
 		Lean vs. overweight/obese & 759              & 104              \\
@@ -174,6 +176,135 @@ These results were different from the original Creighton data, which was mildly 
 (Didn't check for the overlaps of the obesity-associated genes with the genes I found, but I did that later on).
 
 \subsubsection*{Common genes in TCGA cancer types}
+
+To see if there were any genes common across all cancer types, I did a gene expression analysis on each cancer type.
+The samples were split into two groups as in the Creighton study: obese vs. non-obese.
+Each cancer type was logged to the base 10 and Voom normalised before a linear model was fitted to the data.
+The names of the significantly expressed genes with p-value \textless{} 1 for each cancer type was recorded and compared with the other cancer types (forgot to check the fold changes).
+
+\begin{center}
+	\begin{tabular}{cccc}
+             & Lean & Overweight & Obese \\
+		BLCA & 103    & 97         & 61 \\
+		CESC & 85     & 62         & 77 \\
+		COAD & 75     & 80         & 71 \\
+		KIRP & 26     & 53         & 45 \\
+		LIHC & 140    & 75         & 49 \\
+		READ & 22     & 36         & 15 \\
+		SKCM & 72     & 73         & 73 \\
+		UCEC & 90     & 106        & 286 \\
+	\end{tabular}
+\end{center}
+
+The number of genes that were present in any two cancer types were noted down, and was repeated for the genes present in any three cancer types, and so on.
+This was repeated for groups with randomly chosen samples and were repeated 100 times (the proportion of the groups were kept the same - refer to the table above).
+
+\begin{center}
+	\begin{tabular}{ccccccccc}
+		& \multicolumn{8}{c}{Number of cancer types the gene overlapped} \\
+                                     &    1 &    2 &   3 &  4 & 5 & 6 & 7 & 8 \\
+		\midrule
+		         Obese vs. non-obese & 6865 & 1907 & 289 & 26 & 1 & 0 & 0 & 0 \\
+		Randomly split sample groups & 5012 &  870 &  89 &  6 & 0 & 0 & 0 & 0 \\
+	\end{tabular}
+\end{center}
+
+This table showed how the number of differentially expressed genes across all cancer types were consistently greater  than the amount of genes found between randomly split groups of samples.
+I think I had a number for the 95$^{th}$ percentile, but I can't find it right now -- might have to re-fo it... (I think the result shown was still over the 95$^{th}$ percentile mark).
+(I think I did one with 1000 iterations -- still looking for the results).
+
+This result shows that the number of differentially expressed genes observed between the obese and non-obese groups were greater than the number of genes one would expect by chance.
+However, as you can see from the table, there were no differentially expressed genes that were common across all cancer types, suggesting that there may be no general cancer markers that are specific to obesity.\\
+
+After this, we decided to see whether there were any significant pathways expressed in any of the cancer types, and if there is any, check the relevance of the pathway in obesity and/or cancer and use the genes that are involved in those pathways as a starting point for further analysis.
+
+\subsection*{Pathway enrichment analysis}
+
+First, I made a matrix of genes by pathway for each of the pathway databases (reactome, KEGG, and GO).
+Since the GO database had the most pathways and genes recorded, I decided to use this for the analysis.
+For each cancer type, I listed all of the significantly expressed genes between obese vs. non-obese groups.
+These genes were used to pull out the relevant genes from the matrix that I have made, which was used to do Fisher's exact test on.
+The results were corrected for multiple testing, using FDR control.
+
+The results (not shown) showed that there were  no significantly enriched pathway in any of the cancer types investigated.
+To see whether this was due to the genes being ``almost'' significant (and thus not included in the Fisher's test), I used the rank-based approach.
+To do this, I used the camera function from the limma package (as geneSetTest function was ``out-dated'' according to the manual).
+However, this still gave the same result as the Fisher's test, where none of the pathways were enriched in any of the cancer types.
+
+At this point, we went back to the Creighton data to see whether their obesity-associated genes were actually related to obesity and no other clinical variables.
+
+\subsection*{Creighton data revisited}
+
+Firstly, I re-did the gene expression analysis on the Creighton data and compared the genes that I found significant with their obesity-associated genes.
+Although all of Creighton's obesity-associated genes showed up in the list of genes that were p \textless{} 0.01, not all gene were in the top 799 genes in that list.
+
+The 799 genes that I have found were able to separate the obese group from the non-obese group like in the Creighton paper, even though the genes that were present in the list were quite different to the obesity-associated genes from Creighton's paper.
+To support this, the metagene scores from my 799 genes were compared with the metagene scores from the Creighton's obesity-associated genes on a scatter plot.
+This showed that both metagene scores were similar to one another, showing how both sets of genes are ``markers'' for obese patients' cancer, even if the genes they are derive from are different.
+
+When the genes that were common in both sets of genes (my genes and Creighton's genes) were used, it showed slightly better seapration of the obese samples from the non-obese samples (239 genes used).\\
+
+To make sure that the genes were not affected by any other clinical variables that are not related to obesity, a linear model was constructed with those variables included in the model.
+The variables included age, race, menopause status, tumour grade, LN status, ER status, PR status, and HER2 status.
+The residual data (remaining data after controlling for these varaibles) were used to get the differentially expressed genes between the obese and non-obese groups.
+
+In Creighton's study, they stated that they found 799 gene probes that were p \textless{} 0.01 and fold change \textgreater{} 1.2 between the obese and non-obese groups.
+However, there were not many gene probes with fold change greater than 1.2 (132 genes) even after logging/exponentiating, and there were significantly greater number of genes with p \textless{} 0.01 (more than 799 gene probes).
+Again, all of the genes that Creighton's team had identified were in the list of significant genes, but not all of them showed up in the top 799 genes.
+
+The heatmaps of the metagene scores from the top 799 genes (from residual data), Creighton genes that were in the top 799 genes (216 genes) showed similar results as the genes identified before controlling for other clinical variables.
+There were 140 genes present in the 799 residual genes that were also in the 239 genes found to be common in both Creighton and 799 genes (from raw data).
+The metagene scores generated from these genes showed better separation of the groups compared to either one on its own, similar to the results with 239 genes.\\
+
+To completely control for the effect of race in the analysis, differentially expressed genes were also obtained using only the Caucasian samples (n = 77).
+The top 799 genes were obtained, as well as the common genes from the Creighton genes that were in those 799 genes (x genes).\\
+
+Now, all of the genes mentioned above were used to get construct a transformation matrix in the raw data (unadjusted for clinical variables).
+These matrices were used to transform the cancer data and metagene scores were obtained as described in previous section.
+Unfortunately, none of the gene sets used were able to separate the samples based on their BMI status.
+
+\section*{Summary (of a summary)}
+
+It seems like that none of the genes that are differentially expressed in obese samples can not be used as a marker for obesity and cancer in other cancer types, nor in the same cancer type but with a different sample population.
+This was mentioned (very briefly) in the Creighton paper, when they were talking about other publicly available human breast tumour data.
+
+As mentioned earlier, this could be due to different cancer types having different tumour biology to one another, together with the tumour heterogeneity within and between the samples.
+Sample quality of the tumours used in the studies may have been problematic as well, especially in the TCGA cancer data as we don't know how those samples were taken and sequenced.
+Greater sample size and/or quality of the samples would help us focus on the true obesity-associated gene signature.\\
+
+I guess the results from the pathway enrichment analysis supports the idea of sample variability and quality.
+If all the cancer samples were developing in a similar fashion to one another, then there would be at least a single pathway coming up as significant.
+Seeing that there are no pathways coming up as significant, it suggests that the sample size and/or quality was too poor to find anything in common.
+
+An alternative explanation (or together with poor sample quality and size) could be that there were no significantly enriched pathways because the samples were so different from one another.
+It could be that each tumour sample have different pathways activated compared to other samples, but still getting the same net result (cancer progression).
+If this was true, this would suggest that there are a huge number of independent pathways that a tumour could take to progress through cancer, with no overlap or ``bottleneck'' pathway.
+However, I doubt that this would be the case as there are very limited pathways for cell cycle/proliferation/transcription which the cancer will eventually have to take.\\
+
+Although all of Creighton's obesity-associated genes came up in the list of significantly differentially expressed genes, it was concerning to find that not all genes found by Creighton were not in the top 799 genes of the genes that I have found.
+Also, there were not many genes that were expressed at a fold change greater than 1.2 like they have claimed in their paper.
+The difference in these results were probably due to the difference in the methods used, rather than other clinical variables affecting tha analysis.
+
+The fact that none of the obesity-associated gene sets found in the analyses (with or without controlling for other clinical variables) were able to separate the obese samples from the non-obese samples strongly suggests that there may not be any obesity-associated genetic signature for cancer in general (at least in the samples currently available to us).\\
+
+
+
+
+\section*{Future directions}
+
+(Re-)do everything that I have missed so far.
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

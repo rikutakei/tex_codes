@@ -707,8 +707,7 @@ There were no significant pathways enriched in any of the cancer data.
 Re-run the analysis with all the samples on the same scale
     - combine all the samples then normalise the whole data
 It still didn't find any significant pathways.
-Go back to Creighton data and double check if the marker is actually
-BMI related, or some other factors involved.
+Go back to Creighton data and double check if the marker is actually BMI related, or some other factors involved.
 ======================================================================
 4 April 2016
 ----------------------------------------------------------------------
@@ -716,12 +715,9 @@ Need to check whether the obesity-related markers are being affected by other fa
     - fit linear model, then use the residuals from it so the
         variables are removed from the data.
 Pseudocode:
-    - remove all of the possible variables affecting the data (except
-        obesity)
-    - do differential expression analysis using obese vs non-obese
-        samples
-    - check if the DEGs matches the obesity-specific probes they have
-        found in their paper.
+    - remove all of the possible variables affecting the data (except obesity)
+    - do differential expression analysis using obese vs non-obese samples
+    - check if the DEGs matches the obesity-specific probes they have found in their paper.
 ======================================================================
 6 April 2016
 ----------------------------------------------------------------------
