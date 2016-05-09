@@ -23,7 +23,12 @@ These usually have a function once it has the correct 3D structure, but it may r
 Quaternary structure is where multiple tertiary structure come together to form a single functional protein.
 Not all protein form a quaternary structure to function.
 
-\section{Bond Rotation}
+\section{Secondary Structure of a Protein}
+
+There are three main secondary structures in a protein: $\alpha$-helix, $\beta$-sheets, and turns.
+These secondary structures of a protein has to be made in accordance with the allowed bond angles of the amide plane of the peptide backbone.
+
+\subsection{Bond Rotation}
 
 Protein structure is created by the main chain and side chain bonds, and requires the main/side chains to be in a certain conformation.
 In order to do this, the amino acids must rotate and orientate correctly for the right interaction.
@@ -36,12 +41,12 @@ Obviously, even though rotations are allowed at the C$_{\alpha}$ atom, not all a
 There are four types of bond angle rotations: $\omega, \psi, \phi$, and $\chi$.
 These angles have values that range from 0 to $\pm$180$^{\circ}$, and together, it gives the 3D structural information of a protein.
 
-\subsection{Phi ($\phi$) Angle}
+\subsubsection{Phi ($\phi$) Angle}
 
 Phi angle is defined as the bond angle rotation of the N--C$_{\alpha}$ bond.
 This bond rotation leads to O--O atom collision.
 
-\subsection{Psi ($\Psi$) Angle}
+\subsubsection{Psi ($\Psi$) Angle}
 
 Psi angle is defined as the bond angle rotation of the C--C$_{\alpha}$ bond.
 This bond rotation leads to the NH--NH collision.
@@ -51,14 +56,52 @@ This bond rotation leads to the NH--NH collision.
 \noindent
 \textbf{Remembering phi/psi angles are quite hard, but just remember that, relative to the C$_{\alpha}$ atom, phi angle is the rotation of the amide plane on the amino group side, whereas the psi angle is the rotation of the amide plane on the other side (i.e. the carboxyl side).}
 
-\subsection{Omega ($\omega$) Angle}
+\subsubsection{Omega ($\omega$) Angle}
 
-mega angle is the bond angle rotation of the actual peptide bond (N--C bond, NOT N--C$_{\alpha}$ bond).
+Omega angle is the bond angle rotation of the actual peptide bond (N--C bond, NOT N--C$_{\alpha}$ bond).
 This bond can only be either 0$^{\circ}$ (\textit{cis}) or 180$^{\circ}$ (\textit{trans}).
 
-\subsection{Chi ($\chi$) Angle}
+\subsubsection{Chi ($\chi$) Angle}
 
 Chi angle is the bond angle rotation of the side chain bond (C$_{\alpha}$--R bond).
+
+\subsection{$\alpha$-Helices}
+
+Specifically speaking, $\alpha$-helix is just one of the many types of helices that may be present in a protein -- there are other types of helices (e.g. polyproline helix), but $\alpha$-helix is the most common type.
+
+In $\alpha$-helix, the carbonyl group of the n$^{th}$ residue forms a H-bond to the amino group of the n+4$^{th}$ residue (e.g. the carbonyl group of the 1$^{st}$ residue H-bonds to the amino group of the 5$^{th}$ residue)
+There is about 3.6 residues per turn, which is about 5.4\AA{} per turn.
+The distance (or height) between 2 residues is about 1.5\AA.
+The side chains point \textbf{outwards} from the helix (this provides certain chemical properties on the sides of the helix, e.g. hydrophobic side).
+$\alpha$-helices are \textbf{dipole} in nature, due to the amide bond polarity, all of which points in a single direction.
+
+There are some residues that disrupt the helical structure.
+These amino acids are glycine and proline.
+Glycine side chain is a hydrogen atom, so it causes very little steric hindrance and therefore very flexible.
+This flexibility can cause disruption in the helical structure.
+Proline has a unique side chain that connects back to its amino group (forming an ``imino group''), meaning that proline introduces a natural `bend' in the polypeptide chain, and thus disrupts the helical structure.
+
+\begin{center}
+% \includegraphics[width=0.7\textwidth]{alphahelix}
+\end{center}
+
+\subsection{$\beta$-Sheets}
+
+$\beta$-sheets, or $\beta$-pleated sheets, are formed from H-bond formation between adjacent polypeptide chain (or strands), therefore $\beta$-sheets are formed from 2$\sim$10 strands (but it can have more strands).
+Each strand has about 15 amino acids, and the $\beta$-sheets can be either parallel (both strands go from N to C terminal) or anti-parallel (strands go in an opposite direction).
+$\beta$-sheets are extended, but pleated (i.e. it's not completely flat), and the side chains point above and below.
+
+\begin{center}
+% \includegraphics[width=0.5\textwidth]{betasheet}
+% \includegraphics[width=0.4\textwidth]{turns}
+\end{center}
+
+\subsection{Turns}
+
+Turns are sharp hairpin turns in a protein, and it has a high glycine and proline content (due to its flexibility and unique structure).
+About 30\% of the residues in a protein is involved in turns.
+It is common for the residues to form H-bonds across the turn.
+There are many types of turns (\textgreater16), but type I and II are the most common.
 
 \section{Ramachandron Plot}
 
@@ -66,57 +109,53 @@ This plot shows all the possible phi/psi angles (i.e. the two amide planes adjac
 Any phi/psi angle pairs that cause steric hindrance are not plotted, so we get some `regions' of allowed angle pairs for any given protein.
 The side chains of the amino acids are (usually) staggered to minimise steric hindrance.
 
-\vspace{0.5cm}
-
-\includegraphics[width=\textwidth]{ramachandron}
-
-\section{Secondary Structure of a Protein}
-
-There are three main secondary structures in a protein: $\alpha$-helix, $\beta$-sheets, and turns.
-
-\subsection{$\alpha$-Helices}
-
-Specifically speaking, $\alpha$-helix is a type of helix that is present in a protein -- there are other types of helices (e.g. polyproline helix), but $\alpha$-helix is the most common type.
-
-In $\alpha$-helix, the carbonyl group of the n$^{th}$ residue forms a H-bond to the amino group of the n+4$^{th}$ residue (e.g. the carbonyl group of the 1$^{st}$ residue H-bonds to the amino group of the 5$^{th}$ residue)
-There is about 3.6 residues per turn, which is about 5.4\AA per turn.
-The distance (or height) between 2 residues is about 1.5\AA.
-The side chains point outwards from the helix (this provides certain chemical properties on the sides of the helix, e.g. hydrophobic side). 
-$\alpha$-helices are dipole in nature, due to the amide bond polarity, all of which points at a single direction.
-
-There are some residues that disrupt the helical structure, and these are glycine and proline.
-Glycine side chain is a hydrogen atom, so it causes very little steric hindrance and therefore very flexible.
-This flexibility can cause disruption in the helical structure.
-Proline has a unique side chain that connects back to its amino group, forming an imino group, meaning that proline introduces a natural `bend' in the polypeptide chain, and thus disrupts the helical structure.
-
-\begin{center}
-\includegraphics[width=0.7\textwidth]{alphahelix}
-\end{center}
-
-\subsection{$\beta$-Sheets}
-
-$\beta$-sheets, or $\beta$-pleated sheets, are formed from H-bond formation between adjacent polypeptide chain (or strands), therefore $\beta$-sheets are formed from 2$\sim$10 strands (but itcan have more strands).
-Each strand has about 15 amino acids, and the $\beta$-sheets can be either parallel (both strands go from N to C terminal) or anti-parallel (strands go in an opposite direction).
-$\beta$-sheets are extended, but pleated (i.e. it's not completely flat), and the side chains point above and below.
-
-\begin{center}
-\includegraphics[width=0.5\textwidth]{betasheet}
-\includegraphics[width=0.4\textwidth]{turns}
-\end{center}
-
-\subsection{Turns}
-
-Turns are sharp hairpin turns in a protein, and it has a high glycine and proline content.
-About 30\% of the residues in a protein is involved in turns.
-It is common for the residues to form H-bonds across the turn.
-There are many types of turns (\textgreater16), but type I and II are common.
-
 \subsection{Relationship between Ramachandron Plots and Secondary Structures}
 
 Secondary structures have certain phi/psi angle pairs, and when you overlay these to the plot, it falls into the allowed regions of the plot at a distinct region.
-This is not surprising, because if the secondary structures fall in the forbidden region, how did the structure form in the first place?
-It can't -- the structure cannot form due to steric hindrance.
+Secondary structures cannot contain any forbidden angle paris, because if they did contain such angle pair(s) there would be a steric hindrance.
 
-This essentially shows that secondary structures have unique phi/psi angle pairs.
+This graph essentially shows that secondary structures have unique phi/psi angle pairs.
 
-\includegraphics[width=\textwidth]{ramachandron}
+% \includegraphics[width=\textwidth]{ramachandron}
+
+\subsection*{What you should get out of this lecture}
+
+\begin{itemize}
+	\item Primary structure is the amino acid sequence of a protein
+		\begin{itemize}
+			\item Primary structure/sequence of the protein determines the 3D structure of the protein
+		\end{itemize}
+	\item Secondary structure is the regular folds/structure that are stabilised by H-bonds between the peptide backbone
+	\item Tertiary structure is the 3D structure of a protein and can have biological function(s)
+	\item Quaternary structure is a group of tertiary structure combined together as a single protein
+	\item Amide bonds of the peptide backbone has a partial double bond characteristic, and therefore cannot be rotated around this bond (amide plane)
+	\item Rotation is allowed between the amide planes, but not all angles are allowed due to steric hindrance
+	\item Relative to the C$_{\alpha}$ atom, phi $\phi$ angle is the rotation of the amide plane on the amino group side, whereas the psi $\psi$ angle is the rotation of the amide plane on the other side (i.e. the carboxyl side)
+	\item Omega $\omega$ angle is the angle of the peptide bond and can only be \textit{cis} or \textit{trans}
+	\item Chi $\chi$ angle is the angle of rotation of the side chain group
+	\item $\alpha$-helix properties:
+		\begin{itemize}
+			\item H-bond between the carbonyl group of the n$^{th}$ residue with the amino group of the n+4$^{th}$ residue
+			\item 3.6 residues per turn, 5.4\AA{} per turn
+			\item 1.5\AA{} between any two amino acid in the helix
+			\item Side chains point outwards
+			\item Dipole due to the dipole nature of the amide bonds
+			\item Glycine and proline are the common helix breakers
+		\end{itemize}
+	\item $\beta$-helix properties:
+		\begin{itemize}
+			\item H-bond between adjacent polypeptide chains/strands
+			\item Formed from 2$\sim$10 strands
+			\item Each strand has about 15 amino acids
+			\item It can be parallel or anti-parallel
+			\item Side chains points up or down
+		\end{itemize}
+	\item Properties of a turn:
+		\begin{itemize}
+			\item About 30\% of residues are involved in turns
+			\item proline and glycine rich
+			\item There are many types of turns, but types I and II are most common
+		\end{itemize}
+	\item Ramachandron Plot shows the allowed Phi/Psi angle pairs in a protein
+	\item Secondary structures have their own unique phi/psi angle pairs, and therefore have a distinct area on the Ramachandron plot.
+\end{itemize}

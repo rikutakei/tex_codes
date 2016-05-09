@@ -1,34 +1,34 @@
-\contentsline {chapter}{Introduction}{10}
-\contentsline {chapter}{Lecture 1}{11}
-\contentsline {section}{\numberline {1.1}Protein}{11}
-\contentsline {section}{\numberline {1.2}Amino Acids}{11}
+\contentsline {chapter}{Introduction}{11}
+\contentsline {chapter}{Lecture 1}{12}
+\contentsline {section}{\numberline {1.1}Protein}{12}
+\contentsline {section}{\numberline {1.2}Amino Acids}{12}
 \contentsline {section}{\numberline {1.3}Amino Acid Side Chains}{12}
-\contentsline {section}{\numberline {1.4}Amino Acid Subgroups}{12}
-\contentsline {subsection}{\numberline {1.4.1}Non-polar}{12}
-\contentsline {subsection}{\numberline {1.4.2}Uncharged Polar}{12}
-\contentsline {subsection}{\numberline {1.4.3}Negatively Charged}{12}
-\contentsline {subsection}{\numberline {1.4.4}Positively Charged}{12}
-\contentsline {section}{\numberline {1.5}Charge of Amino Acids}{14}
-\contentsline {section}{\numberline {1.6}Amino Acid Modifications}{15}
+\contentsline {section}{\numberline {1.4}Charge of Amino Acid Side Chain}{13}
+\contentsline {section}{\numberline {1.5}Amino Acid Subgroups}{14}
+\contentsline {subsection}{\numberline {1.5.1}Non-polar}{14}
+\contentsline {subsection}{\numberline {1.5.2}Uncharged Polar}{14}
+\contentsline {subsection}{\numberline {1.5.3}Negatively Charged}{14}
+\contentsline {subsection}{\numberline {1.5.4}Positively Charged}{14}
+\contentsline {section}{\numberline {1.6}Amino Acid Modifications}{14}
 \contentsline {section}{\numberline {1.7}Proteins, Peptides, and Peptide Bonds}{15}
 \contentsline {subsection}{\numberline {1.7.1}Amide (peptide) Bonds}{15}
-\contentsline {chapter}{Lecture 2}{16}
-\contentsline {section}{\numberline {2.1}Levels of Protein Structure}{16}
-\contentsline {subsection}{\numberline {2.1.1}Primary Structure}{16}
-\contentsline {subsection}{\numberline {2.1.2}Secondary Structure}{16}
-\contentsline {subsection}{\numberline {2.1.3}Tertiary Structure}{16}
-\contentsline {subsection}{\numberline {2.1.4}Quaternary Structure}{16}
-\contentsline {section}{\numberline {2.2}Bond Rotation}{16}
-\contentsline {subsection}{\numberline {2.2.1}Phi ($\phi $) Angle}{17}
-\contentsline {subsection}{\numberline {2.2.2}Psi ($\Psi $) Angle}{17}
-\contentsline {subsection}{\numberline {2.2.3}Omega ($\omega $) Angle}{17}
-\contentsline {subsection}{\numberline {2.2.4}Chi ($\chi $) Angle}{17}
-\contentsline {section}{\numberline {2.3}Ramachandron Plot}{17}
-\contentsline {section}{\numberline {2.4}Secondary Structure of a Protein}{18}
-\contentsline {subsection}{\numberline {2.4.1}$\alpha $-Helices}{18}
-\contentsline {subsection}{\numberline {2.4.2}$\beta $-Sheets}{19}
-\contentsline {subsection}{\numberline {2.4.3}Turns}{20}
-\contentsline {subsection}{\numberline {2.4.4}Relationship between Ramachandron Plots and Secondary Structures}{20}
+\contentsline {chapter}{Lecture 2}{17}
+\contentsline {section}{\numberline {2.1}Levels of Protein Structure}{17}
+\contentsline {subsection}{\numberline {2.1.1}Primary Structure}{17}
+\contentsline {subsection}{\numberline {2.1.2}Secondary Structure}{17}
+\contentsline {subsection}{\numberline {2.1.3}Tertiary Structure}{17}
+\contentsline {subsection}{\numberline {2.1.4}Quaternary Structure}{17}
+\contentsline {section}{\numberline {2.2}Secondary Structure of a Protein}{18}
+\contentsline {subsection}{\numberline {2.2.1}Bond Rotation}{18}
+\contentsline {subsubsection}{Phi ($\phi $) Angle}{18}
+\contentsline {subsubsection}{Psi ($\Psi $) Angle}{18}
+\contentsline {subsubsection}{Omega ($\omega $) Angle}{18}
+\contentsline {subsubsection}{Chi ($\chi $) Angle}{19}
+\contentsline {subsection}{\numberline {2.2.2}$\alpha $-Helices}{19}
+\contentsline {subsection}{\numberline {2.2.3}$\beta $-Sheets}{19}
+\contentsline {subsection}{\numberline {2.2.4}Turns}{19}
+\contentsline {section}{\numberline {2.3}Ramachandron Plot}{20}
+\contentsline {subsection}{\numberline {2.3.1}Relationship between Ramachandron Plots and Secondary Structures}{20}
 \contentsline {chapter}{Lecture 3}{22}
 \contentsline {section}{\numberline {3.1}Supersecondary structure}{22}
 \contentsline {section}{\numberline {3.2}Protein Domains}{22}
@@ -43,355 +43,355 @@
 \contentsline {section}{\numberline {4.3}Haemoglobin}{26}
 \contentsline {section}{\numberline {4.4}O$_2$ Binding Property}{26}
 \contentsline {subsection}{\numberline {4.4.1}Myoglobin}{26}
-\contentsline {subsection}{\numberline {4.4.2}Haemoglobin}{27}
-\contentsline {section}{\numberline {4.5}Sequential and Concerted Model of \-Allosterism}{27}
+\contentsline {subsection}{\numberline {4.4.2}Haemoglobin}{26}
+\contentsline {section}{\numberline {4.5}Sequential and Concerted Model of \-Allosterism}{26}
 \contentsline {subsection}{\numberline {4.5.1}Sequential Model}{27}
-\contentsline {subsection}{\numberline {4.5.2}Concerted Model}{28}
+\contentsline {subsection}{\numberline {4.5.2}Concerted Model}{27}
 \contentsline {chapter}{Lecture 5}{29}
 \contentsline {section}{\numberline {5.1}Allosteric Effectors of Haemoglobin}{29}
 \contentsline {section}{\numberline {5.2}2,3-Bisphosphoglycerate (BPG)}{29}
 \contentsline {section}{\numberline {5.3}H$^+$ and CO$_2$}{30}
 \contentsline {subsection}{\numberline {5.3.1}The Bohr Effect}{30}
 \contentsline {subsection}{\numberline {5.3.2}The Blood Bicarbonate Buffer System}{30}
-\contentsline {chapter}{Lecture 6}{32}
-\contentsline {section}{\numberline {6.1}Haemoglobin Variants}{32}
-\contentsline {section}{\numberline {6.2}Normal Variants}{32}
-\contentsline {subsection}{\numberline {6.2.1}Foetal Haemoglobin (HbF)}{32}
-\contentsline {section}{\numberline {6.3}Abnormal Variants}{32}
+\contentsline {chapter}{Lecture 6}{31}
+\contentsline {section}{\numberline {6.1}Haemoglobin Variants}{31}
+\contentsline {section}{\numberline {6.2}Normal Variants}{31}
+\contentsline {subsection}{\numberline {6.2.1}Foetal Haemoglobin (HbF)}{31}
+\contentsline {section}{\numberline {6.3}Abnormal Variants}{31}
 \contentsline {subsection}{\numberline {6.3.1}Sickle Cell Haemoglobin (HbS)}{32}
-\contentsline {subsection}{\numberline {6.3.2}Met-Haemoglobin (HbM)}{33}
-\contentsline {subsection}{\numberline {6.3.3}Haemoglobin C (HbC)}{33}
-\contentsline {chapter}{Lecture 7}{34}
-\contentsline {section}{\numberline {7.1}Post-Translational Modification (PTM)}{34}
-\contentsline {section}{\numberline {7.2}Covalent Modification of Amino Acids}{34}
-\contentsline {section}{\numberline {7.3}Phoshphorylation}{34}
+\contentsline {subsection}{\numberline {6.3.2}Met-Haemoglobin (HbM)}{32}
+\contentsline {subsection}{\numberline {6.3.3}Haemoglobin C (HbC)}{32}
+\contentsline {chapter}{Lecture 7}{33}
+\contentsline {section}{\numberline {7.1}Post-Translational Modification (PTM)}{33}
+\contentsline {section}{\numberline {7.2}Covalent Modification of Amino Acids}{33}
+\contentsline {section}{\numberline {7.3}Phoshphorylation}{33}
 \contentsline {subsection}{\numberline {7.3.1}Insulin Receptor}{34}
-\contentsline {subsection}{\numberline {7.3.2}Na$^+$/K$^+$ Pump}{35}
-\contentsline {section}{\numberline {7.4}Gamma-carboxy Glutamic Acid (Gla)}{35}
-\contentsline {section}{\numberline {7.5}Hydroxylation}{36}
-\contentsline {chapter}{Lecture 8}{37}
-\contentsline {section}{\numberline {8.1}Introduction to Enzymes and Enzyme Engineering}{37}
-\contentsline {chapter}{Lecture 9}{38}
-\contentsline {section}{\numberline {9.1}Introduction to Biotechnology}{38}
-\contentsline {subsection}{\numberline {9.1.1}The `Old' Way of Obtaining Proteins}{38}
-\contentsline {subsection}{\numberline {9.1.2}Recombinant Protein System}{38}
-\contentsline {subsection}{\numberline {9.1.3}Eukaryotic System}{38}
+\contentsline {subsection}{\numberline {7.3.2}Na$^+$/K$^+$ Pump}{34}
+\contentsline {section}{\numberline {7.4}Gamma-carboxy Glutamic Acid (Gla)}{34}
+\contentsline {section}{\numberline {7.5}Hydroxylation}{34}
+\contentsline {chapter}{Lecture 8}{36}
+\contentsline {section}{\numberline {8.1}Introduction to Enzymes and Enzyme Engineering}{36}
+\contentsline {chapter}{Lecture 9}{37}
+\contentsline {section}{\numberline {9.1}Introduction to Biotechnology}{37}
+\contentsline {subsection}{\numberline {9.1.1}The `Old' Way of Obtaining Proteins}{37}
+\contentsline {subsection}{\numberline {9.1.2}Recombinant Protein System}{37}
+\contentsline {subsection}{\numberline {9.1.3}Eukaryotic System}{37}
 \contentsline {subsection}{\numberline {9.1.4}Recombinant Antibodies}{38}
-\contentsline {subsection}{\numberline {9.1.5}Pharming}{39}
-\contentsline {chapter}{Lecture 10}{40}
-\contentsline {section}{\numberline {10.1}Introduction to Enzymes}{40}
-\contentsline {section}{\numberline {10.2}Active Site of an Enzyme}{40}
-\contentsline {subsection}{\numberline {10.2.1}Geometric Specificity and Stereospecificity}{40}
-\contentsline {section}{\numberline {10.3}Enzyme-Substrate Interaction}{41}
-\contentsline {subsection}{\numberline {10.3.1}Lock-and-Key Model}{41}
-\contentsline {subsection}{\numberline {10.3.2}Induced-fit Model}{41}
-\contentsline {section}{\numberline {10.4}Enzymes, Activation Energy, and \\Catalytic Mechanisms}{42}
-\contentsline {subsection}{\numberline {10.4.1}Acid-base Catalysis}{42}
-\contentsline {subsection}{\numberline {10.4.2}Covalent Catalysis}{42}
-\contentsline {subsection}{\numberline {10.4.3}Metal Ion Catalysis}{43}
-\contentsline {section}{\numberline {10.5}Co-factors and Co-enzymes/Co-substrates}{43}
-\contentsline {section}{\numberline {10.6}Enzyme Nomenclature}{43}
-\contentsline {chapter}{Lecture 11}{44}
-\contentsline {section}{\numberline {11.1}Enzyme Kinetics}{44}
-\contentsline {section}{\numberline {11.2}Measuring Enzyme Catalysis}{44}
-\contentsline {section}{\numberline {11.3}Effect of Enzyme Concentration on the Rate of Reaction}{45}
-\contentsline {section}{\numberline {11.4}Effect of Substrate Concentration on the Rate of Reaction}{45}
-\contentsline {subsection}{\numberline {11.4.1}V$_{max}$ and K$_M$}{46}
-\contentsline {chapter}{Lecture 12}{47}
-\contentsline {section}{\numberline {12.1}The Michaelis-Menten Equation}{47}
-\contentsline {section}{\numberline {12.2}Lineweaver-Burk Plot}{47}
-\contentsline {section}{\numberline {12.3}Significance of K$_M$}{48}
-\contentsline {section}{\numberline {12.4}Physiological Significance of K$_M$}{48}
-\contentsline {section}{\numberline {12.5}V$_{max}$ and k$_{cat}$}{48}
-\contentsline {section}{\numberline {12.6}k$_{cat}$, K$_M$ and Catalytic Efiiciency}{49}
-\contentsline {chapter}{Lecture 13}{50}
-\contentsline {section}{\numberline {13.1}Enzyme Inhibitor}{50}
-\contentsline {section}{\numberline {13.2}Irreversible Inhibitors}{50}
-\contentsline {section}{\numberline {13.3}Reversible Inhibitors}{50}
-\contentsline {subsection}{\numberline {13.3.1}Competitive Reversible Inhibitor}{51}
-\contentsline {subsection}{\numberline {13.3.2}Non-competitive Reversible Inhibitor}{51}
-\contentsline {section}{\numberline {13.4}Methods of Enzyme Regulation}{52}
-\contentsline {subsection}{\numberline {13.4.1}Allosteric Enzyme Regulation}{52}
-\contentsline {subsection}{\numberline {13.4.2}Covalent Modification of Enzymes}{53}
-\contentsline {subsection}{\numberline {13.4.3}Activation of Enzymes by Cleavage}{53}
-\contentsline {section}{\numberline {13.5}Isoenzymes/Isozymes}{53}
-\contentsline {chapter}{Lecture 14}{54}
-\contentsline {section}{\numberline {14.1}Pharmacology and Toxicology}{54}
-\contentsline {section}{\numberline {14.2}Drugs}{54}
-\contentsline {subsection}{\numberline {14.2.1}Sources of Drugs}{54}
-\contentsline {subsection}{\numberline {14.2.2}Targets of Drugs}{54}
-\contentsline {section}{\numberline {14.3}Agonists and Antagonists}{54}
-\contentsline {section}{\numberline {14.4}Receptors}{54}
-\contentsline {subsection}{\numberline {14.4.1}Drug Receptor}{55}
-\contentsline {subsection}{\numberline {14.4.2}Physiological Receptor}{55}
-\contentsline {section}{\numberline {14.5}Ligand-Gated Ion Channels}{56}
-\contentsline {section}{\numberline {14.6}Voltage-Gated Ion Channels}{56}
-\contentsline {chapter}{Lecture 15}{57}
-\contentsline {section}{\numberline {15.1}Nuclear Receptor}{57}
-\contentsline {section}{\numberline {15.2}Mechanism of Nuclear Receptor Signalling}{57}
-\contentsline {subsection}{\numberline {15.2.1}Regulation of Nuclear Receptor}{57}
-\contentsline {section}{\numberline {15.3}Structure of Nuclear Receptor}{58}
-\contentsline {section}{\numberline {15.4}What Genes are Activated by Nuclear Receptor}{58}
-\contentsline {section}{\numberline {15.5}Nuclear Receptor and Cancer}{58}
-\contentsline {subsection}{\numberline {15.5.1}Breast Cancer}{58}
-\contentsline {subsection}{\numberline {15.5.2}Androgen Receptor and Prostate Cancer}{58}
-\contentsline {section}{\numberline {15.6}Effect of Hormones on Living Organisms}{59}
-\contentsline {chapter}{Lecture 16}{60}
-\contentsline {section}{\numberline {16.1}G-protein Coupled Receptors (GPCR)}{60}
-\contentsline {section}{\numberline {16.2}Mechanism of GPCRs}{60}
-\contentsline {section}{\numberline {16.3}Dopamine Receptor}{60}
-\contentsline {subsection}{\numberline {16.3.1}Parkinson's Disease}{60}
-\contentsline {subsection}{\numberline {16.3.2}Psychosis}{60}
-\contentsline {chapter}{Lecture 17}{62}
-\contentsline {section}{\numberline {17.1}Membrane Lipids and Proteins}{62}
-\contentsline {section}{\numberline {17.2}Membrane Composition}{62}
-\contentsline {section}{\numberline {17.3}Membrane Lipid Structure}{62}
-\contentsline {section}{\numberline {17.4}Membrane Fluidity}{63}
-\contentsline {subsection}{\numberline {17.4.1}Temperature}{63}
-\contentsline {subsection}{\numberline {17.4.2}Type of Fatty Acid}{63}
-\contentsline {subsection}{\numberline {17.4.3}Presence of Cholesterol}{63}
-\contentsline {section}{\numberline {17.5}Lipid Bilayer is a 2D Fluid}{63}
-\contentsline {section}{\numberline {17.6}Membrane Proteins}{64}
-\contentsline {section}{\numberline {17.7}How Are Proteins Attached to the Membrane?}{64}
-\contentsline {chapter}{Lecture 18}{66}
-\contentsline {section}{\numberline {18.1}Transport of Non-polar Molecules Through the Membrane}{66}
-\contentsline {subsection}{\numberline {18.1.1}Permeability Coefficient and Oil-Water Partition Coefficient}{66}
-\contentsline {subsection}{\numberline {18.1.2}Concentration Gradient vs. Flux}{67}
-\contentsline {section}{\numberline {18.2}Transport of Polar Molecules Through the Membrane}{67}
-\contentsline {subsection}{\numberline {18.2.1}Channels}{67}
-\contentsline {subsection}{\numberline {18.2.2}Transporters}{68}
-\contentsline {section}{\numberline {18.3}Types of Transport Processes}{69}
-\contentsline {chapter}{Lecture 19}{70}
-\contentsline {section}{\numberline {19.1}Energy Metabolism and ATP}{70}
-\contentsline {section}{\numberline {19.2}Energy Balance in the Body}{70}
-\contentsline {subsection}{\numberline {19.2.1}Subtopic: Leptin Receptor}{70}
-\contentsline {section}{\numberline {19.3}Units of Energy}{70}
-\contentsline {section}{\numberline {19.4}Measuring Energy Intake}{71}
-\contentsline {subsection}{\numberline {19.4.1}Bomb Calorimetry}{71}
-\contentsline {section}{\numberline {19.5}Atwater Factor}{71}
-\contentsline {section}{\numberline {19.6}Measuring Energy Expenditure}{71}
-\contentsline {subsection}{\numberline {19.6.1}Direct Calorimetry}{71}
-\contentsline {subsection}{\numberline {19.6.2}Indirect Calorimetry}{71}
-\contentsline {subsection}{\numberline {19.6.3}Respiration Exchange Ratio}{71}
-\contentsline {section}{\numberline {19.7}Basal Metabolism}{72}
-\contentsline {subsection}{\numberline {19.7.1}Hyper and Hypothyroidism}{72}
-\contentsline {chapter}{Lecture 20}{73}
-\contentsline {section}{\numberline {20.1}Digestion and Absorption of Food}{73}
-\contentsline {section}{\numberline {20.2}Organs Involved in Digestion}{73}
-\contentsline {subsection}{\numberline {20.2.1}Salivary Glands}{73}
-\contentsline {subsection}{\numberline {20.2.2}Stomach}{73}
-\contentsline {subsection}{\numberline {20.2.3}Pancreas}{73}
-\contentsline {subsection}{\numberline {20.2.4}Liver}{73}
-\contentsline {subsection}{\numberline {20.2.5}Small Intestine}{73}
-\contentsline {section}{\numberline {20.3}Beaumont's Experiment}{73}
-\contentsline {section}{\numberline {20.4}Digestion}{74}
-\contentsline {section}{\numberline {20.5}Carbohydrate Digestion}{74}
-\contentsline {subsection}{\numberline {20.5.1}Enzymes Involved in Carbohydrate Digestion}{74}
-\contentsline {subsection}{\numberline {20.5.2}Lactose Intolerance}{74}
-\contentsline {section}{\numberline {20.6}Carbohydrate Absorption}{74}
-\contentsline {subsection}{\numberline {20.6.1}Glucose Transport}{75}
-\contentsline {subsection}{\numberline {20.6.2}Coeliac Disease}{75}
-\contentsline {chapter}{Lecture 21}{76}
-\contentsline {section}{\numberline {21.1}Protein Digestion and Absorption}{76}
-\contentsline {section}{\numberline {21.2}Essential Amino Acids}{76}
-\contentsline {section}{\numberline {21.3}Regulation of Protein Digestion}{76}
-\contentsline {section}{\numberline {21.4}Enzymes Involved in Protein Digestion}{76}
-\contentsline {section}{\numberline {21.5}Protein Digestion}{76}
-\contentsline {subsection}{\numberline {21.5.1}Pepsinogen Activation}{77}
-\contentsline {subsection}{\numberline {21.5.2}Small Intestine Peptidase Activation}{78}
-\contentsline {section}{\numberline {21.6}Protein Absorption}{78}
-\contentsline {subsection}{\numberline {21.6.1}Amino Acid Transport}{78}
-\contentsline {subsection}{\numberline {21.6.2}Peptide Absorption}{78}
-\contentsline {subsection}{\numberline {21.6.3}Absorption of Intact Proteins}{79}
-\contentsline {section}{\numberline {21.7}Diseases of Inappropriate Enzyme Activation}{79}
-\contentsline {section}{\numberline {21.8}Diseases of Malabsorption}{79}
-\contentsline {section}{\numberline {21.9}Digestion of Nucleic Acid}{79}
-\contentsline {chapter}{Lecture 22}{80}
-\contentsline {section}{\numberline {22.1}Lipid Digestion and Absorption}{80}
-\contentsline {section}{\numberline {22.2}Bile Acids/Salts}{80}
-\contentsline {section}{\numberline {22.3}Bile Composition}{80}
-\contentsline {section}{\numberline {22.4}Digestion of Lipids}{80}
-\contentsline {section}{\numberline {22.5}Fat Malabsorption}{80}
-\contentsline {subsection}{\numberline {22.5.1}Orlistat (Xenicol)}{80}
-\contentsline {section}{\numberline {22.6}Process of Fat Absorption}{81}
-\contentsline {subsection}{\numberline {22.6.1}Lipoproteins}{81}
-\contentsline {subsubsection}{Function of Apoproteins}{81}
-\contentsline {subsection}{\numberline {22.6.2}Lipid Transport Pathways}{81}
-\contentsline {subsubsection}{Exogenous Pathway}{82}
-\contentsline {subsubsection}{Lipoprotein Lipase}{82}
-\contentsline {subsubsection}{Endogenous Pathway}{82}
-\contentsline {subsection}{\numberline {22.6.3}Familial Hypercholesterolemia (FH)}{83}
-\contentsline {chapter}{Lecture 23}{84}
-\contentsline {section}{\numberline {23.1}Vitamins}{84}
-\contentsline {subsection}{\numberline {23.1.1}Fat Soluble Vitamins}{84}
-\contentsline {subsubsection}{Vitamin A}{84}
-\contentsline {subsubsection}{Vitamin D}{84}
-\contentsline {subsubsection}{Vitamin E}{84}
-\contentsline {subsubsection}{Vitamin K}{85}
-\contentsline {subsection}{\numberline {23.1.2}Water Soluble Vitamins}{85}
-\contentsline {subsubsection}{Vitamin B1}{85}
-\contentsline {subsubsection}{Vitamin B2}{85}
-\contentsline {subsubsection}{Vitamin B3}{85}
-\contentsline {subsubsection}{Vitamin B5}{85}
-\contentsline {subsubsection}{Vitamin B6}{85}
-\contentsline {subsubsection}{Vitamin B7}{85}
-\contentsline {subsubsection}{Vitamin B9}{85}
-\contentsline {subsubsection}{Vitamin B12}{86}
-\contentsline {subsubsection}{Vitamin C}{86}
-\contentsline {chapter}{Lecture 24}{87}
-\contentsline {section}{\numberline {24.1}Minerals}{87}
-\contentsline {subsection}{\numberline {24.1.1}Selenium}{87}
-\contentsline {subsection}{\numberline {24.1.2}Iodine}{87}
-\contentsline {subsection}{\numberline {24.1.3}Iron}{87}
-\contentsline {subsection}{\numberline {24.1.4}Zinc}{87}
-\contentsline {chapter}{Lecture 25}{89}
-\contentsline {section}{\numberline {25.1}Metabolic Pathways and ATP Synthesis}{89}
-\contentsline {subsection}{\numberline {25.1.1}Conservation of Energy}{89}
-\contentsline {subsection}{\numberline {25.1.2}Energy Coupling}{89}
-\contentsline {subsubsection}{Coupling ATP Hydrolysis with Hexokinse}{89}
-\contentsline {subsection}{\numberline {25.1.3}Oxidising Fuels for Energy}{90}
-\contentsline {subsubsection}{Redox Reactions}{90}
-\contentsline {subsubsection}{Phosphorylation Reactions}{90}
-\contentsline {subsection}{\numberline {25.1.4}Reducing Equivalents}{90}
-\contentsline {subsection}{\numberline {25.1.5}Co-enzymes}{90}
-\contentsline {subsubsection}{NAD}{90}
-\contentsline {subsubsection}{FAD}{91}
-\contentsline {subsubsection}{Co-enzyme A}{91}
-\contentsline {chapter}{Lecture 26}{92}
-\contentsline {section}{\numberline {26.1}Glycolysis}{92}
-\contentsline {subsection}{\numberline {26.1.1}Activation of Glucose}{92}
-\contentsline {subsection}{\numberline {26.1.2}Energy Pay-Off/Release Phase}{94}
-\contentsline {subsubsection}{Oxidation of G3P and First Substrate Level Phosphorylation}{94}
-\contentsline {subsubsection}{Arsenic Poisoning}{94}
-\contentsline {subsubsection}{Second Substrate Level Phosphorylation}{94}
-\contentsline {section}{\numberline {26.2}Fate of Pyruvate}{96}
-\contentsline {subsection}{\numberline {26.2.1}Aerobic Condition}{96}
-\contentsline {subsection}{\numberline {26.2.2}Anaerobic Condition}{96}
-\contentsline {chapter}{Lecture 27}{97}
-\contentsline {section}{\numberline {27.1}Fatty Acid as a Fuel}{97}
-\contentsline {section}{\numberline {27.2}Delivery of Fatty Acids}{97}
-\contentsline {subsection}{\numberline {27.2.1}From Adipose Tissue to Cells}{97}
-\contentsline {subsubsection}{Fatty Acid Activation}{97}
-\contentsline {subsection}{\numberline {27.2.2}From Cytoplasm to Mitochondria}{98}
-\contentsline {subsubsection}{Carnitine Supplements}{98}
-\contentsline {section}{\numberline {27.3}$\beta $-Oxidation}{99}
-\contentsline {chapter}{Lecture 28}{100}
-\contentsline {section}{\numberline {28.1}Citric Acid Cycle}{100}
-\contentsline {subsection}{\numberline {28.1.1}First Half -- Release of CO$_2$}{100}
-\contentsline {subsubsection}{Condensation of Acetyl-CoA and Oxaloacetate}{100}
-\contentsline {subsubsection}{Isomerisation of Citrate}{100}
-\contentsline {subsubsection}{First Oxidative Decarboxylation}{100}
-\contentsline {subsubsection}{Second Oxidative Decarboxylation}{100}
-\contentsline {subsection}{\numberline {28.1.2}Second Half -- Rearranging it back to Oxaloacetate}{101}
-\contentsline {subsubsection}{Succinyl-CoA to Succinate}{101}
-\contentsline {subsubsection}{Succinate to Oxaloacetate}{101}
-\contentsline {chapter}{Lecture 29}{103}
-\contentsline {section}{\numberline {29.1}Amino Acids as Fuel}{103}
-\contentsline {section}{\numberline {29.2}Deamination of Amino Acids}{103}
-\contentsline {subsection}{\numberline {29.2.1}Common Amino/Keto Acid Pairs}{104}
-\contentsline {section}{\numberline {29.3}Removal of Ammonium}{104}
-\contentsline {chapter}{Lecture 30}{106}
-\contentsline {section}{\numberline {30.1}Oxidative Phosphorylation -- Part 1}{106}
-\contentsline {section}{\numberline {30.2}Electron Transport Chain}{106}
-\contentsline {subsection}{\numberline {30.2.1}Electron Carriers}{106}
-\contentsline {subsection}{\numberline {30.2.2}Movement of Electrons Through ETC}{107}
-\contentsline {chapter}{Lecture 31}{108}
-\contentsline {section}{\numberline {31.1}Oxidative Phosphorylation -- Part 2}{108}
-\contentsline {subsection}{\numberline {31.1.1}Complex I}{108}
-\contentsline {subsection}{\numberline {31.1.2}Complex II}{108}
-\contentsline {subsection}{\numberline {31.1.3}Co-Enzyme Q (Ubiquinone)}{108}
-\contentsline {subsection}{\numberline {31.1.4}Complex III}{109}
-\contentsline {subsection}{\numberline {31.1.5}Cytochrome c}{109}
-\contentsline {subsection}{\numberline {31.1.6}Complex IV}{109}
-\contentsline {subsection}{\numberline {31.1.7}Energy Accounting}{109}
-\contentsline {section}{\numberline {31.2}Poisoning the ETC}{109}
-\contentsline {subsection}{\numberline {31.2.1}Rotenone}{109}
-\contentsline {subsection}{\numberline {31.2.2}Cyanide}{109}
-\contentsline {subsection}{\numberline {31.2.3}Carbon Monoxide}{109}
-\contentsline {subsection}{\numberline {31.2.4}Consequences}{109}
-\contentsline {chapter}{Lecture 32}{111}
-\contentsline {section}{\numberline {32.1}History of ATP Synthase}{111}
-\contentsline {section}{\numberline {32.2}Proton Motive Force}{111}
-\contentsline {section}{\numberline {32.3}Experimental Proof of pmf}{111}
-\contentsline {subsection}{\numberline {32.3.1}Experiment with Mitochondria with no Outer Membrane}{111}
-\contentsline {subsection}{\numberline {32.3.2}Experiment using an Uncoupler}{112}
-\contentsline {subsubsection}{Dinitrophenol (DNP)}{112}
-\contentsline {subsection}{\numberline {32.3.3}Liposome with Light-Inducible Proton Pump}{112}
-\contentsline {section}{\numberline {32.4}F$_o$F$_1$ ATP Synthase}{113}
-\contentsline {subsection}{\numberline {32.4.1}Mechanism of ATP Synthesis}{113}
-\contentsline {section}{\numberline {32.5}Energy Accounting}{113}
-\contentsline {chapter}{Lecture 33}{114}
-\contentsline {section}{\numberline {33.1}Photosynthesis}{114}
-\contentsline {section}{\numberline {33.2}History of Photosynthesis}{114}
-\contentsline {section}{\numberline {33.3}Mechanism of Photosynthesis}{115}
-\contentsline {subsection}{\numberline {33.3.1}Antenna and Reaction Center Concept}{115}
-\contentsline {subsection}{\numberline {33.3.2}Z Scheme}{116}
-\contentsline {subsection}{\numberline {33.3.3}Chemiosmosis Theory}{116}
-\contentsline {chapter}{Lecture 34}{117}
-\contentsline {section}{\numberline {34.1}Alcohol Metabolism}{117}
-\contentsline {subsection}{\numberline {34.1.1}Alcohol}{117}
-\contentsline {subsection}{\numberline {34.1.2}Alcohol Dehydrogenase}{117}
-\contentsline {subsubsection}{Kinetics of Alcohol Dehydrogenase}{117}
-\contentsline {subsection}{\numberline {34.1.3}Acetaldehyde Dehydrogenase}{117}
-\contentsline {subsection}{\numberline {34.1.4}Acetyl-CoA Synthetase}{117}
-\contentsline {subsection}{\numberline {34.1.5}Fate of Acetyl-CoA from Alcohol}{118}
-\contentsline {subsection}{\numberline {34.1.6}Consequences of Alcohol Metabolism}{118}
-\contentsline {section}{\numberline {34.2}Metabolism of Alcohol as a Toxin}{118}
-\contentsline {chapter}{Lecture 35}{119}
-\contentsline {section}{\numberline {35.1}Fuel Stores}{119}
-\contentsline {section}{\numberline {35.2}Fat Storage}{119}
-\contentsline {section}{\numberline {35.3}TAG Synthesis}{119}
-\contentsline {section}{\numberline {35.4}Mobilisation of TAGs}{119}
-\contentsline {section}{\numberline {35.5}Glycogen}{119}
-\contentsline {section}{\numberline {35.6}Glycogen Synthesis}{120}
-\contentsline {section}{\numberline {35.7}Mobilisation of Glycogen}{120}
-\contentsline {section}{\numberline {35.8}Formation of Fatty Acids from Glucose}{120}
-\contentsline {chapter}{Lecture 36}{121}
-\contentsline {section}{\numberline {36.1}Starvation}{121}
-\contentsline {section}{\numberline {36.2}Liver Glycogen}{121}
-\contentsline {section}{\numberline {36.3}Gluconeogenesis}{122}
-\contentsline {section}{\numberline {36.4}Maintaining Fuel Supply to the Brain}{122}
-\contentsline {subsection}{\numberline {36.4.1}Protein Stores}{122}
-\contentsline {subsection}{\numberline {36.4.2}Ketone Bodies}{123}
-\contentsline {subsubsection}{Ketone Body Synthesis}{123}
-\contentsline {section}{\numberline {36.5}Metabolic Adaptations to Starvation}{124}
-\contentsline {chapter}{Lecture 37}{125}
-\contentsline {section}{\numberline {37.1}Exercise Metabolism}{125}
-\contentsline {section}{\numberline {37.2}Anaerobic Exercise}{125}
-\contentsline {subsection}{\numberline {37.2.1}Phosphocreatine}{125}
-\contentsline {subsection}{\numberline {37.2.2}Glycogen}{125}
-\contentsline {subsection}{\numberline {37.2.3}Anaerobic Glycolysis}{125}
-\contentsline {subsection}{\numberline {37.2.4}Regulation of Glycolysis in Exercising Muscle}{125}
-\contentsline {section}{\numberline {37.3}Aerobic Exercise}{126}
-\contentsline {section}{\numberline {37.4}Aerobic Training}{126}
-\contentsline {section}{\numberline {37.5}Muscle Fibre Types}{126}
-\contentsline {section}{\numberline {37.6}Myostatin}{126}
-\contentsline {chapter}{Lecture 38}{127}
-\contentsline {section}{\numberline {38.1}Diabetes}{127}
-\contentsline {section}{\numberline {38.2}Insulin}{127}
-\contentsline {chapter}{Lecture 39}{129}
-\contentsline {section}{\numberline {39.1}Obesity}{129}
-\contentsline {section}{\numberline {39.2}Metabolic Rate}{129}
-\contentsline {section}{\numberline {39.3}Uncoupling Protom Motive Force from Oxidative Phosphorylation}{129}
-\contentsline {subsection}{\numberline {39.3.1}Dinitrophenol}{130}
-\contentsline {subsection}{\numberline {39.3.2}Brown Adipose Tissue}{130}
-\contentsline {subsubsection}{Uncoupling Protein (UCP)}{130}
-\contentsline {subsubsection}{Diet-induced Thermogenesis}{130}
-\contentsline {subsubsection}{Strategies of BAT Usage}{130}
-\contentsline {section}{\numberline {39.4}Genetic Component of Obesity}{130}
-\contentsline {subsection}{\numberline {39.4.1}Obese Gene (Leptin)}{130}
-\contentsline {subsection}{\numberline {39.4.2}Leptin in Humans}{131}
-\contentsline {section}{\numberline {39.5}Treatments}{131}
-\contentsline {chapter}{Lecture 40}{132}
-\contentsline {section}{\numberline {40.1}Integration of Metabolism}{132}
-\contentsline {subsection}{\numberline {40.1.1}Brain Metabolism}{132}
-\contentsline {subsection}{\numberline {40.1.2}Skeletal Muscle Metabolism}{132}
-\contentsline {subsection}{\numberline {40.1.3}Hear Muscle Metabolism}{132}
-\contentsline {subsection}{\numberline {40.1.4}Adipose Tissue Metabolism}{132}
-\contentsline {subsection}{\numberline {40.1.5}Liver Metabolism}{132}
-\contentsline {section}{\numberline {40.2}Signalling Your Body}{133}
-\contentsline {subsection}{\numberline {40.2.1}Endocrine System}{133}
-\contentsline {subsection}{\numberline {40.2.2}Nervous System}{133}
-\contentsline {subsection}{\numberline {40.2.3}Types of Hormones}{133}
-\contentsline {subsection}{\numberline {40.2.4}Functions Regulated by Signal Molecules}{133}
-\contentsline {subsection}{\numberline {40.2.5}Signal Transduction and Diseases}{133}
+\contentsline {subsection}{\numberline {9.1.5}Pharming}{38}
+\contentsline {chapter}{Lecture 10}{39}
+\contentsline {section}{\numberline {10.1}Introduction to Enzymes}{39}
+\contentsline {section}{\numberline {10.2}Active Site of an Enzyme}{39}
+\contentsline {subsection}{\numberline {10.2.1}Geometric Specificity and Stereospecificity}{39}
+\contentsline {section}{\numberline {10.3}Enzyme-Substrate Interaction}{40}
+\contentsline {subsection}{\numberline {10.3.1}Lock-and-Key Model}{40}
+\contentsline {subsection}{\numberline {10.3.2}Induced-fit Model}{40}
+\contentsline {section}{\numberline {10.4}Enzymes, Activation Energy, and \\Catalytic Mechanisms}{40}
+\contentsline {subsection}{\numberline {10.4.1}Acid-base Catalysis}{41}
+\contentsline {subsection}{\numberline {10.4.2}Covalent Catalysis}{41}
+\contentsline {subsection}{\numberline {10.4.3}Metal Ion Catalysis}{41}
+\contentsline {section}{\numberline {10.5}Co-factors and Co-enzymes/Co-substrates}{42}
+\contentsline {section}{\numberline {10.6}Enzyme Nomenclature}{42}
+\contentsline {chapter}{Lecture 11}{43}
+\contentsline {section}{\numberline {11.1}Enzyme Kinetics}{43}
+\contentsline {section}{\numberline {11.2}Measuring Enzyme Catalysis}{43}
+\contentsline {section}{\numberline {11.3}Effect of Enzyme Concentration on the Rate of Reaction}{43}
+\contentsline {section}{\numberline {11.4}Effect of Substrate Concentration on the Rate of Reaction}{44}
+\contentsline {subsection}{\numberline {11.4.1}V$_{max}$ and K$_M$}{44}
+\contentsline {chapter}{Lecture 12}{45}
+\contentsline {section}{\numberline {12.1}The Michaelis-Menten Equation}{45}
+\contentsline {section}{\numberline {12.2}Lineweaver-Burk Plot}{45}
+\contentsline {section}{\numberline {12.3}Significance of K$_M$}{46}
+\contentsline {section}{\numberline {12.4}Physiological Significance of K$_M$}{46}
+\contentsline {section}{\numberline {12.5}V$_{max}$ and k$_{cat}$}{46}
+\contentsline {section}{\numberline {12.6}k$_{cat}$, K$_M$ and Catalytic Efiiciency}{47}
+\contentsline {chapter}{Lecture 13}{48}
+\contentsline {section}{\numberline {13.1}Enzyme Inhibitor}{48}
+\contentsline {section}{\numberline {13.2}Irreversible Inhibitors}{48}
+\contentsline {section}{\numberline {13.3}Reversible Inhibitors}{48}
+\contentsline {subsection}{\numberline {13.3.1}Competitive Reversible Inhibitor}{49}
+\contentsline {subsection}{\numberline {13.3.2}Non-competitive Reversible Inhibitor}{49}
+\contentsline {section}{\numberline {13.4}Methods of Enzyme Regulation}{49}
+\contentsline {subsection}{\numberline {13.4.1}Allosteric Enzyme Regulation}{49}
+\contentsline {subsection}{\numberline {13.4.2}Covalent Modification of Enzymes}{50}
+\contentsline {subsection}{\numberline {13.4.3}Activation of Enzymes by Cleavage}{50}
+\contentsline {section}{\numberline {13.5}Isoenzymes/Isozymes}{50}
+\contentsline {chapter}{Lecture 14}{51}
+\contentsline {section}{\numberline {14.1}Pharmacology and Toxicology}{51}
+\contentsline {section}{\numberline {14.2}Drugs}{51}
+\contentsline {subsection}{\numberline {14.2.1}Sources of Drugs}{51}
+\contentsline {subsection}{\numberline {14.2.2}Targets of Drugs}{51}
+\contentsline {section}{\numberline {14.3}Agonists and Antagonists}{52}
+\contentsline {section}{\numberline {14.4}Receptors}{52}
+\contentsline {subsection}{\numberline {14.4.1}Drug Receptor}{52}
+\contentsline {subsection}{\numberline {14.4.2}Physiological Receptor}{52}
+\contentsline {section}{\numberline {14.5}Ligand-Gated Ion Channels}{52}
+\contentsline {section}{\numberline {14.6}Voltage-Gated Ion Channels}{53}
+\contentsline {chapter}{Lecture 15}{54}
+\contentsline {section}{\numberline {15.1}Nuclear Receptor}{54}
+\contentsline {section}{\numberline {15.2}Mechanism of Nuclear Receptor Signalling}{54}
+\contentsline {subsection}{\numberline {15.2.1}Regulation of Nuclear Receptor}{54}
+\contentsline {section}{\numberline {15.3}Structure of Nuclear Receptor}{55}
+\contentsline {section}{\numberline {15.4}What Genes are Activated by Nuclear Receptor}{55}
+\contentsline {section}{\numberline {15.5}Nuclear Receptor and Cancer}{55}
+\contentsline {subsection}{\numberline {15.5.1}Breast Cancer}{55}
+\contentsline {subsection}{\numberline {15.5.2}Androgen Receptor and Prostate Cancer}{56}
+\contentsline {section}{\numberline {15.6}Effect of Hormones on Living Organisms}{56}
+\contentsline {chapter}{Lecture 16}{57}
+\contentsline {section}{\numberline {16.1}G-protein Coupled Receptors (GPCR)}{57}
+\contentsline {section}{\numberline {16.2}Mechanism of GPCRs}{57}
+\contentsline {section}{\numberline {16.3}Dopamine Receptor}{57}
+\contentsline {subsection}{\numberline {16.3.1}Parkinson's Disease}{58}
+\contentsline {subsection}{\numberline {16.3.2}Psychosis}{58}
+\contentsline {chapter}{Lecture 17}{59}
+\contentsline {section}{\numberline {17.1}Membrane Lipids and Proteins}{59}
+\contentsline {section}{\numberline {17.2}Membrane Composition}{59}
+\contentsline {section}{\numberline {17.3}Membrane Lipid Structure}{59}
+\contentsline {section}{\numberline {17.4}Membrane Fluidity}{60}
+\contentsline {subsection}{\numberline {17.4.1}Temperature}{60}
+\contentsline {subsection}{\numberline {17.4.2}Type of Fatty Acid}{60}
+\contentsline {subsection}{\numberline {17.4.3}Presence of Cholesterol}{60}
+\contentsline {section}{\numberline {17.5}Lipid Bilayer is a 2D Fluid}{61}
+\contentsline {section}{\numberline {17.6}Membrane Proteins}{61}
+\contentsline {section}{\numberline {17.7}How Are Proteins Attached to the Membrane?}{61}
+\contentsline {chapter}{Lecture 18}{62}
+\contentsline {section}{\numberline {18.1}Transport of Non-polar Molecules Through the Membrane}{62}
+\contentsline {subsection}{\numberline {18.1.1}Permeability Coefficient and Oil-Water Partition Coefficient}{62}
+\contentsline {subsection}{\numberline {18.1.2}Concentration Gradient vs. Flux}{62}
+\contentsline {section}{\numberline {18.2}Transport of Polar Molecules Through the Membrane}{63}
+\contentsline {subsection}{\numberline {18.2.1}Channels}{63}
+\contentsline {subsection}{\numberline {18.2.2}Transporters}{63}
+\contentsline {section}{\numberline {18.3}Types of Transport Processes}{64}
+\contentsline {chapter}{Lecture 19}{65}
+\contentsline {section}{\numberline {19.1}Energy Metabolism and ATP}{65}
+\contentsline {section}{\numberline {19.2}Energy Balance in the Body}{65}
+\contentsline {subsection}{\numberline {19.2.1}Subtopic: Leptin Receptor}{65}
+\contentsline {section}{\numberline {19.3}Units of Energy}{66}
+\contentsline {section}{\numberline {19.4}Measuring Energy Intake}{66}
+\contentsline {subsection}{\numberline {19.4.1}Bomb Calorimetry}{66}
+\contentsline {section}{\numberline {19.5}Atwater Factor}{66}
+\contentsline {section}{\numberline {19.6}Measuring Energy Expenditure}{66}
+\contentsline {subsection}{\numberline {19.6.1}Direct Calorimetry}{67}
+\contentsline {subsection}{\numberline {19.6.2}Indirect Calorimetry}{67}
+\contentsline {subsection}{\numberline {19.6.3}Respiration Exchange Ratio}{67}
+\contentsline {section}{\numberline {19.7}Basal Metabolism}{67}
+\contentsline {subsection}{\numberline {19.7.1}Hyper and Hypothyroidism}{68}
+\contentsline {chapter}{Lecture 20}{69}
+\contentsline {section}{\numberline {20.1}Digestion and Absorption of Food}{69}
+\contentsline {section}{\numberline {20.2}Organs Involved in Digestion}{69}
+\contentsline {subsection}{\numberline {20.2.1}Salivary Glands}{69}
+\contentsline {subsection}{\numberline {20.2.2}Stomach}{69}
+\contentsline {subsection}{\numberline {20.2.3}Pancreas}{69}
+\contentsline {subsection}{\numberline {20.2.4}Liver}{69}
+\contentsline {subsection}{\numberline {20.2.5}Small Intestine}{70}
+\contentsline {section}{\numberline {20.3}Beaumont's Experiment}{70}
+\contentsline {section}{\numberline {20.4}Digestion}{70}
+\contentsline {section}{\numberline {20.5}Carbohydrate Digestion}{70}
+\contentsline {subsection}{\numberline {20.5.1}Enzymes Involved in Carbohydrate Digestion}{70}
+\contentsline {subsection}{\numberline {20.5.2}Lactose Intolerance}{71}
+\contentsline {section}{\numberline {20.6}Carbohydrate Absorption}{71}
+\contentsline {subsection}{\numberline {20.6.1}Glucose Transport}{71}
+\contentsline {subsection}{\numberline {20.6.2}Coeliac Disease}{72}
+\contentsline {chapter}{Lecture 21}{73}
+\contentsline {section}{\numberline {21.1}Protein Digestion and Absorption}{73}
+\contentsline {section}{\numberline {21.2}Essential Amino Acids}{73}
+\contentsline {section}{\numberline {21.3}Regulation of Protein Digestion}{73}
+\contentsline {section}{\numberline {21.4}Enzymes Involved in Protein Digestion}{73}
+\contentsline {section}{\numberline {21.5}Protein Digestion}{74}
+\contentsline {subsection}{\numberline {21.5.1}Pepsinogen Activation}{74}
+\contentsline {subsection}{\numberline {21.5.2}Small Intestine Peptidase Activation}{74}
+\contentsline {section}{\numberline {21.6}Protein Absorption}{75}
+\contentsline {subsection}{\numberline {21.6.1}Amino Acid Transport}{75}
+\contentsline {subsection}{\numberline {21.6.2}Peptide Absorption}{75}
+\contentsline {subsection}{\numberline {21.6.3}Absorption of Intact Proteins}{75}
+\contentsline {section}{\numberline {21.7}Diseases of Inappropriate Enzyme Activation}{75}
+\contentsline {section}{\numberline {21.8}Diseases of Malabsorption}{75}
+\contentsline {section}{\numberline {21.9}Digestion of Nucleic Acid}{76}
+\contentsline {chapter}{Lecture 22}{77}
+\contentsline {section}{\numberline {22.1}Lipid Digestion and Absorption}{77}
+\contentsline {section}{\numberline {22.2}Bile Acids/Salts}{77}
+\contentsline {section}{\numberline {22.3}Bile Composition}{77}
+\contentsline {section}{\numberline {22.4}Digestion of Lipids}{77}
+\contentsline {section}{\numberline {22.5}Fat Malabsorption}{78}
+\contentsline {subsection}{\numberline {22.5.1}Orlistat (Xenicol)}{78}
+\contentsline {section}{\numberline {22.6}Process of Fat Absorption}{78}
+\contentsline {subsection}{\numberline {22.6.1}Lipoproteins}{78}
+\contentsline {subsubsection}{Function of Apoproteins}{79}
+\contentsline {subsection}{\numberline {22.6.2}Lipid Transport Pathways}{79}
+\contentsline {subsubsection}{Exogenous Pathway}{79}
+\contentsline {subsubsection}{Lipoprotein Lipase}{79}
+\contentsline {subsubsection}{Endogenous Pathway}{79}
+\contentsline {subsection}{\numberline {22.6.3}Familial Hypercholesterolemia (FH)}{80}
+\contentsline {chapter}{Lecture 23}{81}
+\contentsline {section}{\numberline {23.1}Vitamins}{81}
+\contentsline {subsection}{\numberline {23.1.1}Fat Soluble Vitamins}{81}
+\contentsline {subsubsection}{Vitamin A}{81}
+\contentsline {subsubsection}{Vitamin D}{81}
+\contentsline {subsubsection}{Vitamin E}{82}
+\contentsline {subsubsection}{Vitamin K}{82}
+\contentsline {subsection}{\numberline {23.1.2}Water Soluble Vitamins}{82}
+\contentsline {subsubsection}{Vitamin B1}{82}
+\contentsline {subsubsection}{Vitamin B2}{82}
+\contentsline {subsubsection}{Vitamin B3}{82}
+\contentsline {subsubsection}{Vitamin B5}{83}
+\contentsline {subsubsection}{Vitamin B6}{83}
+\contentsline {subsubsection}{Vitamin B7}{83}
+\contentsline {subsubsection}{Vitamin B9}{83}
+\contentsline {subsubsection}{Vitamin B12}{83}
+\contentsline {subsubsection}{Vitamin C}{83}
+\contentsline {chapter}{Lecture 24}{84}
+\contentsline {section}{\numberline {24.1}Minerals}{84}
+\contentsline {subsection}{\numberline {24.1.1}Selenium}{84}
+\contentsline {subsection}{\numberline {24.1.2}Iodine}{84}
+\contentsline {subsection}{\numberline {24.1.3}Iron}{84}
+\contentsline {subsection}{\numberline {24.1.4}Zinc}{85}
+\contentsline {chapter}{Lecture 25}{86}
+\contentsline {section}{\numberline {25.1}Metabolic Pathways and ATP Synthesis}{86}
+\contentsline {subsection}{\numberline {25.1.1}Conservation of Energy}{86}
+\contentsline {subsection}{\numberline {25.1.2}Energy Coupling}{86}
+\contentsline {subsubsection}{Coupling ATP Hydrolysis with Hexokinse}{87}
+\contentsline {subsection}{\numberline {25.1.3}Oxidising Fuels for Energy}{87}
+\contentsline {subsubsection}{Redox Reactions}{87}
+\contentsline {subsubsection}{Phosphorylation Reactions}{87}
+\contentsline {subsection}{\numberline {25.1.4}Reducing Equivalents}{88}
+\contentsline {subsection}{\numberline {25.1.5}Co-enzymes}{88}
+\contentsline {subsubsection}{NAD}{88}
+\contentsline {subsubsection}{FAD}{88}
+\contentsline {subsubsection}{Co-enzyme A}{89}
+\contentsline {chapter}{Lecture 26}{90}
+\contentsline {section}{\numberline {26.1}Glycolysis}{90}
+\contentsline {subsection}{\numberline {26.1.1}Activation of Glucose}{90}
+\contentsline {subsection}{\numberline {26.1.2}Energy Pay-Off/Release Phase}{91}
+\contentsline {subsubsection}{Oxidation of G3P and First Substrate Level Phosphorylation}{91}
+\contentsline {subsubsection}{Arsenic Poisoning}{91}
+\contentsline {subsubsection}{Second Substrate Level Phosphorylation}{91}
+\contentsline {section}{\numberline {26.2}Fate of Pyruvate}{92}
+\contentsline {subsection}{\numberline {26.2.1}Aerobic Condition}{92}
+\contentsline {subsection}{\numberline {26.2.2}Anaerobic Condition}{92}
+\contentsline {chapter}{Lecture 27}{93}
+\contentsline {section}{\numberline {27.1}Fatty Acid as a Fuel}{93}
+\contentsline {section}{\numberline {27.2}Delivery of Fatty Acids}{93}
+\contentsline {subsection}{\numberline {27.2.1}From Adipose Tissue to Cells}{93}
+\contentsline {subsubsection}{Fatty Acid Activation}{93}
+\contentsline {subsection}{\numberline {27.2.2}From Cytoplasm to Mitochondria}{94}
+\contentsline {subsubsection}{Carnitine Supplements}{94}
+\contentsline {section}{\numberline {27.3}$\beta $-Oxidation}{94}
+\contentsline {chapter}{Lecture 28}{95}
+\contentsline {section}{\numberline {28.1}Citric Acid Cycle}{95}
+\contentsline {subsection}{\numberline {28.1.1}First Half -- Release of CO$_2$}{95}
+\contentsline {subsubsection}{Condensation of Acetyl-CoA and Oxaloacetate}{95}
+\contentsline {subsubsection}{Isomerisation of Citrate}{95}
+\contentsline {subsubsection}{First Oxidative Decarboxylation}{96}
+\contentsline {subsubsection}{Second Oxidative Decarboxylation}{96}
+\contentsline {subsection}{\numberline {28.1.2}Second Half -- Rearranging it back to Oxaloacetate}{96}
+\contentsline {subsubsection}{Succinyl-CoA to Succinate}{96}
+\contentsline {subsubsection}{Succinate to Oxaloacetate}{96}
+\contentsline {chapter}{Lecture 29}{97}
+\contentsline {section}{\numberline {29.1}Amino Acids as Fuel}{97}
+\contentsline {section}{\numberline {29.2}Deamination of Amino Acids}{97}
+\contentsline {subsection}{\numberline {29.2.1}Common Amino/Keto Acid Pairs}{97}
+\contentsline {section}{\numberline {29.3}Removal of Ammonium}{98}
+\contentsline {chapter}{Lecture 30}{99}
+\contentsline {section}{\numberline {30.1}Oxidative Phosphorylation -- Part 1}{99}
+\contentsline {section}{\numberline {30.2}Electron Transport Chain}{99}
+\contentsline {subsection}{\numberline {30.2.1}Electron Carriers}{99}
+\contentsline {subsection}{\numberline {30.2.2}Movement of Electrons Through ETC}{100}
+\contentsline {chapter}{Lecture 31}{101}
+\contentsline {section}{\numberline {31.1}Oxidative Phosphorylation -- Part 2}{101}
+\contentsline {subsection}{\numberline {31.1.1}Complex I}{101}
+\contentsline {subsection}{\numberline {31.1.2}Complex II}{101}
+\contentsline {subsection}{\numberline {31.1.3}Co-Enzyme Q (Ubiquinone)}{101}
+\contentsline {subsection}{\numberline {31.1.4}Complex III}{102}
+\contentsline {subsection}{\numberline {31.1.5}Cytochrome c}{102}
+\contentsline {subsection}{\numberline {31.1.6}Complex IV}{102}
+\contentsline {subsection}{\numberline {31.1.7}Energy Accounting}{102}
+\contentsline {section}{\numberline {31.2}Poisoning the ETC}{102}
+\contentsline {subsection}{\numberline {31.2.1}Rotenone}{102}
+\contentsline {subsection}{\numberline {31.2.2}Cyanide}{102}
+\contentsline {subsection}{\numberline {31.2.3}Carbon Monoxide}{103}
+\contentsline {subsection}{\numberline {31.2.4}Consequences}{103}
+\contentsline {chapter}{Lecture 32}{104}
+\contentsline {section}{\numberline {32.1}History of ATP Synthase}{104}
+\contentsline {section}{\numberline {32.2}Proton Motive Force}{104}
+\contentsline {section}{\numberline {32.3}Experimental Proof of pmf}{104}
+\contentsline {subsection}{\numberline {32.3.1}Experiment with Mitochondria with no Outer Membrane}{104}
+\contentsline {subsection}{\numberline {32.3.2}Experiment using an Uncoupler}{105}
+\contentsline {subsubsection}{Dinitrophenol (DNP)}{105}
+\contentsline {subsection}{\numberline {32.3.3}Liposome with Light-Inducible Proton Pump}{105}
+\contentsline {section}{\numberline {32.4}F$_o$F$_1$ ATP Synthase}{105}
+\contentsline {subsection}{\numberline {32.4.1}Mechanism of ATP Synthesis}{105}
+\contentsline {section}{\numberline {32.5}Energy Accounting}{106}
+\contentsline {chapter}{Lecture 33}{107}
+\contentsline {section}{\numberline {33.1}Photosynthesis}{107}
+\contentsline {section}{\numberline {33.2}History of Photosynthesis}{107}
+\contentsline {section}{\numberline {33.3}Mechanism of Photosynthesis}{108}
+\contentsline {subsection}{\numberline {33.3.1}Antenna and Reaction Center Concept}{108}
+\contentsline {subsection}{\numberline {33.3.2}Z Scheme}{108}
+\contentsline {subsection}{\numberline {33.3.3}Chemiosmosis Theory}{109}
+\contentsline {chapter}{Lecture 34}{110}
+\contentsline {section}{\numberline {34.1}Alcohol Metabolism}{110}
+\contentsline {subsection}{\numberline {34.1.1}Alcohol}{110}
+\contentsline {subsection}{\numberline {34.1.2}Alcohol Dehydrogenase}{110}
+\contentsline {subsubsection}{Kinetics of Alcohol Dehydrogenase}{110}
+\contentsline {subsection}{\numberline {34.1.3}Acetaldehyde Dehydrogenase}{111}
+\contentsline {subsection}{\numberline {34.1.4}Acetyl-CoA Synthetase}{111}
+\contentsline {subsection}{\numberline {34.1.5}Fate of Acetyl-CoA from Alcohol}{111}
+\contentsline {subsection}{\numberline {34.1.6}Consequences of Alcohol Metabolism}{111}
+\contentsline {section}{\numberline {34.2}Metabolism of Alcohol as a Toxin}{111}
+\contentsline {chapter}{Lecture 35}{113}
+\contentsline {section}{\numberline {35.1}Fuel Stores}{113}
+\contentsline {section}{\numberline {35.2}Fat Storage}{113}
+\contentsline {section}{\numberline {35.3}TAG Synthesis}{113}
+\contentsline {section}{\numberline {35.4}Mobilisation of TAGs}{114}
+\contentsline {section}{\numberline {35.5}Glycogen}{114}
+\contentsline {section}{\numberline {35.6}Glycogen Synthesis}{114}
+\contentsline {section}{\numberline {35.7}Mobilisation of Glycogen}{114}
+\contentsline {section}{\numberline {35.8}Formation of Fatty Acids from Glucose}{114}
+\contentsline {chapter}{Lecture 36}{116}
+\contentsline {section}{\numberline {36.1}Starvation}{116}
+\contentsline {section}{\numberline {36.2}Liver Glycogen}{116}
+\contentsline {section}{\numberline {36.3}Gluconeogenesis}{117}
+\contentsline {section}{\numberline {36.4}Maintaining Fuel Supply to the Brain}{117}
+\contentsline {subsection}{\numberline {36.4.1}Protein Stores}{117}
+\contentsline {subsection}{\numberline {36.4.2}Ketone Bodies}{117}
+\contentsline {subsubsection}{Ketone Body Synthesis}{118}
+\contentsline {section}{\numberline {36.5}Metabolic Adaptations to Starvation}{118}
+\contentsline {chapter}{Lecture 37}{119}
+\contentsline {section}{\numberline {37.1}Exercise Metabolism}{119}
+\contentsline {section}{\numberline {37.2}Anaerobic Exercise}{119}
+\contentsline {subsection}{\numberline {37.2.1}Phosphocreatine}{119}
+\contentsline {subsection}{\numberline {37.2.2}Glycogen}{119}
+\contentsline {subsection}{\numberline {37.2.3}Anaerobic Glycolysis}{120}
+\contentsline {subsection}{\numberline {37.2.4}Regulation of Glycolysis in Exercising Muscle}{120}
+\contentsline {section}{\numberline {37.3}Aerobic Exercise}{120}
+\contentsline {section}{\numberline {37.4}Aerobic Training}{120}
+\contentsline {section}{\numberline {37.5}Muscle Fibre Types}{120}
+\contentsline {section}{\numberline {37.6}Myostatin}{121}
+\contentsline {chapter}{Lecture 38}{122}
+\contentsline {section}{\numberline {38.1}Diabetes}{122}
+\contentsline {section}{\numberline {38.2}Insulin}{123}
+\contentsline {chapter}{Lecture 39}{124}
+\contentsline {section}{\numberline {39.1}Obesity}{124}
+\contentsline {section}{\numberline {39.2}Metabolic Rate}{124}
+\contentsline {section}{\numberline {39.3}Uncoupling Protom Motive Force from Oxidative Phosphorylation}{124}
+\contentsline {subsection}{\numberline {39.3.1}Dinitrophenol}{124}
+\contentsline {subsection}{\numberline {39.3.2}Brown Adipose Tissue}{125}
+\contentsline {subsubsection}{Uncoupling Protein (UCP)}{125}
+\contentsline {subsubsection}{Diet-induced Thermogenesis}{125}
+\contentsline {subsubsection}{Strategies of BAT Usage}{125}
+\contentsline {section}{\numberline {39.4}Genetic Component of Obesity}{125}
+\contentsline {subsection}{\numberline {39.4.1}Obese Gene (Leptin)}{125}
+\contentsline {subsection}{\numberline {39.4.2}Leptin in Humans}{126}
+\contentsline {section}{\numberline {39.5}Treatments}{126}
+\contentsline {chapter}{Lecture 40}{127}
+\contentsline {section}{\numberline {40.1}Integration of Metabolism}{127}
+\contentsline {subsection}{\numberline {40.1.1}Brain Metabolism}{127}
+\contentsline {subsection}{\numberline {40.1.2}Skeletal Muscle Metabolism}{127}
+\contentsline {subsection}{\numberline {40.1.3}Hear Muscle Metabolism}{127}
+\contentsline {subsection}{\numberline {40.1.4}Adipose Tissue Metabolism}{127}
+\contentsline {subsection}{\numberline {40.1.5}Liver Metabolism}{128}
+\contentsline {section}{\numberline {40.2}Signalling Your Body}{128}
+\contentsline {subsection}{\numberline {40.2.1}Endocrine System}{128}
+\contentsline {subsection}{\numberline {40.2.2}Nervous System}{128}
+\contentsline {subsection}{\numberline {40.2.3}Types of Hormones}{128}
+\contentsline {subsection}{\numberline {40.2.4}Functions Regulated by Signal Molecules}{128}
+\contentsline {subsection}{\numberline {40.2.5}Signal Transduction and Diseases}{129}
