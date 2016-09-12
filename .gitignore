@@ -1,5 +1,6 @@
 ## gitignore file
 **/*.acn
+**/*.pptx
 **/*.acr
 **/*.alg
 **/*.aux
