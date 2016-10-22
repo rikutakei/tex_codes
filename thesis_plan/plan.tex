@@ -1,0 +1,53 @@
+\documentclass[a4paper, 10pt]{article}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[margin=1.5cm]{geometry}
+
+\begin{document}
+	\section*{Introduction}
+	\begin{itemize}
+		\item BMI Intro.
+		\item Creighton and Funtes-Mattei intro
+		\item Gene signature intro + microarray/NGS intro
+		\item BMI and cancer
+		\item Mechanism of cancer progression in obese patient
+		\item TCGA/ICGC/GEO
+		\item Gatza pathway studies (old, 18 pathways and new papers)
+		\item SVD/transformation matrix intro (maybe in methods?)
+		\item Aim of research
+	\end{itemize}
+	\section*{Methods}
+	\begin{itemize}
+		\item WHO BMI classification
+		\item Data download
+		\item Normalisation methods (RMA/MAS5)
+		\item Batch effect
+		\item Standardising/scaling
+		\item SVD/transformation matrix
+		\item Gene expression analysis
+		\item Pathway enrichment analysis
+		\item Metagene direction
+		\item Obesity metagene prediction with Gatza pathway (using linear model)
+	\end{itemize}
+	\section*{Results part 1 -- Creighton/FM metagene and Cris/ICGC data}
+	\begin{itemize}
+		\item Original Creighton obesity metagene in Creighton data
+		\item Original Creighton obesity metagene in ICGC/Cris data
+		\item Original FM obesity metagene in FM and Creighton data
+		\item Original FM obesity metagene in ICGC/Cris data
+		\item DEGs in Creighton data
+		\item DEG obesity metagenes from Creighton data in ICGC/Cris data
+		\item Common DEGs in ICGC data (per-cancer and combined)
+		\item Path enrichment analysis in ICGC data (per-cancer and combined)
+	\end{itemize}
+	\section*{Results part 2 -- Gatza pathway metagenes and obesity metagenes}
+	\begin{itemize}
+		\item Gatza pathway metagene direction in Gatza data
+		\item All metagenes in all data set, and correlation between SVD and transformation matrix
+			\begin{itemize}
+				\item Determining which data set the transformation matrices is being made in
+			\end{itemize}
+		\item Predicting obesity metagene (in Cris' data) using linear model that was made from Gatza pathways
+	\end{itemize}
+\end{document}
