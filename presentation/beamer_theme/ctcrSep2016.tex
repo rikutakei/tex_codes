@@ -21,7 +21,7 @@
 }
 
 \title[BMI and Cancer]{Body Mass Index and Pathway Dysregulation in Cancer}
-\subtitle{CTCR Talk}
+\subtitle{CGL Talk}
 \author[Riku Takei]{Riku Takei (MSc)\\Supervisor: Assoc. Prof. Mik Black}
 \institute{Department of Biochemistry, University of Otago}
 
@@ -113,11 +113,12 @@
 	\frametitle{Methods}
 	Downloaded RNA-seq data from 8 different cancer types from ICGC
 	\vskip2ex
-	Microarray data from Creighton's paper
-	\vskip2ex
-	Microarray data from Fuentes-Mattei's paper
-	\vskip2ex
-	Microarray data from Cris Print
+	Microarray data from:
+	\begin{itemize}
+		\item Creighton's paper
+		\item Fuentes-Mattei's paper
+		\item Cris Print
+	\end{itemize}
 	\vskip2ex
 	\includegraphics[width=0.4\textwidth]{./images/tcga}
 	\hfill
@@ -262,10 +263,10 @@
 \end{frame}
 
 \begin{frame}{Creighton \textit{et al.} data revisited}
-	Gene expression analysis was carried out on the Creighton \textit{et al.} data:
+	Gene expression analysis was carried out on:
 	\begin{itemize}
 		\item Original Creighton data
-		\item Caucasian-only Creighton data
+		\item Creighton data (Caucasian samples only)
 	\end{itemize}
 	\vskip2ex
 	Gene expression analysis was repeated with the residual version of the above data
@@ -295,7 +296,7 @@
 	All of the gene probe sets I have found (8 in total) were used to create metagenes as before
 	\begin{itemize}
 		\item Checked in Creighton \textit{et al.} data
-		\item Transferred into other cancer data sets
+		\item Transferred into other cancer data sets using transformation matrix
 	\end{itemize}
 \end{frame}
 
@@ -400,9 +401,9 @@
 % 	There were no pathways enriched in any of the obesity-associated genes found so far
 % \end{frame}
 
-\begin{frame}{Relevance of BMI in Cris' data}
+\begin{frame}{So \ldots BMI is not related to cancer?}
 	\begin{center}
-		\includegraphics[width=0.60\paperwidth]{./images/tmp/mikres}
+		\includegraphics[width=0.55\paperwidth]{./images/tmp/mikres}
 	\end{center}
 \end{frame}
 
@@ -415,14 +416,14 @@
 \end{frame}
 
 \begin{frame}{Gatza \textit{et al.} (2010)}
-	Used 18 pathways to define sub-class of breast tumours, based on the expression of the pathway signatures
+	Used 18 pathways to define sub-classes of breast tumours, based on the expression of the pathway signatures
 	\begin{itemize}
 		\item AKT, ER, PR, HER2, PI3K, p53, MYC, RAS, etc...
 	\end{itemize}
 	\vskip2ex
-	Each pathway signature was obtained by overexpressing a single gene in an appropriate cell line, and then differentially expressed genes were noted down
+	Each pathway signature was obtained by overexpressing a single gene in a model cell line, and then differentially expressed genes were noted down
 	\begin{itemize}
-			\item Use these pathways to see what the obesity-associated genes are most similar to
+			\item Use these `pathway genes' to see what the obesity-associated genes are most similar to
 	\end{itemize}
 \end{frame}
 
@@ -461,9 +462,8 @@
 	\includegraphics[width=0.40\paperwidth]{./images/gatzares1}
 \end{frame}
 
-\begin{frame}{Predicting obesity metagene with pathway metagene}
+\begin{frame}{\normalsize Predicting obesity metagene with pathway metagene}
 	Make a linear model (in Cris' data) with sample BMI and/or pathway metagenes and use this to predict Creighton's obesity metagene
-	\vskip2ex
 	\begin{itemize}
 		\item If any of the pathway metagenes are significant in the model, the pathway is a good predictor of the obesity metagene
 	\end{itemize}
@@ -475,6 +475,14 @@
 \end{frame}
 
 \begin{frame}{Results}
+	Made 4 models:
+	\begin{itemize}
+		\item BMI-only
+		\item BMI and pathway metagenes
+		\item Pathways-only
+		\item PR pathway only
+	\end{itemize}
+	\vskip2ex
 	Sample BMI was not significant  in the model
 	\vskip2ex
 	Only pathway that was a good predictor of obesity metagene was PR pathway metagene
@@ -511,7 +519,7 @@
 	\textbf{Gatza pathway metagene analysis}
 	\begin{itemize}
 		\item Sample BMI was not a good predictor of the obesity metagene, but PR pathway metagene was
-		\item However, the model was not great at predicting the obesity metagene
+		\item None of the models were great at predicting the obesity metagene
 			\begin{itemize}
 				\item Other mechanism contributing to obesity metagene?
 			\end{itemize}
