@@ -1,0 +1,60 @@
+\documentclass[12pt, a4paper]{article}
+
+\usepackage{tikz}
+\usepackage{gantt}
+\usepackage{pdflscape}
+\usepackage[margin=0.5cm]{geometry}
+
+\begin{document}
+\begin{landscape}
+	\scalebox{0.45}{
+	\begin{gantt}[xunitlength=0.5cm,fontsize=\small,titlefontsize=\small,drawledgerline=true]{35}{106}
+		\begin{ganttitle}
+			\titleelement{OCT}{14}
+			\titleelement{NOV}{30}
+			\titleelement{DEC}{31}
+			\titleelement{JAN}{31}
+		\end{ganttitle}
+		\begin{ganttitle}
+			\numtitle{18}{1}{31}{1}
+			\numtitle{1}{1}{30}{1}
+			\numtitle{1}{1}{31}{1}
+			\numtitle{1}{1}{31}{1}
+		\end{ganttitle}
+		\ganttgroup{Introduction}{0}{41.5}
+		\ganttbar{Aim}{0}{2.17}
+		\ganttbar{BMI intro}{2.17}{6.83}
+		\ganttbar{Creighton + FM intro}{9.0}{4.17}
+		\ganttbar{Gene signaature/MA/NGS}{13.27}{5}
+		\ganttbar{BMI + cancer}{18.27}{7.83}
+		\ganttbar{Mechanism of cancer in obese patients}{26.1}{4.17}
+		\ganttbar{TCGA/ICGC}{30.27}{3.5}
+		\ganttbar{Gatza studies}{33.77}{4.83}
+		\ganttbar{SVD/Transformation matrix}{38.6}{3}
+		\ganttgroup{Methods}{20.5}{47.43}
+		\ganttbar{Data download}{20.5}{4.17}
+		\ganttbar{Data normalisation}{24.67}{4.17}
+		\ganttbar{Data scaling}{28.84}{2.3}
+		\ganttbar{SVD/metagene}{31.14}{4.3}
+		\ganttbar{Gene expression analysis}{35.44}{6.83}
+		\ganttbar{Pathway enrichment analysis}{42.27}{6.83}
+		\ganttbar{Gatza metagene direction}{49.1}{6.83}
+		\ganttbar{Continuous BMI}{55.93}{5}
+		\ganttbar{Obesity metagene with linear modelling}{60.93}{7}
+		\ganttgroup{Results}{34.5}{57.98}
+		\ganttbar{Creighton MG}{34.5}{6.17}
+		\ganttbar{Creighton MG in ICGC}{41.1}{7}
+		\ganttbar{FM MG in Creighton}{48.1}{4.17}
+		\ganttbar{FM MG in ICGC}{52.27}{4.17}
+		\ganttbar{Continuous BMI}{56.17}{7}
+		\ganttbar{Obesity metagenes in Creighton}{63.27}{7}
+		\ganttbar{ICGC DEGs}{70.27}{3.17}
+		\ganttbar{ICGC pathway enrichment}{73.44}{3.17}
+		\ganttbar{Gatza metagene direction}{76.61}{4.3}
+		\ganttbar{Gatza MG vs. Creighton MG}{80.91}{4.83}
+		\ganttbar{Predicting obs. MG with Gatza MG}{85.74}{7}
+		\ganttgroup{Discussion}{85.74}{21}
+	\end{gantt}
+	}
+\end{landscape}
+\end{document}
