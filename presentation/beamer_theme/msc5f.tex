@@ -22,7 +22,7 @@
 }
 
 \title[BMI and Cancer]{Body Mass Index and Pathway Dysregulation in Cancer}
-\subtitle{Colloquia Talk}
+\subtitle{MSc 5F Talk}
 \author[Riku Takei]{Riku Takei (MSc)\\Supervisor: Assoc. Prof. Mik Black}
 \institute{Department of Biochemistry, University of Otago}
 
@@ -45,16 +45,17 @@
 % \end{frame}
 
 \begin{frame}{Obesity}
-	\begin{center}
-		{\footnotesize
-				In 2014, 11\% of men and 15\% of women were obese world wide\\
-			}
-			\vskip2ex
+	{\footnotesize
+		Between 1980 and 2014, proportion of population that is obese nearly doubled
+		\vskip1ex
+		In 2014, 11\% of men and 15\% of women were obese world wide\\
+		}
+		\begin{center}
 			\includegraphics[scale=0.30]{./images/obesityworldmap}
-	\end{center}
-	\begin{flushright}
-		{\tiny(WHO, 2014)}
-	\end{flushright}
+		\end{center}
+		\begin{flushright}
+			{\tiny(WHO, 2014)}
+		\end{flushright}
 \end{frame}
 
 \begin{frame}
@@ -64,16 +65,25 @@
 		{\footnotesize
 			Cancers are caused by dysregulation in various pathways/mechanisms that allow them to survive and proliferate
 			\begin{itemize}
-				\item Commonly know as the Hallmarks of Cancer {\tiny(Hanahan and Weinberg, 2011)}
+				\item {\scriptsize Commonly know as the Hallmarks of Cancer}
+					{\tiny(Hanahan and Weinberg, 2011)}
 			\end{itemize}
+			\vskip2ex
 			Many reports on obesity being a major risk factor for certain types of cancer
 			\begin{itemize}
-				\item Overweight and obesity estimated to account for 14\% and 20\% of all deaths from cancer in men and women, respectively {\tiny(Calle \textit{et al.}, 2003)}
+				\item {\scriptsize Overweight and obesity estimated to account for 14\% and 20\% of all deaths from cancer in men and women, respectively}
+					{\tiny(Calle \textit{et al.}, 2003)}
 			\end{itemize}
 		}
 		\column{0.5\textwidth}
 		\includegraphics[width=0.45\paperwidth]{./images/cancerhallmark}
 	\end{columns}
+	\vskip2ex
+	\begin{center}
+		{\footnotesize
+			Whether obesity has an effect on tumour molecular characteristics is unknown
+		}
+	\end{center}
 \end{frame}
 
 \begin{frame}
@@ -94,7 +104,7 @@
 	\frametitle{Aims}
 	\begin{enumerate}
 		\item Investigate the association between patient BMI and tumour molecular characteristics
-		\item Determine whether pathway commonalities exist across tumours that arise from other tissues
+		\item Determine whether pathway commonalities exist across tumours that arise in other tissues
 	\end{enumerate}
 \end{frame}
 
@@ -106,7 +116,7 @@
 	\begin{itemize}
 		\item Creighton's data
 		\item Fuentes-Mattei's data
-		\item Cris Print's data
+		\item Cris Print's data (University of Auckland)
 	\end{itemize}
 	\includegraphics[width=0.4\textwidth]{./images/tcga}
 	\hfill
@@ -165,7 +175,6 @@
 \end{frame}
 
 \begin{frame}{Creighton \textit{et al.} metagene correlates with BMI}
-	\hspace{-4.0ex}
 	\includegraphics[width=0.45\paperwidth]{./images/png/crclin0}
 	\includegraphics[width=0.45\paperwidth]{./images/png/crclin1}
 \end{frame}
@@ -208,7 +217,10 @@
 		\includegraphics[width=0.23\paperwidth]{./images/png/crtcga8}
 		\includegraphics[width=0.23\paperwidth]{./images/png/crtcga10}
 		\includegraphics[width=0.23\paperwidth]{./images/png/crtcga12}
-		\includegraphics[width=0.23\paperwidth]{./images/png/crtcga14}
+		\includegraphics[width=0.23\paperwidth]{./images/png/crtcga14}\\
+		\begin{flushright}
+			{\tiny (Note: metagene scores have been flipped)}
+		\end{flushright}
 	\end{adjustwidth}
 \end{frame}
 
@@ -230,7 +242,7 @@
 		\column{0.5\textwidth}
 		137 ER+ breast cancer samples in the study, 130 unique genes identified\\
 		\vskip2ex
-		Data were normalised  with RMA normalisation method\\
+		% Data were normalised  with RMA normalisation method\\
 		\vskip2ex
 		\column{0.5\textwidth}
 		\includegraphics[width=0.45\paperwidth]{./images/fmcircos}
@@ -266,9 +278,9 @@
 \begin{frame}{Summary 1}
 	Metagene from Creighton \textit{et al.} correlated with gene expression and patient BMI in Creighton data set
 	\vskip2ex
-	Metagene derived from Creighton's obesity-associated genes  correlated with the gene expression but not the patient BMI in ICGC data
+	Creighton's metagene correlated with the gene expression but not the patient BMI in ICGC data
 	\vskip2ex
-	Metagene derived from Fuentes-Mattei obesity-associated genes correlated with the gene expression but not the patient BMI in both Creighton \textit{et al.} and ICGC data
+	Fuentes-Mattei's metagene correlated with the gene expression but not the patient BMI in both Creighton \textit{et al.} and ICGC data
 \end{frame}
 
 \begin{frame}{Gene Expression Analysis}
@@ -306,7 +318,7 @@
 	All of the non-BMI clinical variables were controlled for in the linear model
 	{\footnotesize
 		\begin{itemize}
-			\item Age, ethnicity, menopause status, grade, LN status, ER/PR/HER2 statuses
+			\item Age, ethnicity, menopause status, grade, LN status, ER/PR/HER2 status
 		\end{itemize}
 	}
 	\vskip2ex
@@ -314,7 +326,7 @@
 \end{frame}
 
 \begin{frame}{Completely remove the effect of ethnicity}
-	African American patients are more likely to have higher BMI than Cauacasian patients
+	African American patients tended to have higher BMI than Cauacasian patients
 	\vskip2ex
 	Removed the effect of ethnicity by removing the African American patients' data (total of 77 patient data after removal)
 	{\footnotesize
@@ -510,21 +522,13 @@
 \end{frame}
 
 \begin{frame}{\normalsize Predicting obesity metagene with pathway metagene}
-	Make a linear model in training data with sample BMI and/or pathway metagenes and use this to predict Creighton's obesity metagene
-	\begin{itemize}
-			{\footnotesize
-			\item If any of the pathway metagenes are significant in the model, the pathway is a ``good'' predictor of the obesity metagene
-				}
-	\end{itemize}
+	Linear model was made to predict the obesity metagene using Gatza's pathway metagenes
 	\vskip2ex
-	Then use this model to predict the obesity metagene in Creighton data
-	\begin{itemize}
-		\item Compare the predicted obesity metagene with the SVD-generated obesity metagene
-	\end{itemize}
+	If any of the pathway metagenes are significant in the model, the pathway could be a good predictor of the obesity metagene
 \end{frame}
 
 \begin{frame}{Results}
-	Made 4 models:
+	4 models were made in Cris Print's data (training data):
 	\begin{enumerate}
 		\item BMI-only
 		\item BMI and selected pathway metagenes
@@ -534,43 +538,58 @@
 	\vskip2ex
 	Sample BMI was not significant  in the model
 	\vskip2ex
-	Only pathway that was a good predictor of obesity metagene was PR pathway metagene
-\end{frame}
-
-\begin{frame}{\normalsize Comparison of the predicted obesity metagene with true value}
-	\begin{center}
-		\includegraphics[width=0.45\paperwidth]{./images/tmp/prediction1}
-		\includegraphics[width=0.45\paperwidth]{./images/tmp/prediction2}
-	\end{center}
-\end{frame}
-
-\begin{frame}{\normalsize Comparison of the predicted obesity metagene with true value}
-	\begin{center}
-		\includegraphics[width=0.45\paperwidth]{./images/tmp/prediction3}
-		\includegraphics[width=0.45\paperwidth]{./images/tmp/prediction4}
-	\end{center}
-\end{frame}
-
-\begin{frame}{Overall Summary}
-	\textbf{Creighton/FM metagene analysis}
+	Only pathway that was a significant predictor of obesity metagene was the PR pathway metagene
 	\begin{itemize}
-		\item Both Creighton and FM metagenes correlated with the overall gene expression in any cancer data set
-		\item The metagene score does not correlate with the BMI status of the samples
+		\item {\footnotesize p = 3.66$\times10^{-6}$, R$^2$ = 0.1992}
+	\end{itemize}
+\end{frame}
+
+% \begin{frame}{\normalsize Comparison of the predicted obesity metagene with true value}
+% 	\begin{center}
+% 		\includegraphics[width=0.45\paperwidth]{./images/tmp/prediction1}
+% 		\includegraphics[width=0.45\paperwidth]{./images/tmp/prediction2}
+% 	\end{center}
+% \end{frame}
+
+% \begin{frame}{\normalsize Comparison of the predicted obesity metagene with true value}
+% 	\begin{center}
+% 		\includegraphics[width=0.45\paperwidth]{./images/tmp/prediction3}
+% 		\includegraphics[width=0.45\paperwidth]{./images/tmp/prediction4}
+% 	\end{center}
+% \end{frame}
+
+\begin{frame}{Summary}
+	BMI did not have a strong association with tumour molecular characteristics
+	\begin{itemize}
+		\item {\footnotesize BMI may not have a direct effect on tumour development and progression}
 	\end{itemize}
 	\vskip2ex
-	\textbf{Gene expression and metagene analysis}
+	PR pathway was the only pathway that significantly associated with obesity-associated metagenes
 	\begin{itemize}
-		\item Again, all of the gene sets correlated with the overall gene expression in any data set, but none of them correlated with the BMI status
+		\item {\footnotesize PR may have a significant role in tumour development/progression, but it is not clear as to how BMI affects the PR pathway}
 	\end{itemize}
 \end{frame}
 
-\begin{frame}{Overall Summary}
-	\textbf{Gatza pathway metagene analysis}
-	\begin{itemize}
-		\item Sample BMI was not a good predictor of the obesity metagene, but PR pathway metagene was
-		\item None of the models were great at predicting the obesity metagene
-	\end{itemize}
-\end{frame}
+% \begin{frame}{Overall Summary}
+% 	\textbf{Creighton/FM metagene analysis}
+% 	\begin{itemize}
+% 		\item Both Creighton and FM metagenes correlated with the overall gene expression in any cancer data set
+% 		\item The metagene score does not correlate with the BMI status of the samples
+% 	\end{itemize}
+% 	\vskip2ex
+% 	\textbf{Gene expression and metagene analysis}
+% 	\begin{itemize}
+% 		\item Again, all of the gene sets correlated with the overall gene expression in any data set, but none of them correlated with the BMI status
+% 	\end{itemize}
+% \end{frame}
+
+% \begin{frame}{Overall Summary}
+% 	\textbf{Gatza pathway metagene analysis}
+% 	\begin{itemize}
+% 		\item Sample BMI was not a good predictor of the obesity metagene, but PR pathway metagene was
+% 		\item None of the models were great at predicting the obesity metagene
+% 	\end{itemize}
+% \end{frame}
 
 % \begin{frame}{Summary 2}
 % 	Metagenes found in Creighton \textit{et al.} data correlates with GE and BMI status in Creighton data, but not in other data
