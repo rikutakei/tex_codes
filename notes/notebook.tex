@@ -1,0 +1,29 @@
+% My master tips book
+\documentclass[a4paper, 12pt] {report}
+
+% All of the packages imported for this document:
+\usepackage[utf8]{inputenc}
+\usepackage{glossaries}
+\usepackage{hyperref}
+\usepackage{setspace}
+\usepackage{url}
+\usepackage{multicol}
+
+
+\makeglossaries
+
+\begin{document}
+
+\include{./title/title}
+\include{./glossary/glossary}
+
+\tableofcontents
+
+\printglossaries
+\clearpage
+
+\include{./subnotes/intro}
+
+\include{./subnotes/gwas}
+
+\end{document}

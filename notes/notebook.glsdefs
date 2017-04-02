@@ -1,0 +1,3900 @@
+\ifglsentryexists{rnaseq}{}%
+{%
+\gls@defglossaryentry{rnaseq}%
+{%
+name={RNA-seq},%
+sort={RNA-seq},%
+type={main},%
+first={RNA-seq},%
+firstplural={RNA-seqs},%
+text={RNA-seq},%
+plural={RNA-seqs},%
+description={Sequence data using the transcriptome},%
+descriptionplural={Sequence data using the transcriptome},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{r}{}%
+{%
+\gls@defglossaryentry{r}%
+{%
+name={R},%
+sort={R},%
+type={main},%
+first={R},%
+firstplural={Rs},%
+text={R},%
+plural={Rs},%
+description={Statistical programming language},%
+descriptionplural={Statistical programming language},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{immunoediting}{}%
+{%
+\gls@defglossaryentry{immunoediting}%
+{%
+name={Immunoediting},%
+sort={Immunoediting},%
+type={main},%
+first={immunoediting},%
+firstplural={immunoeditings},%
+text={immunoediting},%
+plural={immunoeditings},%
+description={Process where the immune system successfully eliminates the highly immunogenic cancer cells during surveillance, but fails to eliminate the weakly immunogenic cells},%
+descriptionplural={Process where the immune system successfully eliminates the highly immunogenic cancer cells during surveillance, but fails to eliminate the weakly immunogenic cells},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{metagene}{}%
+{%
+\gls@defglossaryentry{metagene}%
+{%
+name={Metagene},%
+sort={Metagene},%
+type={main},%
+first={metagene},%
+firstplural={metagenes},%
+text={metagene},%
+plural={metagenes},%
+description={Summary score of a sample that represents the overall gene expression of the genes that was used to obtain the scores},%
+descriptionplural={Summary score of a sample that represents the overall gene expression of the genes that was used to obtain the scores},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ldp}{}%
+{%
+\gls@defglossaryentry{ldp}%
+{%
+name={Limited duration prevalence},%
+sort={Limited duration prevalence},%
+type={main},%
+first={limited duration prevalence},%
+firstplural={limited duration prevalences},%
+text={limited duration prevalence},%
+plural={limited duration prevalences},%
+description={Number of patients diagnosed with a disease within a fixed period of time in the past \citep {Bray2013}},%
+descriptionplural={Number of patients diagnosed with a disease within a fixed period of time in the past \citep {Bray2013}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{apoptosis}{}%
+{%
+\gls@defglossaryentry{apoptosis}%
+{%
+name={Apoptosis},%
+sort={Apoptosis},%
+type={main},%
+first={apoptosis},%
+firstplural={apoptosiss},%
+text={apoptosis},%
+plural={apoptosiss},%
+description={The death of cells which occurs as a normal and controlled part of an organism's growth or development},%
+descriptionplural={The death of cells which occurs as a normal and controlled part of an organism's growth or development},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{chromothripsis}{}%
+{%
+\gls@defglossaryentry{chromothripsis}%
+{%
+name={Chromothripsis},%
+sort={Chromothripsis},%
+type={main},%
+first={chromothripsis},%
+firstplural={chromothripsiss},%
+text={chromothripsis},%
+plural={chromothripsiss},%
+description={An all-at-once mutational pattern in which a large number of rearrangements are confined to local regions of one or more chromosomes \citep {Stephens2011}},%
+descriptionplural={An all-at-once mutational pattern in which a large number of rearrangements are confined to local regions of one or more chromosomes \citep {Stephens2011}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{kataegis}{}%
+{%
+\gls@defglossaryentry{kataegis}%
+{%
+name={Kataegis},%
+sort={Kataegis},%
+type={main},%
+first={kataegis},%
+firstplural={kataegiss},%
+text={kataegis},%
+plural={kataegiss},%
+description={Showers of single nucleotide changes confined to local regions, often near sites of chromosome rearrangements \citep {Stephens2011}},%
+descriptionplural={Showers of single nucleotide changes confined to local regions, often near sites of chromosome rearrangements \citep {Stephens2011}},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{adipocyte}{}%
+{%
+\gls@defglossaryentry{adipocyte}%
+{%
+name={Adipocyte},%
+sort={Adipocyte},%
+type={main},%
+first={adipo\discretionary {-}{}{}cyte},%
+firstplural={adipo\discretionary {-}{}{}cytes},%
+text={adipo\discretionary {-}{}{}cyte},%
+plural={adipo\discretionary {-}{}{}cytes},%
+description={Adipose tissue cell},%
+descriptionplural={Adipose tissue cell},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{type1}{}%
+{%
+\gls@defglossaryentry{type1}%
+{%
+name={Type I error},%
+sort={Type I error},%
+type={main},%
+first={Type I error},%
+firstplural={Type I errors},%
+text={Type I error},%
+plural={Type I errors},%
+description={Incorrect rejection of a true null hypothesis; false positive},%
+descriptionplural={Incorrect rejection of a true null hypothesis; false positive},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{type2}{}%
+{%
+\gls@defglossaryentry{type2}%
+{%
+name={Type II error},%
+sort={Type II error},%
+type={main},%
+first={Type II error},%
+firstplural={Type II errors},%
+text={Type II error},%
+plural={Type II errors},%
+description={Incorrect retaining of a false null hypothesis; false negative},%
+descriptionplural={Incorrect retaining of a false null hypothesis; false negative},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{power}{}%
+{%
+\gls@defglossaryentry{power}%
+{%
+name={Power},%
+sort={Power},%
+type={main},%
+first={power},%
+firstplural={powers},%
+text={power},%
+plural={powers},%
+description={Probability that it will reject a false null hypothesis; it is inversely related to the probability of making a Type II error},%
+descriptionplural={Probability that it will reject a false null hypothesis; it is inversely related to the probability of making a Type II error},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ontology}{}%
+{%
+\gls@defglossaryentry{ontology}%
+{%
+name={Ontology},%
+sort={Ontology},%
+type={main},%
+first={ontology},%
+firstplural={ontologys},%
+text={ontology},%
+plural={ontologys},%
+description={A set of concepts and categories in a subject area or domain that shows their properties and the relations between them},%
+descriptionplural={A set of concepts and categories in a subject area or domain that shows their properties and the relations between them},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{carcinogen}{}%
+{%
+\gls@defglossaryentry{carcinogen}%
+{%
+name={Carcinogen},%
+sort={Carcinogen},%
+type={main},%
+first={carcinogen},%
+firstplural={carcinogens},%
+text={carcinogen},%
+plural={carcinogens},%
+description={A substance capable of causing cancer},%
+descriptionplural={A substance capable of causing cancer},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{passenger}{}%
+{%
+\gls@defglossaryentry{passenger}%
+{%
+name={Passanger mutation},%
+sort={Passanger mutation},%
+type={main},%
+first={passanger},%
+firstplural={passangers},%
+text={passanger},%
+plural={passangers},%
+description={Mutations that have neither a selective advantage nor contribute to tumour progression},%
+descriptionplural={Mutations that have neither a selective advantage nor contribute to tumour progression},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{driver}{}%
+{%
+\gls@defglossaryentry{driver}%
+{%
+name={Driver mutation},%
+sort={Driver mutation},%
+type={main},%
+first={driver},%
+firstplural={drivers},%
+text={driver},%
+plural={drivers},%
+description={Mutations that helps tumorigenesis and its subsequent progression},%
+descriptionplural={Mutations that helps tumorigenesis and its subsequent progression},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{somatic}{}%
+{%
+\gls@defglossaryentry{somatic}%
+{%
+name={Somatic mutation},%
+sort={Somatic mutation},%
+type={main},%
+first={somatic mutation},%
+firstplural={somatic mutations},%
+text={somatic mutation},%
+plural={somatic mutations},%
+description={Mutations that are acquried by the cell over the course of the lifetime of an individual},%
+descriptionplural={Mutations that are acquried by the cell over the course of the lifetime of an individual},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{germline}{}%
+{%
+\gls@defglossaryentry{germline}%
+{%
+name={Germline mutation},%
+sort={Germline mutation},%
+type={main},%
+first={germline mutation},%
+firstplural={germline mutations},%
+text={germline mutation},%
+plural={germline mutations},%
+description={Mutations that are passed on from the parents},%
+descriptionplural={Mutations that are passed on from the parents},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{stability}{}%
+{%
+\gls@defglossaryentry{stability}%
+{%
+name={Stability gene},%
+sort={Stability gene},%
+type={main},%
+first={stability gene},%
+firstplural={stability genes},%
+text={stability gene},%
+plural={stability genes},%
+description={Genes that are involved in \acrshort {dna} repair mechanisms},%
+descriptionplural={Genes that are involved in \acrshort {dna} repair mechanisms},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{allele}{}%
+{%
+\gls@defglossaryentry{allele}%
+{%
+name={Allele},%
+sort={Allele},%
+type={main},%
+first={allele},%
+firstplural={alleles},%
+text={allele},%
+plural={alleles},%
+description={Variant form of a given gene},%
+descriptionplural={Variant form of a given gene},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{suppressor}{}%
+{%
+\gls@defglossaryentry{suppressor}%
+{%
+name={Tumour suppressor gene},%
+sort={Tumour suppressor gene},%
+type={main},%
+first={tumour suppressor},%
+firstplural={tumour suppressors},%
+text={tumour suppressor},%
+plural={tumour suppressors},%
+description={Genes that prevent or ``decelerate'' the process of tumorigenesis and/or tumour progression},%
+descriptionplural={Genes that prevent or ``decelerate'' the process of tumorigenesis and/or tumour progression},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{oncogene}{}%
+{%
+\gls@defglossaryentry{oncogene}%
+{%
+name={Oncogene},%
+sort={Oncogene},%
+type={main},%
+first={oncogene},%
+firstplural={oncogenes},%
+text={oncogene},%
+plural={oncogenes},%
+description={Genes that promote or ``accelerate'' the process of tumorigenesis and/or tumour progression},%
+descriptionplural={Genes that promote or ``accelerate'' the process of tumorigenesis and/or tumour progression},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{daly}{}%
+{%
+\gls@defglossaryentry{daly}%
+{%
+name={DALY},%
+sort={DALY},%
+type={main},%
+first={Disability-Adjusted Life Year\glsspace (DALY)},%
+firstplural={Disability-Adjusted Life Years\glsspace (DALYs)},%
+text={DALY},%
+plural={DALYs},%
+description={Disability-Adjusted Life Year},%
+descriptionplural={Disability-Adjusted Life Years},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Disability-Adjusted Life Year},%
+longplural={Disability-Adjusted Life Years},%
+short={DALY},%
+shortplural={DALYs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{gwas}{}%
+{%
+\gls@defglossaryentry{gwas}%
+{%
+name={GWAS},%
+sort={GWAS},%
+type={main},%
+first={genome wide association study\glsspace (GWAS)},%
+firstplural={genome wide association studies\glsspace (GWAS)},%
+text={GWAS},%
+plural={GWAS},%
+description={Genome wide association study},%
+descriptionplural={genome wide association studies},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={genome wide association study},%
+longplural={genome wide association studies},%
+short={GWAS},%
+shortplural={GWAS},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{acth}{}%
+{%
+\gls@defglossaryentry{acth}%
+{%
+name={ACTH},%
+sort={ACTH},%
+type={main},%
+first={adrenocorticotropic hormone\glsspace (ACTH)},%
+firstplural={adrenocorticotropic hormones\glsspace (ACTHs)},%
+text={ACTH},%
+plural={ACTHs},%
+description={Adrenocorticotropic hormone},%
+descriptionplural={adrenocorticotropic hormone\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={adrenocorticotropic hormone},%
+longplural={adrenocorticotropic hormones},%
+short={ACTH},%
+shortplural={ACTHs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{agrp}{}%
+{%
+\gls@defglossaryentry{agrp}%
+{%
+name={AGRP},%
+sort={AGRP},%
+type={main},%
+first={agouti-related protein\glsspace (AGRP)},%
+firstplural={agouti-related proteins\glsspace (AGRPs)},%
+text={AGRP},%
+plural={AGRPs},%
+description={Agouti-related protein},%
+descriptionplural={agouti-related protein\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={agouti-related protein},%
+longplural={agouti-related proteins},%
+short={AGRP},%
+shortplural={AGRPs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{aid}{}%
+{%
+\gls@defglossaryentry{aid}%
+{%
+name={AID},%
+sort={AID},%
+type={main},%
+first={activation-induced cytidine deaminase\glsspace (AID)},%
+firstplural={activation-induced cytidine deaminases\glsspace (AIDs)},%
+text={AID},%
+plural={AIDs},%
+description={Activation-induced cytidine deaminase},%
+descriptionplural={activation-induced cytidine deaminase\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={activation-induced cytidine deaminase},%
+longplural={activation-induced cytidine deaminases},%
+short={AID},%
+shortplural={AIDs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{anova}{}%
+{%
+\gls@defglossaryentry{anova}%
+{%
+name={ANOVA},%
+sort={ANOVA},%
+type={main},%
+first={analysis of variance\glsspace (ANOVA)},%
+firstplural={analysis of variances\glsspace (ANOVAs)},%
+text={ANOVA},%
+plural={ANOVAs},%
+description={Analysis of variance},%
+descriptionplural={analysis of variance\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={analysis of variance},%
+longplural={analysis of variances},%
+short={ANOVA},%
+shortplural={ANOVAs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{apobec}{}%
+{%
+\gls@defglossaryentry{apobec}%
+{%
+name={APOBEC},%
+sort={APOBEC},%
+type={main},%
+first={apolipoprotein B mRNA editing enzyme, catalytic polypeptide-like\glsspace (APOBEC)},%
+firstplural={apolipoprotein B mRNA editing enzyme, catalytic polypeptide-likes\glsspace (APOBECs)},%
+text={APOBEC},%
+plural={APOBECs},%
+description={Apolipoprotein B mRNA editing enzyme, catalytic polypeptide-like},%
+descriptionplural={apolipoprotein B mRNA editing enzyme, catalytic polypeptide-like\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={apolipoprotein B mRNA editing enzyme, catalytic polypeptide-like},%
+longplural={apolipoprotein B mRNA editing enzyme, catalytic polypeptide-likes},%
+short={APOBEC},%
+shortplural={APOBECs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{atp}{}%
+{%
+\gls@defglossaryentry{atp}%
+{%
+name={ATP},%
+sort={ATP},%
+type={main},%
+first={adenosine triphosphate\glsspace (ATP)},%
+firstplural={adenosine triphosphates\glsspace (ATPs)},%
+text={ATP},%
+plural={ATPs},%
+description={Adenosine triphosphate},%
+descriptionplural={adenosine triphosphate\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={adenosine triphosphate},%
+longplural={adenosine triphosphates},%
+short={ATP},%
+shortplural={ATPs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{bcat}{}%
+{%
+\gls@defglossaryentry{bcat}%
+{%
+name={BCAT},%
+sort={BCAT},%
+type={main},%
+first={$\beta $-catenin\glsspace (BCAT)},%
+firstplural={$\beta $-catenins\glsspace (BCATs)},%
+text={BCAT},%
+plural={BCATs},%
+description={$\beta $-catenin},%
+descriptionplural={$\beta $-catenin\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={$\beta $-catenin},%
+longplural={$\beta $-catenins},%
+short={BCAT},%
+shortplural={BCATs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{bcl2}{}%
+{%
+\gls@defglossaryentry{bcl2}%
+{%
+name={Bcl-2},%
+sort={Bcl-2},%
+type={main},%
+first={B-cell lymphoma 2\glsspace (Bcl-2)},%
+firstplural={B-cell lymphoma 2s\glsspace (Bcl-2s)},%
+text={Bcl-2},%
+plural={Bcl-2s},%
+description={B-cell lymphoma 2},%
+descriptionplural={B-cell lymphoma 2\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={B-cell lymphoma 2},%
+longplural={B-cell lymphoma 2s},%
+short={Bcl-2},%
+shortplural={Bcl-2s},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ber}{}%
+{%
+\gls@defglossaryentry{ber}%
+{%
+name={BER},%
+sort={BER},%
+type={main},%
+first={base-excision repair\glsspace (BER)},%
+firstplural={base-excision repairs\glsspace (BERs)},%
+text={BER},%
+plural={BERs},%
+description={Base-excision repair},%
+descriptionplural={base-excision repair\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={base-excision repair},%
+longplural={base-excision repairs},%
+short={BER},%
+shortplural={BERs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{bh3}{}%
+{%
+\gls@defglossaryentry{bh3}%
+{%
+name={BH3},%
+sort={BH3},%
+type={main},%
+first={Bcl-2 homology 3\glsspace (BH3)},%
+firstplural={Bcl-2 homology 3s\glsspace (BH3s)},%
+text={BH3},%
+plural={BH3s},%
+description={Bcl-2 homology 3},%
+descriptionplural={Bcl-2 homology 3\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Bcl-2 homology 3},%
+longplural={Bcl-2 homology 3s},%
+short={BH3},%
+shortplural={BH3s},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{bic}{}%
+{%
+\gls@defglossaryentry{bic}%
+{%
+name={BIC},%
+sort={BIC},%
+type={main},%
+first={Bayesian Information Criterion\glsspace (BIC)},%
+firstplural={Bayesian Information Criterions\glsspace (BICs)},%
+text={BIC},%
+plural={BICs},%
+description={Bayesian Information Criterion},%
+descriptionplural={Bayesian Information Criterion\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Bayesian Information Criterion},%
+longplural={Bayesian Information Criterions},%
+short={BIC},%
+shortplural={BICs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{blca}{}%
+{%
+\gls@defglossaryentry{blca}%
+{%
+name={BLCA},%
+sort={BLCA},%
+type={main},%
+first={bladder urothelial carcinoma\glsspace (BLCA)},%
+firstplural={bladder urothelial carcinomas\glsspace (BLCAs)},%
+text={BLCA},%
+plural={BLCAs},%
+description={Bladder urothelial carcinoma},%
+descriptionplural={bladder urothelial carcinoma\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={bladder urothelial carcinoma},%
+longplural={bladder urothelial carcinomas},%
+short={BLCA},%
+shortplural={BLCAs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{bmi}{}%
+{%
+\gls@defglossaryentry{bmi}%
+{%
+name={BMI},%
+sort={BMI},%
+type={main},%
+first={body mass index\glsspace (BMI)},%
+firstplural={body mass indexs\glsspace (BMIs)},%
+text={BMI},%
+plural={BMIs},%
+description={Body mass index},%
+descriptionplural={body mass index\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={body mass index},%
+longplural={body mass indexs},%
+short={BMI},%
+shortplural={BMIs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{camera}{}%
+{%
+\gls@defglossaryentry{camera}%
+{%
+name={CAMERA},%
+sort={CAMERA},%
+type={main},%
+first={correlation adjusted mean rank gene set test\glsspace (CAMERA)},%
+firstplural={correlation adjusted mean rank gene set tests\glsspace (CAMERAs)},%
+text={CAMERA},%
+plural={CAMERAs},%
+description={Correlation adjusted mean rank gene set test},%
+descriptionplural={correlation adjusted mean rank gene set test\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={correlation adjusted mean rank gene set test},%
+longplural={correlation adjusted mean rank gene set tests},%
+short={CAMERA},%
+shortplural={CAMERAs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{cart}{}%
+{%
+\gls@defglossaryentry{cart}%
+{%
+name={CART},%
+sort={CART},%
+type={main},%
+first={cocaine and amphetamine related transcript\glsspace (CART)},%
+firstplural={cocaine and amphetamine related transcripts\glsspace (CARTs)},%
+text={CART},%
+plural={CARTs},%
+description={Cocaine and amphetamine related transcript},%
+descriptionplural={cocaine and amphetamine related transcript\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={cocaine and amphetamine related transcript},%
+longplural={cocaine and amphetamine related transcripts},%
+short={CART},%
+shortplural={CARTs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{cdna}{}%
+{%
+\gls@defglossaryentry{cdna}%
+{%
+name={cDNA},%
+sort={cDNA},%
+type={main},%
+first={complimentary DNA\glsspace (cDNA)},%
+firstplural={complimentary DNAs\glsspace (cDNAs)},%
+text={cDNA},%
+plural={cDNAs},%
+description={Complimentary DNA},%
+descriptionplural={complimentary DNA\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={complimentary DNA},%
+longplural={complimentary DNAs},%
+short={cDNA},%
+shortplural={cDNAs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{cesc}{}%
+{%
+\gls@defglossaryentry{cesc}%
+{%
+name={CESC},%
+sort={CESC},%
+type={main},%
+first={cervical squamous cell carcinoma and endocervical adenocarcinoma\glsspace (CESC)},%
+firstplural={cervical squamous cell carcinoma and endocervical adenocarcinomas\glsspace (CESCs)},%
+text={CESC},%
+plural={CESCs},%
+description={Cervical squamous cell carcinoma and endocervical adenocarcinoma},%
+descriptionplural={cervical squamous cell carcinoma and endocervical adenocarcinoma\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={cervical squamous cell carcinoma and endocervical adenocarcinoma},%
+longplural={cervical squamous cell carcinoma and endocervical adenocarcinomas},%
+short={CESC},%
+shortplural={CESCs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{coad}{}%
+{%
+\gls@defglossaryentry{coad}%
+{%
+name={COAD},%
+sort={COAD},%
+type={main},%
+first={colon adenocarcinoma\glsspace (COAD)},%
+firstplural={colon adenocarcinomas\glsspace (COADs)},%
+text={COAD},%
+plural={COADs},%
+description={Colon adenocarcinoma},%
+descriptionplural={colon adenocarcinoma\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={colon adenocarcinoma},%
+longplural={colon adenocarcinomas},%
+short={COAD},%
+shortplural={COADs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{cpm}{}%
+{%
+\gls@defglossaryentry{cpm}%
+{%
+name={cpm},%
+sort={cpm},%
+type={main},%
+first={counts per million\glsspace (cpm)},%
+firstplural={counts per millions\glsspace (cpms)},%
+text={cpm},%
+plural={cpms},%
+description={Counts per million},%
+descriptionplural={counts per million\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={counts per million},%
+longplural={counts per millions},%
+short={cpm},%
+shortplural={cpms},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{cyp}{}%
+{%
+\gls@defglossaryentry{cyp}%
+{%
+name={CYP},%
+sort={CYP},%
+type={main},%
+first={cytochrome P450\glsspace (CYP)},%
+firstplural={cytochrome P450s\glsspace (CYPs)},%
+text={CYP},%
+plural={CYPs},%
+description={Cytochrome P450},%
+descriptionplural={cytochrome P450\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={cytochrome P450},%
+longplural={cytochrome P450s},%
+short={CYP},%
+shortplural={CYPs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{deg}{}%
+{%
+\gls@defglossaryentry{deg}%
+{%
+name={DEG},%
+sort={DEG},%
+type={main},%
+first={differentially expressed gene\glsspace (DEG)},%
+firstplural={differentially expressed genes\glsspace (DEGs)},%
+text={DEG},%
+plural={DEGs},%
+description={Differentially expressed gene},%
+descriptionplural={differentially expressed gene\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={differentially expressed gene},%
+longplural={differentially expressed genes},%
+short={DEG},%
+shortplural={DEGs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{dna}{}%
+{%
+\gls@defglossaryentry{dna}%
+{%
+name={DNA},%
+sort={DNA},%
+type={main},%
+first={deoxyribonucleic acid\glsspace (DNA)},%
+firstplural={deoxyribonucleic acids\glsspace (DNAs)},%
+text={DNA},%
+plural={DNAs},%
+description={Deoxyribonucleic acid},%
+descriptionplural={deoxyribonucleic acid\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={deoxyribonucleic acid},%
+longplural={deoxyribonucleic acids},%
+short={DNA},%
+shortplural={DNAs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{egfr}{}%
+{%
+\gls@defglossaryentry{egfr}%
+{%
+name={EGFR},%
+sort={EGFR},%
+type={main},%
+first={epidermal growth factor receptor\glsspace (EGFR)},%
+firstplural={epidermal growth factor receptors\glsspace (EGFRs)},%
+text={EGFR},%
+plural={EGFRs},%
+description={Epidermal growth factor receptor},%
+descriptionplural={epidermal growth factor receptor\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={epidermal growth factor receptor},%
+longplural={epidermal growth factor receptors},%
+short={EGFR},%
+shortplural={EGFRs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{emt}{}%
+{%
+\gls@defglossaryentry{emt}%
+{%
+name={EMT},%
+sort={EMT},%
+type={main},%
+first={endothelial-mesenchymal transition\glsspace (EMT)},%
+firstplural={endothelial-mesenchymal transitions\glsspace (EMTs)},%
+text={EMT},%
+plural={EMTs},%
+description={Endothelial-mesenchymal transition},%
+descriptionplural={endothelial-mesenchymal transition\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={endothelial-mesenchymal transition},%
+longplural={endothelial-mesenchymal transitions},%
+short={EMT},%
+shortplural={EMTs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{erk}{}%
+{%
+\gls@defglossaryentry{erk}%
+{%
+name={ERK},%
+sort={ERK},%
+type={main},%
+first={extracellular signal regulated kinase\glsspace (ERK)},%
+firstplural={extracellular signal regulated kinases\glsspace (ERKs)},%
+text={ERK},%
+plural={ERKs},%
+description={Extracellular signal regulated kinase},%
+descriptionplural={extracellular signal regulated kinase\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={extracellular signal regulated kinase},%
+longplural={extracellular signal regulated kinases},%
+short={ERK},%
+shortplural={ERKs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{er}{}%
+{%
+\gls@defglossaryentry{er}%
+{%
+name={ER},%
+sort={ER},%
+type={main},%
+first={estrogen receptor\glsspace (ER)},%
+firstplural={estrogen receptors\glsspace (ERs)},%
+text={ER},%
+plural={ERs},%
+description={Estrogen receptor},%
+descriptionplural={estrogen receptor\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={estrogen receptor},%
+longplural={estrogen receptors},%
+short={ER},%
+shortplural={ERs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fcs}{}%
+{%
+\gls@defglossaryentry{fcs}%
+{%
+name={FCS},%
+sort={FCS},%
+type={main},%
+first={functional class scoring\glsspace (FCS)},%
+firstplural={functional class scorings\glsspace (FCSs)},%
+text={FCS},%
+plural={FCSs},%
+description={Functional class scoring},%
+descriptionplural={functional class scoring\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={functional class scoring},%
+longplural={functional class scorings},%
+short={FCS},%
+shortplural={FCSs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fc}{}%
+{%
+\gls@defglossaryentry{fc}%
+{%
+name={FC},%
+sort={FC},%
+type={main},%
+first={fold change\glsspace (FC)},%
+firstplural={fold changes\glsspace (FCs)},%
+text={FC},%
+plural={FCs},%
+description={Fold change},%
+descriptionplural={fold change\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={fold change},%
+longplural={fold changes},%
+short={FC},%
+shortplural={FCs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fdr}{}%
+{%
+\gls@defglossaryentry{fdr}%
+{%
+name={FDR},%
+sort={FDR},%
+type={main},%
+first={false discovery rate\glsspace (FDR)},%
+firstplural={false discovery rates\glsspace (FDRs)},%
+text={FDR},%
+plural={FDRs},%
+description={False discovery rate},%
+descriptionplural={false discovery rate\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={false discovery rate},%
+longplural={false discovery rates},%
+short={FDR},%
+shortplural={FDRs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fto}{}%
+{%
+\gls@defglossaryentry{fto}%
+{%
+name={FTO},%
+sort={FTO},%
+type={main},%
+first={fat mass and obesity associated\glsspace (FTO)},%
+firstplural={fat mass and obesity associateds\glsspace (FTOs)},%
+text={FTO},%
+plural={FTOs},%
+description={Fat mass and obesity associated},%
+descriptionplural={fat mass and obesity associated\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={fat mass and obesity associated},%
+longplural={fat mass and obesity associateds},%
+short={FTO},%
+shortplural={FTOs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{fwer}{}%
+{%
+\gls@defglossaryentry{fwer}%
+{%
+name={FWER},%
+sort={FWER},%
+type={main},%
+first={family-wise error rate\glsspace (FWER)},%
+firstplural={family-wise error rates\glsspace (FWERs)},%
+text={FWER},%
+plural={FWERs},%
+description={Family-wise error rate},%
+descriptionplural={family-wise error rate\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={family-wise error rate},%
+longplural={family-wise error rates},%
+short={FWER},%
+shortplural={FWERs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{g1}{}%
+{%
+\gls@defglossaryentry{g1}%
+{%
+name={G1},%
+sort={G1},%
+type={main},%
+first={Gap 1\glsspace (G1)},%
+firstplural={Gap 1s\glsspace (G1s)},%
+text={G1},%
+plural={G1s},%
+description={Gap 1},%
+descriptionplural={Gap 1\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Gap 1},%
+longplural={Gap 1s},%
+short={G1},%
+shortplural={G1s},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{gaba}{}%
+{%
+\gls@defglossaryentry{gaba}%
+{%
+name={GABA},%
+sort={GABA},%
+type={main},%
+first={$\gamma $-aminobutyric acid\glsspace (GABA)},%
+firstplural={$\gamma $-aminobutyric acids\glsspace (GABAs)},%
+text={GABA},%
+plural={GABAs},%
+description={$\gamma $-aminobutyric acid},%
+descriptionplural={$\gamma $-aminobutyric acid\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={$\gamma $-aminobutyric acid},%
+longplural={$\gamma $-aminobutyric acids},%
+short={GABA},%
+shortplural={GABAs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{geo}{}%
+{%
+\gls@defglossaryentry{geo}%
+{%
+name={GEO},%
+sort={GEO},%
+type={main},%
+first={Gene Expression Omnibus\glsspace (GEO)},%
+firstplural={Gene Expression Omnibuss\glsspace (GEOs)},%
+text={GEO},%
+plural={GEOs},%
+description={Gene Expression Omnibus},%
+descriptionplural={Gene Expression Omnibus\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Gene Expression Omnibus},%
+longplural={Gene Expression Omnibuss},%
+short={GEO},%
+shortplural={GEOs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ghsr}{}%
+{%
+\gls@defglossaryentry{ghsr}%
+{%
+name={GHSR},%
+sort={GHSR},%
+type={main},%
+first={growth hormone secretagogue receptor\glsspace (GHSR)},%
+firstplural={growth hormone secretagogue receptors\glsspace (GHSRs)},%
+text={GHSR},%
+plural={GHSRs},%
+description={Growth hormone secretagogue receptor},%
+descriptionplural={growth hormone secretagogue receptor\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={growth hormone secretagogue receptor},%
+longplural={growth hormone secretagogue receptors},%
+short={GHSR},%
+shortplural={GHSRs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{go}{}%
+{%
+\gls@defglossaryentry{go}%
+{%
+name={GO},%
+sort={GO},%
+type={main},%
+first={Gene Ontology\glsspace (GO)},%
+firstplural={Gene Ontologys\glsspace (GOs)},%
+text={GO},%
+plural={GOs},%
+description={Gene Ontology},%
+descriptionplural={Gene Ontology\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Gene Ontology},%
+longplural={Gene Ontologys},%
+short={GO},%
+shortplural={GOs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{gpcr}{}%
+{%
+\gls@defglossaryentry{gpcr}%
+{%
+name={GPCR},%
+sort={GPCR},%
+type={main},%
+first={G-protein coupled receptor\glsspace (GPCR)},%
+firstplural={G-protein coupled receptors\glsspace (GPCRs)},%
+text={GPCR},%
+plural={GPCRs},%
+description={G-protein coupled receptor},%
+descriptionplural={G-protein coupled receptor\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={G-protein coupled receptor},%
+longplural={G-protein coupled receptors},%
+short={GPCR},%
+shortplural={GPCRs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{gsea}{}%
+{%
+\gls@defglossaryentry{gsea}%
+{%
+name={GSEA},%
+sort={GSEA},%
+type={main},%
+first={Gene Set Enrichment Analysis\glsspace (GSEA)},%
+firstplural={Gene Set Enrichment Analysiss\glsspace (GSEAs)},%
+text={GSEA},%
+plural={GSEAs},%
+description={Gene Set Enrichment Analysis},%
+descriptionplural={Gene Set Enrichment Analysis\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Gene Set Enrichment Analysis},%
+longplural={Gene Set Enrichment Analysiss},%
+short={GSEA},%
+shortplural={GSEAs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{her2}{}%
+{%
+\gls@defglossaryentry{her2}%
+{%
+name={HER2},%
+sort={HER2},%
+type={main},%
+first={human epidermal growth factor receptor 2\glsspace (HER2)},%
+firstplural={human epidermal growth factor receptor 2s\glsspace (HER2s)},%
+text={HER2},%
+plural={HER2s},%
+description={Human epidermal growth factor receptor 2},%
+descriptionplural={human epidermal growth factor receptor 2\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={human epidermal growth factor receptor 2},%
+longplural={human epidermal growth factor receptor 2s},%
+short={HER2},%
+shortplural={HER2s},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{icgc}{}%
+{%
+\gls@defglossaryentry{icgc}%
+{%
+name={ICGC},%
+sort={ICGC},%
+type={main},%
+first={International Cancer Genome Consortium\glsspace (ICGC)},%
+firstplural={International Cancer Genome Consortiums\glsspace (ICGCs)},%
+text={ICGC},%
+plural={ICGCs},%
+description={International Cancer Genome Consortium},%
+descriptionplural={International Cancer Genome Consortium\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={International Cancer Genome Consortium},%
+longplural={International Cancer Genome Consortiums},%
+short={ICGC},%
+shortplural={ICGCs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ifna}{}%
+{%
+\gls@defglossaryentry{ifna}%
+{%
+name={IFN$\alpha $},%
+sort={IFN$\alpha $},%
+type={main},%
+first={interferon-$\alpha $\glsspace (IFN$\alpha $)},%
+firstplural={interferon-$\alpha $s\glsspace (IFN$\alpha $s)},%
+text={IFN$\alpha $},%
+plural={IFN$\alpha $s},%
+description={Interferon-$\alpha $},%
+descriptionplural={interferon-$\alpha $\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={interferon-$\alpha $},%
+longplural={interferon-$\alpha $s},%
+short={IFN$\alpha $},%
+shortplural={IFN$\alpha $s},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ifny}{}%
+{%
+\gls@defglossaryentry{ifny}%
+{%
+name={IFN$\gamma $},%
+sort={IFN$\gamma $},%
+type={main},%
+first={interferon-$\gamma $\glsspace (IFN$\gamma $)},%
+firstplural={interferon-$\gamma $s\glsspace (IFN$\gamma $s)},%
+text={IFN$\gamma $},%
+plural={IFN$\gamma $s},%
+description={Interferon-$\gamma $},%
+descriptionplural={interferon-$\gamma $\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={interferon-$\gamma $},%
+longplural={interferon-$\gamma $s},%
+short={IFN$\gamma $},%
+shortplural={IFN$\gamma $s},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{igfbp}{}%
+{%
+\gls@defglossaryentry{igfbp}%
+{%
+name={IGFBP},%
+sort={IGFBP},%
+type={main},%
+first={insulin-like growth factor binding protein\glsspace (IGFBP)},%
+firstplural={insulin-like growth factor binding proteins\glsspace (IGFBPs)},%
+text={IGFBP},%
+plural={IGFBPs},%
+description={Insulin-like growth factor binding protein},%
+descriptionplural={insulin-like growth factor binding protein\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={insulin-like growth factor binding protein},%
+longplural={insulin-like growth factor binding proteins},%
+short={IGFBP},%
+shortplural={IGFBPs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{igf}{}%
+{%
+\gls@defglossaryentry{igf}%
+{%
+name={IGF},%
+sort={IGF},%
+type={main},%
+first={insulin-like growth factor\glsspace (IGF)},%
+firstplural={insulin-like growth factors\glsspace (IGFs)},%
+text={IGF},%
+plural={IGFs},%
+description={Insulin-like growth factor},%
+descriptionplural={insulin-like growth factor\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={insulin-like growth factor},%
+longplural={insulin-like growth factors},%
+short={IGF},%
+shortplural={IGFs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{il10}{}%
+{%
+\gls@defglossaryentry{il10}%
+{%
+name={IL-10},%
+sort={IL-10},%
+type={main},%
+first={interleukin-10\glsspace (IL-10)},%
+firstplural={interleukin-10s\glsspace (IL-10s)},%
+text={IL-10},%
+plural={IL-10s},%
+description={Interleukin-10},%
+descriptionplural={interleukin-10\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={interleukin-10},%
+longplural={interleukin-10s},%
+short={IL-10},%
+shortplural={IL-10s},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{il6}{}%
+{%
+\gls@defglossaryentry{il6}%
+{%
+name={IL-6},%
+sort={IL-6},%
+type={main},%
+first={interleukin-6\glsspace (IL-6)},%
+firstplural={interleukin-6s\glsspace (IL-6s)},%
+text={IL-6},%
+plural={IL-6s},%
+description={Interleukin-6},%
+descriptionplural={interleukin-6\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={interleukin-6},%
+longplural={interleukin-6s},%
+short={IL-6},%
+shortplural={IL-6s},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{irs}{}%
+{%
+\gls@defglossaryentry{irs}%
+{%
+name={IRS},%
+sort={IRS},%
+type={main},%
+first={insulin receptor substrate\glsspace (IRS)},%
+firstplural={insulin receptor substrates\glsspace (IRSs)},%
+text={IRS},%
+plural={IRSs},%
+description={Insulin receptor substrate},%
+descriptionplural={insulin receptor substrate\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={insulin receptor substrate},%
+longplural={insulin receptor substrates},%
+short={IRS},%
+shortplural={IRSs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{jak}{}%
+{%
+\gls@defglossaryentry{jak}%
+{%
+name={JAK},%
+sort={JAK},%
+type={main},%
+first={janus kinase\glsspace (JAK)},%
+firstplural={janus kinases\glsspace (JAKs)},%
+text={JAK},%
+plural={JAKs},%
+description={Janus kinase},%
+descriptionplural={janus kinase\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={janus kinase},%
+longplural={janus kinases},%
+short={JAK},%
+shortplural={JAKs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{kegg}{}%
+{%
+\gls@defglossaryentry{kegg}%
+{%
+name={KEGG},%
+sort={KEGG},%
+type={main},%
+first={Kyoto Encyclopedia of Genes and Genomes\glsspace (KEGG)},%
+firstplural={Kyoto Encyclopedia of Genes and Genomess\glsspace (KEGGs)},%
+text={KEGG},%
+plural={KEGGs},%
+description={Kyoto Encyclopedia of Genes and Genomes},%
+descriptionplural={Kyoto Encyclopedia of Genes and Genomes\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Kyoto Encyclopedia of Genes and Genomes},%
+longplural={Kyoto Encyclopedia of Genes and Genomess},%
+short={KEGG},%
+shortplural={KEGGs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{kirp}{}%
+{%
+\gls@defglossaryentry{kirp}%
+{%
+name={KIRP},%
+sort={KIRP},%
+type={main},%
+first={kidney renal clear cell carcinoma\glsspace (KIRP)},%
+firstplural={kidney renal clear cell carcinomas\glsspace (KIRPs)},%
+text={KIRP},%
+plural={KIRPs},%
+description={Kidney renal clear cell carcinoma},%
+descriptionplural={kidney renal clear cell carcinoma\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={kidney renal clear cell carcinoma},%
+longplural={kidney renal clear cell carcinomas},%
+short={KIRP},%
+shortplural={KIRPs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{lihc}{}%
+{%
+\gls@defglossaryentry{lihc}%
+{%
+name={LIHC},%
+sort={LIHC},%
+type={main},%
+first={liver hepatocellular carcinoma\glsspace (LIHC)},%
+firstplural={liver hepatocellular carcinomas\glsspace (LIHCs)},%
+text={LIHC},%
+plural={LIHCs},%
+description={Liver hepatocellular carcinoma},%
+descriptionplural={liver hepatocellular carcinoma\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={liver hepatocellular carcinoma},%
+longplural={liver hepatocellular carcinomas},%
+short={LIHC},%
+shortplural={LIHCs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ln}{}%
+{%
+\gls@defglossaryentry{ln}%
+{%
+name={LN},%
+sort={LN},%
+type={main},%
+first={lymph node\glsspace (LN)},%
+firstplural={lymph nodes\glsspace (LNs)},%
+text={LN},%
+plural={LNs},%
+description={Lymph node},%
+descriptionplural={lymph node\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={lymph node},%
+longplural={lymph nodes},%
+short={LN},%
+shortplural={LNs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{mas}{}%
+{%
+\gls@defglossaryentry{mas}%
+{%
+name={MAS5},%
+sort={MAS5},%
+type={main},%
+first={microarray analysis suite 5.0\glsspace (MAS5)},%
+firstplural={microarray analysis suite 5.0s\glsspace (MAS5s)},%
+text={MAS5},%
+plural={MAS5s},%
+description={Microarray analysis suite 5.0},%
+descriptionplural={microarray analysis suite 5.0\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={microarray analysis suite 5.0},%
+longplural={microarray analysis suite 5.0s},%
+short={MAS5},%
+shortplural={MAS5s},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{mc1r}{}%
+{%
+\gls@defglossaryentry{mc1r}%
+{%
+name={MC1R},%
+sort={MC1R},%
+type={main},%
+first={melanocortin 1 receptor\glsspace (MC1R)},%
+firstplural={melanocortin 1 receptors\glsspace (MC1Rs)},%
+text={MC1R},%
+plural={MC1Rs},%
+description={Melanocortin 1 receptor},%
+descriptionplural={melanocortin 1 receptor\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={melanocortin 1 receptor},%
+longplural={melanocortin 1 receptors},%
+short={MC1R},%
+shortplural={MC1Rs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{mc4r}{}%
+{%
+\gls@defglossaryentry{mc4r}%
+{%
+name={MC4R},%
+sort={MC4R},%
+type={main},%
+first={melanocortin 4 receptor\glsspace (MC4R)},%
+firstplural={melanocortin 4 receptors\glsspace (MC4Rs)},%
+text={MC4R},%
+plural={MC4Rs},%
+description={Melanocortin 4 receptor},%
+descriptionplural={melanocortin 4 receptor\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={melanocortin 4 receptor},%
+longplural={melanocortin 4 receptors},%
+short={MC4R},%
+shortplural={MC4Rs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{met}{}%
+{%
+\gls@defglossaryentry{met}%
+{%
+name={MET},%
+sort={MET},%
+type={main},%
+first={mesenchymal-endothelial transition\glsspace (MET)},%
+firstplural={mesenchymal-endothelial transitions\glsspace (METs)},%
+text={MET},%
+plural={METs},%
+description={Mesenchymal-endothelial transition},%
+descriptionplural={mesenchymal-endothelial transition\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={mesenchymal-endothelial transition},%
+longplural={mesenchymal-endothelial transitions},%
+short={MET},%
+shortplural={METs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{mmr}{}%
+{%
+\gls@defglossaryentry{mmr}%
+{%
+name={MMR},%
+sort={MMR},%
+type={main},%
+first={mismatch repair\glsspace (MMR)},%
+firstplural={mismatch repairs\glsspace (MMRs)},%
+text={MMR},%
+plural={MMRs},%
+description={Mismatch repair},%
+descriptionplural={mismatch repair\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={mismatch repair},%
+longplural={mismatch repairs},%
+short={MMR},%
+shortplural={MMRs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{mm}{}%
+{%
+\gls@defglossaryentry{mm}%
+{%
+name={MM},%
+sort={MM},%
+type={main},%
+first={mismatch\glsspace (MM)},%
+firstplural={mismatchs\glsspace (MMs)},%
+text={MM},%
+plural={MMs},%
+description={Mismatch},%
+descriptionplural={mismatch\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={mismatch},%
+longplural={mismatchs},%
+short={MM},%
+shortplural={MMs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{mrna}{}%
+{%
+\gls@defglossaryentry{mrna}%
+{%
+name={mRNA},%
+sort={mRNA},%
+type={main},%
+first={messenger RNA\glsspace (mRNA)},%
+firstplural={messenger RNAs\glsspace (mRNAs)},%
+text={mRNA},%
+plural={mRNAs},%
+description={Messenger RNA},%
+descriptionplural={messenger RNA\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={messenger RNA},%
+longplural={messenger RNAs},%
+short={mRNA},%
+shortplural={mRNAs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{msh}{}%
+{%
+\gls@defglossaryentry{msh}%
+{%
+name={MSH},%
+sort={MSH},%
+type={main},%
+first={melanocyte-stimulating hormone\glsspace (MSH)},%
+firstplural={melanocyte-stimulating hormones\glsspace (MSHs)},%
+text={MSH},%
+plural={MSHs},%
+description={Melanocyte-stimulating hormone},%
+descriptionplural={melanocyte-stimulating hormone\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={melanocyte-stimulating hormone},%
+longplural={melanocyte-stimulating hormones},%
+short={MSH},%
+shortplural={MSHs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{mtor}{}%
+{%
+\gls@defglossaryentry{mtor}%
+{%
+name={mTOR},%
+sort={mTOR},%
+type={main},%
+first={mammalian target of rapamycin\glsspace (mTOR)},%
+firstplural={mammalian target of rapamycins\glsspace (mTORs)},%
+text={mTOR},%
+plural={mTORs},%
+description={Mammalian target of rapamycin},%
+descriptionplural={mammalian target of rapamycin\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={mammalian target of rapamycin},%
+longplural={mammalian target of rapamycins},%
+short={mTOR},%
+shortplural={mTORs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{m}{}%
+{%
+\gls@defglossaryentry{m}%
+{%
+name={$\mu $},%
+sort={$\mu $},%
+type={main},%
+first={mean\glsspace ($\mu $)},%
+firstplural={means\glsspace ($\mu $s)},%
+text={$\mu $},%
+plural={$\mu $s},%
+description={Mean},%
+descriptionplural={mean\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={mean},%
+longplural={means},%
+short={$\mu $},%
+shortplural={$\mu $s},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ner}{}%
+{%
+\gls@defglossaryentry{ner}%
+{%
+name={NER},%
+sort={NER},%
+type={main},%
+first={nucleotide-excision repair\glsspace (NER)},%
+firstplural={nucleotide-excision repairs\glsspace (NERs)},%
+text={NER},%
+plural={NERs},%
+description={Nucleotide-excision repair},%
+descriptionplural={nucleotide-excision repair\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={nucleotide-excision repair},%
+longplural={nucleotide-excision repairs},%
+short={NER},%
+shortplural={NERs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{nfkb}{}%
+{%
+\gls@defglossaryentry{nfkb}%
+{%
+name={NF-$\kappa $B},%
+sort={NF-$\kappa $B},%
+type={main},%
+first={nuclear factor $\kappa $B\glsspace (NF-$\kappa $B)},%
+firstplural={nuclear factor $\kappa $Bs\glsspace (NF-$\kappa $Bs)},%
+text={NF-$\kappa $B},%
+plural={NF-$\kappa $Bs},%
+description={Nuclear factor $\kappa $B},%
+descriptionplural={nuclear factor $\kappa $B\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={nuclear factor $\kappa $B},%
+longplural={nuclear factor $\kappa $Bs},%
+short={NF-$\kappa $B},%
+shortplural={NF-$\kappa $Bs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ngs}{}%
+{%
+\gls@defglossaryentry{ngs}%
+{%
+name={NGS},%
+sort={NGS},%
+type={main},%
+first={next generation sequencing\glsspace (NGS)},%
+firstplural={next generation sequencings\glsspace (NGSs)},%
+text={NGS},%
+plural={NGSs},%
+description={Next generation sequencing},%
+descriptionplural={next generation sequencing\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={next generation sequencing},%
+longplural={next generation sequencings},%
+short={NGS},%
+shortplural={NGSs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{nnk}{}%
+{%
+\gls@defglossaryentry{nnk}%
+{%
+name={NNK},%
+sort={NNK},%
+type={main},%
+first={4-(methylnitrosamino)-1-(3-pyridyl)-1-butanone\glsspace (NNK)},%
+firstplural={4-(methylnitrosamino)-1-(3-pyridyl)-1-butanones\glsspace (NNKs)},%
+text={NNK},%
+plural={NNKs},%
+description={4-(methylnitrosamino)-1-(3-pyridyl)-1-butanone},%
+descriptionplural={4-(methylnitrosamino)-1-(3-pyridyl)-1-butanone\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={4-(methylnitrosamino)-1-(3-pyridyl)-1-butanone},%
+longplural={4-(methylnitrosamino)-1-(3-pyridyl)-1-butanones},%
+short={NNK},%
+shortplural={NNKs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{npy}{}%
+{%
+\gls@defglossaryentry{npy}%
+{%
+name={NPY},%
+sort={NPY},%
+type={main},%
+first={neuropeptide Y\glsspace (NPY)},%
+firstplural={neuropeptide Ys\glsspace (NPYs)},%
+text={NPY},%
+plural={NPYs},%
+description={Neuropeptide Y},%
+descriptionplural={neuropeptide Y\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={neuropeptide Y},%
+longplural={neuropeptide Ys},%
+short={NPY},%
+shortplural={NPYs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{nyr1}{}%
+{%
+\gls@defglossaryentry{nyr1}%
+{%
+name={Y1R},%
+sort={Y1R},%
+type={main},%
+first={neuropeptide Y1 receptor\glsspace (Y1R)},%
+firstplural={neuropeptide Y1 receptors\glsspace (Y1Rs)},%
+text={Y1R},%
+plural={Y1Rs},%
+description={Neuropeptide Y1 receptor},%
+descriptionplural={neuropeptide Y1 receptor\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={neuropeptide Y1 receptor},%
+longplural={neuropeptide Y1 receptors},%
+short={Y1R},%
+shortplural={Y1Rs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{nzbc}{}%
+{%
+\gls@defglossaryentry{nzbc}%
+{%
+name={NZBC},%
+sort={NZBC},%
+type={main},%
+first={New Zealand Breast Cancer\glsspace (NZBC)},%
+firstplural={New Zealand Breast Cancers\glsspace (NZBCs)},%
+text={NZBC},%
+plural={NZBCs},%
+description={New Zealand Breast Cancer},%
+descriptionplural={New Zealand Breast Cancer\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={New Zealand Breast Cancer},%
+longplural={New Zealand Breast Cancers},%
+short={NZBC},%
+shortplural={NZBCs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{nz}{}%
+{%
+\gls@defglossaryentry{nz}%
+{%
+name={NZ},%
+sort={NZ},%
+type={main},%
+first={New Zealand\glsspace (NZ)},%
+firstplural={New Zealands\glsspace (NZs)},%
+text={NZ},%
+plural={NZs},%
+description={New Zealand},%
+descriptionplural={New Zealand\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={New Zealand},%
+longplural={New Zealands},%
+short={NZ},%
+shortplural={NZs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{opa}{}%
+{%
+\gls@defglossaryentry{opa}%
+{%
+name={OPA},%
+sort={OPA},%
+type={main},%
+first={obesity policy action\glsspace (OPA)},%
+firstplural={obesity policy actions\glsspace (OPAs)},%
+text={OPA},%
+plural={OPAs},%
+description={Obesity policy action},%
+descriptionplural={obesity policy action\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={obesity policy action},%
+longplural={obesity policy actions},%
+short={OPA},%
+shortplural={OPAs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ora}{}%
+{%
+\gls@defglossaryentry{ora}%
+{%
+name={ORA},%
+sort={ORA},%
+type={main},%
+first={over representation analysis\glsspace (ORA)},%
+firstplural={over representation analysiss\glsspace (ORAs)},%
+text={ORA},%
+plural={ORAs},%
+description={Over representation analysis},%
+descriptionplural={over representation analysis\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={over representation analysis},%
+longplural={over representation analysiss},%
+short={ORA},%
+shortplural={ORAs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{pah}{}%
+{%
+\gls@defglossaryentry{pah}%
+{%
+name={PAH},%
+sort={PAH},%
+type={main},%
+first={polycyclic aromatic hydrocarbon\glsspace (PAH)},%
+firstplural={polycyclic aromatic hydrocarbons\glsspace (PAHs)},%
+text={PAH},%
+plural={PAHs},%
+description={Polycyclic aromatic hydrocarbon},%
+descriptionplural={polycyclic aromatic hydrocarbon\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={polycyclic aromatic hydrocarbon},%
+longplural={polycyclic aromatic hydrocarbons},%
+short={PAH},%
+shortplural={PAHs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{pc1}{}%
+{%
+\gls@defglossaryentry{pc1}%
+{%
+name={PC1},%
+sort={PC1},%
+type={main},%
+first={prohormone convertase 1\glsspace (PC1)},%
+firstplural={prohormone convertase 1s\glsspace (PC1s)},%
+text={PC1},%
+plural={PC1s},%
+description={Prohormone convertase 1},%
+descriptionplural={prohormone convertase 1\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={prohormone convertase 1},%
+longplural={prohormone convertase 1s},%
+short={PC1},%
+shortplural={PC1s},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{pep}{}%
+{%
+\gls@defglossaryentry{pep}%
+{%
+name={PEP},%
+sort={PEP},%
+type={main},%
+first={phosphoenol pyruvate\glsspace (PEP)},%
+firstplural={phosphoenol pyruvates\glsspace (PEPs)},%
+text={PEP},%
+plural={PEPs},%
+description={Phosphoenol pyruvate},%
+descriptionplural={phosphoenol pyruvate\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={phosphoenol pyruvate},%
+longplural={phosphoenol pyruvates},%
+short={PEP},%
+shortplural={PEPs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{pi3k}{}%
+{%
+\gls@defglossaryentry{pi3k}%
+{%
+name={PI3K},%
+sort={PI3K},%
+type={main},%
+first={phosphatidylinositol 3-kinase\glsspace (PI3K)},%
+firstplural={phosphatidylinositol 3-kinases\glsspace (PI3Ks)},%
+text={PI3K},%
+plural={PI3Ks},%
+description={Phosphatidylinositol 3-kinase},%
+descriptionplural={phosphatidylinositol 3-kinase\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={phosphatidylinositol 3-kinase},%
+longplural={phosphatidylinositol 3-kinases},%
+short={PI3K},%
+shortplural={PI3Ks},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{pm}{}%
+{%
+\gls@defglossaryentry{pm}%
+{%
+name={PM},%
+sort={PM},%
+type={main},%
+first={perfect match\glsspace (PM)},%
+firstplural={perfect matchs\glsspace (PMs)},%
+text={PM},%
+plural={PMs},%
+description={Perfect match},%
+descriptionplural={perfect match\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={perfect match},%
+longplural={perfect matchs},%
+short={PM},%
+shortplural={PMs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{pomc}{}%
+{%
+\gls@defglossaryentry{pomc}%
+{%
+name={POMC},%
+sort={POMC},%
+type={main},%
+first={pro-opiomelanocortin\glsspace (POMC)},%
+firstplural={pro-opiomelanocortins\glsspace (POMCs)},%
+text={POMC},%
+plural={POMCs},%
+description={Pro-opiomelanocortin},%
+descriptionplural={pro-opiomelanocortin\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={pro-opiomelanocortin},%
+longplural={pro-opiomelanocortins},%
+short={POMC},%
+shortplural={POMCs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{prr}{}%
+{%
+\gls@defglossaryentry{prr}%
+{%
+name={PRR},%
+sort={PRR},%
+type={main},%
+first={pattern recognition receptor\glsspace (PRR)},%
+firstplural={pattern recognition receptors\glsspace (PRRs)},%
+text={PRR},%
+plural={PRRs},%
+description={Pattern recognition receptor},%
+descriptionplural={pattern recognition receptor\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={pattern recognition receptor},%
+longplural={pattern recognition receptors},%
+short={PRR},%
+shortplural={PRRs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{pr}{}%
+{%
+\gls@defglossaryentry{pr}%
+{%
+name={PR},%
+sort={PR},%
+type={main},%
+first={progesterone receptor\glsspace (PR)},%
+firstplural={progesterone receptors\glsspace (PRs)},%
+text={PR},%
+plural={PRs},%
+description={Progesterone receptor},%
+descriptionplural={progesterone receptor\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={progesterone receptor},%
+longplural={progesterone receptors},%
+short={PR},%
+shortplural={PRs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{pyy}{}%
+{%
+\gls@defglossaryentry{pyy}%
+{%
+name={PYY$_{3-36}$},%
+sort={PYY$_{3-36}$},%
+type={main},%
+first={peptide YY$_{3-36}$\glsspace (PYY$_{3-36}$)},%
+firstplural={peptide YY$_{3-36}$s\glsspace (PYY$_{3-36}$s)},%
+text={PYY$_{3-36}$},%
+plural={PYY$_{3-36}$s},%
+description={3-36},%
+descriptionplural={peptide YY$_{3-36}$\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={peptide YY$_{3-36}$},%
+longplural={peptide YY$_{3-36}$s},%
+short={PYY$_{3-36}$},%
+shortplural={PYY$_{3-36}$s},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{rb}{}%
+{%
+\gls@defglossaryentry{rb}%
+{%
+name={RB},%
+sort={RB},%
+type={main},%
+first={retinoblastoma-associated\glsspace (RB)},%
+firstplural={retinoblastoma-associateds\glsspace (RBs)},%
+text={RB},%
+plural={RBs},%
+description={Retinoblastoma-associated},%
+descriptionplural={retinoblastoma-associated\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={retinoblastoma-associated},%
+longplural={retinoblastoma-associateds},%
+short={RB},%
+shortplural={RBs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{read}{}%
+{%
+\gls@defglossaryentry{read}%
+{%
+name={READ},%
+sort={READ},%
+type={main},%
+first={rectum adenocarcinoma\glsspace (READ)},%
+firstplural={rectum adenocarcinomas\glsspace (READs)},%
+text={READ},%
+plural={READs},%
+description={Rectum adenocarcinoma},%
+descriptionplural={rectum adenocarcinoma\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={rectum adenocarcinoma},%
+longplural={rectum adenocarcinomas},%
+short={READ},%
+shortplural={READs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{rma}{}%
+{%
+\gls@defglossaryentry{rma}%
+{%
+name={RMA},%
+sort={RMA},%
+type={main},%
+first={robust multi array\glsspace (RMA)},%
+firstplural={robust multi arrays\glsspace (RMAs)},%
+text={RMA},%
+plural={RMAs},%
+description={Robust multi array},%
+descriptionplural={robust multi array\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={robust multi array},%
+longplural={robust multi arrays},%
+short={RMA},%
+shortplural={RMAs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{rna}{}%
+{%
+\gls@defglossaryentry{rna}%
+{%
+name={RNA},%
+sort={RNA},%
+type={main},%
+first={ribonucleic acid\glsspace (RNA)},%
+firstplural={ribonucleic acids\glsspace (RNAs)},%
+text={RNA},%
+plural={RNAs},%
+description={Ribonucleic acid},%
+descriptionplural={ribonucleic acid\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={ribonucleic acid},%
+longplural={ribonucleic acids},%
+short={RNA},%
+shortplural={RNAs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ros}{}%
+{%
+\gls@defglossaryentry{ros}%
+{%
+name={ROS},%
+sort={ROS},%
+type={main},%
+first={reactive oxygen species\glsspace (ROS)},%
+firstplural={reactive oxygen speciess\glsspace (ROSs)},%
+text={ROS},%
+plural={ROSs},%
+description={Reactive oxygen species},%
+descriptionplural={reactive oxygen species\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={reactive oxygen species},%
+longplural={reactive oxygen speciess},%
+short={ROS},%
+shortplural={ROSs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{sd}{}%
+{%
+\gls@defglossaryentry{sd}%
+{%
+name={$\sigma $},%
+sort={$\sigma $},%
+type={main},%
+first={standard deviation\glsspace ($\sigma $)},%
+firstplural={standard deviations\glsspace ($\sigma $s)},%
+text={$\sigma $},%
+plural={$\sigma $s},%
+description={Standard deviation},%
+descriptionplural={standard deviation\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={standard deviation},%
+longplural={standard deviations},%
+short={$\sigma $},%
+shortplural={$\sigma $s},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{skcm}{}%
+{%
+\gls@defglossaryentry{skcm}%
+{%
+name={SKCM},%
+sort={SKCM},%
+type={main},%
+first={skin cutaneous melanoma\glsspace (SKCM)},%
+firstplural={skin cutaneous melanomas\glsspace (SKCMs)},%
+text={SKCM},%
+plural={SKCMs},%
+description={Skin cutaneous melanoma},%
+descriptionplural={skin cutaneous melanoma\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={skin cutaneous melanoma},%
+longplural={skin cutaneous melanomas},%
+short={SKCM},%
+shortplural={SKCMs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{snp}{}%
+{%
+\gls@defglossaryentry{snp}%
+{%
+name={SNP},%
+sort={SNP},%
+type={main},%
+first={single nucleotide polymorphism\glsspace (SNP)},%
+firstplural={single nucleotide polymorphisms\glsspace (SNPs)},%
+text={SNP},%
+plural={SNPs},%
+description={Single nucleotide polymorphism},%
+descriptionplural={single nucleotide polymorphism\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={single nucleotide polymorphism},%
+longplural={single nucleotide polymorphisms},%
+short={SNP},%
+shortplural={SNPs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ssdna}{}%
+{%
+\gls@defglossaryentry{ssdna}%
+{%
+name={ssDNA},%
+sort={ssDNA},%
+type={main},%
+first={single-stranded DNA\glsspace (ssDNA)},%
+firstplural={single-stranded DNAs\glsspace (ssDNAs)},%
+text={ssDNA},%
+plural={ssDNAs},%
+description={Single-stranded DNA},%
+descriptionplural={single-stranded DNA\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={single-stranded DNA},%
+longplural={single-stranded DNAs},%
+short={ssDNA},%
+shortplural={ssDNAs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{stat3}{}%
+{%
+\gls@defglossaryentry{stat3}%
+{%
+name={STAT3},%
+sort={STAT3},%
+type={main},%
+first={signal transducer and activator of transcription 3\glsspace (STAT3)},%
+firstplural={signal transducer and activator of transcription 3s\glsspace (STAT3s)},%
+text={STAT3},%
+plural={STAT3s},%
+description={Signal transducer and activator of transcription 3},%
+descriptionplural={signal transducer and activator of transcription 3\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={signal transducer and activator of transcription 3},%
+longplural={signal transducer and activator of transcription 3s},%
+short={STAT3},%
+shortplural={STAT3s},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{stat}{}%
+{%
+\gls@defglossaryentry{stat}%
+{%
+name={STAT},%
+sort={STAT},%
+type={main},%
+first={signal transducer and activator of transcription\glsspace (STAT)},%
+firstplural={signal transducer and activator of transcriptions\glsspace (STATs)},%
+text={STAT},%
+plural={STATs},%
+description={Signal transducer and activator of transcription},%
+descriptionplural={signal transducer and activator of transcription\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={signal transducer and activator of transcription},%
+longplural={signal transducer and activator of transcriptions},%
+short={STAT},%
+shortplural={STATs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{svd}{}%
+{%
+\gls@defglossaryentry{svd}%
+{%
+name={SVD},%
+sort={SVD},%
+type={main},%
+first={singular value decomposition\glsspace (SVD)},%
+firstplural={singular value decompositions\glsspace (SVDs)},%
+text={SVD},%
+plural={SVDs},%
+description={Singular value decomposition},%
+descriptionplural={singular value decomposition\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={singular value decomposition},%
+longplural={singular value decompositions},%
+short={SVD},%
+shortplural={SVDs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{tcga}{}%
+{%
+\gls@defglossaryentry{tcga}%
+{%
+name={TCGA},%
+sort={TCGA},%
+type={main},%
+first={The Cancer Genome Atlas\glsspace (TCGA)},%
+firstplural={The Cancer Genome Atlass\glsspace (TCGAs)},%
+text={TCGA},%
+plural={TCGAs},%
+description={The Cancer Genome Atlas},%
+descriptionplural={The Cancer Genome Atlas\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={The Cancer Genome Atlas},%
+longplural={The Cancer Genome Atlass},%
+short={TCGA},%
+shortplural={TCGAs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{tgfb}{}%
+{%
+\gls@defglossaryentry{tgfb}%
+{%
+name={TGF$\beta $},%
+sort={TGF$\beta $},%
+type={main},%
+first={transforming growth factor-$\beta $\glsspace (TGF$\beta $)},%
+firstplural={transforming growth factor-$\beta $s\glsspace (TGF$\beta $s)},%
+text={TGF$\beta $},%
+plural={TGF$\beta $s},%
+description={Transforming growth factor-$\beta $},%
+descriptionplural={transforming growth factor-$\beta $\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={transforming growth factor-$\beta $},%
+longplural={transforming growth factor-$\beta $s},%
+short={TGF$\beta $},%
+shortplural={TGF$\beta $s},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{tlr}{}%
+{%
+\gls@defglossaryentry{tlr}%
+{%
+name={TLR},%
+sort={TLR},%
+type={main},%
+first={Toll-like receptor\glsspace (TLR)},%
+firstplural={Toll-like receptors\glsspace (TLRs)},%
+text={TLR},%
+plural={TLRs},%
+description={Toll-like receptor},%
+descriptionplural={Toll-like receptor\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Toll-like receptor},%
+longplural={Toll-like receptors},%
+short={TLR},%
+shortplural={TLRs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{tnfa}{}%
+{%
+\gls@defglossaryentry{tnfa}%
+{%
+name={TNF$\alpha $},%
+sort={TNF$\alpha $},%
+type={main},%
+first={tumour necrosis factor-$\alpha $\glsspace (TNF$\alpha $)},%
+firstplural={tumour necrosis factor-$\alpha $s\glsspace (TNF$\alpha $s)},%
+text={TNF$\alpha $},%
+plural={TNF$\alpha $s},%
+description={Tumour necrosis factor-$\alpha $},%
+descriptionplural={tumour necrosis factor-$\alpha $\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={tumour necrosis factor-$\alpha $},%
+longplural={tumour necrosis factor-$\alpha $s},%
+short={TNF$\alpha $},%
+shortplural={TNF$\alpha $s},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{tsp1}{}%
+{%
+\gls@defglossaryentry{tsp1}%
+{%
+name={TSP-1},%
+sort={TSP-1},%
+type={main},%
+first={thrombospondin-1\glsspace (TSP-1)},%
+firstplural={thrombospondin-1s\glsspace (TSP-1s)},%
+text={TSP-1},%
+plural={TSP-1s},%
+description={Thrombospondin-1},%
+descriptionplural={thrombospondin-1\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={thrombospondin-1},%
+longplural={thrombospondin-1s},%
+short={TSP-1},%
+shortplural={TSP-1s},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ucec}{}%
+{%
+\gls@defglossaryentry{ucec}%
+{%
+name={UCEC},%
+sort={UCEC},%
+type={main},%
+first={uterine corpus endometrial carcinoma\glsspace (UCEC)},%
+firstplural={uterine corpus endometrial carcinomas\glsspace (UCECs)},%
+text={UCEC},%
+plural={UCECs},%
+description={Uterine corpus endometrial carcinoma},%
+descriptionplural={uterine corpus endometrial carcinoma\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={uterine corpus endometrial carcinoma},%
+longplural={uterine corpus endometrial carcinomas},%
+short={UCEC},%
+shortplural={UCECs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{usa}{}%
+{%
+\gls@defglossaryentry{usa}%
+{%
+name={USA},%
+sort={USA},%
+type={main},%
+first={United States of America\glsspace (USA)},%
+firstplural={United States of Americas\glsspace (USAs)},%
+text={USA},%
+plural={USAs},%
+description={United States of America},%
+descriptionplural={United States of America\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={United States of America},%
+longplural={United States of Americas},%
+short={USA},%
+shortplural={USAs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{uv}{}%
+{%
+\gls@defglossaryentry{uv}%
+{%
+name={UV},%
+sort={UV},%
+type={main},%
+first={ultraviolet\glsspace (UV)},%
+firstplural={ultraviolets\glsspace (UVs)},%
+text={UV},%
+plural={UVs},%
+description={Ultraviolet},%
+descriptionplural={ultraviolet\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={ultraviolet},%
+longplural={ultraviolets},%
+short={UV},%
+shortplural={UVs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{vegfa}{}%
+{%
+\gls@defglossaryentry{vegfa}%
+{%
+name={VEGF-A},%
+sort={VEGF-A},%
+type={main},%
+first={vascular endothelial growth factor-A\glsspace (VEGF-A)},%
+firstplural={vascular endothelial growth factor-As\glsspace (VEGF-As)},%
+text={VEGF-A},%
+plural={VEGF-As},%
+description={Vascular endothelial growth factor-A},%
+descriptionplural={vascular endothelial growth factor-A\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={vascular endothelial growth factor-A},%
+longplural={vascular endothelial growth factor-As},%
+short={VEGF-A},%
+shortplural={VEGF-As},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{vegf}{}%
+{%
+\gls@defglossaryentry{vegf}%
+{%
+name={VEGF},%
+sort={VEGF},%
+type={main},%
+first={vascular endothelial growth factor\glsspace (VEGF)},%
+firstplural={vascular endothelial growth factors\glsspace (VEGFs)},%
+text={VEGF},%
+plural={VEGFs},%
+description={Vascular endothelial growth factor},%
+descriptionplural={vascular endothelial growth factor\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={vascular endothelial growth factor},%
+longplural={vascular endothelial growth factors},%
+short={VEGF},%
+shortplural={VEGFs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{vif}{}%
+{%
+\gls@defglossaryentry{vif}%
+{%
+name={VIF},%
+sort={VIF},%
+type={main},%
+first={variance inflation factor\glsspace (VIF)},%
+firstplural={variance inflation factors\glsspace (VIFs)},%
+text={VIF},%
+plural={VIFs},%
+description={Variance inflation factor},%
+descriptionplural={variance inflation factor\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={variance inflation factor},%
+longplural={variance inflation factors},%
+short={VIF},%
+shortplural={VIFs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{who}{}%
+{%
+\gls@defglossaryentry{who}%
+{%
+name={WHO},%
+sort={WHO},%
+type={main},%
+first={World Health Organization\glsspace (WHO)},%
+firstplural={World Health Organizations\glsspace (WHOs)},%
+text={WHO},%
+plural={WHOs},%
+description={World Health Organization},%
+descriptionplural={World Health Organization\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={World Health Organization},%
+longplural={World Health Organizations},%
+short={WHO},%
+shortplural={WHOs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{wmw}{}%
+{%
+\gls@defglossaryentry{wmw}%
+{%
+name={WMW},%
+sort={WMW},%
+type={main},%
+first={Wilcoxon-Mann-Whitney\glsspace (WMW)},%
+firstplural={Wilcoxon-Mann-Whitneys\glsspace (WMWs)},%
+text={WMW},%
+plural={WMWs},%
+description={Wilcoxon-Mann-Whitney},%
+descriptionplural={Wilcoxon-Mann-Whitney\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Wilcoxon-Mann-Whitney},%
+longplural={Wilcoxon-Mann-Whitneys},%
+short={WMW},%
+shortplural={WMWs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
