@@ -808,6 +808,96 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{ibs}{}%
+{%
+\gls@defglossaryentry{ibs}%
+{%
+name={IBS},%
+sort={IBS},%
+type={acronym},%
+first={identity by state\glsspace (IBS)},%
+firstplural={identity by states\glsspace (IBSs)},%
+text={IBS},%
+plural={IBSs},%
+description={Identity by state},%
+descriptionplural={identity by state\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={identity by state},%
+longplural={identity by states},%
+short={IBS},%
+shortplural={IBSs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{ibd}{}%
+{%
+\gls@defglossaryentry{ibd}%
+{%
+name={IBD},%
+sort={IBD},%
+type={acronym},%
+first={identical by descent\glsspace (IBD)},%
+firstplural={identical by descents\glsspace (IBDs)},%
+text={IBD},%
+plural={IBDs},%
+description={Identical by descent},%
+descriptionplural={identical by descent\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={identical by descent},%
+longplural={identical by descents},%
+short={IBD},%
+shortplural={IBDs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
+\ifglsentryexists{hwe}{}%
+{%
+\gls@defglossaryentry{hwe}%
+{%
+name={HWE},%
+sort={HWE},%
+type={acronym},%
+first={Hardy-Weinberg equilibrium\glsspace (HWE)},%
+firstplural={Hardy-Weinberg equilibriums\glsspace (HWEs)},%
+text={HWE},%
+plural={HWEs},%
+description={Hardy-Weinberg equilibrium},%
+descriptionplural={Hardy-Weinberg equilibrium\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={Hardy-Weinberg equilibrium},%
+longplural={Hardy-Weinberg equilibriums},%
+short={HWE},%
+shortplural={HWEs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
 \ifglsentryexists{agrp}{}%
 {%
 \gls@defglossaryentry{agrp}%
@@ -3154,7 +3244,7 @@ parent={},%
 {%
 name={PR},%
 sort={PR},%
-type={main},%
+type={acronym},%
 first={progesterone receptor\glsspace (PR)},%
 firstplural={progesterone receptors\glsspace (PRs)},%
 text={PR},%
@@ -3184,7 +3274,7 @@ parent={},%
 {%
 name={PYY$_{3-36}$},%
 sort={PYY$_{3-36}$},%
-type={main},%
+type={acronym},%
 first={peptide YY$_{3-36}$\glsspace (PYY$_{3-36}$)},%
 firstplural={peptide YY$_{3-36}$s\glsspace (PYY$_{3-36}$s)},%
 text={PYY$_{3-36}$},%
@@ -3214,7 +3304,7 @@ parent={},%
 {%
 name={RB},%
 sort={RB},%
-type={main},%
+type={acronym},%
 first={retinoblastoma-associated\glsspace (RB)},%
 firstplural={retinoblastoma-associateds\glsspace (RBs)},%
 text={RB},%
@@ -3244,7 +3334,7 @@ parent={},%
 {%
 name={READ},%
 sort={READ},%
-type={main},%
+type={acronym},%
 first={rectum adenocarcinoma\glsspace (READ)},%
 firstplural={rectum adenocarcinomas\glsspace (READs)},%
 text={READ},%
@@ -3274,7 +3364,7 @@ parent={},%
 {%
 name={RMA},%
 sort={RMA},%
-type={main},%
+type={acronym},%
 first={robust multi array\glsspace (RMA)},%
 firstplural={robust multi arrays\glsspace (RMAs)},%
 text={RMA},%
@@ -3304,7 +3394,7 @@ parent={},%
 {%
 name={RNA},%
 sort={RNA},%
-type={main},%
+type={acronym},%
 first={ribonucleic acid\glsspace (RNA)},%
 firstplural={ribonucleic acids\glsspace (RNAs)},%
 text={RNA},%
@@ -3334,7 +3424,7 @@ parent={},%
 {%
 name={ROS},%
 sort={ROS},%
-type={main},%
+type={acronym},%
 first={reactive oxygen species\glsspace (ROS)},%
 firstplural={reactive oxygen speciess\glsspace (ROSs)},%
 text={ROS},%
@@ -3364,7 +3454,7 @@ parent={},%
 {%
 name={$\sigma $},%
 sort={$\sigma $},%
-type={main},%
+type={acronym},%
 first={standard deviation\glsspace ($\sigma $)},%
 firstplural={standard deviations\glsspace ($\sigma $s)},%
 text={$\sigma $},%
@@ -3394,7 +3484,7 @@ parent={},%
 {%
 name={SKCM},%
 sort={SKCM},%
-type={main},%
+type={acronym},%
 first={skin cutaneous melanoma\glsspace (SKCM)},%
 firstplural={skin cutaneous melanomas\glsspace (SKCMs)},%
 text={SKCM},%
@@ -3424,7 +3514,7 @@ parent={},%
 {%
 name={SNP},%
 sort={SNP},%
-type={main},%
+type={acronym},%
 first={single nucleotide polymorphism\glsspace (SNP)},%
 firstplural={single nucleotide polymorphisms\glsspace (SNPs)},%
 text={SNP},%
@@ -3454,7 +3544,7 @@ parent={},%
 {%
 name={ssDNA},%
 sort={ssDNA},%
-type={main},%
+type={acronym},%
 first={single-stranded DNA\glsspace (ssDNA)},%
 firstplural={single-stranded DNAs\glsspace (ssDNAs)},%
 text={ssDNA},%
@@ -3484,7 +3574,7 @@ parent={},%
 {%
 name={STAT3},%
 sort={STAT3},%
-type={main},%
+type={acronym},%
 first={signal transducer and activator of transcription 3\glsspace (STAT3)},%
 firstplural={signal transducer and activator of transcription 3s\glsspace (STAT3s)},%
 text={STAT3},%
@@ -3514,7 +3604,7 @@ parent={},%
 {%
 name={STAT},%
 sort={STAT},%
-type={main},%
+type={acronym},%
 first={signal transducer and activator of transcription\glsspace (STAT)},%
 firstplural={signal transducer and activator of transcriptions\glsspace (STATs)},%
 text={STAT},%
@@ -3544,7 +3634,7 @@ parent={},%
 {%
 name={SVD},%
 sort={SVD},%
-type={main},%
+type={acronym},%
 first={singular value decomposition\glsspace (SVD)},%
 firstplural={singular value decompositions\glsspace (SVDs)},%
 text={SVD},%
@@ -3574,7 +3664,7 @@ parent={},%
 {%
 name={TCGA},%
 sort={TCGA},%
-type={main},%
+type={acronym},%
 first={The Cancer Genome Atlas\glsspace (TCGA)},%
 firstplural={The Cancer Genome Atlass\glsspace (TCGAs)},%
 text={TCGA},%
@@ -3604,7 +3694,7 @@ parent={},%
 {%
 name={TGF$\beta $},%
 sort={TGF$\beta $},%
-type={main},%
+type={acronym},%
 first={transforming growth factor-$\beta $\glsspace (TGF$\beta $)},%
 firstplural={transforming growth factor-$\beta $s\glsspace (TGF$\beta $s)},%
 text={TGF$\beta $},%
@@ -3634,7 +3724,7 @@ parent={},%
 {%
 name={TLR},%
 sort={TLR},%
-type={main},%
+type={acronym},%
 first={Toll-like receptor\glsspace (TLR)},%
 firstplural={Toll-like receptors\glsspace (TLRs)},%
 text={TLR},%
@@ -3664,7 +3754,7 @@ parent={},%
 {%
 name={TNF$\alpha $},%
 sort={TNF$\alpha $},%
-type={main},%
+type={acronym},%
 first={tumour necrosis factor-$\alpha $\glsspace (TNF$\alpha $)},%
 firstplural={tumour necrosis factor-$\alpha $s\glsspace (TNF$\alpha $s)},%
 text={TNF$\alpha $},%
@@ -3694,7 +3784,7 @@ parent={},%
 {%
 name={TSP-1},%
 sort={TSP-1},%
-type={main},%
+type={acronym},%
 first={thrombospondin-1\glsspace (TSP-1)},%
 firstplural={thrombospondin-1s\glsspace (TSP-1s)},%
 text={TSP-1},%
@@ -3724,7 +3814,7 @@ parent={},%
 {%
 name={UCEC},%
 sort={UCEC},%
-type={main},%
+type={acronym},%
 first={uterine corpus endometrial carcinoma\glsspace (UCEC)},%
 firstplural={uterine corpus endometrial carcinomas\glsspace (UCECs)},%
 text={UCEC},%
@@ -3754,7 +3844,7 @@ parent={},%
 {%
 name={USA},%
 sort={USA},%
-type={main},%
+type={acronym},%
 first={United States of America\glsspace (USA)},%
 firstplural={United States of Americas\glsspace (USAs)},%
 text={USA},%
@@ -3784,7 +3874,7 @@ parent={},%
 {%
 name={UV},%
 sort={UV},%
-type={main},%
+type={acronym},%
 first={ultraviolet\glsspace (UV)},%
 firstplural={ultraviolets\glsspace (UVs)},%
 text={UV},%
@@ -3814,7 +3904,7 @@ parent={},%
 {%
 name={VEGF-A},%
 sort={VEGF-A},%
-type={main},%
+type={acronym},%
 first={vascular endothelial growth factor-A\glsspace (VEGF-A)},%
 firstplural={vascular endothelial growth factor-As\glsspace (VEGF-As)},%
 text={VEGF-A},%
@@ -3844,7 +3934,7 @@ parent={},%
 {%
 name={VEGF},%
 sort={VEGF},%
-type={main},%
+type={acronym},%
 first={vascular endothelial growth factor\glsspace (VEGF)},%
 firstplural={vascular endothelial growth factors\glsspace (VEGFs)},%
 text={VEGF},%
@@ -3874,7 +3964,7 @@ parent={},%
 {%
 name={VIF},%
 sort={VIF},%
-type={main},%
+type={acronym},%
 first={variance inflation factor\glsspace (VIF)},%
 firstplural={variance inflation factors\glsspace (VIFs)},%
 text={VIF},%
@@ -3904,7 +3994,7 @@ parent={},%
 {%
 name={WHO},%
 sort={WHO},%
-type={main},%
+type={acronym},%
 first={World Health Organization\glsspace (WHO)},%
 firstplural={World Health Organizations\glsspace (WHOs)},%
 text={WHO},%
@@ -3934,7 +4024,7 @@ parent={},%
 {%
 name={WMW},%
 sort={WMW},%
-type={main},%
+type={acronym},%
 first={Wilcoxon-Mann-Whitney\glsspace (WMW)},%
 firstplural={Wilcoxon-Mann-Whitneys\glsspace (WMWs)},%
 text={WMW},%

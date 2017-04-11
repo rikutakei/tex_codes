@@ -1,0 +1,266 @@
+\section{Types of markers used in \gls{gwas}}
+\label{sec:types_of_markers_used_in_gwas}
+
+\subsection{LD-based markers}
+\label{sub:ld_based_markers}
+
+As mentioned earlier, LD can be useful to make a \gls{gwas} more efficient.
+From the HapMap studies, it was shown that most of the roughly 11 million SNPs in the genome have neighbouring groups that are nearly perfectly correlated with each other.
+This means that the genotype of one SNP perfectly predicts the other SNPs that correlate with it (i.e.\ in high LD).
+Since SNPs that are in high LD segregate together, genotyping a single marker SNP from the group of SNPs that are in high LD will be sufficient to track all of the SNPs for that group.
+Using the information about these known LD patterns, you can choose a few ``tag SNPs'' that represent or capture the most common variation within the regions of high LD.
+It is theorised that a well-chosen set of SNPs can be used to provide information about the genome without having to genotype the whole genome.
+With that said, in a region of high LD, it is hard to fine-map a causal variant since there will be highly correlated markers each showing a similar strength of association with the phenotype.
+
+There are some populations that have larger variation and less LD than other populations, such as the African populations.
+For these populations, a larger number of SNPs is required to gain useful information about their genome.
+This means that the LD-based markers may be appropriate for one population, but it  may fail to detect variation in a different population due to the difference in the LD pattern for that population.
+Therefore, it is important to consider the ancestry of the population when choosing markers based on LD.
+
+\subsection{Missense mutation markers}
+\label{sub:missense_mutation_markers}
+
+Missense mutations are mutations in the coding region of the gene that result in amino acid change.
+Since there is a high proportion of missense mutations that cause Mendelian diseases, it is proposed that focussing on these missense mutations may be better and more efficient than genotyping the whole genome.
+A typical gene contains one or two missense mutations, which means that only about 30000 to 60000 SNPs are required to be genotyped.
+Because missense mutations are more likely to have functional consequences, this approach may be more efficient at identifying the cause of the disease.
+
+However, Mendelian diseases are highly penetrant and cause severe phenotypes.
+Furthermore, these diseases are caused by not only missense mutations, but frameshift, insertion and deletion, and other mutations.
+In contrast, the alleles that contribute to complex phenotypes have more subtle effects, and are more likely to be caused by mutations in the non-coding regulatory regions rather than in the coding regions.
+Since these causal alleles contribute modestly to the risk factors associated with the common diseases, these alleles are less likely to be subject to negative selection, unlike those alleles that cause Mendelian disorders.
+
+SNPs in the coding regions are usually accepted as the ``answer'' when an association of the missense mutation is detected.
+This may not be the case, as some nearby non-coding mutation may be more strongly associated with the disease than the SNPs in the  coding regions.
+Therefore, regardless of where the SNPs are located (coding or non-coding), SNPs that are associated with the disease should be validated.
+
+\subsection{Convenience-based markers}
+\label{sub:convenience_based_markers}
+
+In this approach, the markers are picked based on the ease and cost of genotyping.
+This approach will be less efficient per variant for surveying the genome for disease alleles than a set based on LD of functional considerations.
+One way to do this is to type a few SNPs in or near the coding region of each gene.
+This will allow the detection of those chosen SNPs as well as those that are in high LD with these SNPs.
+Limitation to this approach is that the SNPs that are chosen based on the physical proximity does not guarantee the detection of the SNPs that are nearby, and will almost certainly miss the SNPs that are further away from the SNPs.
+
+\section{Study designs to make \gls{gwas} more efficient}
+\label{sec:study_designs_to_make_gwas_more_efficient}
+
+\subsection{Sample size}
+\label{sub:sample_size}
+
+\Gls{gwas} are very expensive and requires a lot of effort.
+Due to this, \gls{gwas} try to keep the sample size low, but this results in the reduction in power.
+Since variants that contribute to common traits are likely to have modest effect on the phenotype, large sample size is  required to have enough power  to detect anything interesting.
+In addition to this, the need of large sample size is further emphasised by the large number of hypothesis testing done in \gls{gwas}.
+Larger sample size will be required to keep the findings significant after correcting for multiple testing.
+
+With that said, you are able to reduce the sample size if you lower the significance threshold (i.e.\ make it less stringent).
+However, by doing this you run the risk of introducing more false positives in the results, and therefore require the identification of the true causal genes from the sea of false positives.
+Depending on what the outcome you want from the study, the sample size should be chosen accordingly.
+
+\subsection{Multi-stage approach}
+\label{sub:multi_stage_approach}
+
+One way to overcome the limitation of sample size and the accompanied false positives is to use a two- or three-stage screening process.
+In the first stage, a subset of samples are genotyped for the whole genome with significance threshold set to a value such that it is enough to detect loci that is associated with the phenotype.
+This will also allow reasonable number of false positives to be detected.
+
+In the second stage, all of the markers that passed the threshold in the  first stage is then tested on an independent population sample with a more stringent threshold value (similar or larger sample size than the first stage).
+Since the second stage only uses the markers that were significant in the first stage, the process  will be more efficient in the second stage.
+Furthermore, second stage will be able to identify the true positives that are associated with the phenotype from the large number of false positives identified in the first stage.
+This can be repeated for the third stage as well.
+
+There are a number of ways in which the  thresholds for these sort of analyses can be defined.
+The first is to use the Bonferroni correction, but this will generally give a ridiculously low p-value threshold due to its highly conservative nature.
+Permutation approach can be used to determine the threshold by comparing  the probability of results observed from the analysis and the results observed by chance (from the permutation).
+There are other approaches like frequentist and Bayesian approaches.
+
+\subsection{Founder population}
+\label{sub:founder_population}
+
+Founder populations are those that have been recently derived (\textless{}100 generations ago) from a limited pool of individuals.
+Founder population will therefore represent the genetic make up of the population that originated from these founders.
+Furthermore, these founders will have had less recombination compared with their descendants, so the LD patterns in these founding populations will be larger (as recombination would have disrupted these LD sites in the descendants).
+By using the founder populations, you are able to use less markers to genotype the samples, as the LD patterns will be larger in the founders (and therefore require less markers to obtain information about the genome).
+
+This approach is better for localising genes that underlie Mendelian disorders (i.e.\ rare and recent variants), and may provide less use for common diseases.
+This is because common alleles would have already entered the population multiple times, and so the LD pattern surrounding these alleles will already be smaller around these common variants.
+Therefore, the number of markers required for these common alleles may not be reduced substantially.
+
+\subsection{Pooled samples}
+\label{sub:pooled_samples}
+
+Pooled samples is when you pool equal amounts  of \acrshort{dna} from multiple individuals into a single ``sample'', and genotype this mixed sample.
+Allele frequencies are estimated from the pooled genotypes and \gls{gwas} is carried out using this estimate.
+Pooled samples are able to reduce the cost as less number of genotyping is required.
+However, for some diseases, individual genotype data is required to carry out complex analyses of gene-gene or gene-environment interactions (you are taking one genotype that represents the phenotypes of those samples used for genotyping; in other words a single genotype is not representing a single phenotype).
+
+\section{Limitations}
+\label{sec:limitations}
+
+\subsection{Rare alleles and \gls{gwas}}
+\label{ssub:rare_alleles_and_gwas}
+
+The ability or power to detect alleles increases with increasing frequency and increasing penetrance of the allele.
+In other words,  the power to detect an allele depends on the proportion of the phenotypic variance in the population that is explained by a particular variant.
+Therefore, highly penetrant and rare alleles are able to be detected, and so are common alleles that have low penetrance.
+However, for those rare alleles that have modest effect on the phenotype are very difficult to detect with \gls{gwas}.
+Furthermore, since tag SNPs are currently designed to tag common SNPs (\textgreater{}5\% frequencies), rare alleles are less well represented in the SNP databases.
+
+One thing to note about rare alleles is that rare alleles are likely to have arisen relatively recently, and therefore there would have been less recombination and mutation that disrupt the haplotype on which they arose.
+This also means that rare variants are expected to be on single, long haplotypes.
+
+\subsection{Population stratification}
+\label{sub:population_stratification}
+
+In a large population group, the population will have a mix of ethnicities or sub-populations.
+These different sub groups may have different disease prevalence or phenotypes compared with other groups, and the disease cases can be over-represented in one or more sub groups.
+If this is the case, then the frequencies of the markers used will be different depending on the subgroups, and therefore lead to a bias and false positives.
+
+One way to avoid this is by using a well-matched cases and  controls in the study.
+This will prevent a large-scale population stratification in the study cohort, as the frequencies of the markers will be similar between the cases and controls when they are well-matched.
+However, this method cannot completely remove population stratification, and mild stratification will remain.
+Another way of preventing population stratification is by using family-based samples.
+Since the offspring will have inherited the genes from the parents, there will be no problem of stratification between the cases and controls (all of the genetic variations observed in the offspring is represented in the genetic make up of the parents).
+However, family-based approach will reduce the power, due to smaller sample size compared to normal \gls{gwas}.
+
+\section{Extending \gls{gwas}}
+\label{sec:extending_gwas}
+
+\subsection{Meta-analysis}
+\label{sub:meta_analysis}
+
+Individual \gls{gwas} are underpowered to detect only those variants that have the biggest effect, and greater power is required to detect other susceptibility loci.
+Meta-analysis can be carried out on the data from a comparable \gls{gwas}.
+This is a low-cost approach to enhance the power for the main  as well as the joint (gene-gene and gene-environment) effects.
+Furthermore, this allows you to replicate the results, get better idea of the SNPs for subsequent replication studies, and investigate potential sources of heterogeneity.
+
+
+
+
+
+Summary-level data will be enough to carry out many meta-analysis, but access to individual-level data allows for more sophisticated analyses.
+These include: haplotype and conditional analyses; imputation; examine joint effects of genes and environment; and explore phenotypic heterogeneity.
+
+
+
+
+
+
+
+
+
+\section{\Acrfull{hwe}}
+\label{sec:hwe}
+
+\Gls{hwe} is a theory stating that, in a large random-mating population with no selection, mutation, or migration, the allele frequencies and the genotype frequencies are constant from generation to generation.
+Furthermore, there is a simple relationship between the allele frequencies and the genotype frequencies.
+
+Consider two alleles $A$ and $a$, where the frequency of allele $A$ in a population is given by $f(A) = p$ and frequency of allele $a$ is given by $f(a) = q$.
+\Gls{hwe} states that $f(AA) = p^2$, $f(Aa) = 2pq$, and $f(aa) = q^2$ in a given population.
+These proportions are known as the Hardy-Weinberg proportions.
+If the proportions deviate from the \gls{hwe} (in other words, the observed genotype frequencies don't follow HW proportions), then this suggests that the assumption(s) underlying the \gls{hwe} is violated.
+These assumptions are:
+\begin{enumerate}[(a),noitemsep]
+	\item Organisms are diploid
+	\item Only sexual reproduction occur
+	\item No overlapping generations
+	\item Mating is random
+	\item Population size is infinitely large
+	\item Allele frequencies are equal in the sexes
+	\item There is no migration, mutation or selection
+\end{enumerate}
+
+\section{Relatedness}
+\label{sec:relatedness}
+
+In linkage studies, you look for genetic loci that correlate between the phenotype of interest and the pattern of transmission over generations.
+The signals that you identify in the so-called ``family-based association studies'' are specific to the particular family, and it cannot be generalised to the larger population.
+In contrast, \gls{gwas} searches for loci that have significant correlation between the phenotypes and genotypes of unrelated individuals.
+Since \gls{gwas} is carried out at a population-level, the findings can be generalised to that population.
+However, if for some reason the samples happen to be related with one another in the sample population used in the \gls{gwas}, the findings can no longer be generalised, as the signal may have come from those related samples (i.e.\ only generalisable in that related population).
+Therefore, relatedness between the samples are essential for a linkage studies, but it is nuisance in \gls{gwas}, as it violates the assumption that all of the samples are unrelated to one another.
+
+There are two forms of relatedness that can confound an association study: population structure and cryptic relatedness.
+Population structure is when there are large-scale systematic differences in ancestry.
+For exmple, groups of individuals with more recent shared ancestors than one would expect in a random-mating population.
+Shared ancestry corresponds to relatedness (or kinship) and therefore population structure can be defined in terms of patterns of kinship among groups of individuals (i.e.\ subpopulations, or ``islands'').
+Cryptic relatedness refers to the presence of close relatives in a sample of seemingly unrelated individuals.
+Where population structure refers to the relatedness of large groups of individuals, cryptic relatedness refers to recent common ancestry among smaller groups of individuals (often pairs).
+
+
+
+
+
+\subsection{\Acrfull{ibd}}
+\label{sub:ibd}
+
+\Gls{ibd} is the probability of four alleles from two diploid individuals at a given genetic locus is from the same ancestral allele without an intermediate mutation.
+Consider two individuals $A$ and $B$.
+At a given genetic locus, $A$ may have alleles 
+If one or more of these four alleles ($a_1$,  $a_2$, $b_1$ and  $b_2$) was from a single ancestor, then that allele will be \gls{ibd}.
+I know the naming of the alleles are confusing, but say for example $x_1$ was an allele present in one the ancestors.
+This $x_1$ allele may have been passed down to individual $A$ at the given locus (for example, at $a_1$) through many generations.
+Similarly, $x_1$ may have also been passed down to individual $B$ at the locus as $b_2$.
+Since both $a_1$ and $b_2$ alleles originated from the same ancestral allele ($x_1$), these two alleles are said to be \gls{ibd}.
+
+\subsection{\Acrfull{ibs}}
+\label{sub:ibs}
+
+\Gls{ibs} is the probability that a sequence of \acrshort{dna}  are identical between two individuals.
+Consider a region of \acrshort{dna} with $M$ markers, containing $1\dots k\dots M$ SNPs.
+The \gls{ibs} between two individuals $i$ and $j$ is given by:
+\begin{equation*}
+	IBS_{ij} = 1 - \frac{1}{2M}\sum_k \lvert G_{ik} - G_{jk} \rvert
+\end{equation*}
+where $G_{ik}$ is the number of minor allele (0,1 or 2) carried by the $i^{th}$ individual at SNP $k$.
+If individuals $i$ and $j$ have an identical SNP at position $k$, then $\lvert G_{ik} - G_{jk} \rvert$ will equal to 0.
+Therefore, \gls{ibs} of 100\% (or close to 100\%) means that the individuals are identical.
+
+If the \acrshort{dna} segment is \gls{ibd}, then that segment will also be \gls{ibs} (since the segment would have come from the same ancestor).
+However, there is  a chance that a segment can be \gls{ibs} but not \gls{ibd}.
+This can occur if the individuals obtained the sequence from two different ancestors that had the same mutation, and therefore the same sequence.
+
+\subsection{Ascertainment bias}
+\label{sub:ascertainment_bias}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\subsection{Controlling for relatedness}
+\label{sub:controlling_for_relatedness}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
