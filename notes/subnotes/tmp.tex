@@ -125,32 +125,6 @@ Another way of preventing population stratification is by using family-based sam
 Since the offspring will have inherited the genes from the parents, there will be no problem of stratification between the cases and controls (all of the genetic variations observed in the offspring is represented in the genetic make up of the parents).
 However, family-based approach will reduce the power, due to smaller sample size compared to normal \gls{gwas}.
 
-\section{Extending \gls{gwas}}
-\label{sec:extending_gwas}
-
-\subsection{Meta-analysis}
-\label{sub:meta_analysis}
-
-Individual \gls{gwas} are underpowered to detect only those variants that have the biggest effect, and greater power is required to detect other susceptibility loci.
-Meta-analysis can be carried out on the data from a comparable \gls{gwas}.
-This is a low-cost approach to enhance the power for the main  as well as the joint (gene-gene and gene-environment) effects.
-Furthermore, this allows you to replicate the results, get better idea of the SNPs for subsequent replication studies, and investigate potential sources of heterogeneity.
-
-
-
-
-
-Summary-level data will be enough to carry out many meta-analysis, but access to individual-level data allows for more sophisticated analyses.
-These include: haplotype and conditional analyses; imputation; examine joint effects of genes and environment; and explore phenotypic heterogeneity.
-
-
-
-
-
-
-
-
-
 \section{\Acrfull{hwe}}
 \label{sec:hwe}
 
@@ -158,7 +132,7 @@ These include: haplotype and conditional analyses; imputation; examine joint eff
 Furthermore, there is a simple relationship between the allele frequencies and the genotype frequencies.
 
 Consider two alleles $A$ and $a$, where the frequency of allele $A$ in a population is given by $f(A) = p$ and frequency of allele $a$ is given by $f(a) = q$.
-\Gls{hwe} states that $f(AA) = p^2$, $f(Aa) = 2pq$, and $f(aa) = q^2$ in a given population.
+\Gls{hwe} states that the allele frequencies are $f(AA) = p^2$, $f(Aa) = 2pq$, and $f(aa) = q^2$ in a given population (that is infinitely large and randomly mating).
 These proportions are known as the Hardy-Weinberg proportions.
 If the proportions deviate from the \gls{hwe} (in other words, the observed genotype frequencies don't follow HW proportions), then this suggests that the assumption(s) underlying the \gls{hwe} is violated.
 These assumptions are:
@@ -171,6 +145,44 @@ These assumptions are:
 	\item Allele frequencies are equal in the sexes
 	\item There is no migration, mutation or selection
 \end{enumerate}
+
+In terms of quality control in \gls{gwas}, significant deviation of a sample from the \gls{hwe} is most likely indicative of genotyping error (i.e.\ technical error), especially if the sample is believed to come from the same genetic population.
+Other causes of deviation from the \gls{hwe} could be due to the samples coming from, for example,  distinct genetic populations (unlikely to be unnoticed) or possibly due to inbreeding.
+In either case, the Hardy-Weinberg proportion of allele frequencies will be altered.
+
+\section{Effective number of tests in \gls{gwas}}
+\label{sec:effective_number_of_tests_in_gwas}
+
+In \gls{gwas}, you test the association of all of the \glspl{snp} with the phenotype of interest, meaning that there will be as many hypothesis tests done as the number of \glspl{snp} in the analysis.
+Consider a \gls{gwas} with 1,000,000 \glspl{snp} and a significance threshold of p < 0.05.
+In this scenario, you would expect 50,000 \glspl{snp} to show up as being associated with the disease by chance (i.e.\ false positives), which is not ideal.
+
+One way to reduce the number of false positives is to adjust the significance threshold with \gls{fwer} control.
+For the situation above, you would adjust the p-value with the number of tests carried (Bonferroni adjustment):
+\begin{equation*}
+	p = \frac{0.05}{1000000} = 5\times10^{-8}
+\end{equation*}
+This p-value is used in many \glspl{gwas}.
+However, this approach may be too conservative and may lead to loss in power (increased false negatives).
+One way to work around this problem is to reduce the number of tests carried out in the \gls{gwas}.
+\citet{Duggal2008} suggested the use of a single \gls{snp} per \gls{ld}, and use the p-value calculated from the reduced number of tests.
+
+Another, perhaps more reliable way, is to carry out a permutation test.
+With permutation test, the samples are ``shuffled'' in such a way that the link between the genotype and the phenotype of the samples are separated.
+This is usually done by assigning cases and controls randomly, using the same samples as the original \gls{gwas} data.
+\gls{gwas} is then carried out on this shuffled data $n$ times, shuffling the samples every time.
+The lowest p-value from each analysis is recorded, as it represents the most significant p-value you would obtain by chance.
+%TODO: finish explaining how to get the permuted p-value
+These p-values are compared with the lowest p-value from the original \gls{gwas}.
+
+
+
+
+
+
+
+
+
 
 \section{Relatedness}
 \label{sec:relatedness}
@@ -198,9 +210,9 @@ Where population structure refers to the relatedness of large groups of individu
 
 \Gls{ibd} is the probability of four alleles from two diploid individuals at a given genetic locus is from the same ancestral allele without an intermediate mutation.
 Consider two individuals $A$ and $B$.
-At a given genetic locus, $A$ may have alleles 
-If one or more of these four alleles ($a_1$,  $a_2$, $b_1$ and  $b_2$) was from a single ancestor, then that allele will be \gls{ibd}.
-I know the naming of the alleles are confusing, but say for example $x_1$ was an allele present in one the ancestors.
+At a given genetic locus, $A$ may have alleles $a_1$ and $a_2$, and individual $B$ may have alleles $b_1$ and  $b_2$.
+If one or more of these four alleles ($a_1$,  $a_2$, $b_1$ or $b_2$) was from a single ancestor, then that allele will be \gls{ibd}.
+I know the naming of the alleles are confusing, but say for example $x_1$ was an allele present in one of the ancestors.
 This $x_1$ allele may have been passed down to individual $A$ at the given locus (for example, at $a_1$) through many generations.
 Similarly, $x_1$ may have also been passed down to individual $B$ at the locus as $b_2$.
 Since both $a_1$ and $b_2$ alleles originated from the same ancestral allele ($x_1$), these two alleles are said to be \gls{ibd}.
@@ -242,8 +254,199 @@ This can occur if the individuals obtained the sequence from two different ances
 
 
 
-\subsection{Controlling for relatedness}
-\label{sub:controlling_for_relatedness}
+\section{Controlling for relatedness}
+\label{sec:controlling_for_relatedness}
+
+There are several ways to control for relatedness (population substructure and cryptic relatedness) among the samples.
+One way is to remove the samples that are related to one another, based on their \gls{ibs} and/or \gls{ibd}.
+However, this will reduce the sample size and therefore reduce the power to detect association.
+Alternatively, you could match the samples in the case and control groups so the population groups are matched between the cases and controls.
+This will control for the major effect that population substructure may have on the data, but it will not account for the effects of small, fine scale population effect.
+For example, you get an apparent association between \glspl{snp} and Type II diabetes in Pima Indians (WTCCC training course material).
+
+Another way to control for the relatedness is to include families into the study, where affected offspring will be in the case group and parents in the control group.
+This approach will control for the population structure, and also allows you to look at which parents the causal allele came from (which is often difficult in other association studies).
+Again, this approach reduces the power and increase the cost, as it is difficult to gather enough families and two parents are required to make one control.
+
+There are statistical methods that control for population substructure and relatedness between the samples in the study, which will be discussed below.
+These methods control for sample relatedness without removing the samples, and therefore retains the power to detect association.
+
+\subsection{\gls{qq} plot}
+\label{sub:qq_plot}
+
+\Gls{qq} plot is a plot that compares two probability distributions, and it can be used to see whether the data set has any evidence of population structure.
+The expected negative log p-values for each \gls{snp}  (which is the rank of the \gls{snp} divided by the number of markers) is along the x-axis and the observed p-values for the \glspl{snp} are on the y-axis.
+In this plot, the ``tail'' end of the plot represent the most significant p-value, and therefore a potentially important \gls{snp}.
+
+If there is no population structure in the data set, the dots will be along the null distribution (i.e.\ y = x).
+However, if there is a population structure present in the data set, then the p-values are ``inflated'' by a constant factor $\lambda$, and the values move away from the null distribution.
+This inflation factor is used in the genomic control method to control for the population structure.
+
+\subsection{Genomic control}
+\label{sub:genomic_control}
+
+Genomic control is a method developed by \citet{Devlin1999} that is easy to apply on the data set to control for population effect.
+\citet{Devlin1999} argued that the Armitage test statistics inflated linearly by a constant factor $\lambda$ when there was evidence of population substructure.
+Therefore, by adjusting all of the test statistics by a  constant factor $\lambda$, genomic control is able to adjust for the confounding effect of the population structure.
+A disadvantage of genomic control is that it adjusts each marker by uniform value ($\lambda$), which may not be suitable for markers that differ significantly in their allele frequencies across ancestral populations and/or under selection \citep{Price2006}.
+In other words, uniform adjustment across all the markers is not suitable when a marker is significantly different across ancestries.
+
+\subsection{Adjustments using \gls{pca}}
+\label{sub:adjustments_using_pca}
+
+Instead of adjusting the markers with a constant factor, \gls{pca}-based methods aim to adjust the genotype and phenotype of the samples based on the ancestry of the samples.
+First, \gls{pca} is applied to the genotype data (matrix of \glspl{snp} by samples) to get  a summary of the genotype data to obtain a continuous axes of genetic variation (i.e.\ principal components).
+These axes explain the genetic variation (or the ancestry) of the samples.
+Next, the genotypes and  the phenotypes of the samples are continuously adjusted by the amount attributable to ancestry, by taking the residuals from the linear models \citep{Price2006}.
+Lastly, the adjusted data is used for the \gls{gwas}.
+
+Although \gls{pca}-based methods (such as EIGENSTRAT) are able to account for the majority of the population structure, it does not account for all of it.
+This is because these methods only utilise a few principal components to capture the sample structure, which will explain majority (but not all) of the genetic variation of the population.
+
+\subsection{Mixed linear models}
+\label{sub:mixed_linear_models}
+
+As mentioned earlier, \gls{pca}-based adjustments may not be sufficient to correct for all of the population substructure.
+If the complete genealogy of the samples were known, this would be possible by applying variance component to correct for the relatedness.
+However, this is not usually the case.
+With that said, high-density genotype information of the samples can be  used to estimate the level of relatedness between individuals and make a ``kinship matrix'' or ``empirical relatedness matrix''.
+This kinship matrix can be included in the mixed linear model and be accounted for as ``random effect'' in the model, thus able to focus on the effect of the locus on the disease without the confounding effect from the population structure.
+The following description of the methodology for mixed model is from \citet{Kang2010}.
+
+Let $Z_{ij}$ be the contribution of factor $j$ to the phenotype of individual $i$.
+Then the phenotype of individual $i$, $y_i$ is:
+\begin{equation*}
+	y_i = \sum_{j=1} Z_{ij} + \varepsilon_i
+\end{equation*}
+where $\varepsilon_i$ represent the random variable (i.e.\ environment factor) that affect the phenotype and $E(\varepsilon_i) = 0$.
+
+Now let $Y = \{y_1, y_2,\ldots,y_n\}$ (vector of phenotype of individuals), and assume the environmental components are uncorrelated and the variance covariance structure of $Y$ depends on the number of genes shared among individuals.
+Then in the absence of dominance effects:
+\begin{equation*}
+	Var(Y) = 2\sigma^2_a\Phi + \sigma^2_eI
+\end{equation*}
+where $\Phi$ = kinship coefficients, $I$ = identity matrix, $\sigma_a^2$ for additive genetic variance and $\sigma_e^2$ for random environmental variance.
+
+In association studies, you test each locus $k$ for an association by testing whether $H_0:\beta_k = 0$ using the model:
+\begin{equation*}
+	y_i = \beta_0 + \beta_kX_{ik} + \eta_{ik}
+\end{equation*}
+where the error term $\eta_{ik} = \sum \beta_sX_{is} + \varepsilon_i$ and $X$ is the \gls{maf} counts at a given locus.
+If the relatedness is known, then the variance covariance of $\eta_{ik}$ can be approximated in the form of $Var(Y) = 2\sigma^2_a\Phi + \sigma^2_eI$ (see below), and therefore able to focus on the effect of locus by accounting for the relatedness as a ``random effect'' in the mixed model.
+
+Genotype data can be used to construct an $n\times n$ genetic relatedness matrix (e.g.\ \gls{ibs} or Balding-Nichols matrix), $\hat{S}$, and normalise it to have sample variance of 1, using a Gower's centered matrix:
+\begin{equation*}
+	\hat{S}_N = \frac{(n-1)\hat{S}}{Tr(P\hat{S}P)}
+\end{equation*}
+\begin{equation*}
+	P = I-ll'/n
+\end{equation*}
+where $l$ is a vector of 1's.
+Use variance component model $Var(Y) = 2\sigma^2_a\hat{S}_N + \sigma^2_eI$ to estiimate the restricted maximum likelihood parameters of $\sigma^2_a$ and $\sigma^2_e$, and test for $H_0:\sigma^2_a = 0$.
+If this is rejected, use generalised least square F-test (or any score test) to estimate the effects of $\beta_k$, and test whether $\beta_k = 0$ using the model:
+\begin{equation*}
+	y_i = \beta_0 + \beta_kX_{ik} + \eta_{i}
+\end{equation*}
+\begin{equation*}
+	Var(\eta) = V \propto2\hat{\sigma}^2_a\hat{S}_N + \hat{\sigma}^2_eI
+\end{equation*}
+
+\section{Meta-analysis}
+\label{sec:meta_analysis}
+
+Individual \gls{gwas} can be underpowered to detect only those variants that have the biggest effect, and greater power is required to detect other susceptibility loci.
+To increase the power to detect causal variants, meta-analysis can be carried out on the data from comparable \gls{gwas}.
+This is a low-cost approach to enhance the power for the main effect as well as the joint (gene-gene and gene-environment) effects.
+Furthermore, this allows you to replicate the results, get better idea of the SNPs for subsequent replication studies, and investigate potential sources of heterogeneity.
+
+Summary-level data will be enough to carry out many meta-analysis, but access to individual-level data allows for more sophisticated analyses.
+These include: haplotype and conditional analyses; imputation; examine joint effects of genes and environment; and explore phenotypic heterogeneity.
+Broadly speaking, there are two types of models that underly the methods for meta-analyses: fixed-effects model and random-effects model.
+
+\subsection{Imputation}
+\label{sub:imputation}
+
+
+
+
+
+
+
+\subsection{Fixed-effects model}
+\label{sub:fixed_effects_model}
+
+Under the fixed-effects model, all of the populations included in the meta analysis are assumed to have the same effect size.
+This means that in the fixed-effects model, all of the populations are assumed to be homogeneous and therefore require similar studies for the meta analysis.
+Due to this assumption, studies are carefully selected to make sure the effect sizes are similar across different studies.
+However, this does not necessarily maximise the sample size which is the main goal of meta analysis in the first place.
+
+Fixed-effects model often uses inverse-variance weighting to adjust the effect sizes from different studies.
+Let $X_1,\ldots, X_n$ be the effect size estimate of study 1 to $n$ (e.g.\ log odds ratio), variance of the effect size of study $i$ be $V_i = SE(X_i)^2$, and the weight of the study $i$ be $W_i = V_i^{-1}$.
+Then the inverse-variance weighted effect size estimator is:
+\begin{equation*}
+	\bar{X} = \frac{\sum W_iX_i}{\sum W_i}
+\end{equation*}
+$Z$-scores can then be generated from this, taking into account the number of cases and controls in each study:
+\begin{equation*}
+	Z_{FE} = \frac{\bar{X}}{SE(\bar{X})} = \frac{\sum W_iX_i}{\sqrt{\sum W_i}}
+\end{equation*}
+Or, for weighted $Z$-score:
+\begin{equation*}
+	Z_{WS} = \frac{\sum \sqrt{N_ip_i(1-p_i)}Z_i}{\sum \sqrt{N_ip_i(1-p_i)}}
+\end{equation*}
+Where $p_i$ is the \gls{maf}, and $N_i$ is the effective sample size of study $i$.
+For more details, see \citet{Han2011}.
+
+\subsection{Random-effects model}
+\label{sub:random_effects_model}
+
+In contrast, the random-effects model assumes that all of the populations included in the meta analysis have different effect sizes.
+This will allow for the heterogeneity between the effect size estimates between the studies.
+However, as \citet{Han2011} pointed out, random-effects model assumes this heterogeneity even under the null hypothesis where the effect sizes of the studies are all 0, and therefore should have no heterogeneity under the null hypothesis.
+This results in overly conservative p-values and consequently results in lower p-values compared to the fixed-effects model.
+\citet{Han2011} developed a new random-effects model that assumed no heterogeneity under the null hypothesis (RE-HE).
+
+\section{Trans-ancestry meta-analysis}
+\label{sec:trans_ancestry_meta_analysis}
+
+\gls{gwas} and meta-analyses have been carried out extensively in the European population, and it has provided significant amount of knowledge about variants that cause diseases in European population.
+However, these variants may not necessarily be present or have significance in other populations.
+Furthermore, the variants identified in European population alone does not explain the overall disease risk (check citation).
+Therefore, it is important to carry out \gls{tama} to identify novel and population-specific variants.
+
+\subsection{Advantages of \gls{tama}}
+\label{sub:advantages_of_tama}
+
+Most of the advantages of \gls{tama} are the same as in normal meta-analysis: increased sample size, increased power to detect variants, and replication of results.
+However, there are a couple of additional advantages in \gls{tama}.
+First, by including multiple different populations with different ancestries, \gls{tama} allows you to identify local and global variants.
+Local variants will be specific to a population, whereas global variants are those that are present in all of the populations included in the studies (check citation).
+By identifying these variants, it will be possible to customise clinical treatments for specific groups of people in the future.
+
+Second, a mix of different ancestral populations allow one to fine map certain regions of the genome for a more precise identification of causal \glspl{snp}.
+This is due to the fact that different ancestry will have different \gls{ld} patterns, and by overlapping these regions of \gls{ld}, you can fine map certain regions of genome.
+Fine mapping of genetic regions allow you to narrow down the region where the causal variant may be, which will be particularly useful for regions with sparse \gls{ld} patterns (?; check if correct).
+
+\subsection{Challenges of trans-ancestry meta-analysis}
+\label{sub:challenges_of_trans_ancestry_meta_analysis}
+
+
+
+
+
+
+
+
+\section{Methods to carry out trans-ancestry meta-analysis}
+\label{sec:methods_to_carry_out_trans_ancestry_meta_analysis}
+
+Similar methods to normal meta-analysis can be used, but population structure, cryptic relatedness and difference in ancestries will have to be accounted for, as well as between study differences.
+
+\subsection{Bayesian partition model (MANTRA)}
+\label{sub:bayesian_partition_model}
+
+Both fixed-effects and random-effects models do not fit well with the meta analysis design.
+Fixed-effects model assumes that all studies 
 
 
 
@@ -255,12 +458,48 @@ This can occur if the individuals obtained the sequence from two different ances
 
 
 
+\section{Fine-mapping}
+\label{sec:fine_mapping}
 
+One of the limitations with a single population \gls{gwas} or meta-analysis is that there may be many \glspl{snp} that show association with the disease in a given region of the genome.
+This is usually due to the large \gls{ld} patterns that are specific to the population, making it difficult to identify which \gls{snp} within the \gls{ld} region is actually causal.
+The purpose of fine-mapping is to narrow down this region of genome to reduce the number of candidate \glspl{snp} that could be relevant to the disease.
 
+\subsection{Credible sets}
+\label{sub:credible_sets}
 
+Credible set was first defined in the study done by \citet{wtccc2012}, using Bayes factors and posterior probability to describe how likely a \gls{snp} is causal.
+A credible set is the minimal number of \glspl{snp} in a genomic region that are most likely to be causal of the disease \citep{wtccc2012}.
+\glspl{snp} in the credible sets are selected based on the likelihood of a \gls{snp} accounting for the association signal within that gene region.
+For example, a 99\% credible set will have \glspl{snp} that are 99\% likely to account for the association signal within that genomic region.
+As the authors mention in their study, credible sets are analogous to confidence interval, where in a particular gene region, you can be confident that the true causal \gls{snp} will be included in the relevant credible set \citep{wtccc2012}.
+Therefore, the smaller the credible set, the more confident the true causal variant is included in the credible set of that genomic region (kind of?).
 
+Under the assumptions that there is only one causal \gls{snp} in a gene region, and that the causal \gls{snp} was genotyped in the study, the authors were able to calculate the posterior probability of a given \gls{snp} being causal of the association signal \citep{wtccc2012}.
+First, the strength of evidence for association for each of the \glspl{snp} were determined based on the Bayes factor.
+Let $X_i$ be the genotype data at locus $i$ of a gene region with $k$ loci.
+Consider two models, $M_0$ and $M_i$, where $M_0$ is the null model of no association with locus $i$, and $M_i$ is the alternative model where the \gls{snp} at locus $i$ is the only causal allele within that region.
+Now, the Bayes factor of the locus $i$, $BF_i$, is given by:
+\begin{equation*}
+	BF_i = \frac{Pr(X_i|M_i)}{Pr(X_i|M_0)}
+\end{equation*}
+where $Pr(X_i|M_i)$ is the probability that the \gls{snp} at locus $i$ is causal in the region and $Pr(X_i|M_0)$ is the probability that there is no association.
 
-
-
-
+The Bayes factor for a region ($BF_{reg}$) is:
+\begin{equation*}
+	BF_{reg} = \sum^{k}_{i = 1}BF_iPr(M_i|M)
+\end{equation*}
+where $M$ represents all of the $k$ models for $k$ loci in that gene region.
+Assuming there is a uniform prior that any particular \gls{snp} in a region can be causal, the mean Bayes factor for the region is:
+\begin{align*}
+	Pr(M_i|M) = \frac{1}{k}\\
+	\therefore BF_{reg} = \frac{1}{k}\sum_{i = 1}^{k}BF_i
+\end{align*}
+Now, the posterior probability that a given \gls{snp} is the causal \gls{snp} in that region is:
+\begin{equation*}
+	Pr(M_i|X,M) = \frac{1}{k}\frac{BF_i}{BF_{reg}}
+\end{equation*}
+where $X$ is the genotype of the $k$ loci in the region, and $M$ the corresponding models.
+Note that the posterior probability of the \gls{snp} being causal is proportional to the Bayes factor of that \gls{snp}.
+In other words, the stronger the evidence of association, the higher the probability of that \gls{snp} is included in the credible set.
 

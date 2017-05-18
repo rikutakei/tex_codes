@@ -778,6 +778,36 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{pca}{}%
+{%
+\gls@defglossaryentry{pca}%
+{%
+name={PCA},%
+sort={PCA},%
+type={acronym},%
+first={principal component analysis\glsspace (PCA)},%
+firstplural={principal component analysiss\glsspace (PCAs)},%
+text={PCA},%
+plural={PCAs},%
+description={Principal Component Analysis},%
+descriptionplural={principal component analysis\acrpluralsuffix },%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={principal component analysis},%
+longplural={principal component analysiss},%
+short={PCA},%
+shortplural={PCAs},%
+counter={page},%
+parent={},%
+%
+}%
+}%
 \ifglsentryexists{acth}{}%
 {%
 \gls@defglossaryentry{acth}%
