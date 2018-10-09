@@ -1,0 +1,33 @@
+\documentclass[a4paper, 12pt, oneside]{report} % for final draft compilation
+% \documentclass[a4paper, 12pt, oneside, draft]{report} % for draft compilation
+
+% Preamble:
+\usepackage[T1]{fontenc}                                 % package for specifying output font encoding
+\usepackage[acronym,style=super,nogroupskip]{glossaries} % package for making glossaries
+\usepackage[hidelinks, colorlinks]{hyperref}             % package for hyperlinking references - hidelinks option removes the ugly boxes around the huperlinks
+\usepackage[md]{titlesec}                                % package for tweaking the chapter/section/subsection titles format
+\usepackage[utf8]{inputenc}                              % package for specifying input font encoding
+\usepackage{mathptmx}                                    % package for Times New Roman font
+
+% Change the itemize bullet points to dash:
+\def\labelitemi{--}
+
+% Set up the hyperlinks - change the colour of the links to blue:
+% \hypersetup{allcolors=blue}
+\hypersetup{allcolors=black} % uncomment this line to make the hyperlinks black
+
+% Change the default url font:
+\urlstyle{rm}
+
+\begin{document}
+
+\include{./titlepage}
+
+\include{./preface}
+
+
+
+
+
+
+\end{document}
