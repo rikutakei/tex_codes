@@ -74,6 +74,54 @@ Unlike candidate gene association studies, \gls{gwas} does not make any assumpti
 This means that you are able to carry out the association studies without having to know the causal genes of the disease.
 ``The genome-wide association approach therefore represents an unbiased yet fairly comprehensive option that can be attempted even in the absence of convincing evidence regarding the function or location of the causal genes'' \citep{Hirschhorn2005}.
 
+\section{\glsdesc{ld}}
+\label{sec:ld}
+
+Consider two alleles or gene loci, A and B, that are on the same chromosome.
+If these alleles are ``dependent'', then A and B will always segregate together.
+Mathematically, the probability of both A and B segregating together is $P(AB)$.
+Now, if A and B are ``independent'', then A being passed on to the offspring has no influence on B being passed on, and vice versa.
+Mathematically, the probability of both A and B segregating in this case is given by $P(A)P(B)$.
+
+\Gls{ld}, by definition, is the correlation between nearby variants such that the alleles at neighbouring markers on the same chromosome are associated within a population more often than they were unlinked.
+In other words, {\bfseries \gls{ld} is a measure of how likely two alleles or loci are passed on to the offspring together}.
+Mathematically, this is represented as:
+\begin{equation}
+	\label{eq:ld}
+D = P(AB) - P(A)P(B)
+\end{equation}
+where $D$ is the coefficient of \gls{ld}.
+When $D = 0$, A and B are said to be in equilibrium and will not segregate together.
+On the other hand, when $D = 1$, A and B are said to be in perfect \gls{ld}, where A and B will always segregate together.
+
+By measuring the \gls{ld} of two alleles, or in our case two markers, you are able to determine whether those alleles will be passed on together.
+This means that only one marker is required to detect or track both alleles, if they are in strong \gls{ld}.
+Therefore, you can choose several markers that represent several alleles that are in high \gls{ld} with the marker.
+Furthermore, if that marker is associated with a disease, it is likely that at least one of the markers that are in high \gls{ld} with that marker is also associated with the disease.
+This allows us to use less markers without losing any power to detect variants that are associated with the disease.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

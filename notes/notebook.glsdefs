@@ -3958,3 +3958,33 @@ parent={},%
 %
 }%
 }%
+\ifglsentryexists{ld}{}%
+{%
+\gls@defglossaryentry{ld}%
+{%
+name={Linkage disquilibrium},%
+sort={Linkage disquilibrium},%
+type={main},%
+first={linkage disquilibrium},%
+firstplural={linkage disquilibriums},%
+text={linkage disquilibrium},%
+plural={linkage disquilibriums},%
+description={Correlation between nearby variants such that the alleles at neighbouring markers (on the same chromosome) are associated within a population more often than if they were unlinked},%
+descriptionplural={Correlation between nearby variants such that the alleles at neighbouring markers (on the same chromosome) are associated within a population more often than if they were unlinked},%
+symbol={\relax },%
+symbolplural={\relax },%
+user1={},%
+user2={},%
+user3={},%
+user4={},%
+user5={},%
+user6={},%
+long={},%
+longplural={},%
+short={},%
+shortplural={},%
+counter={page},%
+parent={},%
+%
+}%
+}%

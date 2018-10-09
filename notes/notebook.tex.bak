@@ -1,0 +1,55 @@
+% My master tips book
+\documentclass[a4paper, 12pt] {report}
+
+% Preamble:
+\usepackage[T1]{fontenc}                                 % package for specifying output font encoding
+\usepackage[acronym,style=super,nogroupskip,section=chapter]{glossaries} % package for making glossaries
+\usepackage[flushleft]{threeparttablex}                  % package to add notes at the bottom of the table
+\usepackage[font=footnotesize,format=hang]{caption}      % package for formatting figure caption
+\usepackage[hidelinks, colorlinks]{hyperref}             % package for hyperlinking references - hidelinks option removes the ugly boxes around the huperlinks
+\usepackage[md]{titlesec}                                % package for tweaking the chapter/section/subsection titles format
+\usepackage[noabbrev,capitalise]{cleveref}               % package for referencing multiple referencing in a single \ref command
+\usepackage[toc]{appendix}                               % package for making appendices
+\usepackage[utf8]{inputenc}                              % package for specifying input font encoding
+\usepackage{chngcntr}                                    % package for making continuous figure numbering, instead of section-based numbering
+\usepackage{graphicx}                                    % package for graphics handling (i.e. figure images)
+\usepackage{mathptmx}                                    % package for Times New Roman font
+\usepackage{natbib}                                      % package for reference management
+\usepackage{setspace}                                    % package for setting line space (used in title page)
+\usepackage{xcolor,colortbl}                             % package for making colours
+\usepackage{booktabs}                                    % package for better looking tables
+\usepackage{longtable}                                   % package for tables that span multiple pages
+\usepackage{siunitx}                                     % package for scientific notations and units
+\usepackage{etoolbox}                                    % package to 'robustify' \bfseries
+\usepackage{enumitem}                                    % package for tweaking lists
+
+% Set up the hyperlinks - change the colour of the links to blue:
+% \hypersetup{allcolors=blue}
+\hypersetup{allcolors=black} % uncomment this line to make the hyperlinks black
+
+\def\labelitemi{--}
+
+\makeglossaries
+
+\begin{document}
+
+\include{./title/title}
+\include{./glossary/glossary}
+
+\tableofcontents
+
+\printglossaries
+\clearpage
+
+\include{./subnotes/intro}
+
+\include{./subnotes/gwas}
+
+\bibliographystyle{BiocRefStyle}
+
+\addcontentsline{toc}{chapter}{\bibname}
+
+% Print out the bibliography:
+\bibliography{./GWAS}
+
+\end{document}
